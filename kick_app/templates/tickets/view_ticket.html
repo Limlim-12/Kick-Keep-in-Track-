@@ -1,0 +1,88 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="row">
+    <div class="col-lg-8">
+        <div class="card shadow-sm mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <h4 class="mb-0">{{ title }}</h4>
+                <span class="badge 
+                    {% if ticket.status.name == 'OPEN' %} bg-danger
+                    {% elif ticket.status.name == 'IN_PROGRESS' %} bg-warning text-dark
+                    {% elif ticket.status.name == 'PENDING' %} bg-info
+                    {% else %} bg-success {% endif %} fs-6">
+                    {{ ticket.status.value }}
+                </span>
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Concern Details</h5>
+                <p class="card-text" style="white-space: pre-wrap;">{{ ticket.concern_details }}</p>
+                <hr>
+                <div class="row">
+                    <div class="col-md-6">
+                        <strong>Client:</strong> {{ ticket.client.account_name }}<br>
+                        <strong>Account #:</strong> {{ ticket.client.account_number }}<br>
+                        <strong>Region:</strong> {{ ticket.client.region.name }}
+                    </div>
+                    <div class="col-md-6">
+                        <strong>Created By:</strong> {{ ticket.creator.full_name if ticket.creator else 'N/A' }}<br>
+                        <strong>Assigned To:</strong> {{ ticket.assigned_tsr.full_name if ticket.assigned_tsr else
+                        'Unassigned' }}<br>
+                        <strong>Created At:</strong> {{ ticket.created_at | pht }}<br>
+                        <strong>Last Update:</strong> {{ ticket.updated_at | pht }}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card shadow-sm">
+            <div class="card-header">
+                <h5 class="mb-0">Activity Log</h5>
+            </div>
+            <div class="card-body">
+                <ul class="list-group list-group-flush">
+                    {% for log in logs %}
+                    <li class="list-group-item">
+                        <strong>{{ log.timestamp | pht }}:</strong>
+                        {{ log.action }}
+                    </li>
+                    {% else %}
+                    <li class="list-group-item">No activity logged yet.</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-4">
+        <div class="card shadow-sm">
+            <div class="card-header">
+                <h5 class="mb-0">Update Ticket</h5>
+            </div>
+            <div class="card-body">
+                <form method="POST" action="" novalidate>
+                    {{ form.hidden_tag() }}
+                    <div class="mb-3">
+                        {{ form.status.label(class="form-label") }}
+                        {{ form.status(class="form-select" + (" is-invalid" if form.status.errors else "")) }}
+                        {% for error in form.status.errors %}
+                        <div class="invalid-feedback">{{ error }}</div>
+                        {% endfor %}
+                    </div>
+                    <div class="mb-3">
+                        {{ form.remarks.label(class="form-label") }}
+                        {{ form.remarks(class="form-control" + (" is-invalid" if form.remarks.errors else ""), rows=4)
+                        }}
+                        {% for error in form.remarks.errors %}
+                        <div class="invalid-feedback">{{ error }}</div>
+                        {% endfor %}
+                    </div>
+                    <div class="d-grid">
+                        {{ form.submit(class="btn btn-primary") }}
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

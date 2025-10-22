@@ -1,0 +1,260 @@
+from flask import render_template, flash, redirect, url_for, request
+from flask_login import login_required, current_user
+from sqlalchemy import func
+from . import tickets
+from .forms import TicketForm, UpdateTicketForm
+from kick_app import db
+from kick_app.models import (
+    Ticket,
+    Client,
+    User,
+    Region,
+    TicketStatus,
+    UserRole,
+    ActivityLog,
+)
+from kick_app.decorators import admin_required
+
+# --- Helper Function for Auto-Assignment ---
+
+
+def get_next_tsr():
+    """
+    Finds the active TSR with the fewest 'Open' or 'In Progress' tickets.
+    This is our core load-balancing logic.
+    """
+
+    # Subquery: Count open/in-progress tickets for each TSR
+    subquery = (
+        db.session.query(
+            Ticket.assigned_to_id, func.count(Ticket.id).label("ticket_count")
+        )
+        .filter(Ticket.status.in_([TicketStatus.OPEN, TicketStatus.IN_PROGRESS]))
+        .group_by(Ticket.assigned_to_id)
+        .subquery()
+    )
+
+    # Main Query: Find active TSRs and join with their ticket counts
+    tsr_with_counts = (
+        db.session.query(User, func.coalesce(subquery.c.ticket_count, 0).label("count"))
+        .outerjoin(subquery, User.id == subquery.c.assigned_to_id)
+        .filter(User.role == UserRole.TSR, User.is_active == True)
+        .order_by(
+            func.coalesce(subquery.c.ticket_count, 0).asc()  # Order by count ascending
+        )
+        .first()
+    )  # Get the one with the lowest count
+
+    return tsr_with_counts[0] if tsr_with_counts else None
+
+
+# --- Ticket Routes ---
+
+
+@tickets.route("/new", methods=["GET", "POST"])
+@login_required
+@admin_required
+def create_ticket():
+    """Admin-only route to create a new ticket."""
+    form = TicketForm()
+    if form.validate_on_submit():
+
+        # --- ADD THIS PRINT STATEMENT ---
+        print("RUNNING NEW TICKET CODE - v2")
+        # --- END OF ADDITION ---
+        
+        client = form.client.data
+        concern_title = form.concern_title.data
+        concern_details = form.concern_details.data
+
+        # Auto-generate ticket name per your new format
+        ticket_name = (
+            f"{client.region.name}_"
+            f"{client.account_name}_"                   # <-- Corrected: Name first
+            f"{client.account_number}_"                 # <-- Corrected: Number second
+            f"{concern_title.replace(' ', '')}"        # <-- Concern title (spaces removed)
+        )
+
+        ticket = Ticket(
+            ticket_name=ticket_name,
+            concern_title=concern_title,
+            concern_details=concern_details,
+            client_id=client.id,
+            created_by_id=current_user.id,
+            status=TicketStatus.OPEN,
+        )
+
+        db.session.add(ticket)
+        db.session.commit()  # Commit to get ticket.id
+
+        # Log the creation
+        log_creation = ActivityLog(
+            action=f"Ticket created by {current_user.full_name}",
+            user_id=current_user.id,
+            ticket_id=ticket.id,
+        )
+        db.session.add(log_creation)
+
+        # --- Auto-assignment logic ---
+        next_tsr = get_next_tsr()
+        if next_tsr:
+            ticket.assigned_to_id = next_tsr.id
+
+            # Log the assignment
+            log_assign = ActivityLog(
+                action=f"Ticket auto-assigned to {next_tsr.full_name}",
+                user_id=current_user.id,
+                ticket_id=ticket.id,
+            )
+            db.session.add(log_assign)
+
+            db.session.commit()
+            flash(
+                f"Ticket created and auto-assigned to {next_tsr.full_name}.", "success"
+            )
+        else:
+            db.session.commit()
+            flash(
+                "Ticket created but no active TSRs available for assignment.", "warning"
+            )
+
+        return redirect(url_for("tickets.all_tickets"))
+
+    # --- ADD THIS 'ELSE' BLOCK ---
+    elif request.method == "POST":
+        # If form validation fails on POST, flash the errors
+        for field, errors in form.errors.items():
+            for error in errors:
+                flash(f"Error in {getattr(form, field).label.text}: {error}", "danger")
+    # --- END OF NEW BLOCK ---
+
+    return render_template("create_ticket.html", title="Create New Ticket", form=form)
+
+
+@tickets.route("/all")
+@login_required
+@admin_required
+def all_tickets():
+    """Admin-only view of all tickets, filterable."""
+    page = request.args.get("page", 1, type=int)
+    # Simple filtering (we can expand this)
+    status_filter = request.args.get("status")
+
+    query = Ticket.query.order_by(Ticket.created_at.desc())
+
+    if status_filter:
+        try:
+            query = query.filter(Ticket.status == TicketStatus[status_filter.upper()])
+        except KeyError:
+            flash(f"Invalid status filter '{status_filter}'.", "warning")
+
+    all_tickets = query.paginate(page=page, per_page=15)
+    return render_template(
+        "all_tickets.html",
+        title="All Tickets",
+        tickets=all_tickets,
+        statuses=TicketStatus,
+    )
+
+
+@tickets.route("/my")
+@login_required
+def my_tickets():
+    """TSR-only view of their assigned tickets."""
+    if current_user.role == UserRole.ADMIN:
+        # Admins visiting this are redirected to the 'all' page
+        return redirect(url_for("tickets.all_tickets"))
+
+    page = request.args.get("page", 1, type=int)
+
+    # Get all tickets assigned to the current user
+    # Show Open and In Progress tickets first
+    my_tickets = (
+        Ticket.query.filter_by(assigned_to_id=current_user.id)
+        .order_by(
+            db.case(
+                (Ticket.status == TicketStatus.OPEN, 0),
+                (Ticket.status == TicketStatus.IN_PROGRESS, 1),
+                (Ticket.status == TicketStatus.PENDING, 2),
+                (Ticket.status == TicketStatus.RESOLVED, 3),
+                else_=4,
+            ),
+            Ticket.updated_at.desc(),
+        )
+        .paginate(page=page, per_page=15)
+    )
+
+    return render_template("my_tickets.html", title="My Tickets", tickets=my_tickets)
+
+
+@tickets.route("/<int:id>", methods=["GET", "POST"])
+@login_required
+def view_ticket(id):
+    """View ticket details and update (for assigned TSR or Admin)."""
+    ticket = Ticket.query.get_or_404(id)
+
+    # Security check: Must be admin or the assigned TSR
+    if current_user.role != UserRole.ADMIN and ticket.assigned_to_id != current_user.id:
+        flash("You do not have permission to view this ticket.", "danger")
+        return redirect(url_for("main.index"))
+
+    form = UpdateTicketForm()
+
+    if form.validate_on_submit():
+        # Only the assigned TSR or an Admin can update
+        try:
+            new_status_enum = TicketStatus[form.status.data]
+
+            # Log the change
+            log_action = (
+                f"Status changed from {ticket.status.value} to {new_status_enum.value} "
+                f"by {current_user.full_name}. Remark: {form.remarks.data}"
+            )
+
+            ticket.status = new_status_enum
+
+            log = ActivityLog(
+                action=log_action, user_id=current_user.id, ticket_id=ticket.id
+            )
+            db.session.add(log)
+            db.session.commit()
+
+            flash("Ticket updated successfully.", "success")
+            return redirect(url_for("tickets.view_ticket", id=id))
+
+        except Exception as e:
+            db.session.rollback()
+            flash(f"Error updating ticket: {e}", "danger")
+
+    # Pre-populate the form with the ticket's current status
+    form.status.data = ticket.status.name
+
+    # Get all activity logs for this ticket
+    logs = ticket.logs.order_by(ActivityLog.timestamp.asc()).all()
+
+    return render_template(
+        "view_ticket.html",
+        title=f"Ticket: {ticket.ticket_name}",
+        ticket=ticket,
+        form=form,
+        logs=logs,
+    )
+
+
+@tickets.route("/delete/<int:id>", methods=["POST"])
+@login_required
+@admin_required
+def delete_ticket(id):
+    """Admin-only route to delete a ticket."""
+    ticket = Ticket.query.get_or_404(id)
+
+    # Manually delete dependent activity logs first
+    # This prevents a database error
+    ActivityLog.query.filter_by(ticket_id=ticket.id).delete()
+
+    # Now, safely delete the ticket
+    db.session.delete(ticket)
+    db.session.commit()
+
+    flash(f'Ticket "{ticket.concern_title}" has been permanently deleted.', "success")
+    return redirect(url_for("tickets.all_tickets"))

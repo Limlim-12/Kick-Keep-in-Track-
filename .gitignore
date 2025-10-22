@@ -1,0 +1,16 @@
+# Python
+*.pyc
+__pycache__/
+.venv/
+venv/
+
+# Database
+app.db
+instance/
+
+# Environment
+.env
+.flaskenv
+
+# IDE
+.vscode/

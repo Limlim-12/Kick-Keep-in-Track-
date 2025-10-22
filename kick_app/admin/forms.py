@@ -1,0 +1,45 @@
+from flask_wtf import FlaskForm
+from flask_wtf.file import FileField, FileAllowed, FileRequired
+from wtforms import StringField, SubmitField, SelectField
+from wtforms.validators import DataRequired, Length
+from wtforms_sqlalchemy.fields import QuerySelectField
+from kick_app.models import Region
+
+
+def get_regions():
+    """Helper function to query all regions for the form."""
+    return Region.query.all()
+
+
+class ClientForm(FlaskForm):
+    """Form for adding or editing a client."""
+
+    account_number = StringField(
+        "Account Number", validators=[DataRequired(), Length(max=100)]
+    )
+    account_name = StringField(
+        "Account Name", validators=[DataRequired(), Length(max=200)]
+    )
+    region = QuerySelectField(
+        "Region",
+        query_factory=get_regions,
+        get_label="name",
+        allow_blank=False,
+        validators=[DataRequired()],
+    )
+    status = SelectField(
+        "Status",
+        choices=[("Active", "Active"), ("Inactive", "Inactive")],
+        default="Active",
+    )
+    submit = SubmitField("Save Client")
+
+
+class ExcelUploadForm(FlaskForm):
+    """Form for uploading an Excel file of clients."""
+
+    excel_file = FileField(
+        "Client Excel File",
+        validators=[FileRequired(), FileAllowed(["xlsx", "xls"], "Excel files only!")],
+    )
+    submit = SubmitField("Upload")

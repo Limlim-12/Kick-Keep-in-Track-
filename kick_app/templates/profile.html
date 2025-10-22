@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="card shadow-sm">
+    <div class="card-header">
+        <h1>My Profile</h1>
+    </div>
+    <div class="card-body">
+        <p><strong>Username:</strong> {{ user.username }}</p>
+        <p><strong>Email:</strong> {{ user.email }}</p>
+        <p><strong>Role:</strong> {{ user.role.value }}</p>
+        <p><strong>Member Since:</strong> {{ user.created_at.strftime('%Y-%m-%d') }}</p>
+    </div>
+</div>
+{% endblock %}

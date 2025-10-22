@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-8 offset-md-2">
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <h2 class="card-title text-center">{{ title }}</h2>
+                <form method="POST" action="" novalidate>
+                    {{ form.hidden_tag() }} <div class="mb-3">
+                        {{ form.account_number.label(class="form-label") }}
+                        {{ form.account_number(class="form-control" + (" is-invalid" if form.account_number.errors else
+                        "")) }}
+                        {% for error in form.account_number.errors %}
+                        <div class="invalid-feedback">{{ error }}</div>
+                        {% endfor %}
+                    </div>
+
+                    <div class="mb-3">
+                        {{ form.account_name.label(class="form-label") }}
+                        {{ form.account_name(class="form-control" + (" is-invalid" if form.account_name.errors else ""))
+                        }}
+                        {% for error in form.account_name.errors %}
+                        <div class="invalid-feedback">{{ error }}</div>
+                        {% endfor %}
+                    </div>
+
+                    <div class="mb-3">
+                        {{ form.region.label(class="form-label") }}
+                        {{ form.region(class="form-select" + (" is-invalid" if form.region.errors else "")) }}
+                        {% for error in form.region.errors %}
+                        <div class="invalid-feedback">{{ error }}</div>
+                        {% endfor %}
+                    </div>
+
+                    <div class="mb-3">
+                        {{ form.status.label(class="form-label") }}
+                        {{ form.status(class="form-select" + (" is-invalid" if form.status.errors else "")) }}
+                        {% for error in form.status.errors %}
+                        <div class="invalid-feedback">{{ error }}</div>
+                        {% endfor %}
+                    </div>
+
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                        <a href="{{ url_for('admin.client_list') }}" class="btn btn-secondary">Cancel</a>
+                        {{ form.submit(class="btn btn-primary") }}
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

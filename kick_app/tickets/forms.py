@@ -2,12 +2,21 @@ from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField, TextAreaField, SelectField
 from wtforms.validators import DataRequired, Length
 from wtforms_sqlalchemy.fields import QuerySelectField
-from kick_app.models import Client, TicketStatus
+from kick_app.models import Client, TicketStatus, User, UserRole
 
 
 def get_clients():
     """Helper function to query all clients, ordered by name."""
     return Client.query.order_by(Client.account_name).all()
+
+
+def get_tsrs():
+    """Helper function to query all active TSRs."""
+    return (
+        User.query.filter(User.role == UserRole.TSR, User.is_active == True)
+        .order_by(User.full_name)
+        .all()
+    )
 
 
 class TicketForm(FlaskForm):
@@ -41,6 +50,13 @@ class UpdateTicketForm(FlaskForm):
         "Update Status",
         choices=[(status.name, status.value) for status in TicketStatus],
         validators=[DataRequired()],
+    )
+    assigned_tsr = QuerySelectField(
+        "Assign/Reassign to TSR",
+        query_factory=get_tsrs,
+        get_label="full_name",
+        allow_blank=True,  # Allow 'Unassigned'
+        validators=[],  # Not required, admin might just be adding a note
     )
     remarks = TextAreaField(
         "Add Remarks/Notes", validators=[DataRequired(), Length(min=5, max=1000)]

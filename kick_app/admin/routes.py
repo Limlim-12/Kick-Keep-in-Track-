@@ -6,13 +6,13 @@ from flask import (
     url_for,
     request,
 )  # Removed current_app
-from flask_login import login_required
+from flask_login import login_required, current_user
 from . import admin
-from .forms import ClientForm, ExcelUploadForm
+from .forms import ClientForm, ExcelUploadForm, AnnouncementForm, ReportForm
 from kick_app import db
 
 # CORRECTED IMPORT: Added User and UserRole
-from kick_app.models import Client, Region, User, UserRole
+from kick_app.models import Client, Region, User, UserRole, Announcement
 from kick_app.decorators import admin_required
 from werkzeug.utils import secure_filename
 
@@ -231,3 +231,87 @@ def reject_user(id):
     else:
         flash("Cannot delete an active user or an Admin.", "danger")
     return redirect(url_for("admin.user_list"))
+
+# --- ANNOUNCEMENT ROUTES ---
+
+
+@admin.route("/announcements", methods=["GET", "POST"])
+@login_required
+@admin_required
+def manage_announcements():
+    """Admin page to view, create, and delete announcements."""
+    form = AnnouncementForm()
+
+    if form.validate_on_submit():
+        announcement = Announcement(message=form.message.data, user_id=current_user.id)
+        db.session.add(announcement)
+        db.session.commit()
+        flash("New announcement has been posted.", "success")
+        return redirect(url_for("admin.manage_announcements"))
+
+    # Get all announcements, newest first
+    announcements = Announcement.query.order_by(Announcement.created_at.desc()).all()
+
+    return render_template(
+        "announcements.html",
+        title="Announcement Management",
+        form=form,
+        announcements=announcements,
+    )
+
+
+@admin.route("/announcements/toggle/<int:id>", methods=["POST"])
+@login_required
+@admin_required
+def toggle_announcement(id):
+    """Toggles the 'is_active' status of an announcement."""
+    announcement = Announcement.query.get_or_404(id)
+    announcement.is_active = not announcement.is_active
+    db.session.commit()
+    status = "activated" if announcement.is_active else "deactivated"
+    flash(f"Announcement has been {status}.", "info")
+    return redirect(url_for("admin.manage_announcements"))
+
+
+@admin.route("/announcements/delete/<int:id>", methods=["POST"])
+@login_required
+@admin_required
+def delete_announcement(id):
+    """Deletes an announcement."""
+    announcement = Announcement.query.get_or_404(id)
+    db.session.delete(announcement)
+    db.session.commit()
+    flash("Announcement has been permanently deleted.", "success")
+    return redirect(url_for("admin.manage_announcements"))
+
+
+@admin.route("/reports", methods=["GET", "POST"])
+@login_required
+@admin_required
+def reports():
+    """Admin page for generating reports."""
+    form = ReportForm()
+
+    if form.validate_on_submit():
+        # ---- IMPORTANT: Define variables *inside* the 'if' block ----
+        start_date = form.start_date.data
+        end_date = form.end_date.data
+        # -----------------------------------------------------------
+
+        if form.submit_tickets.data:
+            # User clicked 'Generate Ticket Report'
+            return redirect(
+                url_for("api.export_tickets", start_date=start_date, end_date=end_date)
+            )
+        elif form.submit_tsr.data:
+            # User clicked 'Generate TSR Performance Report'
+            return redirect(
+                url_for(
+                    "api.export_tsr_performance",
+                    start_date=start_date,
+                    end_date=end_date,
+                )
+            )
+
+    # If it's a GET request or validation failed, render the form
+    return render_template("reports.html", title="Reporting Tools", form=form)

@@ -1,6 +1,6 @@
 from flask import Blueprint, render_template, redirect, url_for
 from flask_login import login_required, current_user
-from kick_app.models import UserRole  # Import UserRole
+from kick_app.models import Announcement, UserRole  # Import UserRole
 
 main = Blueprint("main", __name__)
 
@@ -11,17 +11,24 @@ main = Blueprint("main", __name__)
 def index():
     """
     Main dashboard page.
-    Redirects user to their specific dashboard.
+    This now renders the dashboard template.
     """
-    if current_user.role == UserRole.ADMIN:
-        # Admin sees the "All Tickets" page
-        return redirect(url_for("tickets.all_tickets"))
-    elif current_user.role == UserRole.TSR:
-        # TSR sees "My Tickets"
-        return redirect(url_for("tickets.my_tickets"))
 
-    # Fallback (shouldn't be reached)
-    return render_template("index.html", title="Dashboard")
+    # --- ADD THIS LOGIC ---
+    # Fetch all active announcements, newest first
+    announcements = (
+        Announcement.query.filter_by(is_active=True)
+        .order_by(Announcement.created_at.desc())
+        .all()
+    )
+    # --- END OF ADDITION ---
+    # --- THIS IS THE CHANGE ---
+    # We no longer redirect. We render the dashboard,
+    # and the template itself will decide what to show.
+    return render_template(
+        "dashboard.html", title="Dashboard", announcements=announcements
+    )
+    # --- END OF CHANGE ---
 
 
 @main.route("/profile")

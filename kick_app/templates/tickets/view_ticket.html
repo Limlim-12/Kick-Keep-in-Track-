@@ -69,6 +69,18 @@
                         <div class="invalid-feedback">{{ error }}</div>
                         {% endfor %}
                     </div>
+
+                    {% if current_user.role.value == 'Admin' %}
+                    <div class="mb-3">
+                        {{ form.assigned_tsr.label(class="form-label") }}
+                        {{ form.assigned_tsr(class="form-select" + (" is-invalid" if form.assigned_tsr.errors else ""))
+                        }}
+                        <div class="form-text">Leave blank to unassign.</div>
+                        {% for error in form.assigned_tsr.errors %}
+                        <div class="invalid-feedback">{{ error }}</div>
+                        {% endfor %}
+                    </div>
+                    {% endif %}
                     <div class="mb-3">
                         {{ form.remarks.label(class="form-label") }}
                         {{ form.remarks(class="form-control" + (" is-invalid" if form.remarks.errors else ""), rows=4)

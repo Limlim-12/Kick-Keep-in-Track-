@@ -56,18 +56,18 @@ def create_app(config_class=Config):
 
     # Simple main routes
     from .routes import main as main_blueprint
-
     app.register_blueprint(main_blueprint)
 
     # Import and register the admin blueprint
     from .admin import admin as admin_blueprint
-
     app.register_blueprint(admin_blueprint)
 
     # Import and register the tickets blueprint
     from .tickets import tickets as tickets_blueprint
-
     app.register_blueprint(tickets_blueprint)
+
+    from .api import api as api_blueprint
+    app.register_blueprint(api_blueprint)
 
     # This 'with' block ensures that the app context is active
     # when we create the tables, which is necessary for SQLAlchemy.

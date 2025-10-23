@@ -211,6 +211,35 @@ def view_ticket(id):
                 f"by {current_user.full_name}. Remark: {form.remarks.data}"
             )
 
+            # --- START: NEW ASSIGNMENT LOGIC ---
+            if current_user.role == UserRole.ADMIN:
+                new_tsr = form.assigned_tsr.data
+                old_tsr_id = ticket.assigned_to_id
+
+                # Check if the assignment has changed
+                if new_tsr and old_tsr_id != new_tsr.id:
+                    # A new TSR was selected
+                    log_reassign_action = f"Ticket reassigned from {ticket.assigned_tsr.full_name if ticket.assigned_tsr else 'Unassigned'} to {new_tsr.full_name} by {current_user.full_name}."
+                    log_reassign = ActivityLog(
+                        action=log_reassign_action,
+                        user_id=current_user.id,
+                        ticket_id=ticket.id,
+                    )
+                    db.session.add(log_reassign)
+                    ticket.assigned_to_id = new_tsr.id
+
+                elif not new_tsr and old_tsr_id:
+                    # The field was set to blank (Unassigned)
+                    log_unassign_action = f"Ticket unassigned from {ticket.assigned_tsr.full_name} by {current_user.full_name}."
+                    log_unassign = ActivityLog(
+                        action=log_unassign_action,
+                        user_id=current_user.id,
+                        ticket_id=ticket.id,
+                    )
+                    db.session.add(log_unassign)
+                    ticket.assigned_to_id = None
+            # --- END: NEW ASSIGNMENT LOGIC ---
+
             ticket.status = new_status_enum
 
             log = ActivityLog(

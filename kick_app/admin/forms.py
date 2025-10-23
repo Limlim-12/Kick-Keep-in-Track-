@@ -1,6 +1,7 @@
 from flask_wtf import FlaskForm
 from flask_wtf.file import FileField, FileAllowed, FileRequired
-from wtforms import StringField, SubmitField, SelectField
+from wtforms import StringField, SubmitField, SelectField, TextAreaField
+from wtforms.fields import DateField
 from wtforms.validators import DataRequired, Length
 from wtforms_sqlalchemy.fields import QuerySelectField
 from kick_app.models import Region
@@ -43,3 +44,29 @@ class ExcelUploadForm(FlaskForm):
         validators=[FileRequired(), FileAllowed(["xlsx", "xls"], "Excel files only!")],
     )
     submit = SubmitField("Upload")
+
+
+class AnnouncementForm(FlaskForm):
+    """Form for admins to create a new announcement."""
+
+    message = TextAreaField(
+        "Announcement Message", validators=[DataRequired(), Length(min=5, max=1000)]
+    )
+    submit = SubmitField("Post Announcement")
+
+
+class ReportForm(FlaskForm):
+    """Form for generating reports."""
+    start_date = DateField('Start Date', validators=[DataRequired()])
+    end_date = DateField('End Date', validators=[DataRequired()])
+    submit_tickets = SubmitField('Generate Ticket Report')  
+
+
+class ReportForm(FlaskForm):
+    """Form for generating reports."""
+
+    start_date = DateField("Start Date", validators=[DataRequired()])
+    end_date = DateField("End Date", validators=[DataRequired()])
+    submit_tickets = SubmitField("Generate Ticket Report")
+    # --- ADD THIS LINE ---
+    submit_tsr = SubmitField("Generate TSR Performance Report")

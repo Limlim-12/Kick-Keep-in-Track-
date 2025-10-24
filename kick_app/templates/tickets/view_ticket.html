@@ -23,6 +23,9 @@
                         <strong>Client:</strong> {{ ticket.client.account_name }}<br>
                         <strong>Account #:</strong> {{ ticket.client.account_number }}<br>
                         <strong>Region:</strong> {{ ticket.client.region.name }}
+                        {% if ticket.rt_ticket_number %}
+                        <strong>RT Ticket #:</strong> {{ ticket.rt_ticket_number }}<br>
+                        {% endif %}
                     </div>
                     <div class="col-md-6">
                         <strong>Created By:</strong> {{ ticket.creator.full_name if ticket.creator else 'N/A' }}<br>

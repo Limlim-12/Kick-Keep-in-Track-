@@ -35,6 +35,14 @@
                         {% endfor %}
                     </div>
 
+                    <div class="mb-3">
+                        {{ form.rt_ticket_number.label(class="form-label") }}
+                        {{ form.rt_ticket_number(class="form-control" + (" is-invalid" if form.rt_ticket_number.errors else "")) }}
+                        {% for error in form.rt_ticket_number.errors %}
+                        <div class="invalid-feedback">{{ error }}</div>
+                        {% endfor %}
+                    </div>
+
                     <div class="d-grid gap-2 d-md-flex justify-content-md-end">
                         <a href="{{ url_for('tickets.all_tickets') }}" class="btn btn-secondary">Cancel</a>
                         {{ form.submit(class="btn btn-primary") }}

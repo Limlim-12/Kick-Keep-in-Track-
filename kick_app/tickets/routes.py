@@ -62,10 +62,11 @@ def create_ticket():
         # --- ADD THIS PRINT STATEMENT ---
         print("RUNNING NEW TICKET CODE - v2")
         # --- END OF ADDITION ---
-        
+
         client = form.client.data
         concern_title = form.concern_title.data
         concern_details = form.concern_details.data
+        rt_ticket_num = form.rt_ticket_number.data or None  # Get data or None if empty
 
         # Auto-generate ticket name per your new format
         ticket_name = (
@@ -82,6 +83,7 @@ def create_ticket():
             client_id=client.id,
             created_by_id=current_user.id,
             status=TicketStatus.OPEN,
+            rt_ticket_number=rt_ticket_num,  # <-- SAVE THE RT NUMBER
         )
 
         db.session.add(ticket)

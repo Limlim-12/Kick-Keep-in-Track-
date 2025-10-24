@@ -17,6 +17,7 @@
                     <th>Client</th>
                     <th>Last Updated</th>
                     <th>Actions</th>
+                    <th>RT Ticket #</th>
                 </tr>
             </thead>
             <tbody>
@@ -35,6 +36,7 @@
                     <td>{{ ticket.assigned_tsr.full_name if ticket.assigned_tsr else 'Unassigned' }}</td>
                     <td>{{ ticket.client.account_name }}</td>
                     <td>{{ ticket.updated_at.strftime('%Y-%m-%d %H:%M') }}</td>
+                    <td>{{ ticket.rt_ticket_number or 'N/A' }}</td>
                     <td>
                         <a href="{{ url_for('tickets.view_ticket', id=ticket.id) }}" class="btn btn-sm btn-outline-primary">View</a>
                     

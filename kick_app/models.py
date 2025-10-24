@@ -165,7 +165,10 @@ class Ticket(db.Model):
         db.String(300), unique=True
     )  # The "Region_AccountName_Num_Concern"
     concern_title = db.Column(db.String(255), nullable=False)
-    concern_details = db.Column(db.Text, nullable=False)  # Renamed from 'concern'  
+    concern_details = db.Column(db.Text, nullable=False)  # Renamed from 'concern' 
+    rt_ticket_number = db.Column(
+        db.String(100), nullable=True, index=True
+    )  # Optional RT ticket number
     status = db.Column(
         db.Enum(TicketStatus), default=TicketStatus.OPEN, nullable=False, index=True
     )

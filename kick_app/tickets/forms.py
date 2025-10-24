@@ -1,6 +1,6 @@
 from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField, TextAreaField, SelectField
-from wtforms.validators import DataRequired, Length
+from wtforms.validators import DataRequired, Length, Optional
 from wtforms_sqlalchemy.fields import QuerySelectField
 from kick_app.models import Client, TicketStatus, User, UserRole
 
@@ -38,6 +38,11 @@ class TicketForm(FlaskForm):
     # --- RENAMED FIELD ---
     concern_details = TextAreaField(
         "Concern Details", validators=[DataRequired(), Length(max=1000)]
+    )
+
+    # --- ADD THIS FIELD ---
+    rt_ticket_number = StringField(
+        "RT Ticket Number (Optional)", validators=[Optional(), Length(max=100)]
     )
 
     submit = SubmitField("Create Ticket")

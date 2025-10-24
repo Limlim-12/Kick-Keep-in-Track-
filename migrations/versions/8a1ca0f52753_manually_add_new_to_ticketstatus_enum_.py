@@ -1,8 +1,8 @@
 """Manually add NEW to TicketStatus enum for PostgreSQL
 
-Revision ID: <SOME_ID_HERE>
-Revises: <PREVIOUS_ID_HERE>
-Create Date: <TIMESTAMP>
+Revision ID: 8a1ca0f52753 # <-- This file's ID
+Revises: 360c7cfe4ae4    # <-- The Previous file's ID
+Create Date: <TIMESTAMP> # <-- Alembic handles this
 
 """
 
@@ -11,8 +11,8 @@ import sqlalchemy as sa
 
 
 # revision identifiers, used by Alembic.
-revision = "<SOME_ID_HERE>"
-down_revision = "<PREVIOUS_ID_HERE>"
+revision = "8a1ca0f52753"  # <-- This file's ID
+down_revision = "360c7cfe4ae4"  # <-- The Previous file's ID
 branch_labels = None
 depends_on = None
 

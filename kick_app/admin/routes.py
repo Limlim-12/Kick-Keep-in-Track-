@@ -69,7 +69,7 @@ def client_list():
 
                 # Check if client already exists
                 existing_client = Client.query.filter_by(
-                    account_number=row["account_number"]
+                    account_number=str(row["account_number"])
                 ).first()
                 if not existing_client:
                     client = Client(

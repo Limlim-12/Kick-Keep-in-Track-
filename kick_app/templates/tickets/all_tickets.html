@@ -11,61 +11,61 @@
         <table class="table table-hover">
             <thead>
                 <tr>
-                    <th>Status</th>
-                    <th>Ticket Name</th>
-                    <th>Assigned TSR</th>
-                    <th>Client</th>
-                    <th>Last Updated</th>
-                    <th>RT Ticket #</th>
-                    <th>Actions</th>
-
+                    <th>RT / Kick ID</th> {# <-- Updated Header #} <th>Ticket Name</th>
+                        <th>Concern Title</th> {# <-- Added Header #} <th>Status</th>
+                            <th>Created At (PHT)</th> {# <-- Added Header #} <th>Last Updated (PHT)</th>
+                                <th>Assigned TSR</th>
+                                <th>Client Name</th> {# <-- Added Header #} <th>Account Number</th> {# <-- Added Header
+                                        #} <th>Region</th> {# <-- Added Header #} <th>Created By</th> {# <-- Added
+                                                Header #} <th>Actions</th>
                 </tr>
             </thead>
             <tbody>
                 {% for ticket in tickets.items %}
                 <tr>
                     <td>
-                        {# --- CORRECTED IF/ELIF STRUCTURE --- #}
-                        <span class="badge
-                            {% if ticket.status.name == 'NEW' %} bg-secondary
-                            {% elif ticket.status.name == 'OPEN' %} bg-danger
-                            {% elif ticket.status.name == 'IN_PROGRESS' %} bg-warning text-dark
-                            {% elif ticket.status.name == 'PENDING' %} bg-info
-                            {% else %} bg-success {% endif %}"> {# Correct endif added here implicitly #}
-                            {{ ticket.status.value }}
-                        </span>
-                    </td>
-                    <td>{{ ticket.ticket_name | truncate(50) }}</td>
-                    <td>{{ ticket.assigned_tsr.full_name if ticket.assigned_tsr else 'Unassigned' }}</td>
-                    <td>{{ ticket.client.account_name }}</td>
-                    {# --- UPDATED: Added | pht filter --- #}
-                    <td>{{ ticket.updated_at | pht }}</td>
-                    <td>
+                        {# --- Display RT # (as link) or Kick ID --- #}
                         {% if ticket.rt_ticket_number %}
-                        {# Create a link using the confirmed URL structure #}
                         <a href="https://rt.coronatelecoms.com/Ticket/Display.html?id={{ ticket.rt_ticket_number }}"
                             target="_blank" rel="noopener noreferrer">
                             {{ ticket.rt_ticket_number }}
                         </a>
                         {% else %}
-                        N/A {# Display N/A if no RT number exists #}
+                        {{ ticket.id }} {# Show internal Kick ID #}
                         {% endif %}
                     </td>
-                    <td>
-                        <a href="{{ url_for('tickets.view_ticket', id=ticket.id) }}"
-                            class="btn btn-sm btn-outline-primary">View</a>
-
-                        <form action="{{ url_for('tickets.delete_ticket', id=ticket.id) }}" method="POST"
-                            class="d-inline"
-                            onsubmit="return confirm('Are you sure you want to permanently delete this ticket? This cannot be undone.');">
-                            <button type="submit" class="btn btn-sm btn-danger">Delete</button>
-                        </form>
-                    </td>
+                    <td>{{ ticket.ticket_name | truncate(50) }}</td>
+                    <td>{{ ticket.concern_title | truncate(30) }}</td> {# <-- Added Cell #} <td>
+                        <span class="badge
+                            {% if ticket.status.name == 'NEW' %} bg-secondary
+                            {% elif ticket.status.name == 'OPEN' %} bg-danger
+                            {% elif ticket.status.name == 'IN_PROGRESS' %} bg-warning text-dark
+                            {% elif ticket.status.name == 'PENDING' %} bg-info
+                            {% else %} bg-success {% endif %}">
+                            {{ ticket.status.value }}
+                        </span>
+                        </td>
+                        <td>{{ ticket.created_at | pht }}</td> {# <-- Added Cell #} <td>{{ ticket.updated_at | pht }}
+                            </td>
+                            <td>{{ ticket.assigned_tsr.full_name if ticket.assigned_tsr else 'Unassigned' }}</td>
+                            <td>{{ ticket.client.account_name }}</td> {# <-- Added Cell #} <td>{{
+                                ticket.client.account_number }}</td> {# <-- Added Cell #} <td>{{
+                                    ticket.client.region.name }}</td> {# <-- Added Cell #} <td>{{
+                                        ticket.creator.full_name if ticket.creator else 'N/A' }}</td> {# <-- Added Cell
+                                            #} <td>
+                                            <a href="{{ url_for('tickets.view_ticket', id=ticket.id) }}"
+                                                class="btn btn-sm btn-outline-primary">View</a>
+                                            <form action="{{ url_for('tickets.delete_ticket', id=ticket.id) }}"
+                                                method="POST" class="d-inline"
+                                                onsubmit="return confirm('Are you sure you want to permanently delete this ticket? This cannot be undone.');">
+                                                <button type="submit" class="btn btn-sm btn-danger">Delete</button>
+                                            </form>
+                                            </td>
                 </tr>
                 {% else %}
                 <tr>
-                    {# --- Corrected colspan to 7 --- #}
-                    <td colspan="7" class="text-center">No tickets found.</td>
+                    {# --- Updated colspan to 12 --- #}
+                    <td colspan="12" class="text-center">No tickets found.</td>
                 </tr>
                 {% endfor %}
             </tbody>

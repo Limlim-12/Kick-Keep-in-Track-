@@ -14,26 +14,40 @@
                     <th>Ticket Name</th>
                     <th>Client</th>
                     <th>Last Updated</th>
-                    <th>Actions</th>
                     <th>RT Ticket #</th>
+                    <th>Actions</th>
+
                 </tr>
             </thead>
             <tbody>
                 {% for ticket in tickets.items %}
                 <tr>
                     <td>
-                        <span class="badge 
-                            {% if ticket.status.name == 'OPEN' %} bg-danger
+                        {# --- CORRECTED IF/ELIF STRUCTURE --- #}
+                        <span class="badge
+                            {% if ticket.status.name == 'NEW' %} bg-secondary
+                            {% elif ticket.status.name == 'OPEN' %} bg-danger
                             {% elif ticket.status.name == 'IN_PROGRESS' %} bg-warning text-dark
                             {% elif ticket.status.name == 'PENDING' %} bg-info
-                            {% else %} bg-success {% endif %}">
+                            {% else %} bg-success {% endif %}"> {# Correct endif added here implicitly #}
                             {{ ticket.status.value }}
                         </span>
                     </td>
                     <td>{{ ticket.ticket_name | truncate(50) }}</td>
                     <td>{{ ticket.client.account_name }}</td>
-                    <td>{{ ticket.updated_at.strftime('%Y-%m-%d %H:%M') }}</td>
-                    <td>{{ ticket.rt_ticket_number or 'N/A' }}</td>
+                    {# --- UPDATED: Added | pht filter --- #}
+                    <td>{{ ticket.updated_at | pht }}</td>
+                    <td>
+                        {% if ticket.rt_ticket_number %}
+                        {# Create a link using the confirmed URL structure #}
+                        <a href="https://rt.coronatelecoms.com/Ticket/Display.html?id={{ ticket.rt_ticket_number }}"
+                            target="_blank" rel="noopener noreferrer">
+                            {{ ticket.rt_ticket_number }}
+                        </a>
+                        {% else %}
+                        N/A {# Display N/A if no RT number exists #}
+                        {% endif %}
+                    </td>
                     <td>
                         <a href="{{ url_for('tickets.view_ticket', id=ticket.id) }}" class="btn btn-sm btn-primary">View
                             / Update</a>
@@ -41,7 +55,8 @@
                 </tr>
                 {% else %}
                 <tr>
-                    <td colspan="5" class="text-center">You have no assigned tickets.</td>
+                    {# --- Corrected colspan to 6 --- #}
+                    <td colspan="6" class="text-center">You have no assigned tickets.</td>
                 </tr>
                 {% endfor %}
             </tbody>

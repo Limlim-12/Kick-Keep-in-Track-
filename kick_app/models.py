@@ -13,10 +13,11 @@ class UserRole(enum.Enum):
 
 
 class TicketStatus(enum.Enum):
+    NEW = "New"  # <-- Add this line
     OPEN = "Open"
     IN_PROGRESS = "In Progress"
     RESOLVED = "Resolved"
-    PENDING = "Pending"  # From your additional ideas
+    PENDING = "Pending"
 
 
 # --- Flask-Login User Loader ---

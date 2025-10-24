@@ -66,7 +66,6 @@ def create_ticket():
         client = form.client.data
         concern_title = form.concern_title.data
         concern_details = form.concern_details.data
-        rt_ticket_num = form.rt_ticket_number.data or None  # Get data or None if empty
 
         # Auto-generate ticket name per your new format
         ticket_name = (
@@ -82,8 +81,7 @@ def create_ticket():
             concern_details=concern_details,
             client_id=client.id,
             created_by_id=current_user.id,
-            status=TicketStatus.OPEN,
-            rt_ticket_number=rt_ticket_num,  # <-- SAVE THE RT NUMBER
+            status=TicketStatus.NEW,
         )
 
         db.session.add(ticket)
@@ -200,27 +198,42 @@ def view_ticket(id):
         flash("You do not have permission to view this ticket.", "danger")
         return redirect(url_for("main.index"))
 
+    # --- START: AUTO-OPEN LOGIC ---
+    # If the current user is the assigned TSR and the status is 'New'
+    if (
+        request.method == "GET"
+        and ticket.assigned_to_id == current_user.id
+        and ticket.status == TicketStatus.NEW
+    ):
+
+        ticket.status = TicketStatus.OPEN
+        log_action = f"Ticket status automatically changed to Open by {current_user.full_name} viewing it."
+        log_open = ActivityLog(
+            action=log_action, user_id=current_user.id, ticket_id=ticket.id
+        )
+        db.session.add(log_open)
+        db.session.commit()
+        flash("Ticket status updated to Open.", "info")
+        # No redirect needed, just continue rendering the page with the updated status
+    # --- END: AUTO-OPEN LOGIC ---
+
     form = UpdateTicketForm()
 
     if form.validate_on_submit():
-        # Only the assigned TSR or an Admin can update
         try:
             new_status_enum = TicketStatus[form.status.data]
-
-            # Log the change
-            log_action = (
-                f"Status changed from {ticket.status.value} to {new_status_enum.value} "
-                f"by {current_user.full_name}. Remark: {form.remarks.data}"
+            log_action = ""  # For status change log
+            something_changed = (
+                False  # Flag to track if we need to commit/flash success
             )
 
-            # --- START: NEW ASSIGNMENT LOGIC ---
+            # --- Handle Admin Reassignment ---
             if current_user.role == UserRole.ADMIN:
                 new_tsr = form.assigned_tsr.data
                 old_tsr_id = ticket.assigned_to_id
 
                 # Check if the assignment has changed
                 if new_tsr and old_tsr_id != new_tsr.id:
-                    # A new TSR was selected
                     log_reassign_action = f"Ticket reassigned from {ticket.assigned_tsr.full_name if ticket.assigned_tsr else 'Unassigned'} to {new_tsr.full_name} by {current_user.full_name}."
                     log_reassign = ActivityLog(
                         action=log_reassign_action,
@@ -229,9 +242,9 @@ def view_ticket(id):
                     )
                     db.session.add(log_reassign)
                     ticket.assigned_to_id = new_tsr.id
+                    something_changed = True
 
                 elif not new_tsr and old_tsr_id:
-                    # The field was set to blank (Unassigned)
                     log_unassign_action = f"Ticket unassigned from {ticket.assigned_tsr.full_name} by {current_user.full_name}."
                     log_unassign = ActivityLog(
                         action=log_unassign_action,
@@ -240,32 +253,92 @@ def view_ticket(id):
                     )
                     db.session.add(log_unassign)
                     ticket.assigned_to_id = None
-            # --- END: NEW ASSIGNMENT LOGIC ---
+                    something_changed = True
 
-            ticket.status = new_status_enum
+            # --- Handle RT Ticket Number Update ---
+            new_rt_number = (
+                form.rt_ticket_number.data.strip() or None
+            )  # Get data (strip whitespace) or None if empty/whitespace only
+            old_rt_number = ticket.rt_ticket_number
 
-            log = ActivityLog(
-                action=log_action, user_id=current_user.id, ticket_id=ticket.id
-            )
-            db.session.add(log)
-            db.session.commit()
+            if new_rt_number != old_rt_number:  # Check if it actually changed
+                rt_log_action = ""
+                if old_rt_number and new_rt_number:
+                    rt_log_action = f"RT Ticket Number changed from '{old_rt_number}' to '{new_rt_number}' by {current_user.full_name}."
+                elif new_rt_number:  # Was None, now has value
+                    rt_log_action = f"RT Ticket Number '{new_rt_number}' added by {current_user.full_name}."
+                elif old_rt_number:  # Had value, now is None (cleared)
+                    rt_log_action = f"RT Ticket Number '{old_rt_number}' removed by {current_user.full_name}."
 
-            flash("Ticket updated successfully.", "success")
+                if rt_log_action:  # Only log if there was a change message
+                    log_rt = ActivityLog(
+                        action=rt_log_action,
+                        user_id=current_user.id,
+                        ticket_id=ticket.id,
+                    )
+                    db.session.add(log_rt)
+                ticket.rt_ticket_number = new_rt_number
+                something_changed = True
+
+            # --- Log the status change ---
+            if ticket.status != new_status_enum:
+                # Prepare status change message, will be added as a log entry later
+                log_action = (
+                    f"Status changed from {ticket.status.value} to {new_status_enum.value} "
+                    f"by {current_user.full_name}."
+                )
+                ticket.status = new_status_enum
+                something_changed = True
+
+            # --- Add the remarks ---
+            if form.remarks.data:
+                remark_log_action = (
+                    f"Remark added by {current_user.full_name}: {form.remarks.data}"
+                )
+                log_remark = ActivityLog(
+                    action=remark_log_action,
+                    user_id=current_user.id,
+                    ticket_id=ticket.id,
+                )
+                db.session.add(log_remark)
+                something_changed = True  # Remarks count as a change
+
+            # --- Commit Status Change Log (if status changed) ---
+            # This is done separately to keep status change and remarks distinct in log
+            if log_action:
+                log_status = ActivityLog(
+                    action=log_action.strip(),  # Use the message prepared earlier
+                    user_id=current_user.id,
+                    ticket_id=ticket.id,
+                )
+                db.session.add(log_status)
+
+            # --- Final Commit and Flash ---
+            if something_changed:
+                db.session.commit()
+                flash("Ticket updated successfully.", "success")
+            else:
+                flash("No changes detected.", "info")  # Inform user if nothing changed
+
             return redirect(url_for("tickets.view_ticket", id=id))
 
         except Exception as e:
             db.session.rollback()
             flash(f"Error updating ticket: {e}", "danger")
 
-    # Pre-populate the form with the ticket's current status
-    form.status.data = ticket.status.name
+    # --- Pre-populate form on GET request ---
+    if request.method == "GET":
+        form.status.data = ticket.status.name
+        form.rt_ticket_number.data = ticket.rt_ticket_number  # Pre-fill RT number
+        if ticket.assigned_tsr:
+            form.assigned_tsr.data = ticket.assigned_tsr
 
     # Get all activity logs for this ticket
     logs = ticket.logs.order_by(ActivityLog.timestamp.asc()).all()
 
     return render_template(
         "view_ticket.html",
-        title=f"Ticket: {ticket.ticket_name}",
+        title=f'Ticket: {ticket.ticket_name}',  # Use concern_title for page title
         ticket=ticket,
         form=form,
         logs=logs,

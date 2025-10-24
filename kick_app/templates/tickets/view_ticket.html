@@ -6,11 +6,13 @@
         <div class="card shadow-sm mb-4">
             <div class="card-header d-flex justify-content-between align-items-center">
                 <h4 class="mb-0">{{ title }}</h4>
-                <span class="badge 
-                    {% if ticket.status.name == 'OPEN' %} bg-danger
+                {# --- CORRECTED IF/ELIF STRUCTURE --- #}
+                <span class="badge
+                    {% if ticket.status.name == 'NEW' %} bg-secondary
+                    {% elif ticket.status.name == 'OPEN' %} bg-danger {# Changed from nested if to elif #}
                     {% elif ticket.status.name == 'IN_PROGRESS' %} bg-warning text-dark
                     {% elif ticket.status.name == 'PENDING' %} bg-info
-                    {% else %} bg-success {% endif %} fs-6">
+                    {% else %} bg-success {% endif %} fs-6"> {# Correct endif added implicitly #}
                     {{ ticket.status.value }}
                 </span>
             </div>
@@ -22,9 +24,14 @@
                     <div class="col-md-6">
                         <strong>Client:</strong> {{ ticket.client.account_name }}<br>
                         <strong>Account #:</strong> {{ ticket.client.account_number }}<br>
-                        <strong>Region:</strong> {{ ticket.client.region.name }}
+                        <strong>Region:</strong> {{ ticket.client.region.name }}<br> {# Added line break #}
                         {% if ticket.rt_ticket_number %}
-                        <strong>RT Ticket #:</strong> {{ ticket.rt_ticket_number }}<br>
+                        <strong>RT Ticket #:</strong>
+                        {# Create a link using the confirmed URL structure #}
+                        <a href="https://rt.coronatelecoms.com/Ticket/Display.html?id={{ ticket.rt_ticket_number }}"
+                            target="_blank" rel="noopener noreferrer">
+                            {{ ticket.rt_ticket_number }}
+                        </a><br>
                         {% endif %}
                     </div>
                     <div class="col-md-6">
@@ -84,6 +91,18 @@
                         {% endfor %}
                     </div>
                     {% endif %}
+
+                    {# --- START: ADDED RT TICKET NUMBER FIELD --- #}
+                    <div class="mb-3">
+                        {{ form.rt_ticket_number.label(class="form-label") }}
+                        {{ form.rt_ticket_number(class="form-control" + (" is-invalid" if form.rt_ticket_number.errors
+                        else "")) }}
+                        {% for error in form.rt_ticket_number.errors %}
+                        <div class="invalid-feedback">{{ error }}</div>
+                        {% endfor %}
+                    </div>
+                    {# --- END: ADDED RT TICKET NUMBER FIELD --- #}
+
                     <div class="mb-3">
                         {{ form.remarks.label(class="form-label") }}
                         {{ form.remarks(class="form-control" + (" is-invalid" if form.remarks.errors else ""), rows=4)

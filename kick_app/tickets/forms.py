@@ -1,6 +1,10 @@
 from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField, TextAreaField, SelectField
-from wtforms.validators import DataRequired, Length, Optional
+from wtforms.validators import (
+    DataRequired,
+    Length,
+    Optional,
+)  # Ensure Optional is imported
 from wtforms_sqlalchemy.fields import QuerySelectField
 from kick_app.models import Client, TicketStatus, User, UserRole
 
@@ -30,40 +34,49 @@ class TicketForm(FlaskForm):
         validators=[DataRequired()],
     )
 
-    # --- NEW FIELD ---
     concern_title = StringField(
-        "Concern Title", validators=[DataRequired(), Length(min=1, max=100)]
+        "Concern Title",
+        validators=[DataRequired(), Length(max=100)],  # Removed min=1 for flexibility
     )
 
-    # --- RENAMED FIELD ---
     concern_details = TextAreaField(
         "Concern Details", validators=[DataRequired(), Length(max=1000)]
-    )
-
-    # --- ADD THIS FIELD ---
-    rt_ticket_number = StringField(
-        "RT Ticket Number (Optional)", validators=[Optional(), Length(max=100)]
     )
 
     submit = SubmitField("Create Ticket")
 
 
+# --- CORRECTED UpdateTicketForm ---
 class UpdateTicketForm(FlaskForm):
-    """Form for TSRs to update a ticket."""
+    """Form for TSRs/Admins to update a ticket."""
 
     status = SelectField(
         "Update Status",
         choices=[(status.name, status.value) for status in TicketStatus],
         validators=[DataRequired()],
     )
+
+    # This field is for Admins to reassign
     assigned_tsr = QuerySelectField(
         "Assign/Reassign to TSR",
         query_factory=get_tsrs,
         get_label="full_name",
-        allow_blank=True,  # Allow 'Unassigned'
-        validators=[],  # Not required, admin might just be adding a note
+        allow_blank=True,  # Allows 'Unassigned' selection
+        validators=[],  # Not strictly required for the update action
     )
+
+    # Field for RT Ticket Number input
+    rt_ticket_number = StringField(
+        "RT Ticket Number", validators=[Optional(), Length(max=100)]
+    )
+
+    # Field for adding remarks
     remarks = TextAreaField(
-        "Add Remarks/Notes", validators=[DataRequired(), Length(min=5, max=1000)]
+        "Add Remarks/Notes",
+        validators=[Optional(), Length(min=5, max=1000)],  # Kept Optional
     )
+
     submit = SubmitField("Update Ticket")
+
+
+# --- END CORRECTION ---

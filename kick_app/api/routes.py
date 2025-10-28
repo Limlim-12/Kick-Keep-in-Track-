@@ -1,7 +1,7 @@
 from flask import jsonify, request, send_file, flash, redirect, url_for
 from flask_login import login_required, current_user
 from . import api
-from kick_app import db
+from .. import db
 from kick_app.models import (
     Ticket,
     User,

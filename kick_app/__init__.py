@@ -2,19 +2,21 @@ from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from flask_login import LoginManager
 from flask_migrate import Migrate
+from flask_mail import Mail  # <-- 1. ADD THIS IMPORT
 from .config import Config
-from datetime import datetime  # <-- IMPORT DATETIME
-import pytz  # <-- IMPORT PYTZ
+from datetime import datetime
+import pytz
 
 # Initialize extensions
 db = SQLAlchemy()
 login_manager = LoginManager()
 migrate = Migrate()
+mail = Mail()  # <-- 2. ADD THIS LINE
 
 # Set the view function name for the login page
 # Flask-Login will redirect users to this route if they try to access a protected page
-login_manager.login_view = "auth.login"  # We will create an 'auth' blueprint later
-login_manager.login_message_category = "info"  # For flashing messages
+login_manager.login_view = "auth.login"
+login_manager.login_message_category = "info"
 
 
 # --- NEW TIMEZONE FILTER ---
@@ -45,6 +47,7 @@ def create_app(config_class=Config):
     db.init_app(app)
     login_manager.init_app(app)
     migrate.init_app(app, db)  # Initialize Flask-Migrate
+    mail.init_app(app)  # <-- 3. ADD THIS LINE
 
     # --- Register Blueprints (Routes) ---
     # Blueprints help organize routes into modules
@@ -56,17 +59,21 @@ def create_app(config_class=Config):
 
     # Simple main routes
     from .routes import main as main_blueprint
+
     app.register_blueprint(main_blueprint)
 
     # Import and register the admin blueprint
     from .admin import admin as admin_blueprint
+
     app.register_blueprint(admin_blueprint)
 
     # Import and register the tickets blueprint
     from .tickets import tickets as tickets_blueprint
+
     app.register_blueprint(tickets_blueprint)
 
     from .api import api as api_blueprint
+
     app.register_blueprint(api_blueprint)
 
     # This 'with' block ensures that the app context is active

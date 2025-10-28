@@ -9,7 +9,7 @@ from flask import (
 from flask_login import login_required, current_user
 from . import admin
 from .forms import ClientForm, ExcelUploadForm, AnnouncementForm, ReportForm
-from kick_app import db
+from .. import db
 
 # CORRECTED IMPORT: Added User and UserRole
 from kick_app.models import Client, Region, User, UserRole, Announcement
@@ -180,11 +180,22 @@ def edit_client(id):
 def delete_client(id):
     """Handle deleting a client."""
     client = Client.query.get_or_404(id)
-    # You might want to add a check here to prevent deleting clients with open tickets
 
-    db.session.delete(client)
-    db.session.commit()
-    flash("Client has been deleted.", "success")
+    # --- START OF FIX: Check for associated tickets ---
+    # We use .first() as it's an efficient way to check if at least one ticket exists
+    if client.tickets.first():
+        flash(
+            f"Cannot delete client '{client.account_name}'. They have existing tickets. "
+            "Please resolve or reassign their tickets first.",
+            "danger",
+        )
+    # --- END OF FIX ---
+    else:
+        # This part only runs if the 'if' condition is false
+        db.session.delete(client)
+        db.session.commit()
+        flash("Client has been deleted.", "success")
+
     return redirect(url_for("admin.client_list"))
 
 
@@ -231,6 +242,7 @@ def reject_user(id):
     else:
         flash("Cannot delete an active user or an Admin.", "danger")
     return redirect(url_for("admin.user_list"))
+
 
 # --- ANNOUNCEMENT ROUTES ---
 

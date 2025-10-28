@@ -26,10 +26,16 @@
                         {% endfor %}
                     </div>
 
-                    <div class="mb-3 form-check">
-                        {{ form.remember_me(class="form-check-input") }}
-                        {{ form.remember_me.label(class="form-check-label") }}
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <div class="form-check">
+                            {{ form.remember_me(class="form-check-input") }}
+                            {{ form.remember_me.label(class="form-check-label") }}
+                        </div>
+                        <div>
+                            <a href="{{ url_for('auth.request_reset') }}">Forgot Password?</a>
+                        </div>
                     </div>
+
                     <div class="d-grid">
                         {{ form.submit(class="btn btn-primary") }}
                     </div>

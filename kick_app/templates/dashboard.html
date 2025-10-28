@@ -45,8 +45,8 @@
     <div class="col-md-2">
         <div class="card text-white bg-primary mb-3">
             <div class="card-body">
-                <h5 class="card-title">Created (Today)</h5> {# Renamed slightly #}
-                <h2 class="card-text" id="admin-total-today">0</h2>
+                <h5 class="card-title">Created (Range)</h5> {# Renamed title #}
+                <h2 class="card-text" id="admin-total-created">0</h2> {# Changed ID #}
             </div>
         </div>
     </div>
@@ -87,7 +87,7 @@
     <div class="col-md-2">
         <div class="card text-white bg-success mb-3">
             <div class="card-body">
-                <h5 class="card-title">Resolved (Today)</h5>
+                <h5 class="card-title">Resolved (Range)</h5> {# Renamed title #}
                 <h2 class="card-text" id="admin-total-resolved">0</h2>
             </div>
         </div>
@@ -153,8 +153,8 @@
     <div class="col-md-4 col-lg-2"> {# Responsive columns #}
         <div class="card text-white bg-success mb-3">
             <div class="card-body">
-                <h5 class="card-title">Resolved (Today)</h5>
-                <h2 class="card-text" id="tsr-resolved-today">0</h2>
+                <h5 class="card-title">Resolved (Range)</h5> {# Renamed title #}
+                <h2 class="card-text" id="tsr-resolved-range">0</h2> {# Changed ID #}
             </div>
         </div>
     </div>
@@ -171,7 +171,7 @@
 <div class="row">
     <div class="col-md-12">
         <div class="card shadow-sm">
-            <div class="card-header">My Weekly Performance (Tickets Resolved)</div>
+            <div class="card-header">My Performance (Tickets Resolved in Range)</div> {# Renamed title #}
             <div class="card-body">
                 <canvas id="tsrPerfChart"></canvas>
             </div>
@@ -184,12 +184,28 @@
 {% block scripts %}
 <script>
     document.addEventListener('DOMContentLoaded', function () {
-        fetch('{{ url_for("api.dashboard_stats") }}')
+
+        // --- START OF FIX: Read date filters from URL ---
+        const urlParams = new URLSearchParams(window.location.search);
+        const startDate = urlParams.get('start_date');
+        const endDate = urlParams.get('end_date');
+
+        // Build the API URL dynamically
+        let apiUrl = '{{ url_for("api.dashboard_stats") }}';
+        if (startDate && endDate) {
+            apiUrl += `?start_date=${startDate}&end_date=${endDate}`;
+        }
+        // --- END OF FIX ---
+
+        // Use the dynamic apiUrl in the fetch
+        fetch(apiUrl)
             .then(response => response.json())
             .then(data => {
                 if (data.role === 'admin') {
                     // --- Populate Admin Stat Cards ---
-                    document.getElementById('admin-total-today').textContent = data.stats.total_today;
+                    // --- START OF FIX: Use correct JSON key 'total_created' ---
+                    document.getElementById('admin-total-created').textContent = data.stats.total_created;
+                    // --- END OF FIX ---
                     document.getElementById('admin-total-new').textContent = data.stats.total_new; // <-- Add NEW
                     document.getElementById('admin-total-open').textContent = data.stats.total_open;
                     document.getElementById('admin-total-inprogress').textContent = data.stats.total_inprogress;
@@ -222,13 +238,42 @@
                                 borderWidth: 1
                             }]
                         },
-                        // ... (Pie chart options remain the same) ...
+                        options: {
+                            responsive: true,
+                            plugins: {
+                                legend: {
+                                    position: 'top',
+                                },
+                            }
+                        }
                     });
 
                     // --- Build Admin Bar Chart ---
-                    // ... (Bar chart JS remains the same) ...
                     const barCtx = document.getElementById('tsrBarChart').getContext('2d');
-                    new Chart(barCtx, { /* ... bar chart config ... */ });
+                    new Chart(barCtx, {
+                        type: 'bar',
+                        data: {
+                            labels: data.bar_chart.labels,
+                            datasets: [{
+                                label: 'Open/In-Progress Tickets',
+                                data: data.bar_chart.data,
+                                backgroundColor: 'rgba(54, 162, 235, 0.7)',
+                                borderColor: 'rgba(54, 162, 235, 1)',
+                                borderWidth: 1
+                            }]
+                        },
+                        options: {
+                            responsive: true,
+                            scales: {
+                                y: {
+                                    beginAtZero: true,
+                                    ticks: {
+                                        stepSize: 1 // Ensure Y-axis shows whole numbers
+                                    }
+                                }
+                            }
+                        }
+                    });
 
 
                 } else if (data.role === 'tsr') {
@@ -237,13 +282,37 @@
                     document.getElementById('tsr-total-open').textContent = data.stats.total_open;
                     document.getElementById('tsr-total-inprogress').textContent = data.stats.total_inprogress;
                     document.getElementById('tsr-total-pending').textContent = data.stats.total_pending; // <-- Add PENDING
-                    document.getElementById('tsr-resolved-today').textContent = data.stats.total_resolved;
+                    // --- START OF FIX: Use correct ID ---
+                    document.getElementById('tsr-resolved-range').textContent = data.stats.total_resolved;
+                    // --- END OF FIX ---
                     document.getElementById('tsr-avg-resolve-time').textContent = data.stats.avg_resolution_time;
 
                     // --- Build TSR Line Chart ---
-                    // ... (Line chart JS remains the same) ...
                     const lineCtx = document.getElementById('tsrPerfChart').getContext('2d');
-                    new Chart(lineCtx, { /* ... line chart config ... */ });
+                    new Chart(lineCtx, {
+                        type: 'line',
+                        data: {
+                            labels: data.line_chart.labels,
+                            datasets: [{
+                                label: 'Tickets Resolved',
+                                data: data.line_chart.data,
+                                fill: false,
+                                borderColor: 'rgb(75, 192, 192)',
+                                tension: 0.1
+                            }]
+                        },
+                        options: {
+                            responsive: true,
+                            scales: {
+                                y: {
+                                    beginAtZero: true,
+                                    ticks: {
+                                        stepSize: 1 // Ensure Y-axis shows whole numbers
+                                    }
+                                }
+                            }
+                        }
+                    });
                 }
             })
             .catch(error => console.error('Error fetching dashboard data:', error));

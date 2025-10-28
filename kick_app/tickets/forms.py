@@ -1,5 +1,12 @@
 from flask_wtf import FlaskForm
-from wtforms import StringField, SubmitField, TextAreaField, SelectField
+from wtforms import (
+    StringField,
+    SubmitField,
+    TextAreaField,
+    SelectField,
+    BooleanField,
+    DateTimeField,
+)
 from wtforms.validators import (
     DataRequired,
     Length,
@@ -7,6 +14,7 @@ from wtforms.validators import (
 )  # Ensure Optional is imported
 from wtforms_sqlalchemy.fields import QuerySelectField
 from kick_app.models import Client, TicketStatus, User, UserRole
+from datetime import datetime
 
 
 def get_clients():
@@ -70,6 +78,15 @@ class UpdateTicketForm(FlaskForm):
         "RT Ticket Number", validators=[Optional(), Length(max=100)]
     )
 
+    # --- ADD THIS FIELD ---
+    email_sent = BooleanField("Mark as Email Sent/Replied")
+
+    remarks = TextAreaField(
+        "Add Remarks/Notes", validators=[Optional(), Length(min=5, max=1000)]
+    )
+
+    submit = SubmitField("Update Ticket")
+
     # Field for adding remarks
     remarks = TextAreaField(
         "Add Remarks/Notes",
@@ -80,3 +97,24 @@ class UpdateTicketForm(FlaskForm):
 
 
 # --- END CORRECTION ---
+
+
+# --- ADD THIS ENTIRE NEW FORM ---
+class EmailLogForm(FlaskForm):
+    """Form for logging an email sent to a client."""
+
+    email_content = TextAreaField(
+        "Paste Email Content Here",
+        validators=[DataRequired(), Length(min=10)],
+        render_kw={"rows": 10},
+    )
+    sent_at = DateTimeField(
+        "Date and Time Sent (PHT)",
+        validators=[DataRequired()],
+        default=datetime.now,  # Defaults to current time
+        format="%Y-%m-%dT%H:%M",  # Format for datetime-local input
+    )
+    submit_email_log = SubmitField("Log Email")
+
+
+# --- END OF NEW FORM ---

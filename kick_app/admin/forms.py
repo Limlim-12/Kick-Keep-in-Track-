@@ -57,13 +57,6 @@ class AnnouncementForm(FlaskForm):
 
 class ReportForm(FlaskForm):
     """Form for generating reports."""
-    start_date = DateField('Start Date', validators=[DataRequired()])
-    end_date = DateField('End Date', validators=[DataRequired()])
-    submit_tickets = SubmitField('Generate Ticket Report')  
-
-
-class ReportForm(FlaskForm):
-    """Form for generating reports."""
 
     start_date = DateField("Start Date", validators=[DataRequired()])
     end_date = DateField("End Date", validators=[DataRequired()])

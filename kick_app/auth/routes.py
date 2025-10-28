@@ -1,9 +1,48 @@
 from flask import render_template, redirect, url_for, flash, request, current_app
 from flask_login import login_user, logout_user, current_user
 from . import auth
-from .forms import LoginForm, RegistrationForm
+from .forms import (
+    LoginForm,
+    RegistrationForm,
+    RequestResetForm,
+    ResetPasswordForm,
+)  # <-- Import new forms
 from kick_app.models import User, UserRole
-from kick_app import db
+from .. import db, mail  
+from flask_mail import Message  # <-- Import Message
+
+
+# --- NEW: Email Sending Function ---
+def send_reset_email(user):
+    """Generates a token and sends the password reset email."""
+    token = user.get_reset_token()
+    reset_url = url_for("auth.reset_token", token=token, _external=True)
+
+    # Get the app's configured sender email
+    sender_email = current_app.config.get("MAIL_DEFAULT_SENDER")
+    if not sender_email:
+        flash(
+            "Email server is not configured. Password reset is unavailable.", "danger"
+        )
+        print("ERROR: MAIL_DEFAULT_SENDER is not set in config.")
+        return
+
+    msg = Message(
+        "Password Reset Request - KICK Application",
+        sender=sender_email,
+        recipients=[user.email],
+    )
+    msg.html = render_template("auth/reset_email.html", user=user, reset_url=reset_url)
+
+    try:
+        mail.send(msg)
+    except Exception as e:
+        # Log the error for debugging
+        print(f"Error sending email: {e}")
+        flash(
+            "Failed to send password reset email. Please try again later or contact an admin.",
+            "danger",
+        )
 
 
 @auth.route("/login", methods=["GET", "POST"])
@@ -34,7 +73,7 @@ def login():
         else:
             flash("Invalid Employee ID or password.", "danger")
 
-    return render_template("login.html", title="Sign In", form=form)
+    return render_template("auth/login.html", title="Sign In", form=form)
 
 
 @auth.route("/logout")
@@ -74,7 +113,9 @@ def register():
             else:
                 # Invalid secret key
                 flash("Invalid Admin Secret Key. Registration failed.", "danger")
-                return render_template("register.html", title="Register", form=form)
+                return render_template(
+                    "auth/register.html", title="Register", form=form
+                )
 
         # Else, they are registering as a TSR (default role)
         else:
@@ -90,4 +131,51 @@ def register():
 
         return redirect(url_for("auth.login"))
 
-    return render_template("register.html", title="Register", form=form)
+    return render_template("auth/register.html", title="Register", form=form)
+
+
+# --- NEW: Password Reset Request Route ---
+@auth.route("/request-reset", methods=["GET", "POST"])
+def request_reset():
+    """Handles the request for a password reset."""
+    if current_user.is_authenticated:
+        return redirect(url_for("main.index"))
+
+    form = RequestResetForm()
+    if form.validate_on_submit():
+        user = User.query.filter_by(email=form.email.data).first()
+        if user:
+            send_reset_email(user)
+            flash(
+                "An email has been sent with instructions to reset your password.",
+                "info",
+            )
+            return redirect(url_for("auth.login"))
+        else:
+            flash("Email not found.", "danger")
+
+    return render_template("auth/request_reset.html", title="Reset Password", form=form)
+
+
+# --- NEW: Password Reset Token Route ---
+@auth.route("/reset-password/<token>", methods=["GET", "POST"])
+def reset_token(token):
+    """Handles the actual password reset using the token."""
+    if current_user.is_authenticated:
+        return redirect(url_for("main.index"))
+
+    user = User.verify_reset_token(token)
+    if user is None:
+        flash("That is an invalid or expired token.", "warning")
+        return redirect(url_Examples("auth.request_reset"))
+
+    form = ResetPasswordForm()
+    if form.validate_on_submit():
+        user.set_password(form.password.data)
+        db.session.commit()
+        flash("Your password has been updated! You are now able to log in.", "success")
+        return redirect(url_for("auth.login"))
+
+    return render_template(
+        "auth/reset_token.html", title="Reset Your Password", form=form
+    )

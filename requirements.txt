@@ -12,3 +12,5 @@ email_validator
 pytz
 gunicorn  # <-- Add this
 psycopg2-binary # <-- Add this
+Flask-Mail  # <-- Add this
+itsdangerous # <-- Add this (for secure tokens)

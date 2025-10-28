@@ -43,10 +43,41 @@ class RegistrationForm(FlaskForm):
         """Check if employee ID already exists."""
         user = User.query.filter_by(employee_id=employee_id.data).first()
         if user:
-            raise ValidationError("That Employee ID is already registered.")
+            raise ValidationError("That Employee ID is. already registered.")
 
     def validate_email(self, email):
         """Check if email already exists."""
         user = User.query.filter_by(email=email.data).first()
         if user:
             raise ValidationError("That email is already in use.")
+
+
+# --- NEW: Password Reset Request Form ---
+class RequestResetForm(FlaskForm):
+    """Form for user to request a password reset email."""
+
+    email = StringField("Company Email", validators=[DataRequired(), Email()])
+    submit = SubmitField("Request Password Reset")
+
+    def validate_email(self, email):
+        """Check if email exists in the database."""
+        user = User.query.filter_by(email=email.data).first()
+        if user is None:
+            raise ValidationError(
+                "There is no account with that email. You must register first."
+            )
+
+
+# --- NEW: Password Reset Form ---
+class ResetPasswordForm(FlaskForm):
+    """Form for user to set a new password."""
+
+    password = PasswordField("New Password", validators=[DataRequired(), Length(min=6)])
+    confirm_password = PasswordField(
+        "Confirm New Password",
+        validators=[
+            DataRequired(),
+            EqualTo("password", message="Passwords must match."),
+        ],
+    )
+    submit = SubmitField("Reset Password")

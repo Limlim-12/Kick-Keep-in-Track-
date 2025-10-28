@@ -6,13 +6,13 @@
         <div class="card shadow-sm mb-4">
             <div class="card-header d-flex justify-content-between align-items-center">
                 <h4 class="mb-0">{{ title }}</h4>
-                {# --- CORRECTED IF/ELIF STRUCTURE --- #}
+
                 <span class="badge
                     {% if ticket.status.name == 'NEW' %} bg-secondary
-                    {% elif ticket.status.name == 'OPEN' %} bg-danger {# Changed from nested if to elif #}
+                    {% elif ticket.status.name == 'OPEN' %} bg-danger
                     {% elif ticket.status.name == 'IN_PROGRESS' %} bg-warning text-dark
                     {% elif ticket.status.name == 'PENDING' %} bg-info
-                    {% else %} bg-success {% endif %} fs-6"> {# Correct endif added implicitly #}
+                    {% else %} bg-success {% endif %} fs-6">
                     {{ ticket.status.value }}
                 </span>
             </div>
@@ -24,10 +24,9 @@
                     <div class="col-md-6">
                         <strong>Client:</strong> {{ ticket.client.account_name }}<br>
                         <strong>Account #:</strong> {{ ticket.client.account_number }}<br>
-                        <strong>Region:</strong> {{ ticket.client.region.name }}<br> {# Added line break #}
+                        <strong>Region:</strong> {{ ticket.client.region.name }}<br>
                         {% if ticket.rt_ticket_number %}
                         <strong>RT Ticket #:</strong>
-                        {# Create a link using the confirmed URL structure #}
                         <a href="https://rt.coronatelecoms.com/Ticket/Display.html?id={{ ticket.rt_ticket_number }}"
                             target="_blank" rel="noopener noreferrer">
                             {{ ticket.rt_ticket_number }}
@@ -45,9 +44,9 @@
             </div>
         </div>
 
-        <div class="card shadow-sm">
+        <div class="card shadow-sm mb-4">
             <div class="card-header">
-                <h5 class="mb-0">Activity Log</h5>
+                <h5 class="mb-0">Internal Activity Log</h5>
             </div>
             <div class="card-body">
                 <ul class="list-group list-group-flush">
@@ -62,10 +61,33 @@
                 </ul>
             </div>
         </div>
+
+        <div class="card shadow-sm">
+            <div class="card-header">
+                <h5 class="mb-0">Client Email Log</h5>
+            </div>
+            <div class="card-body">
+                {% if email_logs %}
+                <ul class="list-group list-group-flush">
+                    {% for log in email_logs %}
+                    <li class="list-group-item">
+                        <p><strong>Sent by {{ log.author.full_name }} on {{ log.sent_at | pht }}</strong></p>
+                        <p class="card-text"
+                            style="white-space: pre-wrap; background-color: #f8f9fa; border: 1px solid #dee2e6; padding: 10px; border-radius: 5px;">
+                            {{ log.email_content }}
+                        </p>
+                    </li>
+                    {% endfor %}
+                </ul>
+                {% else %}
+                <p class="text-center">No client emails have been logged for this ticket.</p>
+                {% endif %}
+            </div>
+        </div>
     </div>
 
     <div class="col-lg-4">
-        <div class="card shadow-sm">
+        <div class="card shadow-sm mb-4">
             <div class="card-header">
                 <h5 class="mb-0">Update Ticket</h5>
             </div>
@@ -92,7 +114,6 @@
                     </div>
                     {% endif %}
 
-                    {# --- START: ADDED RT TICKET NUMBER FIELD --- #}
                     <div class="mb-3">
                         {{ form.rt_ticket_number.label(class="form-label") }}
                         {{ form.rt_ticket_number(class="form-control" + (" is-invalid" if form.rt_ticket_number.errors
@@ -101,7 +122,6 @@
                         <div class="invalid-feedback">{{ error }}</div>
                         {% endfor %}
                     </div>
-                    {# --- END: ADDED RT TICKET NUMBER FIELD --- #}
 
                     <div class="mb-3">
                         {{ form.remarks.label(class="form-label") }}
@@ -111,8 +131,41 @@
                         <div class="invalid-feedback">{{ error }}</div>
                         {% endfor %}
                     </div>
+
                     <div class="d-grid">
                         {{ form.submit(class="btn btn-primary") }}
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="card shadow-sm">
+            <div class="card-header">
+                <h5 class="mb-0">Log a Client Email</h5>
+            </div>
+            <div class="card-body">
+                <form method="POST" action="" novalidate>
+                    {{ email_form.hidden_tag() }}
+
+                    <div class="mb-3">
+                        {{ email_form.sent_at.label(class="form-label") }}
+                        {{ email_form.sent_at(class="form-control" + (" is-invalid" if email_form.sent_at.errors else
+                        ""), type="datetime-local") }}
+                        {% for error in email_form.sent_at.errors %}
+                        <div class="invalid-feedback">{{ error }}</div>
+                        {% endfor %}
+                    </div>
+
+                    <div class="mb-3">
+                        {{ email_form.email_content.label(class="form-label") }}
+                        {{ email_form.email_content(class="form-control" + (" is-invalid" if
+                        email_form.email_content.errors else "")) }}
+                        {% for error in email_form.email_content.errors %}
+                        <div class="invalid-feedback">{{ error }}</div>
+                        {% endfor %}
+                    </div>
+                    <div class="d-grid">
+                        {{ email_form.submit_email_log(class="btn btn-info") }}
                     </div>
                 </form>
             </div>

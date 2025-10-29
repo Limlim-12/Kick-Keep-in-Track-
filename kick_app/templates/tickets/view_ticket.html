@@ -101,43 +101,48 @@
                         <div class="invalid-feedback">{{ error }}</div>
                         {% endfor %}
                     </div>
-
+    
                     {% if current_user.role.value == 'Admin' %}
                     <div class="mb-3">
                         {{ form.assigned_tsr.label(class="form-label") }}
-                        {{ form.assigned_tsr(class="form-select" + (" is-invalid" if form.assigned_tsr.errors else ""))
-                        }}
+                        {{ form.assigned_tsr(class="form-select" + (" is-invalid" if form.assigned_tsr.errors else "")) }}
                         <div class="form-text">Leave blank to unassign.</div>
                         {% for error in form.assigned_tsr.errors %}
                         <div class="invalid-feedback">{{ error }}</div>
                         {% endfor %}
                     </div>
                     {% endif %}
-
+    
                     <div class="mb-3">
                         {{ form.rt_ticket_number.label(class="form-label") }}
-                        {{ form.rt_ticket_number(class="form-control" + (" is-invalid" if form.rt_ticket_number.errors
-                        else "")) }}
+                        {{ form.rt_ticket_number(class="form-control" + (" is-invalid" if form.rt_ticket_number.errors else
+                        "")) }}
                         {% for error in form.rt_ticket_number.errors %}
                         <div class="invalid-feedback">{{ error }}</div>
                         {% endfor %}
                     </div>
-
+    
                     <div class="mb-3">
                         {{ form.remarks.label(class="form-label") }}
-                        {{ form.remarks(class="form-control" + (" is-invalid" if form.remarks.errors else ""), rows=4)
-                        }}
+                        {{ form.remarks(class="form-control" + (" is-invalid" if form.remarks.errors else ""), rows=4) }}
                         {% for error in form.remarks.errors %}
                         <div class="invalid-feedback">{{ error }}</div>
                         {% endfor %}
                     </div>
-
+    
                     <div class="d-grid">
                         {{ form.submit(class="btn btn-primary") }}
                     </div>
-                </form>
+                </form> {% if ticket.status.name == 'OPEN' %}
+                <div class="d-grid mt-3"> <a href="https://rt.coronatelecoms.com/Ticket/Create.html" class="btn btn-success"
+                        target="_blank" rel="noopener noreferrer" title="Create corresponding ticket in RT system">
+                        Create RT Ticket
+                    </a>
+                </div>
+                {% endif %}
             </div>
         </div>
+    
 
         <div class="card shadow-sm">
             <div class="card-header">

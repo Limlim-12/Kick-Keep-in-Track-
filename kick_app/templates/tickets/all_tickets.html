@@ -3,7 +3,9 @@
 {% block content %}
 <div class="d-flex justify-content-between align-items-center mb-3">
     <h1>All Tickets</h1>
-    <a href="{{ url_for('tickets.create_ticket') }}" class="btn btn-primary">Create New Ticket</a>
+        <a href="{{ url_for('tickets.create_ticket') }}" class="btn btn-primary">Create New Ticket (KICK)</a> {#
+        Clarified button text #}
+    </div>
 </div>
 
 <form method="GET" action="{{ url_for('tickets.all_tickets') }}" class="mb-3">

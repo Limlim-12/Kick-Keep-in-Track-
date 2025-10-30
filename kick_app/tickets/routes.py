@@ -20,6 +20,7 @@ from ..models import (  # Correct relative import for models
 )
 from ..decorators import admin_required  # Correct relative import for decorator
 import pytz
+from datetime import datetime  # <-- 1. ADD THIS IMPORT
 
 
 # --- Helper Function for Auto-Assignment (remains the same) ---
@@ -61,13 +62,19 @@ def create_ticket():
         concern_title = form.concern_title.data
         concern_details = form.concern_details.data
 
-        # Auto-generate ticket name
+        # --- START: FIX FOR UNIQUE TICKET NAME ---
+        # 2. Get a unique timestamp string
+        timestamp_str = str(int(datetime.utcnow().timestamp()))
+
+        # 3. Add the timestamp to the ticket name
         ticket_name = (
             f"{client.region.name}_"
             f"{client.account_name}_"
             f"{client.account_number}_"
-            f"{concern_title.replace(' ', '')}"
+            f"{concern_title.replace(' ', '')}_"  # Added an underscore
+            f"{timestamp_str}"  # Added the unique timestamp
         )
+        # --- END: FIX FOR UNIQUE TICKET NAME ---
 
         ticket = Ticket(
             ticket_name=ticket_name,

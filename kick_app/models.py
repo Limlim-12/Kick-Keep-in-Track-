@@ -117,6 +117,7 @@ class Client(db.Model):
     account_number = db.Column(db.String(100), unique=True, nullable=False, index=True)
     account_name = db.Column(db.String(200), nullable=False, index=True)
     status = db.Column(db.String(50), default="Active")
+    plan_rate = db.Column(db.Float, nullable=False, default=0.0)
 
     # Foreign Key
     region_id = db.Column(db.Integer, db.ForeignKey("regions.id"), nullable=False)

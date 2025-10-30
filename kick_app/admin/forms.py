@@ -1,8 +1,8 @@
 from flask_wtf import FlaskForm
 from flask_wtf.file import FileField, FileAllowed, FileRequired
-from wtforms import StringField, SubmitField, SelectField, TextAreaField
+from wtforms import StringField, SubmitField, SelectField, TextAreaField, FloatField
 from wtforms.fields import DateField
-from wtforms.validators import DataRequired, Length
+from wtforms.validators import DataRequired, Length, NumberRange
 from wtforms_sqlalchemy.fields import QuerySelectField
 from kick_app.models import Region
 
@@ -21,6 +21,15 @@ class ClientForm(FlaskForm):
     account_name = StringField(
         "Account Name", validators=[DataRequired(), Length(max=200)]
     )
+
+    plan_rate = FloatField(
+        "Plan Rate (PHP)",
+        validators=[
+            DataRequired(),
+            NumberRange(min=0, message="Must be a positive number."),
+        ],
+    )
+    
     region = QuerySelectField(
         "Region",
         query_factory=get_regions,

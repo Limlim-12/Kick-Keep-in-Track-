@@ -103,8 +103,9 @@
                 <div class="modal-body">
                     {{ upload_form.hidden_tag() }}
                     <div class="mb-3">
+
                         <p>File must be an .xlsx or .xls file with columns: <strong>account_number, account_name,
-                                region_name, status</strong></p>
+                                region_name, status, plan_rate</strong></p>
                         {{ upload_form.excel_file.label(class="form-label") }}
                         {{ upload_form.excel_file(class="form-control" + (" is-invalid" if upload_form.excel_file.errors
                         else "")) }}

@@ -39,6 +39,10 @@
                         <a class="nav-link" href="{{ url_for('main.profile') }}">Profile</a>
                     </li>
 
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('rebate.calculator') }}">Rebate Calculator</a>
+                    </li>
+
                     {% if current_user.role.value == 'Admin' %}
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="adminMenu" role="button"

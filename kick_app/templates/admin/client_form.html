@@ -7,7 +7,8 @@
             <div class="card-body">
                 <h2 class="card-title text-center">{{ title }}</h2>
                 <form method="POST" action="" novalidate>
-                    {{ form.hidden_tag() }} <div class="mb-3">
+                    {{ form.hidden_tag() }}
+                    <div class="mb-3">
                         {{ form.account_number.label(class="form-label") }}
                         {{ form.account_number(class="form-control" + (" is-invalid" if form.account_number.errors else
                         "")) }}
@@ -25,6 +26,14 @@
                         {% endfor %}
                     </div>
 
+                    <div class="mb-3">
+                        {{ form.plan_rate.label(class="form-label") }}
+                        {{ form.plan_rate(class="form-control" + (" is-invalid" if form.plan_rate.errors else ""),
+                        type="number", step="0.01", placeholder="e.g., 1500.00") }}
+                        {% for error in form.plan_rate.errors %}
+                        <div class="invalid-feedback">{{ error }}</div>
+                        {% endfor %}
+                    </div>
                     <div class="mb-3">
                         {{ form.region.label(class="form-label") }}
                         {{ form.region(class="form-select" + (" is-invalid" if form.region.errors else "")) }}

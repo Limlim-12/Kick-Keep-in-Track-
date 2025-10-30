@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-8">
+        <div class="card shadow-sm mb-4">
+            <div class="card-header">
+                <h2 class="mb-0">{{ title }}</h2>
+            </div>
+            <div class="card-body">
+                <p>This tool calculates the rebate for a client based on their plan rate in the KICK database and the
+                    downtime provided.</p>
+                <form method="POST" action="" novalidate>
+                    {{ form.hidden_tag() }}
+
+                    <div class="mb-3">
+                        {{ form.account_number.label(class="form-label") }}
+                        {{ form.account_number(class="form-control" + (" is-invalid" if form.account_number.errors else
+                        "")) }}
+                        <div class="form-text">This is pre-filled if you click the link from a ticket page.</div>
+                        {% for error in form.account_number.errors %}
+                        <div class="invalid-feedback">{{ error }}</div>
+                        {% endfor %}
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            {{ form.start_time.label(class="form-label") }}
+                            {{ form.start_time(class="form-control" + (" is-invalid" if form.start_time.errors else ""),
+                            type="datetime-local") }}
+                            {% for error in form.start_time.errors %}
+                            <div class="invalid-feedback">{{ error }}</div>
+                            {% endfor %}
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            {{ form.end_time.label(class="form-label") }}
+                            {{ form.end_time(class="form-control" + (" is-invalid" if form.end_time.errors else ""),
+                            type="datetime-local") }}
+                            {% for error in form.end_time.errors %}
+                            <div class="invalid-feedback">{{ error }}</div>
+                            {% endfor %}
+                        </div>
+                    </div>
+
+                    <div class="d-grid">
+                        {{ form.submit(class="btn btn-primary") }}
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        {% if error %}
+        <div class="alert alert-danger" role="alert">
+            <b>Calculation Error:</b> {{ error }}
+        </div>
+        {% endif %}
+
+        {% if result %}
+        <div class="card shadow-sm">
+            <div class="card-header">
+                <h3 class="mb-0">Calculation Result</h3>
+            </div>
+            <div class="card-body">
+                <p><strong>Account Name:</strong> {{ result.account_name }}</p>
+                <p><strong>Plan Rate Used:</strong> PHP {{ result.plan_rate }}</p>
+                <p><strong>Total Downtime:</strong> {{ result.downtime_duration }}</p>
+                <hr>
+                <h4 class="mt-3">Estimated Rebate Amount: <span class="text-success fw-bold">PHP {{ result.rebate_amount
+                        }}</span></h4>
+            </div>
+        </div>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}

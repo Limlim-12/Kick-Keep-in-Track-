@@ -5,18 +5,14 @@ from flask import (
     redirect,
     url_for,
     request,
-)  # Removed current_app
+)
 from flask_login import login_required, current_user
 from . import admin
 from .forms import ClientForm, ExcelUploadForm, AnnouncementForm, ReportForm
-from .. import db
-
-# CORRECTED IMPORT: Added User and UserRole
-from kick_app.models import Client, Region, User, UserRole, Announcement
-from kick_app.decorators import admin_required
+from .. import db  # Use relative import
+from ..models import Client, Region, User, UserRole, Announcement  # Use relative import
+from ..decorators import admin_required  # Use relative import
 from werkzeug.utils import secure_filename
-
-# import os # Removed os
 
 
 @admin.route("/clients", methods=["GET", "POST"])
@@ -24,7 +20,7 @@ from werkzeug.utils import secure_filename
 @admin_required
 def client_list():
     """
-    Display client list, handle search, and handle Excel upload.
+    Display client list, handle search, and handle Excel upload (with UPDATE).
     """
     page = request.args.get("page", 1, type=int)
     search_query = request.args.get("search", "")
@@ -37,15 +33,14 @@ def client_list():
             f = upload_form.excel_file.data
             filename = secure_filename(f.filename)
 
-            # Use pandas to read the Excel file
             df = pd.read_excel(f)
 
-            # Expected columns - adjust as needed
             required_columns = [
                 "account_number",
                 "account_name",
                 "region_name",
                 "status",
+                "plan_rate",
             ]
 
             if not all(col in df.columns for col in required_columns):
@@ -56,7 +51,9 @@ def client_list():
                 )
                 return redirect(url_for("admin.client_list"))
 
+            # --- START: MODIFIED LOGIC ---
             clients_added = 0
+            clients_updated = 0
             for index, row in df.iterrows():
                 # Find the region by name
                 region = Region.query.filter_by(name=row["region_name"]).first()
@@ -71,18 +68,32 @@ def client_list():
                 existing_client = Client.query.filter_by(
                     account_number=str(row["account_number"])
                 ).first()
-                if not existing_client:
+
+                if existing_client:
+                    # --- CLIENT EXISTS: UPDATE IT ---
+                    existing_client.account_name = row["account_name"]
+                    existing_client.region_id = region.id
+                    existing_client.status = row["status"]
+                    existing_client.plan_rate = row["plan_rate"]
+                    clients_updated += 1
+                else:
+                    # --- CLIENT IS NEW: ADD IT ---
                     client = Client(
                         account_number=str(row["account_number"]),
                         account_name=row["account_name"],
                         region_id=region.id,
                         status=row["status"],
+                        plan_rate=row["plan_rate"],
                     )
                     db.session.add(client)
                     clients_added += 1
 
             db.session.commit()
-            flash(f"Successfully imported {clients_added} new clients.", "success")
+            flash(
+                f"Import complete: {clients_added} new clients added, {clients_updated} existing clients updated.",
+                "success",
+            )
+            # --- END: MODIFIED LOGIC ---
 
         except Exception as e:
             db.session.rollback()
@@ -123,7 +134,6 @@ def add_client():
     """Handle adding a new client."""
     form = ClientForm()
     if form.validate_on_submit():
-        # Check if account number already exists
         existing_client = Client.query.filter_by(
             account_number=form.account_number.data
         ).first()
@@ -135,6 +145,7 @@ def add_client():
                 account_name=form.account_name.data,
                 region=form.region.data,
                 status=form.status.data,
+                plan_rate=form.plan_rate.data,
             )
             db.session.add(client)
             db.session.commit()
@@ -149,10 +160,9 @@ def add_client():
 def edit_client(id):
     """Handle editing an existing client."""
     client = Client.query.get_or_404(id)
-    form = ClientForm(obj=client)  # Pre-populate form with client data
+    form = ClientForm(obj=client)
 
     if form.validate_on_submit():
-        # Check if new account number conflicts with another client
         if client.account_number != form.account_number.data:
             existing_client = Client.query.filter_by(
                 account_number=form.account_number.data
@@ -167,9 +177,13 @@ def edit_client(id):
         client.account_name = form.account_name.data
         client.region = form.region.data
         client.status = form.status.data
+        client.plan_rate = form.plan_rate.data
         db.session.commit()
         flash("Client details have been updated.", "success")
         return redirect(url_for("admin.client_list"))
+
+    elif request.method == "GET":
+        form.plan_rate.data = client.plan_rate
 
     return render_template("client_form.html", title="Edit Client", form=form)
 
@@ -181,17 +195,13 @@ def delete_client(id):
     """Handle deleting a client."""
     client = Client.query.get_or_404(id)
 
-    # --- START OF FIX: Check for associated tickets ---
-    # We use .first() as it's an efficient way to check if at least one ticket exists
     if client.tickets.first():
         flash(
             f"Cannot delete client '{client.account_name}'. They have existing tickets. "
             "Please resolve or reassign their tickets first.",
             "danger",
         )
-    # --- END OF FIX ---
     else:
-        # This part only runs if the 'if' condition is false
         db.session.delete(client)
         db.session.commit()
         flash("Client has been deleted.", "success")
@@ -204,7 +214,6 @@ def delete_client(id):
 @admin_required
 def user_list():
     """Display list of all users, with pending users first."""
-    # Order by is_active (False first) then by creation date
     all_users = User.query.order_by(User.is_active.asc(), User.created_at.desc()).all()
     return render_template("user_list.html", title="User Management", users=all_users)
 
@@ -244,9 +253,6 @@ def reject_user(id):
     return redirect(url_for("admin.user_list"))
 
 
-# --- ANNOUNCEMENT ROUTES ---
-
-
 @admin.route("/announcements", methods=["GET", "POST"])
 @login_required
 @admin_required
@@ -261,7 +267,6 @@ def manage_announcements():
         flash("New announcement has been posted.", "success")
         return redirect(url_for("admin.manage_announcements"))
 
-    # Get all announcements, newest first
     announcements = Announcement.query.order_by(Announcement.created_at.desc()).all()
 
     return render_template(
@@ -305,18 +310,14 @@ def reports():
     form = ReportForm()
 
     if form.validate_on_submit():
-        # ---- IMPORTANT: Define variables *inside* the 'if' block ----
         start_date = form.start_date.data
         end_date = form.end_date.data
-        # -----------------------------------------------------------
 
         if form.submit_tickets.data:
-            # User clicked 'Generate Ticket Report'
             return redirect(
                 url_for("api.export_tickets", start_date=start_date, end_date=end_date)
             )
         elif form.submit_tsr.data:
-            # User clicked 'Generate TSR Performance Report'
             return redirect(
                 url_for(
                     "api.export_tsr_performance",
@@ -325,5 +326,4 @@ def reports():
                 )
             )
 
-    # If it's a GET request or validation failed, render the form
     return render_template("reports.html", title="Reporting Tools", form=form)

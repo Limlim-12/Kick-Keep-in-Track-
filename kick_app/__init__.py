@@ -76,6 +76,11 @@ def create_app(config_class=Config):
 
     app.register_blueprint(api_blueprint)
 
+    from .rebate import rebate_bp
+
+    app.register_blueprint(rebate_bp)
+
+
     # This 'with' block ensures that the app context is active
     # when we create the tables, which is necessary for SQLAlchemy.
     with app.app_context():

@@ -1,0 +1,1367 @@
+id,action,timestamp,user_id,ticket_id
+1,Ticket created by Michelle Cherry Fernandez,2025-10-24 02:49:56.941015,2,1
+2,Ticket auto-assigned to Sophia Paloma,2025-10-24 02:49:56.995113,2,1
+3,Ticket created by Michelle Cherry Fernandez,2025-10-24 02:50:18.746457,2,2
+4,Ticket auto-assigned to Limuel Ongtingco,2025-10-24 02:50:18.756861,2,2
+5,Ticket reassigned from Limuel Ongtingco to Zxakira Napoles by Limuel Ongtingco.,2025-10-24 02:51:38.574728,1,2
+6,Status changed from Open to Open by Limuel Ongtingco. Remark: Ticket for Kira,2025-10-24 02:51:38.574732,1,2
+7,Ticket created by Limuel Ongtingco,2025-10-24 02:52:19.350562,1,3
+8,Ticket auto-assigned to Limuel Ongtingco,2025-10-24 02:52:19.363067,1,3
+9,Ticket created by Limuel Ongtingco,2025-10-24 02:52:39.202412,1,4
+10,Ticket auto-assigned to Sophia Paloma,2025-10-24 02:52:39.206494,1,4
+11,RT Ticket Number '1421' added by Limuel Ongtingco.,2025-10-24 06:19:28.413906,4,3
+12,Ticket created by Limuel Ongtingco,2025-10-24 07:55:08.990303,1,5
+13,Ticket auto-assigned to Limuel Ongtingco,2025-10-24 07:55:09.091532,1,5
+14,Ticket status automatically changed to Open by Limuel Ongtingco viewing it.,2025-10-24 07:55:43.434984,4,5
+15,RT Ticket Number '1425' added by Limuel Ongtingco.,2025-10-24 07:56:05.279065,4,5
+16,Remark added by Limuel Ongtingco: Payment received and verified. Client has an outstanding balance,2025-10-24 08:05:13.094306,4,3
+17,Status changed from Open to Resolved by Limuel Ongtingco.,2025-10-24 08:05:13.094310,4,3
+18,RT Ticket Number '1419' added by Zxakira Napoles.,2025-10-24 08:06:16.853330,3,2
+19,Remark added by Zxakira Napoles: Doneeeeeee,2025-10-24 08:06:16.853334,3,2
+20,Status changed from Open to Resolved by Zxakira Napoles.,2025-10-24 08:06:16.853336,3,2
+21,Status changed from Open to Resolved by Limuel Ongtingco.,2025-10-24 08:07:08.610444,1,1
+22,Status changed from Open to Resolved by Limuel Ongtingco.,2025-10-24 08:07:44.543116,1,4
+23,RT Ticket Number '1423' added by Limuel Ongtingco.,2025-10-24 08:09:58.375257,1,4
+24,RT Ticket Number '1417' added by Limuel Ongtingco.,2025-10-24 08:10:06.676705,1,1
+25,Ticket created by Limuel Ongtingco,2025-10-26 23:54:16.700650,1,6
+26,Ticket auto-assigned to Sophia Paloma,2025-10-26 23:54:16.710374,1,6
+27,Ticket status automatically changed to Open by Sophia Paloma viewing it.,2025-10-26 23:57:11.231798,5,6
+28,Ticket created by Limuel Ongtingco,2025-10-26 23:58:17.008415,1,7
+29,Ticket auto-assigned to Zxakira Napoles,2025-10-26 23:58:17.015229,1,7
+30,Ticket created by Limuel Ongtingco,2025-10-27 00:00:36.347313,1,8
+31,Ticket auto-assigned to Zxakira Napoles,2025-10-27 00:00:36.354633,1,8
+34,Ticket created by Limuel Ongtingco,2025-10-27 00:03:02.842104,1,10
+35,Ticket auto-assigned to Zxakira Napoles,2025-10-27 00:03:02.902296,1,10
+36,Ticket reassigned from Zxakira Napoles to Limuel Ongtingco by Limuel Ongtingco.,2025-10-27 00:04:17.924109,1,10
+37,Ticket status automatically changed to Open by Zxakira Napoles viewing it.,2025-10-27 00:04:30.840421,3,7
+38,Ticket created by Limuel Ongtingco,2025-10-27 00:05:11.875317,1,11
+39,Ticket auto-assigned to Sophia Paloma,2025-10-27 00:05:11.891740,1,11
+40,Ticket created by Limuel Ongtingco,2025-10-27 00:06:41.090302,1,12
+41,Ticket auto-assigned to Sophia Paloma,2025-10-27 00:06:41.162107,1,12
+42,Ticket created by Limuel Ongtingco,2025-10-27 00:07:38.516884,1,13
+43,Ticket auto-assigned to Sophia Paloma,2025-10-27 00:07:38.535348,1,13
+44,Ticket reassigned from Sophia Paloma to Limuel Ongtingco by Limuel Ongtingco.,2025-10-27 00:07:44.261665,1,13
+45,RT Ticket Number '1427' added by Limuel Ongtingco.,2025-10-27 00:08:13.903325,1,6
+46,Ticket created by Limuel Ongtingco,2025-10-27 00:09:43.501262,1,14
+47,Ticket auto-assigned to Sophia Paloma,2025-10-27 00:09:43.504880,1,14
+48,Ticket status automatically changed to Open by Sophia Paloma viewing it.,2025-10-27 00:10:43.208552,5,14
+49,Ticket created by Limuel Ongtingco,2025-10-27 00:10:54.883654,1,15
+50,Ticket auto-assigned to Limuel Ongtingco,2025-10-27 00:10:54.893503,1,15
+51,RT Ticket Number '1429' added by Zxakira Napoles.,2025-10-27 00:11:28.071110,3,7
+52,Remark added by Zxakira Napoles: Waiting for verification,2025-10-27 00:11:28.071114,3,7
+53,Ticket status automatically changed to Open by Zxakira Napoles viewing it.,2025-10-27 00:12:17.021398,3,8
+54,Status changed from Open to New by Sophia Paloma.,2025-10-27 00:12:25.449344,5,14
+55,Ticket status automatically changed to Open by Sophia Paloma viewing it.,2025-10-27 00:12:25.583384,5,14
+56,Ticket status automatically changed to Open by Sophia Paloma viewing it.,2025-10-27 00:12:50.839488,5,12
+57,Ticket created by Limuel Ongtingco,2025-10-27 00:14:22.993773,1,16
+58,Ticket auto-assigned to Limuel Ongtingco,2025-10-27 00:14:23.001098,1,16
+59,Ticket created by Limuel Ongtingco,2025-10-27 00:15:23.293029,1,17
+60,Ticket auto-assigned to Limuel Ongtingco,2025-10-27 00:15:23.304560,1,17
+61,Ticket reassigned from Limuel Ongtingco to Zxakira Napoles by Limuel Ongtingco.,2025-10-27 00:15:45.071424,1,16
+62,Ticket status automatically changed to Open by Sophia Paloma viewing it.,2025-10-27 00:16:46.266146,5,11
+63,RT Ticket Number '1431' added by Limuel Ongtingco.,2025-10-27 00:16:46.689323,1,8
+64,Ticket reassigned from Limuel Ongtingco to Sophia Paloma by Limuel Ongtingco.,2025-10-27 00:18:04.645363,1,17
+65,Remark added by Zxakira Napoles: Waiting for verification,2025-10-27 00:19:05.945498,3,8
+66,Ticket created by Limuel Ongtingco,2025-10-27 00:20:18.593418,1,18
+67,Ticket auto-assigned to Limuel Ongtingco,2025-10-27 00:20:18.598539,1,18
+68,Ticket created by Limuel Ongtingco,2025-10-27 00:20:37.247358,1,19
+69,Ticket auto-assigned to Limuel Ongtingco,2025-10-27 00:20:37.256231,1,19
+70,Ticket created by Limuel Ongtingco,2025-10-27 00:23:05.514254,1,20
+71,Ticket auto-assigned to Limuel Ongtingco,2025-10-27 00:23:05.525471,1,20
+72,Ticket reassigned from Limuel Ongtingco to Zxakira Napoles by Limuel Ongtingco.,2025-10-27 00:23:19.247435,1,20
+73,Ticket created by Limuel Ongtingco,2025-10-27 00:25:23.350852,1,21
+74,Ticket auto-assigned to Limuel Ongtingco,2025-10-27 00:25:23.367451,1,21
+75,Ticket reassigned from Limuel Ongtingco to Sophia Paloma by Limuel Ongtingco.,2025-10-27 00:25:30.031628,1,21
+76,Ticket status automatically changed to Open by Zxakira Napoles viewing it.,2025-10-27 00:31:25.575825,3,20
+77,Remark added by Limuel Ongtingco: Jochelle Pura,2025-10-27 00:34:09.905055,1,16
+78,Ticket status automatically changed to Open by Sophia Paloma viewing it.,2025-10-27 00:35:47.222650,5,21
+79,Ticket created by Limuel Ongtingco,2025-10-27 00:38:04.903273,1,22
+80,Ticket auto-assigned to Limuel Ongtingco,2025-10-27 00:38:04.908021,1,22
+81,Remark added by Zxakira Napoles: Email sent,2025-10-27 00:38:29.051115,3,20
+82,Ticket status automatically changed to Open by Zxakira Napoles viewing it.,2025-10-27 00:38:35.805138,3,16
+83,Ticket created by Limuel Ongtingco,2025-10-27 00:38:40.171410,1,23
+84,Ticket auto-assigned to Limuel Ongtingco,2025-10-27 00:38:40.192772,1,23
+85,Ticket reassigned from Limuel Ongtingco to Sophia Paloma by Limuel Ongtingco.,2025-10-27 00:38:46.207602,1,23
+86,Ticket created by Limuel Ongtingco,2025-10-27 00:39:31.693795,1,24
+87,Ticket auto-assigned to Limuel Ongtingco,2025-10-27 00:39:31.698985,1,24
+88,Ticket reassigned from Limuel Ongtingco to Zxakira Napoles by Limuel Ongtingco.,2025-10-27 00:39:37.442782,1,24
+89,Remark added by Sophia Paloma: Advisory Email Sent,2025-10-27 00:40:41.458709,5,21
+90,Ticket reassigned from Limuel Ongtingco to Zxakira Napoles by Limuel Ongtingco.,2025-10-27 00:40:51.046119,1,22
+91,Remark added by Sophia Paloma: Advisory Email Sent,2025-10-27 00:40:51.153318,5,21
+92,Ticket status automatically changed to Open by Sophia Paloma viewing it.,2025-10-27 00:41:03.237709,5,23
+93,Remark added by Sophia Paloma: Advisory email sent. ,2025-10-27 00:43:33.180526,5,23
+94,Ticket status automatically changed to Open by Sophia Paloma viewing it.,2025-10-27 00:43:40.023279,5,17
+95,Ticket created by Limuel Ongtingco,2025-10-27 00:43:48.411067,1,25
+96,Ticket auto-assigned to Limuel Ongtingco,2025-10-27 00:43:48.415272,1,25
+97,Ticket reassigned from Limuel Ongtingco to Sophia Paloma by Limuel Ongtingco.,2025-10-27 00:44:17.718251,1,19
+98,Remark added by Zxakira Napoles: email sent,2025-10-27 00:44:44.119704,3,16
+99,Ticket status automatically changed to Open by Zxakira Napoles viewing it.,2025-10-27 00:44:53.649588,3,22
+100,"Remark added by Zxakira Napoles: email sent, waiting for an update.",2025-10-27 00:45:04.468378,3,22
+101,"Remark added by Zxakira Napoles: email sent, waiting for an update.",2025-10-27 00:46:00.934448,3,22
+102,Ticket status automatically changed to Open by Zxakira Napoles viewing it.,2025-10-27 00:46:12.189874,3,24
+103,Ticket created by Limuel Ongtingco,2025-10-27 00:48:45.746733,1,26
+104,Ticket auto-assigned to Limuel Ongtingco,2025-10-27 00:48:45.756810,1,26
+105,Ticket reassigned from Limuel Ongtingco to Zxakira Napoles by Limuel Ongtingco.,2025-10-27 00:48:50.577359,1,26
+106,Ticket status automatically changed to Open by Zxakira Napoles viewing it.,2025-10-27 00:50:24.548913,3,26
+107,Ticket status automatically changed to Open by Limuel Ongtingco viewing it.,2025-10-27 00:51:11.193043,4,10
+108,RT Ticket Number '1440' added by Zxakira Napoles.,2025-10-27 00:55:09.663693,3,26
+109,Remark added by Zxakira Napoles: Ticket created since the issue remains the same.,2025-10-27 00:55:09.663697,3,26
+110,RT Ticket Number '1437' added by Sophia Paloma.,2025-10-27 00:56:50.454658,5,17
+111,Ticket status automatically changed to Open by Sophia Paloma viewing it.,2025-10-27 00:59:28.032654,5,19
+112,RT Ticket Number '1442' added by Zxakira Napoles.,2025-10-27 00:59:49.642299,3,22
+113,Remark added by Zxakira Napoles: ticket created since the issue remains the same as of 10/27/2025,2025-10-27 00:59:49.642302,3,22
+114,Remark added by Sophia Paloma: Advisory email sent. ,2025-10-27 00:59:55.570146,5,19
+115,RT Ticket Number '1327' added by Limuel Ongtingco.,2025-10-27 01:01:51.931158,4,10
+116,Status changed from Open to Resolved by Limuel Ongtingco.,2025-10-27 01:01:51.931163,4,10
+117,Ticket status automatically changed to Open by Limuel Ongtingco viewing it.,2025-10-27 01:01:58.781707,4,13
+118,RT Ticket Number '1445' added by Limuel Ongtingco.,2025-10-27 01:06:39.729895,4,13
+119,Status changed from Open to In Progress by Limuel Ongtingco.,2025-10-27 01:06:39.729900,4,13
+120,Status changed from Open to In Progress by Limuel Ongtingco.,2025-10-27 01:06:52.454705,4,5
+121,Status changed from Open to In Progress by Limuel Ongtingco.,2025-10-27 01:09:10.820508,1,26
+122,Status changed from Open to In Progress by Limuel Ongtingco.,2025-10-27 01:09:21.618226,1,22
+123,Status changed from Open to In Progress by Limuel Ongtingco.,2025-10-27 01:09:48.735410,1,17
+124,RT Ticket Number '1446' added by Sophia Paloma.,2025-10-27 01:09:55.804854,5,14
+125,Status changed from Open to In Progress by Sophia Paloma.,2025-10-27 01:09:55.804857,5,14
+126,Status changed from Open to In Progress by Sophia Paloma.,2025-10-27 01:10:05.197161,5,6
+127,Status changed from Open to In Progress by Limuel Ongtingco.,2025-10-27 01:10:23.533508,1,7
+128,Status changed from Open to In Progress by Limuel Ongtingco.,2025-10-27 01:10:31.866679,1,8
+129,RT Ticket Number '1432' added by Sophia Paloma.,2025-10-27 01:10:42.531027,5,12
+130,Status changed from Open to In Progress by Sophia Paloma.,2025-10-27 01:10:42.531032,5,12
+131,RT Ticket Number '1435' added by Limuel Ongtingco.,2025-10-27 01:11:06.178360,1,11
+132,Status changed from Open to In Progress by Limuel Ongtingco.,2025-10-27 01:11:06.178366,1,11
+133,RT Ticket Number changed from '1435' to '1434' by Sophia Paloma.,2025-10-27 01:11:16.284251,5,11
+134,Ticket status automatically changed to Open by Limuel Ongtingco viewing it.,2025-10-27 01:14:06.009882,4,15
+135,RT Ticket Number '1447' added by Sophia Paloma.,2025-10-27 01:17:00.433336,5,21
+136,Status changed from Open to In Progress by Sophia Paloma.,2025-10-27 01:17:00.433340,5,21
+137,RT Ticket Number '1450' added by Zxakira Napoles.,2025-10-27 01:21:13.879726,3,24
+138,Remark added by Zxakira Napoles: ticket created since the issue remains the same as of 10/27/2025,2025-10-27 01:21:13.879731,3,24
+139,Ticket created by Limuel Ongtingco,2025-10-27 01:43:27.245680,1,27
+140,Ticket auto-assigned to Limuel Ongtingco,2025-10-27 01:43:27.253117,1,27
+141,Ticket created by Limuel Ongtingco,2025-10-27 01:48:34.649293,1,28
+142,Ticket auto-assigned to Limuel Ongtingco,2025-10-27 01:48:34.653328,1,28
+143,Ticket reassigned from Limuel Ongtingco to Zxakira Napoles by Limuel Ongtingco.,2025-10-27 01:48:46.284644,1,28
+144,Ticket status automatically changed to Open by Zxakira Napoles viewing it.,2025-10-27 01:49:18.204103,3,28
+145,RT Ticket Number '1452' added by Zxakira Napoles.,2025-10-27 01:53:30.464481,3,28
+146,RT Ticket Number '1454' added by Limuel Ongtingco.,2025-10-27 01:58:36.367656,4,15
+147,Status changed from Open to In Progress by Limuel Ongtingco.,2025-10-27 01:58:36.367660,4,15
+148,Ticket status automatically changed to Open by Limuel Ongtingco viewing it.,2025-10-27 02:00:01.051842,4,18
+149,Ticket created by Limuel Ongtingco,2025-10-27 02:01:54.093091,1,29
+150,Ticket auto-assigned to Limuel Ongtingco,2025-10-27 02:01:54.102378,1,29
+151,Ticket reassigned from Limuel Ongtingco to Sophia Paloma by Limuel Ongtingco.,2025-10-27 02:01:59.085566,1,29
+152,Ticket status automatically changed to Open by Sophia Paloma viewing it.,2025-10-27 02:02:56.442578,5,29
+153,Ticket status automatically changed to Open by Limuel Ongtingco viewing it.,2025-10-27 02:04:04.768556,4,27
+154,RT Ticket Number '1456' added by Sophia Paloma.,2025-10-27 02:06:43.341593,5,29
+155,Status changed from Open to In Progress by Sophia Paloma.,2025-10-27 02:06:43.341598,5,29
+156,RT Ticket Number '1458' added by Limuel Ongtingco.,2025-10-27 02:18:21.843652,4,27
+157,Status changed from Open to In Progress by Limuel Ongtingco.,2025-10-27 02:18:21.843658,4,27
+158,Ticket status automatically changed to Open by Limuel Ongtingco viewing it.,2025-10-27 02:21:45.629576,4,25
+159,RT Ticket Number '1460' added by Limuel Ongtingco.,2025-10-27 02:27:14.578558,4,25
+160,Status changed from Open to In Progress by Limuel Ongtingco.,2025-10-27 02:27:14.578562,4,25
+161,Status changed from Open to In Progress by Limuel Ongtingco.,2025-10-27 02:33:58.270727,1,28
+162,Status changed from Open to In Progress by Limuel Ongtingco.,2025-10-27 02:34:11.884510,1,24
+163,Ticket created by Limuel Ongtingco,2025-10-27 03:06:15.416165,1,30
+164,Ticket auto-assigned to Limuel Ongtingco,2025-10-27 03:06:15.436743,1,30
+165,Ticket status automatically changed to Open by Limuel Ongtingco viewing it.,2025-10-27 03:10:46.035412,4,30
+166,RT Ticket Number '1462' added by Limuel Ongtingco.,2025-10-27 03:19:06.880349,4,30
+167,Status changed from Open to In Progress by Limuel Ongtingco.,2025-10-27 03:19:06.880354,4,30
+168,Ticket created by Limuel Ongtingco,2025-10-27 03:35:02.954268,1,31
+169,Ticket auto-assigned to Limuel Ongtingco,2025-10-27 03:35:02.962335,1,31
+170,Ticket reassigned from Limuel Ongtingco to Zxakira Napoles by Limuel Ongtingco.,2025-10-27 03:35:11.299527,1,31
+171,RT Ticket Number '1464' added by Zxakira Napoles.,2025-10-27 03:37:21.940780,3,16
+172,Ticket status automatically changed to Open by Zxakira Napoles viewing it.,2025-10-27 03:37:48.397619,3,31
+173,Ticket created by Limuel Ongtingco,2025-10-27 03:39:37.452323,1,32
+174,Ticket auto-assigned to Limuel Ongtingco,2025-10-27 03:39:37.566447,1,32
+175,Ticket reassigned from Limuel Ongtingco to Sophia Paloma by Limuel Ongtingco.,2025-10-27 03:39:43.022739,1,32
+176,Ticket created by Limuel Ongtingco,2025-10-27 03:40:57.805891,1,33
+177,Ticket auto-assigned to Limuel Ongtingco,2025-10-27 03:40:57.815892,1,33
+178,Ticket status automatically changed to Open by Limuel Ongtingco viewing it.,2025-10-27 03:41:22.453442,4,33
+179,Ticket status automatically changed to Open by Sophia Paloma viewing it.,2025-10-27 03:43:27.128868,5,32
+180,RT Ticket Number '1466' added by Limuel Ongtingco.,2025-10-27 03:43:27.455855,4,33
+181,Status changed from Open to In Progress by Limuel Ongtingco.,2025-10-27 03:43:27.455860,4,33
+182,Ticket created by Limuel Ongtingco,2025-10-27 03:50:59.482059,1,34
+183,Ticket auto-assigned to Limuel Ongtingco,2025-10-27 03:50:59.498318,1,34
+184,Ticket created by Limuel Ongtingco,2025-10-27 03:51:31.242060,1,35
+185,Ticket auto-assigned to Limuel Ongtingco,2025-10-27 03:51:31.248554,1,35
+186,Status changed from Open to In Progress by Sophia Paloma.,2025-10-27 03:53:38.463928,5,32
+187,RT Ticket Number '1467' added by Sophia Paloma.,2025-10-27 03:54:00.487081,5,32
+188,Ticket status automatically changed to Open by Limuel Ongtingco viewing it.,2025-10-27 05:14:46.789373,4,34
+189,Ticket created by Limuel Ongtingco,2025-10-27 05:31:14.042899,1,36
+190,Ticket auto-assigned to Limuel Ongtingco,2025-10-27 05:31:14.055524,1,36
+191,Ticket reassigned from Limuel Ongtingco to Sophia Paloma by Limuel Ongtingco.,2025-10-27 05:31:21.301650,1,36
+192,Ticket status automatically changed to Open by Sophia Paloma viewing it.,2025-10-27 05:31:55.790410,5,36
+193,Ticket created by Limuel Ongtingco,2025-10-27 05:32:07.513652,1,37
+194,Ticket auto-assigned to Limuel Ongtingco,2025-10-27 05:32:07.552475,1,37
+195,RT Ticket Number '1470' added by Zxakira Napoles.,2025-10-27 05:32:34.931483,3,20
+196,Ticket status automatically changed to Open by Limuel Ongtingco viewing it.,2025-10-27 05:33:36.583530,4,37
+197,RT Ticket Number '1472' added by Sophia Paloma.,2025-10-27 05:37:24.522458,5,36
+198,Status changed from Open to In Progress by Sophia Paloma.,2025-10-27 05:37:24.522462,5,36
+199,RT Ticket Number '1474' added by Limuel Ongtingco.,2025-10-27 05:40:33.195238,4,37
+200,Status changed from Open to In Progress by Limuel Ongtingco.,2025-10-27 05:40:33.195243,4,37
+201,RT Ticket Number '1476' added by Limuel Ongtingco.,2025-10-27 05:55:40.576930,4,34
+202,Status changed from Open to In Progress by Limuel Ongtingco.,2025-10-27 05:55:40.576935,4,34
+203,Ticket status automatically changed to Open by Limuel Ongtingco viewing it.,2025-10-27 05:55:50.338889,4,35
+204,Ticket created by Limuel Ongtingco,2025-10-27 06:03:24.553295,1,38
+205,Ticket auto-assigned to Zxakira Napoles,2025-10-27 06:03:24.573533,1,38
+206,Ticket status automatically changed to Open by Zxakira Napoles viewing it.,2025-10-27 06:04:02.448495,3,38
+207,Remark added by Zxakira Napoles: service downtime in Cebu - Ongoing,2025-10-27 06:05:17.989791,3,38
+208,Status changed from Open to Pending by Zxakira Napoles.,2025-10-27 06:05:17.989796,3,38
+209,Status changed from Open to Pending by Limuel Ongtingco.,2025-10-27 06:05:20.140417,1,35
+210,Status changed from Open to Pending by Limuel Ongtingco.,2025-10-27 06:05:32.874645,1,31
+211,Status changed from Open to Pending by Limuel Ongtingco.,2025-10-27 06:06:02.144602,1,23
+212,Status changed from Open to In Progress by Limuel Ongtingco.,2025-10-27 06:07:20.611012,1,20
+213,Status changed from Open to In Progress by Limuel Ongtingco.,2025-10-27 06:07:45.733096,1,16
+214,Ticket created by Limuel Ongtingco,2025-10-27 06:13:16.736491,1,39
+215,Ticket auto-assigned to Zxakira Napoles,2025-10-27 06:13:16.742874,1,39
+216,Ticket status automatically changed to Open by Zxakira Napoles viewing it.,2025-10-27 06:13:40.997114,3,39
+217,Status changed from Open to Pending by Limuel Ongtingco.,2025-10-27 06:39:11.548025,4,18
+218,Status changed from In Progress to Resolved by Limuel Ongtingco.,2025-10-27 06:46:31.853901,4,33
+219,Ticket created by Limuel Ongtingco,2025-10-27 06:52:17.710229,1,40
+220,Ticket auto-assigned to Limuel Ongtingco,2025-10-27 06:52:17.775174,1,40
+221,Ticket created by Limuel Ongtingco,2025-10-27 07:14:57.073868,1,41
+222,Ticket auto-assigned to Limuel Ongtingco,2025-10-27 07:14:57.088417,1,41
+223,Ticket reassigned from Limuel Ongtingco to Sophia Paloma by Limuel Ongtingco.,2025-10-27 07:15:04.741080,1,41
+224,Ticket created by Limuel Ongtingco,2025-10-27 07:17:44.521062,1,42
+225,Ticket auto-assigned to Limuel Ongtingco,2025-10-27 07:17:44.569878,1,42
+226,Ticket reassigned from Limuel Ongtingco to Zxakira Napoles by Limuel Ongtingco.,2025-10-27 07:17:53.746119,1,42
+227,RT Ticket Number '1478' added by Limuel Ongtingco.,2025-10-27 07:18:29.280640,1,39
+228,Status changed from Open to In Progress by Limuel Ongtingco.,2025-10-27 07:18:29.280645,1,39
+229,Remark added by Zxakira Napoles: Payment Received and Verified.,2025-10-27 07:19:37.753396,3,8
+230,Status changed from In Progress to Resolved by Zxakira Napoles.,2025-10-27 07:19:37.753402,3,8
+231,Ticket created by Limuel Ongtingco,2025-10-27 07:19:46.757978,1,43
+232,Ticket auto-assigned to Limuel Ongtingco,2025-10-27 07:19:46.768616,1,43
+233,Ticket status automatically changed to Open by Zxakira Napoles viewing it.,2025-10-27 07:19:57.388062,3,42
+234,Status changed from Open to Pending by Zxakira Napoles.,2025-10-27 07:20:11.106982,3,42
+235,Ticket status automatically changed to Open by Sophia Paloma viewing it.,2025-10-27 07:29:45.756202,5,41
+236,Status changed from New to Pending by Limuel Ongtingco.,2025-10-27 07:29:47.338101,1,43
+237,Remark added by Sophia Paloma: Advisory Email Sent. ,2025-10-27 07:30:00.127266,5,41
+238,Status changed from Open to Pending by Sophia Paloma.,2025-10-27 07:30:00.127272,5,41
+239,Status changed from New to Pending by Limuel Ongtingco.,2025-10-27 07:30:00.146881,1,40
+240,Status changed from Open to Pending by Sophia Paloma.,2025-10-27 07:30:17.964996,5,19
+241,Ticket created by Limuel Ongtingco,2025-10-27 08:10:13.841785,1,44
+242,Ticket auto-assigned to Limuel Ongtingco,2025-10-27 08:10:13.845546,1,44
+243,Ticket reassigned from Limuel Ongtingco to Zxakira Napoles by Limuel Ongtingco.,2025-10-27 08:10:37.563897,1,44
+244,Ticket status automatically changed to Open by Zxakira Napoles viewing it.,2025-10-27 08:10:51.608188,3,44
+245,RT Ticket Number '1480' added by Zxakira Napoles.,2025-10-27 08:16:25.518924,3,44
+246,Remark added by Zxakira Napoles: Waiting for verification,2025-10-27 08:16:25.518929,3,44
+247,Status changed from Open to In Progress by Limuel Ongtingco.,2025-10-27 09:10:45.627881,1,44
+248,Ticket created by Limuel Ongtingco,2025-10-27 09:14:55.449000,1,45
+249,Ticket auto-assigned to Limuel Ongtingco,2025-10-27 09:14:55.465578,1,45
+250,Ticket reassigned from Limuel Ongtingco to Sophia Paloma by Limuel Ongtingco.,2025-10-27 09:15:04.281129,1,45
+251,Ticket status automatically changed to Open by Sophia Paloma viewing it.,2025-10-27 09:15:21.165735,5,45
+252,Remark added by Sophia Paloma: Advisory email sent. ,2025-10-27 09:19:03.731935,5,45
+253,Status changed from Open to Pending by Sophia Paloma.,2025-10-27 09:19:03.731939,5,45
+254,RT Ticket Number changed from '1327' to '1425' by Limuel Ongtingco.,2025-10-27 09:25:12.842731,4,10
+255,RT Ticket Number changed from '1425' to '1327' by Limuel Ongtingco.,2025-10-27 09:25:32.730081,4,10
+256,Remark added by Limuel Ongtingco: Payment received and verified,2025-10-27 09:33:08.869379,4,5
+257,Status changed from In Progress to Resolved by Limuel Ongtingco.,2025-10-27 09:33:08.869386,4,5
+258,Remark added by Limuel Ongtingco: payment received and verified,2025-10-27 09:43:00.732385,4,34
+259,Status changed from In Progress to Resolved by Limuel Ongtingco.,2025-10-27 09:43:00.732389,4,34
+260,Ticket created by Limuel Ongtingco,2025-10-27 23:35:50.191005,1,46
+261,Ticket auto-assigned to Limuel Ongtingco,2025-10-27 23:35:50.263630,1,46
+262,Ticket created by Limuel Ongtingco,2025-10-27 23:40:32.783436,1,47
+263,Ticket auto-assigned to Limuel Ongtingco,2025-10-27 23:40:32.791820,1,47
+264,Ticket reassigned from Limuel Ongtingco to Zxakira Napoles by Limuel Ongtingco.,2025-10-27 23:40:40.395043,1,47
+265,Ticket created by Limuel Ongtingco,2025-10-27 23:42:48.264913,1,48
+266,Ticket auto-assigned to Limuel Ongtingco,2025-10-27 23:42:48.279068,1,48
+267,Ticket reassigned from Limuel Ongtingco to Sophia Paloma by Limuel Ongtingco.,2025-10-27 23:42:53.309244,1,48
+268,Ticket status automatically changed to Open by Zxakira Napoles viewing it.,2025-10-27 23:43:22.662666,3,47
+269,Status changed from Pending to Resolved by Sophia Paloma.,2025-10-27 23:59:48.264247,5,41
+270,Ticket status automatically changed to Open by Sophia Paloma viewing it.,2025-10-28 00:03:29.164587,5,48
+271,Status changed from Open to Pending by Sophia Paloma.,2025-10-28 00:03:45.793949,5,48
+272,Status changed from In Progress to Resolved by Sophia Paloma.,2025-10-28 00:04:23.263785,5,6
+273,"Remark added by Zxakira Napoles: sent an email, waiting for an update.",2025-10-28 00:16:44.007222,3,47
+274,Ticket status automatically changed to Open by Limuel Ongtingco viewing it.,2025-10-28 00:28:16.125780,4,46
+275,"Remark added by Limuel Ongtingco: currently colleting data in grafana
+",2025-10-28 00:33:01.501883,4,46
+276,Status changed from In Progress to Resolved by Sophia Paloma.,2025-10-28 01:28:07.460535,5,21
+277,Ticket created by Limuel Ongtingco,2025-10-28 01:30:56.295389,1,49
+278,Ticket auto-assigned to Sophia Paloma,2025-10-28 01:30:56.314180,1,49
+279,Ticket status automatically changed to Open by Sophia Paloma viewing it.,2025-10-28 01:31:14.372187,5,49
+280,Status changed from Open to In Progress by Sophia Paloma.,2025-10-28 01:34:25.206189,5,49
+281,Status changed from In Progress to Resolved by Sophia Paloma.,2025-10-28 02:21:04.258644,5,49
+282,Ticket created by Limuel Ongtingco,2025-10-28 03:35:47.302172,1,50
+283,Ticket auto-assigned to Sophia Paloma,2025-10-28 03:35:47.363024,1,50
+284,Ticket reassigned from Sophia Paloma to Limuel Ongtingco by Limuel Ongtingco.,2025-10-28 03:35:58.997804,1,50
+285,Status changed from Open to Pending by Limuel Ongtingco.,2025-10-28 03:46:39.594586,4,46
+286,Remark added by Limuel Ongtingco: email sent to the client ,2025-10-28 03:47:30.073718,4,37
+287,Email log added by Limuel Ongtingco.,2025-10-28 04:01:45.276354,4,30
+288,Email log added by Limuel Ongtingco.,2025-10-28 04:03:18.238107,4,30
+289,Ticket created by Limuel Ongtingco,2025-10-28 04:05:20.254191,1,51
+290,Ticket auto-assigned to Limuel Ongtingco,2025-10-28 04:05:20.262114,1,51
+291,Ticket status automatically changed to Open by Limuel Ongtingco viewing it.,2025-10-28 04:05:29.246095,4,51
+292,RT Ticket Number '1484' added by Limuel Ongtingco.,2025-10-28 04:09:47.669118,4,51
+293,Status changed from Open to In Progress by Limuel Ongtingco.,2025-10-28 04:09:47.669121,4,51
+294,Ticket created by Limuel Ongtingco,2025-10-28 04:54:25.359644,1,52
+295,Ticket auto-assigned to Sophia Paloma,2025-10-28 04:54:25.384791,1,52
+296,Ticket status automatically changed to Open by Sophia Paloma viewing it.,2025-10-28 04:54:36.090587,5,52
+297,Ticket status automatically changed to Open by Limuel Ongtingco viewing it.,2025-10-28 04:55:35.810968,4,50
+298,Status changed from Open to In Progress by Sophia Paloma.,2025-10-28 04:58:35.101489,5,52
+299,RT Ticket Number '1490' added by Limuel Ongtingco.,2025-10-28 05:02:39.033258,4,50
+300,Status changed from Open to In Progress by Limuel Ongtingco.,2025-10-28 05:02:39.033264,4,50
+301,Ticket created by Limuel Ongtingco,2025-10-28 05:08:04.558653,1,53
+302,Ticket auto-assigned to Sophia Paloma,2025-10-28 05:08:04.567638,1,53
+303,Ticket status automatically changed to Open by Sophia Paloma viewing it.,2025-10-28 05:08:15.413876,5,53
+304,RT Ticket Number '1486' added by Limuel Ongtingco.,2025-10-28 05:08:22.197488,1,53
+305,Status changed from Open to In Progress by Limuel Ongtingco.,2025-10-28 05:08:22.197492,1,53
+306,RT Ticket Number '1486' removed by Sophia Paloma.,2025-10-28 05:08:25.642779,5,53
+307,RT Ticket Number '1488' added by Limuel Ongtingco.,2025-10-28 05:08:57.344521,1,52
+308,Ticket created by Limuel Ongtingco,2025-10-28 05:13:20.000732,1,54
+309,Ticket auto-assigned to Limuel Ongtingco,2025-10-28 05:13:20.015711,1,54
+310,Ticket reassigned from Limuel Ongtingco to Zxakira Napoles by Limuel Ongtingco.,2025-10-28 05:13:25.518515,1,54
+311,Ticket status automatically changed to Open by Zxakira Napoles viewing it.,2025-10-28 05:13:59.181562,3,54
+312,RT Ticket Number '1486' added by Sophia Paloma.,2025-10-28 05:14:01.314318,5,53
+313,RT Ticket Number '1492' added by Limuel Ongtingco.,2025-10-28 05:19:28.994505,1,54
+314,Status changed from Open to In Progress by Limuel Ongtingco.,2025-10-28 05:19:28.994509,1,54
+315,RT Ticket Number '1482' added by Limuel Ongtingco.,2025-10-28 05:20:51.661633,1,49
+316,Status changed from In Progress to Open by Zxakira Napoles.,2025-10-28 05:26:21.454748,3,54
+317,Email log added by Limuel Ongtingco.,2025-10-28 05:27:45.543440,4,27
+318,Email log added by Limuel Ongtingco.,2025-10-28 05:30:58.740815,4,15
+319,RT Ticket Number '1494' added by Limuel Ongtingco.,2025-10-28 05:39:44.844368,4,46
+320,Status changed from Pending to In Progress by Limuel Ongtingco.,2025-10-28 05:39:47.395621,4,46
+321,Email log added by Limuel Ongtingco.,2025-10-28 06:01:54.849141,4,40
+322,Email log added by Limuel Ongtingco.,2025-10-28 06:07:29.574439,4,40
+323,Email log added by Limuel Ongtingco.,2025-10-28 06:13:23.396070,4,43
+324,Email log added by Limuel Ongtingco.,2025-10-28 06:16:11.284954,4,18
+325,Email log added by Limuel Ongtingco.,2025-10-28 06:18:36.288460,4,35
+326,"Remark added by Sophia Paloma: josephinemangaron@gmail.com
+",2025-10-28 06:22:33.653508,5,17
+327,Ticket created by Limuel Ongtingco,2025-10-28 06:31:20.881138,1,55
+328,Ticket auto-assigned to Sophia Paloma,2025-10-28 06:31:21.283916,1,55
+329,Ticket status automatically changed to Open by Sophia Paloma viewing it.,2025-10-28 06:31:40.069439,5,55
+330,Status changed from Open to In Progress by Sophia Paloma.,2025-10-28 06:31:42.920541,5,55
+331,Status changed from Open to In Progress by Limuel Ongtingco.,2025-10-28 06:31:50.030199,1,54
+332,Email log added by Limuel Ongtingco.,2025-10-28 06:34:49.582030,4,35
+333,Status changed from Pending to Resolved by Limuel Ongtingco.,2025-10-28 06:34:53.038379,4,35
+334,RT Ticket Number '1496' added by Limuel Ongtingco.,2025-10-28 06:35:38.837385,1,55
+335,Remark added by Limuel Ongtingco: unverified by sir dennis,2025-10-28 06:36:58.826757,1,7
+336,Email log added by Limuel Ongtingco.,2025-10-28 06:38:14.459577,1,16
+337,Email log added by Limuel Ongtingco.,2025-10-28 06:42:36.581859,1,22
+338,Status changed from In Progress to Resolved by Limuel Ongtingco.,2025-10-28 06:42:42.309220,1,22
+339,Status changed from Pending to Resolved by Sophia Paloma.,2025-10-28 07:01:52.978535,5,19
+340,Email log added by Limuel Ongtingco.,2025-10-28 07:09:27.982008,4,18
+341,Status changed from Pending to Resolved by Limuel Ongtingco.,2025-10-28 07:09:35.081110,4,18
+342,Remark added by Limuel Ongtingco: Rebate Request Applied,2025-10-28 07:21:35.167602,4,46
+343,Status changed from In Progress to Resolved by Limuel Ongtingco.,2025-10-28 07:21:35.167605,4,46
+344,Email log added by Limuel Ongtingco.,2025-10-28 08:04:32.932851,1,16
+345,Email log added by Limuel Ongtingco.,2025-10-28 08:04:51.681236,1,16
+346,RT Ticket Number '1371' added by Zxakira Napoles.,2025-10-28 08:26:30.973122,3,42
+347,Remark added by Zxakira Napoles: Ticket has been resolved. Client's connection is now working.,2025-10-28 08:26:31.004737,3,42
+348,Status changed from Pending to Resolved by Zxakira Napoles.,2025-10-28 08:26:31.004744,3,42
+349,Remark added by Zxakira Napoles: Payment Verified,2025-10-28 08:26:47.979185,3,44
+350,Status changed from In Progress to Resolved by Zxakira Napoles.,2025-10-28 08:26:47.979189,3,44
+351,Status changed from Open to Pending by Limuel Ongtingco.,2025-10-28 08:38:35.680262,1,47
+352,"Remark added by Limuel Ongtingco: resolved
+",2025-10-28 09:14:15.370828,1,21
+353,Ticket created by Limuel Ongtingco,2025-10-28 23:07:30.698464,1,56
+354,Ticket auto-assigned to Limuel Ongtingco,2025-10-28 23:07:30.728473,1,56
+355,Ticket created by Limuel Ongtingco,2025-10-28 23:08:38.235177,1,57
+356,Ticket auto-assigned to Limuel Ongtingco,2025-10-28 23:08:38.247239,1,57
+357,Ticket created by Limuel Ongtingco,2025-10-28 23:09:47.595890,1,58
+358,Ticket auto-assigned to Limuel Ongtingco,2025-10-28 23:09:47.603830,1,58
+359,Ticket created by Limuel Ongtingco,2025-10-28 23:10:31.155991,1,59
+360,Ticket auto-assigned to Limuel Ongtingco,2025-10-28 23:10:31.159795,1,59
+361,Ticket reassigned from Limuel Ongtingco to Zxakira Napoles by Limuel Ongtingco.,2025-10-28 23:10:42.101171,1,57
+362,Ticket reassigned from Limuel Ongtingco to Sophia Paloma by Limuel Ongtingco.,2025-10-28 23:10:52.628062,1,58
+363,Ticket status automatically changed to Open by Limuel Ongtingco viewing it.,2025-10-28 23:12:11.722597,4,56
+364,Ticket status automatically changed to Open by Zxakira Napoles viewing it.,2025-10-28 23:12:20.975172,3,57
+365,Status changed from Open to Pending by Zxakira Napoles.,2025-10-28 23:13:36.789026,3,57
+366,Ticket status automatically changed to Open by Sophia Paloma viewing it.,2025-10-28 23:15:29.331435,5,58
+367,RT Ticket Number '1498' added by Limuel Ongtingco.,2025-10-28 23:21:38.437446,4,56
+368,Status changed from Open to In Progress by Limuel Ongtingco.,2025-10-28 23:21:38.437465,4,56
+369,Ticket status automatically changed to Open by Limuel Ongtingco viewing it.,2025-10-28 23:22:01.434971,4,59
+370,Remark added by Limuel Ongtingco: Payment received and verified,2025-10-28 23:47:16.824319,4,50
+371,Status changed from In Progress to Resolved by Limuel Ongtingco.,2025-10-28 23:47:16.824325,4,50
+372,Remark added by Zxakira Napoles: Connection is now stable but the promised 100mbps is not anymore allocation.,2025-10-28 23:53:33.808245,3,24
+373,Status changed from In Progress to Resolved by Zxakira Napoles.,2025-10-28 23:53:33.808250,3,24
+374,Email log added by Zxakira Napoles.,2025-10-28 23:54:33.903143,3,24
+375,RT Ticket Number '1500' added by Limuel Ongtingco.,2025-10-29 00:18:08.068504,4,59
+376,Status changed from Open to In Progress by Limuel Ongtingco.,2025-10-29 00:18:08.068510,4,59
+377,Status changed from Open to In Progress by Sophia Paloma.,2025-10-29 00:30:47.584798,5,58
+378,Email log added by Limuel Ongtingco.,2025-10-29 00:50:31.734612,1,58
+379,Email log added by Limuel Ongtingco.,2025-10-29 00:51:05.038202,1,58
+380,Email log added by Limuel Ongtingco.,2025-10-29 00:51:24.955072,1,58
+381,Email log added by Limuel Ongtingco.,2025-10-29 01:43:14.091195,4,27
+382,"Remark added by Limuel Ongtingco: updated the ticket in RT
+",2025-10-29 01:43:28.327890,4,27
+383,"Remark added by Zxakira Napoles: Email sent [10/29/2025], waiting for an update.",2025-10-29 01:55:57.358427,3,47
+384,Email log added by Zxakira Napoles.,2025-10-29 02:02:52.049429,3,38
+385,Status changed from Pending to Resolved by Zxakira Napoles.,2025-10-29 02:03:19.943624,3,38
+386,RT Ticket Number '1503' added by Limuel Ongtingco.,2025-10-29 02:15:18.806346,1,58
+387,"Remark added by Zxakira Napoles: Email sent, waiting for an update",2025-10-29 02:15:35.558429,3,54
+388,Email log added by Limuel Ongtingco.,2025-10-29 02:30:26.626672,1,54
+389,"Remark added by Limuel Ongtingco: service invoice has been processed
+email sent to the client",2025-10-29 03:18:31.923167,4,25
+390,Status changed from In Progress to Resolved by Limuel Ongtingco.,2025-10-29 03:18:31.923171,4,25
+391,Ticket created by Limuel Ongtingco,2025-10-29 03:34:52.893578,1,60
+392,Ticket auto-assigned to Zxakira Napoles,2025-10-29 03:34:53.207062,1,60
+393,RT Ticket Number '1505' added by Limuel Ongtingco.,2025-10-29 03:35:13.925514,1,60
+394,Status changed from New to In Progress by Limuel Ongtingco.,2025-10-29 03:35:13.925519,1,60
+395,Status changed from In Progress to Resolved by Sophia Paloma.,2025-10-29 03:36:31.169979,5,17
+396,Status changed from Pending to Open by Limuel Ongtingco.,2025-10-29 05:06:15.844344,1,57
+397,Status changed from Open to Pending by Limuel Ongtingco.,2025-10-29 05:06:23.536105,1,57
+398,Ticket created by Limuel Ongtingco,2025-10-29 05:10:59.799251,1,61
+399,Ticket auto-assigned to Limuel Ongtingco,2025-10-29 05:10:59.805599,1,61
+400,Ticket reassigned from Limuel Ongtingco to Sophia Paloma by Limuel Ongtingco.,2025-10-29 05:11:16.743941,1,61
+401,Ticket status automatically changed to Open by Sophia Paloma viewing it.,2025-10-29 05:11:25.181496,5,61
+405,RT Ticket Number '1507' added by Limuel Ongtingco.,2025-10-29 06:47:31.417721,1,61
+406,Status changed from Open to In Progress by Limuel Ongtingco.,2025-10-29 06:47:36.759863,1,61
+413,Ticket created by Limuel Ongtingco,2025-10-29 07:02:53.144350,1,65
+414,Ticket auto-assigned to Limuel Ongtingco,2025-10-29 07:02:53.153882,1,65
+415,Ticket status automatically changed to Open by Limuel Ongtingco viewing it.,2025-10-29 07:03:09.275902,4,65
+416,RT Ticket Number '1509' added by Limuel Ongtingco.,2025-10-29 07:03:22.213605,4,65
+417,Status changed from Open to In Progress by Limuel Ongtingco.,2025-10-29 07:03:22.213611,4,65
+418,Ticket created by Limuel Ongtingco,2025-10-29 07:06:09.788026,1,66
+419,Ticket auto-assigned to Zxakira Napoles,2025-10-29 07:06:09.817379,1,66
+420,Ticket status automatically changed to Open by Zxakira Napoles viewing it.,2025-10-29 07:06:28.549575,3,66
+421,RT Ticket Number '1510' added by Zxakira Napoles.,2025-10-29 07:10:04.476697,3,66
+422,Status changed from Open to In Progress by Zxakira Napoles.,2025-10-29 07:10:20.455763,3,66
+423,"Remark added by Zxakira Napoles: No Need to create ticket
+Already Up and working.",2025-10-30 00:59:07.600953,3,47
+424,Status changed from Pending to Resolved by Zxakira Napoles.,2025-10-30 00:59:10.696311,3,47
+425,Email log added by Zxakira Napoles.,2025-10-30 00:59:13.828981,3,47
+426,Remark added by Zxakira Napoles: No need to create ticket to this one since their connection is Up and stable.,2025-10-30 02:06:28.830393,3,31
+427,Status changed from Pending to Resolved by Zxakira Napoles.,2025-10-30 02:06:28.830400,3,31
+428,Remark added by Zxakira Napoles: Connection is up and stable but they will proceed in disconnecting the account.,2025-10-30 02:07:07.459528,3,60
+429,Email log added by Zxakira Napoles.,2025-10-30 02:07:15.304627,3,60
+430,Remark added by Zxakira Napoles: RESOLVED TICKET.,2025-10-30 02:07:50.409374,3,20
+431,Status changed from In Progress to Resolved by Zxakira Napoles.,2025-10-30 02:07:53.758932,3,20
+432,"Remark added by Zxakira Napoles: RESOLVED TICKET as per Grafana, they have internet usage.",2025-10-30 02:08:25.853520,3,26
+433,Status changed from In Progress to Resolved by Zxakira Napoles.,2025-10-30 02:08:25.853526,3,26
+434,Status changed from Pending to Resolved by Zxakira Napoles.,2025-10-30 02:09:12.347789,3,57
+435,Status changed from In Progress to Resolved by Sophia Paloma.,2025-10-30 02:39:33.174542,5,58
+436,Status changed from In Progress to Resolved by Sophia Paloma.,2025-10-30 02:39:40.588511,5,61
+437,Remark added by Limuel Ongtingco: still in the verification process,2025-10-30 02:43:24.152918,4,59
+438,"Remark added by Limuel Ongtingco: For on-site visit today
+",2025-10-30 02:44:01.227475,4,37
+439,"Remark added by Zxakira Napoles: 10/30/2025
+connection has been restored.",2025-10-30 05:52:36.884734,3,28
+440,Status changed from In Progress to Resolved by Zxakira Napoles.,2025-10-30 05:52:36.884739,3,28
+441,Email log added by Zxakira Napoles.,2025-10-30 05:52:51.861346,3,28
+442,Ticket created by Limuel Ongtingco,2025-10-30 08:13:12.825542,1,67
+443,Ticket auto-assigned to Zxakira Napoles,2025-10-30 08:13:12.944894,1,67
+444,Ticket status automatically changed to Open by Zxakira Napoles viewing it.,2025-10-30 08:13:24.797355,3,67
+445,RT Ticket Number '1517' added by Zxakira Napoles.,2025-10-30 08:18:37.839384,3,67
+446,Remark added by Zxakira Napoles: waiting for verification,2025-10-30 08:18:37.872146,3,67
+447,Status changed from Open to In Progress by Zxakira Napoles.,2025-10-30 08:18:37.872151,3,67
+448,Ticket created by Limuel Ongtingco,2025-10-30 08:57:25.070721,1,68
+449,Ticket auto-assigned to Zxakira Napoles,2025-10-30 08:57:25.169695,1,68
+450,Ticket reassigned from Zxakira Napoles to Limuel Ongtingco by Limuel Ongtingco.,2025-10-30 08:57:37.896933,1,68
+451,Ticket status automatically changed to Open by Limuel Ongtingco viewing it.,2025-10-30 08:58:53.503782,4,68
+452,Ticket created by Limuel Ongtingco,2025-10-30 09:07:56.896432,1,69
+453,Ticket auto-assigned to Zxakira Napoles,2025-10-30 09:07:56.963179,1,69
+454,Ticket reassigned from Zxakira Napoles to Sophia Paloma by Limuel Ongtingco.,2025-10-30 09:08:07.399226,1,69
+455,Ticket status automatically changed to Open by Sophia Paloma viewing it.,2025-10-30 09:08:23.687783,5,69
+456,RT Ticket Number '1519' added by Limuel Ongtingco.,2025-10-30 09:08:25.380231,4,68
+457,Status changed from Open to In Progress by Limuel Ongtingco.,2025-10-30 09:08:25.380236,4,68
+458,Remark added by Limuel Ongtingco: payment received and verified,2025-10-30 09:22:06.157583,4,59
+459,Status changed from In Progress to Resolved by Limuel Ongtingco.,2025-10-30 09:22:06.157587,4,59
+460,Remark added by Zxakira Napoles: received and verified,2025-10-30 09:22:51.158625,3,67
+461,Status changed from In Progress to Resolved by Zxakira Napoles.,2025-10-30 09:22:51.158631,3,67
+462,Ticket created by Limuel Ongtingco,2025-11-02 23:08:20.315808,1,70
+463,Ticket auto-assigned to Zxakira Napoles,2025-11-02 23:08:20.406417,1,70
+464,Ticket created by Limuel Ongtingco,2025-11-02 23:10:37.479012,1,71
+465,Ticket auto-assigned to Zxakira Napoles,2025-11-02 23:10:37.552209,1,71
+466,Ticket reassigned from Zxakira Napoles to Sophia Paloma by Limuel Ongtingco.,2025-11-02 23:10:43.532530,1,71
+467,Ticket created by Limuel Ongtingco,2025-11-02 23:11:25.622999,1,72
+468,Ticket auto-assigned to Zxakira Napoles,2025-11-02 23:11:25.629056,1,72
+469,Ticket reassigned from Zxakira Napoles to Limuel Ongtingco by Limuel Ongtingco.,2025-11-02 23:11:32.074756,1,72
+470,Ticket created by Limuel Ongtingco,2025-11-02 23:12:22.914305,1,73
+471,Ticket auto-assigned to Zxakira Napoles,2025-11-02 23:12:22.922752,1,73
+472,Ticket created by Limuel Ongtingco,2025-11-02 23:12:57.804473,1,74
+473,Ticket auto-assigned to Zxakira Napoles,2025-11-02 23:12:57.820728,1,74
+474,Ticket reassigned from Zxakira Napoles to Sophia Paloma by Limuel Ongtingco.,2025-11-02 23:13:07.290638,1,74
+475,Ticket created by Limuel Ongtingco,2025-11-02 23:14:05.938075,1,75
+476,Ticket auto-assigned to Zxakira Napoles,2025-11-02 23:14:06.011837,1,75
+477,Ticket reassigned from Zxakira Napoles to Limuel Ongtingco by Limuel Ongtingco.,2025-11-02 23:14:12.166606,1,75
+478,Ticket status automatically changed to Open by Limuel Ongtingco viewing it.,2025-11-02 23:43:48.513901,4,75
+479,Ticket status automatically changed to Open by Sophia Paloma viewing it.,2025-11-02 23:45:58.056598,5,71
+480,RT Ticket Number '1524' added by Limuel Ongtingco.,2025-11-02 23:50:33.116978,4,75
+481,Status changed from Open to In Progress by Limuel Ongtingco.,2025-11-02 23:50:33.116984,4,75
+482,Status changed from Open to In Progress by Sophia Paloma.,2025-11-02 23:51:05.263045,5,71
+483,Ticket status automatically changed to Open by Limuel Ongtingco viewing it.,2025-11-02 23:51:07.087882,4,72
+484,Ticket status automatically changed to Open by Sophia Paloma viewing it.,2025-11-02 23:51:10.237719,5,74
+485,Ticket status automatically changed to Open by Zxakira Napoles viewing it.,2025-11-02 23:51:45.656132,3,70
+486,RT Ticket Number '1528' added by Limuel Ongtingco.,2025-11-02 23:57:00.946828,4,72
+487,Status changed from Open to In Progress by Limuel Ongtingco.,2025-11-02 23:57:00.946834,4,72
+488,RT Ticket Number '1529' added by Zxakira Napoles.,2025-11-02 23:57:03.150649,3,70
+489,Remark added by Zxakira Napoles: ticket created,2025-11-02 23:57:03.161825,3,70
+490,Status changed from Open to In Progress by Zxakira Napoles.,2025-11-02 23:57:08.805609,3,70
+491,Ticket status automatically changed to Open by Zxakira Napoles viewing it.,2025-11-02 23:57:12.942446,3,73
+492,Status changed from Open to In Progress by Sophia Paloma.,2025-11-02 23:58:23.725493,5,74
+493,RT Ticket Number '1525' added by Limuel Ongtingco.,2025-11-02 23:58:43.856586,1,71
+494,RT Ticket Number '1529' added by Limuel Ongtingco.,2025-11-02 23:59:50.665330,1,73
+495,RT Ticket Number '1521' added by Limuel Ongtingco.,2025-11-03 00:00:45.411186,1,69
+496,Status changed from Open to In Progress by Limuel Ongtingco.,2025-11-03 00:00:45.411190,1,69
+497,RT Ticket Number changed from '1529' to '1531' by Zxakira Napoles.,2025-11-03 00:03:02.577802,3,73
+498,Status changed from Open to In Progress by Zxakira Napoles.,2025-11-03 00:18:41.670485,3,73
+499,Ticket created by Limuel Ongtingco,2025-11-03 00:22:58.009288,1,76
+500,Ticket auto-assigned to Zxakira Napoles,2025-11-03 00:22:58.069768,1,76
+501,Ticket reassigned from Zxakira Napoles to Sophia Paloma by Limuel Ongtingco.,2025-11-03 00:23:03.284929,1,76
+502,Ticket status automatically changed to Open by Sophia Paloma viewing it.,2025-11-03 00:26:19.006516,5,76
+503,RT Ticket Number '1533' added by Limuel Ongtingco.,2025-11-03 01:44:08.429588,1,76
+504,Status changed from Open to In Progress by Limuel Ongtingco.,2025-11-03 01:44:11.094052,1,76
+505,Remark added by Limuel Ongtingco: Sanley resolved the ticket.,2025-11-03 01:45:25.927231,4,68
+506,Status changed from In Progress to Resolved by Limuel Ongtingco.,2025-11-03 01:45:25.927237,4,68
+507,Email log added by Limuel Ongtingco.,2025-11-03 01:50:45.438673,4,15
+508,Remark added by Limuel Ongtingco: Sanley resolved the ticket.,2025-11-03 02:21:55.530569,4,37
+509,Status changed from In Progress to Resolved by Limuel Ongtingco.,2025-11-03 02:21:55.530575,4,37
+510,Remark added by Limuel Ongtingco: Sanley resolved the ticket.,2025-11-03 02:23:05.372330,4,30
+511,Status changed from In Progress to Resolved by Limuel Ongtingco.,2025-11-03 02:23:05.372333,4,30
+512,Email log added by Limuel Ongtingco.,2025-11-03 02:28:02.607495,4,30
+513,Email log added by Limuel Ongtingco.,2025-11-03 02:31:00.142400,4,43
+514,Email log added by Limuel Ongtingco.,2025-11-03 02:35:52.867114,4,40
+515,Ticket created by Limuel Ongtingco,2025-11-03 02:39:06.061955,1,77
+516,Ticket auto-assigned to Limuel Ongtingco,2025-11-03 02:39:06.072599,1,77
+517,Ticket status automatically changed to Open by Limuel Ongtingco viewing it.,2025-11-03 02:39:19.078564,4,77
+518,Status changed from In Progress to Resolved by Zxakira Napoles.,2025-11-03 02:51:30.336775,3,66
+519,Status changed from In Progress to Resolved by Zxakira Napoles.,2025-11-03 02:51:39.598775,3,16
+520,Status changed from In Progress to Resolved by Zxakira Napoles.,2025-11-03 02:51:50.960702,3,60
+521,RT Ticket Number changed from '1510' to '1511' by Limuel Ongtingco.,2025-11-03 02:52:02.411187,1,66
+522,Remark added by Limuel Ongtingco: Sanley resolved the ticket,2025-11-03 02:53:41.140374,1,66
+523,RT Ticket Number '1535' added by Limuel Ongtingco.,2025-11-03 03:05:15.862652,4,77
+524,Status changed from Open to In Progress by Limuel Ongtingco.,2025-11-03 03:05:15.862656,4,77
+525,Remark added by Limuel Ongtingco: Sanley resolved the ticket.,2025-11-03 03:09:12.082914,4,65
+526,Status changed from In Progress to Resolved by Limuel Ongtingco.,2025-11-03 03:09:12.082918,4,65
+527,Status changed from In Progress to Resolved by Limuel Ongtingco.,2025-11-03 03:25:49.840653,1,53
+528,Ticket created by Limuel Ongtingco,2025-11-03 03:27:44.152637,1,78
+529,Ticket auto-assigned to Zxakira Napoles,2025-11-03 03:27:44.162883,1,78
+530,RT Ticket Number '1513' added by Limuel Ongtingco.,2025-11-03 03:28:08.389869,1,78
+531,Status changed from New to In Progress by Limuel Ongtingco.,2025-11-03 03:28:16.423555,1,78
+532,Email log added by Limuel Ongtingco.,2025-11-03 03:40:03.201555,1,48
+533,Email log added by Limuel Ongtingco.,2025-11-03 03:51:07.330941,1,45
+534,Remark added by Limuel Ongtingco: Ticket has already been resolved. Updated the RT with the latest Bandwidth Monitoring Graph of the client,2025-11-03 04:00:14.960353,1,29
+535,Status changed from In Progress to Resolved by Limuel Ongtingco.,2025-11-03 04:00:14.960357,1,29
+536,Email log added by Limuel Ongtingco.,2025-11-03 04:12:41.051542,1,23
+537,Ticket created by Limuel Ongtingco,2025-11-03 07:26:59.529411,1,79
+538,Ticket auto-assigned to Zxakira Napoles,2025-11-03 07:26:59.548395,1,79
+539,Ticket status automatically changed to Open by Zxakira Napoles viewing it.,2025-11-03 07:27:17.936488,3,79
+540,RT Ticket Number '1538' added by Limuel Ongtingco.,2025-11-03 07:34:44.316651,1,79
+541,Status changed from Open to In Progress by Limuel Ongtingco.,2025-11-03 07:34:44.316656,1,79
+542,Ticket created by Limuel Ongtingco,2025-11-03 09:55:46.900069,1,80
+543,Ticket auto-assigned to Zxakira Napoles,2025-11-03 09:55:46.918425,1,80
+544,Ticket reassigned from Zxakira Napoles to Limuel Ongtingco by Limuel Ongtingco.,2025-11-03 09:55:51.405250,1,80
+545,Ticket status automatically changed to Open by Limuel Ongtingco viewing it.,2025-11-03 09:56:01.060392,4,80
+546,Ticket created by Limuel Ongtingco,2025-11-04 05:42:26.492364,1,81
+547,Ticket auto-assigned to Zxakira Napoles,2025-11-04 05:42:26.527188,1,81
+548,Ticket created by Limuel Ongtingco,2025-11-04 05:45:57.753734,1,82
+549,Ticket auto-assigned to Zxakira Napoles,2025-11-04 05:45:57.782840,1,82
+550,Ticket reassigned from Zxakira Napoles to Sophia Paloma by Limuel Ongtingco.,2025-11-04 05:46:02.459725,1,82
+551,Email log added by Limuel Ongtingco.,2025-11-04 05:47:32.864175,1,82
+552,Ticket status automatically changed to Open by Sophia Paloma viewing it.,2025-11-04 06:07:28.884523,5,82
+553,Ticket created by Limuel Ongtingco,2025-11-04 06:11:46.944199,1,83
+554,Ticket auto-assigned to Zxakira Napoles,2025-11-04 06:11:46.977826,1,83
+555,Status changed from In Progress to Resolved by Zxakira Napoles.,2025-11-04 06:18:05.036722,3,79
+556,Ticket status automatically changed to Open by Zxakira Napoles viewing it.,2025-11-04 06:18:23.262001,3,81
+557,RT Ticket Number '1540' added by Zxakira Napoles.,2025-11-04 06:25:36.237932,3,81
+558,Status changed from Open to In Progress by Zxakira Napoles.,2025-11-04 06:25:36.237935,3,81
+559,Ticket status automatically changed to Open by Zxakira Napoles viewing it.,2025-11-04 06:25:56.178535,3,83
+560,Remark added by Zxakira Napoles: reported in NEX NOC tacloban,2025-11-04 06:28:17.071372,3,83
+561,Status changed from Open to Pending by Zxakira Napoles.,2025-11-04 06:28:17.071377,3,83
+562,RT Ticket Number '1543' added by Limuel Ongtingco.,2025-11-04 06:45:50.504419,4,80
+563,Status changed from Open to In Progress by Limuel Ongtingco.,2025-11-04 06:45:50.504426,4,80
+564,Ticket created by Limuel Ongtingco,2025-11-04 07:42:57.417493,1,84
+565,Ticket auto-assigned to Zxakira Napoles,2025-11-04 07:42:57.444139,1,84
+566,Ticket reassigned from Zxakira Napoles to Limuel Ongtingco by Limuel Ongtingco.,2025-11-04 07:43:04.214569,1,84
+567,Ticket status automatically changed to Open by Limuel Ongtingco viewing it.,2025-11-04 07:43:30.292608,4,84
+568,Ticket created by Limuel Ongtingco,2025-11-04 23:29:05.238657,1,85
+569,Ticket auto-assigned to Zxakira Napoles,2025-11-04 23:29:05.259700,1,85
+570,Ticket created by Limuel Ongtingco,2025-11-04 23:29:52.829874,1,86
+571,Ticket auto-assigned to Zxakira Napoles,2025-11-04 23:29:52.840542,1,86
+572,Ticket reassigned from Zxakira Napoles to Limuel Ongtingco by Limuel Ongtingco.,2025-11-04 23:29:58.205283,1,86
+573,Ticket created by Limuel Ongtingco,2025-11-04 23:32:39.737621,1,91
+574,Ticket auto-assigned to Zxakira Napoles,2025-11-04 23:32:39.756794,1,91
+575,Ticket reassigned from Zxakira Napoles to Sophia Paloma by Limuel Ongtingco.,2025-11-04 23:32:50.360508,1,91
+576,Ticket status automatically changed to Open by Zxakira Napoles viewing it.,2025-11-04 23:34:27.388831,3,85
+577,RT Ticket Number '1545' added by Limuel Ongtingco.,2025-11-04 23:34:30.101176,4,84
+578,Remark added by Limuel Ongtingco: Already settled his final SOA,2025-11-04 23:34:30.105507,4,84
+579,Status changed from Open to Resolved by Limuel Ongtingco.,2025-11-04 23:34:30.105510,4,84
+580,Ticket status automatically changed to Open by Sophia Paloma viewing it.,2025-11-04 23:37:21.675431,5,91
+581,Ticket created by Limuel Ongtingco,2025-11-04 23:39:50.595667,1,93
+582,Ticket auto-assigned to Zxakira Napoles,2025-11-04 23:39:50.600875,1,93
+583,Ticket reassigned from Zxakira Napoles to Limuel Ongtingco by Limuel Ongtingco.,2025-11-04 23:40:18.210163,1,93
+584,Ticket status automatically changed to Open by Limuel Ongtingco viewing it.,2025-11-04 23:41:17.570282,4,86
+585,RT Ticket Number '1522' added by Limuel Ongtingco.,2025-11-04 23:46:18.173273,4,86
+586,Status changed from Open to In Progress by Limuel Ongtingco.,2025-11-04 23:46:18.173277,4,86
+587,Ticket status automatically changed to Open by Limuel Ongtingco viewing it.,2025-11-04 23:46:25.716576,4,93
+588,RT Ticket Number '1547' added by Limuel Ongtingco.,2025-11-04 23:46:47.979168,4,93
+589,Status changed from Open to In Progress by Limuel Ongtingco.,2025-11-04 23:46:47.979173,4,93
+590,Status changed from Open to In Progress by Sophia Paloma.,2025-11-04 23:52:22.817371,5,91
+591,Email log added by Limuel Ongtingco.,2025-11-05 00:02:43.295765,4,93
+592,Email log added by Limuel Ongtingco.,2025-11-05 00:03:17.138329,4,93
+593,Ticket created by Limuel Ongtingco,2025-11-05 00:18:40.357098,1,95
+594,Ticket auto-assigned to Zxakira Napoles,2025-11-05 00:18:40.362565,1,95
+595,Ticket reassigned from Zxakira Napoles to Sophia Paloma by Limuel Ongtingco.,2025-11-05 00:18:49.757741,1,95
+596,RT Ticket Number '1553' added by Limuel Ongtingco.,2025-11-05 00:19:05.614689,1,91
+597,RT Ticket Number '1548' added by Zxakira Napoles.,2025-11-05 00:19:42.020596,3,85
+598,Status changed from Open to In Progress by Zxakira Napoles.,2025-11-05 00:19:42.020600,3,85
+599,Ticket status automatically changed to Open by Sophia Paloma viewing it.,2025-11-05 00:50:48.023894,5,95
+600,Ticket created by Limuel Ongtingco,2025-11-05 01:31:30.333576,1,96
+601,Ticket auto-assigned to Zxakira Napoles,2025-11-05 01:31:30.347944,1,96
+602,Ticket created by Limuel Ongtingco,2025-11-05 01:32:00.784357,1,97
+603,Ticket auto-assigned to Zxakira Napoles,2025-11-05 01:32:00.791409,1,97
+604,Ticket reassigned from Zxakira Napoles to Sophia Paloma by Limuel Ongtingco.,2025-11-05 01:32:05.487896,1,97
+605,Ticket reassigned from Sophia Paloma to Limuel Ongtingco by Limuel Ongtingco.,2025-11-05 01:32:15.532762,1,97
+606,RT Ticket Number '1555' added by Limuel Ongtingco.,2025-11-05 01:32:27.847931,1,95
+607,Ticket status automatically changed to Open by Limuel Ongtingco viewing it.,2025-11-05 01:32:45.060141,4,97
+608,Ticket created by Limuel Ongtingco,2025-11-05 03:29:39.633788,1,98
+609,Ticket auto-assigned to Zxakira Napoles,2025-11-05 03:29:39.644935,1,98
+610,Ticket reassigned from Zxakira Napoles to Sophia Paloma by Limuel Ongtingco.,2025-11-05 03:29:45.538985,1,98
+611,Ticket created by Limuel Ongtingco,2025-11-05 03:30:17.666399,1,100
+612,Ticket auto-assigned to Zxakira Napoles,2025-11-05 03:30:17.672712,1,100
+613,Ticket reassigned from Zxakira Napoles to Sophia Paloma by Limuel Ongtingco.,2025-11-05 03:30:33.208015,1,100
+614,Remark added by Limuel Ongtingco: Payment received and verified.,2025-11-05 05:15:04.753447,4,77
+615,Status changed from In Progress to Resolved by Limuel Ongtingco.,2025-11-05 05:15:04.753453,4,77
+616,Ticket status automatically changed to Open by Zxakira Napoles viewing it.,2025-11-05 05:18:42.360843,3,96
+617,RT Ticket Number '1557' added by Zxakira Napoles.,2025-11-05 05:22:01.004920,3,96
+618,Status changed from Open to In Progress by Zxakira Napoles.,2025-11-05 05:22:01.004924,3,96
+619,Remark added by Limuel Ongtingco: Payment verified and received.,2025-11-05 05:23:25.325981,4,80
+620,Status changed from In Progress to Resolved by Limuel Ongtingco.,2025-11-05 05:23:25.325986,4,80
+621,Ticket created by Limuel Ongtingco,2025-11-05 06:08:06.212161,1,101
+622,Ticket auto-assigned to Zxakira Napoles,2025-11-05 06:08:06.321378,1,101
+623,Ticket created by Limuel Ongtingco,2025-11-05 06:08:31.251765,1,102
+624,Ticket auto-assigned to Zxakira Napoles,2025-11-05 06:08:31.274613,1,102
+625,Ticket reassigned from Zxakira Napoles to Sophia Paloma by Limuel Ongtingco.,2025-11-05 06:08:41.560766,1,102
+626,Ticket reassigned from Zxakira Napoles to Limuel Ongtingco by Limuel Ongtingco.,2025-11-05 06:08:52.354722,1,101
+627,RT Ticket Number '1559' added by Limuel Ongtingco.,2025-11-05 06:09:39.421556,4,97
+628,Status changed from Open to In Progress by Limuel Ongtingco.,2025-11-05 06:09:39.421560,4,97
+629,Ticket status automatically changed to Open by Limuel Ongtingco viewing it.,2025-11-05 06:09:42.817971,4,101
+630,Ticket created by Limuel Ongtingco,2025-11-05 08:44:55.986180,1,103
+631,Ticket auto-assigned to Zxakira Napoles,2025-11-05 08:44:56.080185,1,103
+632,Email log added by Limuel Ongtingco.,2025-11-05 08:45:43.841646,1,103
+633,Ticket status automatically changed to Open by Zxakira Napoles viewing it.,2025-11-05 09:04:21.111570,3,103
+634,Status changed from New to Pending by Limuel Ongtingco.,2025-11-05 23:26:30.826313,1,100
+635,Status changed from New to Pending by Limuel Ongtingco.,2025-11-05 23:26:39.499121,1,98
+636,RT Ticket Number '1562' added by Limuel Ongtingco.,2025-11-05 23:27:17.607479,1,101
+637,RT Ticket Number '1563' added by Limuel Ongtingco.,2025-11-05 23:27:38.524515,1,102
+638,Status changed from New to In Progress by Limuel Ongtingco.,2025-11-05 23:27:45.560860,1,102
+639,Status changed from Open to In Progress by Limuel Ongtingco.,2025-11-05 23:27:55.097561,1,101
+640,Status changed from Open to In Progress by Limuel Ongtingco.,2025-11-05 23:28:16.925488,1,95
+641,Status changed from Pending to Resolved by Limuel Ongtingco.,2025-11-05 23:29:30.654477,1,83
+642,Status changed from Open to Pending by Limuel Ongtingco.,2025-11-05 23:29:46.410374,1,82
+643,RT Ticket Number '1565' added by Limuel Ongtingco.,2025-11-05 23:30:31.409137,1,103
+644,Status changed from Open to In Progress by Limuel Ongtingco.,2025-11-05 23:30:34.572139,1,103
+645,Ticket created by Limuel Ongtingco,2025-11-05 23:35:17.924286,1,104
+646,Ticket auto-assigned to Zxakira Napoles,2025-11-05 23:35:17.985738,1,104
+647,Ticket created by Limuel Ongtingco,2025-11-05 23:35:53.686915,1,105
+648,Ticket auto-assigned to Zxakira Napoles,2025-11-05 23:35:53.696728,1,105
+649,Ticket reassigned from Zxakira Napoles to Sophia Paloma by Limuel Ongtingco.,2025-11-05 23:35:59.736668,1,105
+650,Ticket created by Limuel Ongtingco,2025-11-05 23:36:47.672936,1,106
+651,Ticket auto-assigned to Zxakira Napoles,2025-11-05 23:36:47.680984,1,106
+652,Ticket reassigned from Zxakira Napoles to Limuel Ongtingco by Limuel Ongtingco.,2025-11-05 23:36:53.106752,1,106
+653,Remark added by Limuel Ongtingco: FOLLOW UP | Repeat Concern Reported,2025-11-05 23:51:34.180747,1,11
+654,Ticket created by Limuel Ongtingco,2025-11-06 00:11:24.391704,1,108
+655,Ticket auto-assigned to Zxakira Napoles,2025-11-06 00:11:24.788361,1,108
+656,Ticket created by Limuel Ongtingco,2025-11-06 00:12:00.909927,1,109
+657,Ticket auto-assigned to Zxakira Napoles,2025-11-06 00:12:00.914461,1,109
+658,Ticket reassigned from Zxakira Napoles to Sophia Paloma by Limuel Ongtingco.,2025-11-06 00:12:06.224608,1,109
+659,Ticket created by Limuel Ongtingco,2025-11-06 00:12:39.586991,1,110
+660,Ticket auto-assigned to Zxakira Napoles,2025-11-06 00:12:39.612615,1,110
+661,Ticket reassigned from Zxakira Napoles to Limuel Ongtingco by Limuel Ongtingco.,2025-11-06 00:12:44.369815,1,110
+662,Ticket created by Limuel Ongtingco,2025-11-06 00:13:19.599762,1,111
+663,Ticket auto-assigned to Zxakira Napoles,2025-11-06 00:13:19.745836,1,111
+664,Status changed from In Progress to Resolved by Zxakira Napoles.,2025-11-06 00:14:49.212156,3,103
+665,Status changed from In Progress to Resolved by Zxakira Napoles.,2025-11-06 00:15:03.590948,3,96
+666,Ticket status automatically changed to Open by Sophia Paloma viewing it.,2025-11-06 00:15:10.162738,5,105
+667,Status changed from In Progress to Resolved by Zxakira Napoles.,2025-11-06 00:15:11.358618,3,78
+668,Status changed from In Progress to Resolved by Zxakira Napoles.,2025-11-06 00:15:22.544901,3,81
+669,Ticket status automatically changed to Open by Zxakira Napoles viewing it.,2025-11-06 00:15:27.879962,3,104
+670,Ticket created by Limuel Ongtingco,2025-11-06 00:15:55.331638,1,112
+671,Ticket auto-assigned to Zxakira Napoles,2025-11-06 00:15:55.379859,1,112
+672,Ticket reassigned from Zxakira Napoles to Sophia Paloma by Limuel Ongtingco.,2025-11-06 00:16:00.567104,1,112
+673,Remark added by Limuel Ongtingco: FOLLOW UP | REPEAT CONCERN REPORTED,2025-11-06 00:17:28.974243,1,73
+674,Ticket created by Limuel Ongtingco,2025-11-06 00:19:01.454235,1,114
+675,Ticket auto-assigned to Zxakira Napoles,2025-11-06 00:19:01.460097,1,114
+676,RT Ticket Number '1567' added by Zxakira Napoles.,2025-11-06 00:19:24.268966,3,104
+677,Status changed from Open to In Progress by Zxakira Napoles.,2025-11-06 00:19:24.268971,3,104
+678,Ticket created by Limuel Ongtingco,2025-11-06 00:19:52.372338,1,115
+679,Ticket auto-assigned to Zxakira Napoles,2025-11-06 00:19:52.396678,1,115
+680,Ticket status automatically changed to Open by Zxakira Napoles viewing it.,2025-11-06 00:20:03.530089,3,108
+681,Ticket reassigned from Zxakira Napoles to Limuel Ongtingco by Limuel Ongtingco.,2025-11-06 00:20:10.464569,1,115
+682,Ticket created by Limuel Ongtingco,2025-11-06 00:21:42.473152,1,116
+683,Ticket auto-assigned to Zxakira Napoles,2025-11-06 00:21:42.478610,1,116
+684,Ticket reassigned from Zxakira Napoles to Sophia Paloma by Limuel Ongtingco.,2025-11-06 00:21:47.370243,1,116
+685,Ticket created by Limuel Ongtingco,2025-11-06 00:22:32.037057,1,117
+686,Ticket auto-assigned to Zxakira Napoles,2025-11-06 00:22:32.044185,1,117
+687,Ticket reassigned from Zxakira Napoles to Limuel Ongtingco by Limuel Ongtingco.,2025-11-06 00:22:44.424746,1,117
+688,RT Ticket Number '1570' added by Zxakira Napoles.,2025-11-06 00:23:03.082335,3,108
+689,Status changed from Open to In Progress by Zxakira Napoles.,2025-11-06 00:23:03.082340,3,108
+690,Ticket created by Limuel Ongtingco,2025-11-06 00:23:32.913204,1,118
+691,Ticket auto-assigned to Zxakira Napoles,2025-11-06 00:23:32.926981,1,118
+692,Ticket status automatically changed to Open by Zxakira Napoles viewing it.,2025-11-06 00:23:50.174840,3,111
+693,Ticket created by Limuel Ongtingco,2025-11-06 00:24:27.042655,1,119
+694,Ticket auto-assigned to Zxakira Napoles,2025-11-06 00:24:27.077689,1,119
+695,Ticket reassigned from Zxakira Napoles to Sophia Paloma by Limuel Ongtingco.,2025-11-06 00:24:31.800701,1,119
+696,Status changed from Open to In Progress by Sophia Paloma.,2025-11-06 00:25:17.134101,5,105
+697,Ticket created by Limuel Ongtingco,2025-11-06 00:25:21.866673,1,120
+698,Ticket auto-assigned to Zxakira Napoles,2025-11-06 00:25:21.872505,1,120
+699,Ticket reassigned from Zxakira Napoles to Limuel Ongtingco by Limuel Ongtingco.,2025-11-06 00:25:27.794086,1,120
+700,RT Ticket Number '1571' added by Sophia Paloma.,2025-11-06 00:25:46.572733,5,105
+701,Ticket status automatically changed to Open by Sophia Paloma viewing it.,2025-11-06 00:25:50.042540,5,109
+702,Ticket created by Limuel Ongtingco,2025-11-06 00:25:59.501234,1,121
+703,Ticket auto-assigned to Zxakira Napoles,2025-11-06 00:25:59.514021,1,121
+704,RT Ticket Number '1573' added by Zxakira Napoles.,2025-11-06 00:26:45.744393,3,111
+705,Status changed from Open to In Progress by Zxakira Napoles.,2025-11-06 00:26:45.744398,3,111
+706,Ticket created by Limuel Ongtingco,2025-11-06 00:26:57.796980,1,122
+707,Ticket auto-assigned to Zxakira Napoles,2025-11-06 00:26:57.805120,1,122
+708,Ticket reassigned from Zxakira Napoles to Sophia Paloma by Limuel Ongtingco.,2025-11-06 00:27:03.682878,1,122
+709,Ticket created by Limuel Ongtingco,2025-11-06 00:27:49.072941,1,123
+710,Ticket auto-assigned to Zxakira Napoles,2025-11-06 00:27:49.079592,1,123
+711,Ticket reassigned from Zxakira Napoles to Limuel Ongtingco by Limuel Ongtingco.,2025-11-06 00:28:08.348428,1,123
+712,Ticket created by Limuel Ongtingco,2025-11-06 00:28:57.693641,1,124
+713,Ticket auto-assigned to Zxakira Napoles,2025-11-06 00:28:57.698353,1,124
+714,RT Ticket Number '1575' added by Sophia Paloma.,2025-11-06 00:29:22.706164,5,109
+715,Status changed from Open to In Progress by Sophia Paloma.,2025-11-06 00:29:22.706168,5,109
+716,Ticket status automatically changed to Open by Sophia Paloma viewing it.,2025-11-06 00:29:30.822926,5,112
+717,Remark added by Limuel Ongtingco: FOLLOW UP | REPEAT CONCERN REPORTED,2025-11-06 00:30:53.106536,1,56
+718,Ticket created by Limuel Ongtingco,2025-11-06 00:31:23.092355,1,126
+719,Ticket auto-assigned to Zxakira Napoles,2025-11-06 00:31:23.099523,1,126
+720,Ticket reassigned from Zxakira Napoles to Sophia Paloma by Limuel Ongtingco.,2025-11-06 00:31:29.076231,1,126
+721,RT Ticket Number '1577' added by Sophia Paloma.,2025-11-06 00:33:23.383903,5,112
+722,Status changed from Open to In Progress by Sophia Paloma.,2025-11-06 00:33:23.383907,5,112
+723,Remark added by Limuel Ongtingco: FOLLOW UP | REPEAT CONCERN REPORTED,2025-11-06 00:33:31.724245,1,75
+724,Ticket status automatically changed to Open by Sophia Paloma viewing it.,2025-11-06 00:34:28.731286,5,116
+725,Ticket created by Limuel Ongtingco,2025-11-06 00:35:37.456684,1,129
+726,Ticket auto-assigned to Zxakira Napoles,2025-11-06 00:35:37.498171,1,129
+727,Ticket reassigned from Zxakira Napoles to Limuel Ongtingco by Limuel Ongtingco.,2025-11-06 00:35:42.547092,1,129
+728,Remark added by Limuel Ongtingco: Ticket has already been resolved in RT.,2025-11-06 00:36:20.146460,1,11
+729,Status changed from In Progress to Resolved by Limuel Ongtingco.,2025-11-06 00:36:20.146467,1,11
+730,RT Ticket Number '1579' added by Sophia Paloma.,2025-11-06 00:38:27.001295,5,116
+731,Status changed from Open to In Progress by Sophia Paloma.,2025-11-06 00:38:27.001299,5,116
+732,Ticket status automatically changed to Open by Sophia Paloma viewing it.,2025-11-06 00:38:31.854989,5,119
+733,RT Ticket Number '1581' added by Sophia Paloma.,2025-11-06 00:42:16.590085,5,119
+734,Status changed from Open to In Progress by Sophia Paloma.,2025-11-06 00:42:16.590089,5,119
+735,Ticket status automatically changed to Open by Sophia Paloma viewing it.,2025-11-06 00:42:20.065935,5,122
+736,Ticket status automatically changed to Open by Zxakira Napoles viewing it.,2025-11-06 00:44:26.194793,3,114
+737,RT Ticket Number '1583' added by Sophia Paloma.,2025-11-06 00:45:17.050138,5,122
+738,Status changed from Open to In Progress by Sophia Paloma.,2025-11-06 00:45:17.050143,5,122
+739,Ticket status automatically changed to Open by Sophia Paloma viewing it.,2025-11-06 00:45:20.150268,5,126
+740,RT Ticket Number '1586' added by Sophia Paloma.,2025-11-06 00:48:23.719608,5,126
+741,Status changed from Open to In Progress by Sophia Paloma.,2025-11-06 00:48:23.719614,5,126
+742,RT Ticket Number '1587' added by Zxakira Napoles.,2025-11-06 00:48:54.074428,3,114
+743,Status changed from Open to In Progress by Zxakira Napoles.,2025-11-06 00:48:54.074432,3,114
+744,Ticket status automatically changed to Open by Zxakira Napoles viewing it.,2025-11-06 00:48:58.590985,3,118
+745,Ticket created by Limuel Ongtingco,2025-11-06 00:50:59.194944,1,130
+746,Ticket auto-assigned to Limuel Ongtingco,2025-11-06 00:50:59.199859,1,130
+747,Ticket reassigned from Limuel Ongtingco to Zxakira Napoles by Limuel Ongtingco.,2025-11-06 00:51:09.052663,1,130
+748,RT Ticket Number '1589' added by Zxakira Napoles.,2025-11-06 00:51:55.668696,3,118
+749,Status changed from Open to In Progress by Zxakira Napoles.,2025-11-06 00:51:55.668701,3,118
+750,Ticket created by Limuel Ongtingco,2025-11-06 00:52:06.782518,1,131
+751,Ticket auto-assigned to Limuel Ongtingco,2025-11-06 00:52:06.788196,1,131
+752,Ticket reassigned from Limuel Ongtingco to Sophia Paloma by Limuel Ongtingco.,2025-11-06 00:52:12.469345,1,131
+753,Ticket status automatically changed to Open by Zxakira Napoles viewing it.,2025-11-06 00:52:50.691847,3,121
+754,Ticket created by Limuel Ongtingco,2025-11-06 00:53:28.075822,1,133
+755,Ticket auto-assigned to Limuel Ongtingco,2025-11-06 00:53:28.095871,1,133
+756,Ticket created by Limuel Ongtingco,2025-11-06 00:53:55.759545,1,134
+757,Ticket auto-assigned to Limuel Ongtingco,2025-11-06 00:53:55.775516,1,134
+758,Ticket reassigned from Limuel Ongtingco to Zxakira Napoles by Limuel Ongtingco.,2025-11-06 00:54:06.240920,1,134
+759,Ticket created by Limuel Ongtingco,2025-11-06 00:54:52.571318,1,135
+760,Ticket auto-assigned to Limuel Ongtingco,2025-11-06 00:54:52.646561,1,135
+761,Ticket reassigned from Limuel Ongtingco to Sophia Paloma by Limuel Ongtingco.,2025-11-06 00:54:58.337375,1,135
+762,Ticket created by Limuel Ongtingco,2025-11-06 00:57:08.958363,1,136
+763,Ticket auto-assigned to Limuel Ongtingco,2025-11-06 00:57:08.964028,1,136
+764,Ticket status automatically changed to Open by Limuel Ongtingco viewing it.,2025-11-06 01:07:28.845997,4,106
+765,RT Ticket Number '1592' added by Zxakira Napoles.,2025-11-06 01:15:23.656982,3,121
+766,Status changed from Open to In Progress by Zxakira Napoles.,2025-11-06 01:15:23.656987,3,121
+767,RT Ticket Number '1593' added by Limuel Ongtingco.,2025-11-06 01:15:37.053831,4,106
+768,Status changed from Open to In Progress by Limuel Ongtingco.,2025-11-06 01:15:37.053835,4,106
+769,Ticket status automatically changed to Open by Limuel Ongtingco viewing it.,2025-11-06 01:16:00.970571,4,110
+770,Ticket status automatically changed to Open by Zxakira Napoles viewing it.,2025-11-06 01:16:25.657717,3,124
+771,RT Ticket Number '1595' added by Zxakira Napoles.,2025-11-06 01:19:05.029696,3,124
+772,Status changed from Open to In Progress by Zxakira Napoles.,2025-11-06 01:19:05.029700,3,124
+773,Ticket status automatically changed to Open by Zxakira Napoles viewing it.,2025-11-06 01:19:40.590371,3,130
+774,Remark added by Zxakira Napoles: Updated the Nex-NOC,2025-11-06 01:20:33.464361,3,130
+775,Status changed from Open to In Progress by Zxakira Napoles.,2025-11-06 01:20:33.464365,3,130
+776,Ticket status automatically changed to Open by Zxakira Napoles viewing it.,2025-11-06 01:20:36.164145,3,134
+777,RT Ticket Number '1597' added by Zxakira Napoles.,2025-11-06 01:24:08.836398,3,134
+778,Status changed from Open to In Progress by Zxakira Napoles.,2025-11-06 01:24:08.836402,3,134
+779,RT Ticket Number '1599' added by Limuel Ongtingco.,2025-11-06 01:30:07.129475,4,110
+780,Status changed from Open to In Progress by Limuel Ongtingco.,2025-11-06 01:30:07.129479,4,110
+781,Ticket status automatically changed to Open by Limuel Ongtingco viewing it.,2025-11-06 01:40:28.013681,4,115
+782,RT Ticket Number '1601' added by Limuel Ongtingco.,2025-11-06 01:48:25.361894,4,115
+783,Status changed from Open to In Progress by Limuel Ongtingco.,2025-11-06 01:48:25.361898,4,115
+784,Ticket status automatically changed to Open by Sophia Paloma viewing it.,2025-11-06 01:48:45.327468,5,131
+785,Ticket status automatically changed to Open by Limuel Ongtingco viewing it.,2025-11-06 01:49:05.975824,4,117
+786,RT Ticket Number '1603' added by Sophia Paloma.,2025-11-06 01:53:30.554141,5,131
+787,Status changed from Open to In Progress by Sophia Paloma.,2025-11-06 01:53:30.554145,5,131
+788,Ticket status automatically changed to Open by Sophia Paloma viewing it.,2025-11-06 01:53:34.105351,5,135
+789,RT Ticket Number '1605' added by Sophia Paloma.,2025-11-06 01:57:18.400689,5,135
+790,Status changed from Open to In Progress by Sophia Paloma.,2025-11-06 01:57:18.400693,5,135
+791,RT Ticket Number '1607' added by Limuel Ongtingco.,2025-11-06 01:59:35.927309,4,117
+792,Status changed from Open to In Progress by Limuel Ongtingco.,2025-11-06 01:59:35.927313,4,117
+793,Ticket status automatically changed to Open by Limuel Ongtingco viewing it.,2025-11-06 01:59:46.806262,4,120
+794,Ticket created by Limuel Ongtingco,2025-11-06 02:18:14.251155,1,137
+795,Ticket auto-assigned to Zxakira Napoles,2025-11-06 02:18:14.280071,1,137
+796,Ticket status automatically changed to Open by Zxakira Napoles viewing it.,2025-11-06 02:18:25.736980,3,137
+797,RT Ticket Number '1608' added by Zxakira Napoles.,2025-11-06 02:19:35.101112,3,137
+798,Status changed from Open to Resolved by Zxakira Napoles.,2025-11-06 02:19:35.101116,3,137
+799,RT Ticket Number '1610' added by Limuel Ongtingco.,2025-11-06 03:15:07.714318,4,120
+800,Status changed from Open to In Progress by Limuel Ongtingco.,2025-11-06 03:15:07.714323,4,120
+801,Ticket status automatically changed to Open by Limuel Ongtingco viewing it.,2025-11-06 03:16:13.676167,4,123
+802,RT Ticket Number '1612' added by Limuel Ongtingco.,2025-11-06 03:19:42.245250,4,123
+803,Status changed from Open to In Progress by Limuel Ongtingco.,2025-11-06 03:19:42.245254,4,123
+804,Ticket created by Limuel Ongtingco,2025-11-06 03:24:15.725864,1,139
+805,Ticket auto-assigned to Zxakira Napoles,2025-11-06 03:24:15.746980,1,139
+806,Ticket reassigned from Zxakira Napoles to Limuel Ongtingco by Limuel Ongtingco.,2025-11-06 03:24:22.350308,1,139
+807,Ticket status automatically changed to Open by Limuel Ongtingco viewing it.,2025-11-06 03:24:31.612866,4,129
+808,Ticket status automatically changed to Open by Limuel Ongtingco viewing it.,2025-11-06 03:24:46.862626,4,139
+809,RT Ticket Number '1614' added by Limuel Ongtingco.,2025-11-06 03:29:55.614908,4,139
+810,Status changed from Open to In Progress by Limuel Ongtingco.,2025-11-06 03:29:55.614912,4,139
+811,Status changed from Open to Pending by Limuel Ongtingco.,2025-11-06 03:58:43.405596,4,129
+812,Ticket status automatically changed to Open by Limuel Ongtingco viewing it.,2025-11-06 03:58:50.771858,4,133
+813,RT Ticket Number '1616' added by Limuel Ongtingco.,2025-11-06 04:03:00.702574,4,133
+814,Status changed from Open to In Progress by Limuel Ongtingco.,2025-11-06 04:03:00.702577,4,133
+815,Ticket status automatically changed to Open by Limuel Ongtingco viewing it.,2025-11-06 04:03:04.777320,4,136
+816,RT Ticket Number '1618' added by Limuel Ongtingco.,2025-11-06 04:06:08.598026,4,136
+817,Status changed from Open to In Progress by Limuel Ongtingco.,2025-11-06 04:06:08.598032,4,136
+818,Email log added by Limuel Ongtingco.,2025-11-06 05:23:04.562417,1,43
+819,Status changed from Pending to New by Limuel Ongtingco.,2025-11-06 05:23:11.874413,1,43
+820,Email log added by Limuel Ongtingco.,2025-11-06 05:30:00.841387,1,100
+821,Status changed from Pending to New by Limuel Ongtingco.,2025-11-06 05:30:04.228903,1,100
+822,Ticket status automatically changed to Open by Limuel Ongtingco viewing it.,2025-11-06 05:38:20.349995,4,43
+823,RT Ticket Number '1620' added by Limuel Ongtingco.,2025-11-06 05:46:48.898136,4,43
+824,Status changed from Open to In Progress by Limuel Ongtingco.,2025-11-06 05:46:48.898141,4,43
+825,Email log added by Limuel Ongtingco.,2025-11-06 05:50:00.371775,1,14
+826,Remark added by Limuel Ongtingco: This ticket has been re-opened.,2025-11-06 05:56:39.981604,1,14
+827,Ticket status automatically changed to Open by Sophia Paloma viewing it.,2025-11-06 06:37:38.295342,5,100
+828,RT Ticket Number changed from '1467' to '1468' by Limuel Ongtingco.,2025-11-06 06:49:21.792404,1,32
+829,Remark added by Limuel Ongtingco: Payment received and verified,2025-11-06 08:42:05.101528,1,91
+830,Status changed from In Progress to Resolved by Limuel Ongtingco.,2025-11-06 08:42:05.101534,1,91
+831,Ticket created by Limuel Ongtingco,2025-11-07 00:01:38.475396,1,140
+832,Ticket auto-assigned to Zxakira Napoles,2025-11-07 00:01:38.498963,1,140
+833,Ticket reassigned from Zxakira Napoles to Limuel Ongtingco by Limuel Ongtingco.,2025-11-07 00:01:43.516080,1,140
+834,Ticket created by Limuel Ongtingco,2025-11-07 00:02:28.185552,1,141
+835,Ticket auto-assigned to Zxakira Napoles,2025-11-07 00:02:28.200410,1,141
+836,Ticket reassigned from Zxakira Napoles to Sophia Paloma by Limuel Ongtingco.,2025-11-07 00:07:22.052871,1,141
+837,Ticket created by Limuel Ongtingco,2025-11-07 00:07:45.684904,1,142
+838,Ticket auto-assigned to Zxakira Napoles,2025-11-07 00:07:45.704807,1,142
+839,Ticket status automatically changed to Open by Limuel Ongtingco viewing it.,2025-11-07 00:08:01.057593,4,140
+840,Ticket status automatically changed to Open by Zxakira Napoles viewing it.,2025-11-07 00:11:34.486522,3,142
+841,RT Ticket Number '1624' added by Zxakira Napoles.,2025-11-07 00:11:43.714015,3,142
+842,Status changed from Open to In Progress by Zxakira Napoles.,2025-11-07 00:11:43.714018,3,142
+843,Status changed from In Progress to Resolved by Zxakira Napoles.,2025-11-07 00:11:52.859842,3,130
+844,RT Ticket Number '1626' added by Limuel Ongtingco.,2025-11-07 00:15:46.908726,4,140
+845,Status changed from Open to In Progress by Limuel Ongtingco.,2025-11-07 00:15:46.908731,4,140
+846,RT Ticket Number '1622' added by Limuel Ongtingco.,2025-11-07 00:17:09.500709,1,100
+847,Status changed from Open to In Progress by Limuel Ongtingco.,2025-11-07 00:17:09.500714,1,100
+848,Ticket status automatically changed to Open by Sophia Paloma viewing it.,2025-11-07 00:18:18.149759,5,141
+849,RT Ticket Number '1628' added by Limuel Ongtingco.,2025-11-07 00:23:22.549046,1,141
+850,Status changed from Open to In Progress by Limuel Ongtingco.,2025-11-07 00:23:22.549050,1,141
+851,Email log added by Limuel Ongtingco.,2025-11-07 00:25:43.242718,1,48
+852,Remark added by Limuel Ongtingco: The client confirmed on their end that internet has been working.,2025-11-07 00:37:12.927867,1,48
+853,Status changed from Pending to Resolved by Limuel Ongtingco.,2025-11-07 00:37:12.927871,1,48
+854,Ticket created by Limuel Ongtingco,2025-11-07 00:38:07.914836,1,143
+855,Ticket auto-assigned to Zxakira Napoles,2025-11-07 00:38:07.947940,1,143
+856,Ticket reassigned from Zxakira Napoles to Limuel Ongtingco by Limuel Ongtingco.,2025-11-07 00:38:17.095452,1,143
+857,Ticket status automatically changed to Open by Limuel Ongtingco viewing it.,2025-11-07 00:40:23.266603,4,143
+858,RT Ticket Number '2106' added by Limuel Ongtingco.,2025-11-07 00:50:10.452350,4,143
+859,Status changed from Open to In Progress by Limuel Ongtingco.,2025-11-07 00:50:10.452354,4,143
+860,Ticket created by Limuel Ongtingco,2025-11-07 01:51:15.523886,1,144
+861,Ticket auto-assigned to Zxakira Napoles,2025-11-07 01:51:15.539590,1,144
+862,Ticket status automatically changed to Open by Zxakira Napoles viewing it.,2025-11-07 01:51:31.116526,3,144
+863,Ticket created by Limuel Ongtingco,2025-11-07 02:52:04.415664,1,145
+864,Ticket auto-assigned to Zxakira Napoles,2025-11-07 02:52:04.436143,1,145
+865,Ticket reassigned from Zxakira Napoles to Sophia Paloma by Limuel Ongtingco.,2025-11-07 02:52:10.283618,1,145
+866,Ticket created by Limuel Ongtingco,2025-11-07 02:52:42.829837,1,146
+867,Ticket auto-assigned to Zxakira Napoles,2025-11-07 02:52:42.836787,1,146
+868,Ticket reassigned from Zxakira Napoles to Limuel Ongtingco by Limuel Ongtingco.,2025-11-07 02:52:48.592475,1,146
+869,Ticket status automatically changed to Open by Limuel Ongtingco viewing it.,2025-11-07 02:52:55.821282,4,146
+870,Ticket status automatically changed to Open by Sophia Paloma viewing it.,2025-11-07 02:53:00.972370,5,145
+871,Status changed from Open to Resolved by Zxakira Napoles.,2025-11-07 03:16:20.022695,3,144
+872,Ticket created by Limuel Ongtingco,2025-11-07 03:16:46.568459,1,147
+873,Ticket auto-assigned to Zxakira Napoles,2025-11-07 03:16:46.586254,1,147
+874,Ticket status automatically changed to Open by Zxakira Napoles viewing it.,2025-11-07 03:16:56.384613,3,147
+875,RT Ticket Number '1635' added by Limuel Ongtingco.,2025-11-07 03:18:35.064511,1,144
+876,RT Ticket Number '1634' added by Limuel Ongtingco.,2025-11-07 03:18:54.335324,1,145
+877,RT Ticket Number '1633' added by Limuel Ongtingco.,2025-11-07 03:19:09.736469,1,146
+878,Status changed from Open to In Progress by Limuel Ongtingco.,2025-11-07 03:19:20.971275,1,145
+879,Status changed from Open to In Progress by Limuel Ongtingco.,2025-11-07 03:19:28.521286,1,146
+880,Ticket created by Limuel Ongtingco,2025-11-07 03:20:40.415776,1,148
+881,Ticket auto-assigned to Zxakira Napoles,2025-11-07 03:20:40.468356,1,148
+882,Ticket reassigned from Zxakira Napoles to Limuel Ongtingco by Limuel Ongtingco.,2025-11-07 03:20:45.619211,1,148
+883,Ticket created by Limuel Ongtingco,2025-11-07 05:10:13.289197,1,149
+884,Ticket auto-assigned to Zxakira Napoles,2025-11-07 05:10:13.323278,1,149
+885,Ticket reassigned from Zxakira Napoles to Limuel Ongtingco by Limuel Ongtingco.,2025-11-07 05:11:03.525253,1,149
+886,Ticket status automatically changed to Open by Limuel Ongtingco viewing it.,2025-11-07 05:11:56.355790,4,149
+887,RT Ticket Number '1637' added by Zxakira Napoles.,2025-11-07 05:12:46.786129,3,147
+888,Status changed from Open to In Progress by Zxakira Napoles.,2025-11-07 05:12:46.786134,3,147
+889,RT Ticket Number '1639' added by Limuel Ongtingco.,2025-11-07 05:16:04.348869,4,149
+890,Status changed from Open to In Progress by Limuel Ongtingco.,2025-11-07 05:16:04.348874,4,149
+891,Ticket status automatically changed to Open by Limuel Ongtingco viewing it.,2025-11-07 05:16:07.086646,4,148
+892,Ticket created by Limuel Ongtingco,2025-11-07 05:17:46.073446,1,151
+893,Ticket auto-assigned to Zxakira Napoles,2025-11-07 05:17:46.078614,1,151
+894,Ticket reassigned from Zxakira Napoles to Sophia Paloma by Limuel Ongtingco.,2025-11-07 05:17:52.510341,1,151
+895,Ticket status automatically changed to Open by Sophia Paloma viewing it.,2025-11-07 05:18:09.255134,5,151
+896,RT Ticket Number '1641' added by Limuel Ongtingco.,2025-11-07 05:20:35.387620,4,148
+897,Remark added by Limuel Ongtingco: Already sent the email SOA to the client and forwarded as well to Tac Team,2025-11-07 05:20:35.408577,4,148
+898,Status changed from Open to Resolved by Limuel Ongtingco.,2025-11-07 05:20:35.408581,4,148
+899,Ticket created by Limuel Ongtingco,2025-11-07 07:45:22.692998,1,152
+900,Ticket auto-assigned to Zxakira Napoles,2025-11-07 07:45:22.711921,1,152
+901,Ticket status automatically changed to Open by Zxakira Napoles viewing it.,2025-11-07 07:45:42.149665,3,152
+902,Ticket created by Limuel Ongtingco,2025-11-07 07:46:16.010942,1,153
+903,Ticket auto-assigned to Zxakira Napoles,2025-11-07 07:46:16.019455,1,153
+904,Ticket reassigned from Zxakira Napoles to Limuel Ongtingco by Limuel Ongtingco.,2025-11-07 07:46:25.633702,1,153
+905,RT Ticket Number '1642' added by Limuel Ongtingco.,2025-11-07 07:48:15.369589,1,151
+906,Status changed from Open to In Progress by Limuel Ongtingco.,2025-11-07 07:48:20.775958,1,151
+907,RT Ticket Number '1644' added by Zxakira Napoles.,2025-11-07 07:48:29.326325,3,152
+908,Status changed from Open to In Progress by Zxakira Napoles.,2025-11-07 07:48:29.326330,3,152
+909,Ticket status automatically changed to Open by Limuel Ongtingco viewing it.,2025-11-07 07:49:07.613318,4,153
+910,RT Ticket Number '1646' added by Limuel Ongtingco.,2025-11-07 07:52:48.629687,4,153
+911,Status changed from Open to In Progress by Limuel Ongtingco.,2025-11-07 07:52:48.629693,4,153
+912,Ticket created by Limuel Ongtingco,2025-11-07 08:09:45.455825,1,154
+913,Ticket auto-assigned to Zxakira Napoles,2025-11-07 08:09:45.473833,1,154
+914,Ticket reassigned from Zxakira Napoles to Limuel Ongtingco by Limuel Ongtingco.,2025-11-07 08:09:49.641201,1,154
+915,Ticket status automatically changed to Open by Limuel Ongtingco viewing it.,2025-11-07 08:10:00.722462,4,154
+916,RT Ticket Number '1647' added by Limuel Ongtingco.,2025-11-07 08:13:42.306526,4,154
+917,Remark added by Limuel Ongtingco: Payment received and verified by DC,2025-11-07 08:13:42.315065,4,154
+918,Status changed from Open to Resolved by Limuel Ongtingco.,2025-11-07 08:13:42.315070,4,154
+919,Ticket created by Limuel Ongtingco,2025-11-07 08:54:20.511918,1,155
+920,Ticket auto-assigned to Zxakira Napoles,2025-11-07 08:54:20.551506,1,155
+921,Ticket status automatically changed to Open by Zxakira Napoles viewing it.,2025-11-07 08:54:41.665500,3,155
+922,Ticket reassigned from Zxakira Napoles to Limuel Ongtingco by Limuel Ongtingco.,2025-11-07 08:55:32.682340,1,155
+923,RT Ticket Number '1649' added by Limuel Ongtingco.,2025-11-07 09:17:43.447252,1,155
+924,Status changed from Open to In Progress by Limuel Ongtingco.,2025-11-07 09:17:43.447256,1,155
+925,Ticket created by Limuel Ongtingco,2025-11-09 23:36:18.511121,1,156
+926,Ticket auto-assigned to Zxakira Napoles,2025-11-09 23:36:18.525027,1,156
+927,Ticket created by Limuel Ongtingco,2025-11-09 23:40:09.053397,1,157
+928,Ticket auto-assigned to Zxakira Napoles,2025-11-09 23:40:09.150931,1,157
+929,Ticket reassigned from Zxakira Napoles to Sophia Paloma by Limuel Ongtingco.,2025-11-09 23:40:21.320654,1,157
+930,Ticket created by Limuel Ongtingco,2025-11-09 23:40:51.210222,1,158
+931,Ticket auto-assigned to Zxakira Napoles,2025-11-09 23:40:51.225164,1,158
+932,Ticket reassigned from Zxakira Napoles to Limuel Ongtingco by Limuel Ongtingco.,2025-11-09 23:40:56.190064,1,158
+933,Ticket created by Limuel Ongtingco,2025-11-09 23:41:26.324930,1,159
+934,Ticket auto-assigned to Zxakira Napoles,2025-11-09 23:41:26.329111,1,159
+935,Ticket created by Limuel Ongtingco,2025-11-09 23:47:58.706987,1,160
+936,Ticket auto-assigned to Zxakira Napoles,2025-11-09 23:47:58.715505,1,160
+937,Ticket reassigned from Zxakira Napoles to Sophia Paloma by Limuel Ongtingco.,2025-11-09 23:48:04.020456,1,160
+938,Ticket status automatically changed to Open by Limuel Ongtingco viewing it.,2025-11-09 23:49:20.006629,4,158
+939,Ticket reassigned from Zxakira Napoles to Limuel Ongtingco by Limuel Ongtingco.,2025-11-09 23:57:52.717934,1,156
+940,RT Ticket Number '1651' added by Limuel Ongtingco.,2025-11-09 23:58:08.514958,4,158
+941,Status changed from Open to In Progress by Limuel Ongtingco.,2025-11-09 23:58:08.514962,4,158
+942,Ticket status automatically changed to Open by Limuel Ongtingco viewing it.,2025-11-09 23:58:11.714216,4,156
+943,RT Ticket Number '1653' added by Limuel Ongtingco.,2025-11-10 00:02:43.846802,4,156
+944,Status changed from Open to In Progress by Limuel Ongtingco.,2025-11-10 00:02:43.846806,4,156
+945,Ticket status automatically changed to Open by Zxakira Napoles viewing it.,2025-11-10 00:11:03.649787,3,159
+946,Ticket status automatically changed to Open by Sophia Paloma viewing it.,2025-11-10 00:12:38.967756,5,160
+947,RT Ticket Number '1654' added by Zxakira Napoles.,2025-11-10 00:15:02.295766,3,159
+948,Status changed from Open to In Progress by Zxakira Napoles.,2025-11-10 00:15:02.295771,3,159
+949,Status changed from In Progress to Resolved by Zxakira Napoles.,2025-11-10 00:15:11.969509,3,152
+950,RT Ticket Number '1656' added by Sophia Paloma.,2025-11-10 00:23:05.931555,5,160
+951,Status changed from Open to In Progress by Sophia Paloma.,2025-11-10 00:23:05.931559,5,160
+952,Ticket status automatically changed to Open by Sophia Paloma viewing it.,2025-11-10 00:23:10.808718,5,157
+953,RT Ticket Number '1659' added by Sophia Paloma.,2025-11-10 00:30:03.494662,5,157
+954,Status changed from Open to In Progress by Sophia Paloma.,2025-11-10 00:30:03.494667,5,157
+955,Remark added by Zxakira Napoles: Ticket marked as rejected,2025-11-10 00:47:51.564586,3,7
+956,Status changed from In Progress to Resolved by Zxakira Napoles.,2025-11-10 00:47:51.564590,3,7
+957,Ticket created by Limuel Ongtingco,2025-11-10 02:09:39.135267,1,161
+958,Ticket auto-assigned to Zxakira Napoles,2025-11-10 02:09:39.216912,1,161
+959,Ticket status automatically changed to Open by Zxakira Napoles viewing it.,2025-11-10 02:09:48.351729,3,161
+960,RT Ticket Number '1661' added by Zxakira Napoles.,2025-11-10 02:34:24.385563,3,161
+961,Status changed from Open to In Progress by Zxakira Napoles.,2025-11-10 02:34:24.385567,3,161
+962,Ticket created by Limuel Ongtingco,2025-11-10 02:36:43.107218,1,162
+963,Ticket auto-assigned to Zxakira Napoles,2025-11-10 02:36:43.194416,1,162
+964,Ticket reassigned from Zxakira Napoles to Sophia Paloma by Limuel Ongtingco.,2025-11-10 02:36:49.386672,1,162
+965,Ticket status automatically changed to Open by Sophia Paloma viewing it.,2025-11-10 02:37:04.611127,5,162
+968,Email log added by Limuel Ongtingco.,2025-11-10 02:44:01.659210,1,42
+969,Remark added by Limuel Ongtingco: Re-opening the ticket. Client experienced LoS,2025-11-10 02:44:27.949943,1,42
+970,Status changed from Resolved to In Progress by Limuel Ongtingco.,2025-11-10 02:44:27.949948,1,42
+971,RT Ticket Number '1662' added by Sophia Paloma.,2025-11-10 02:46:50.834373,5,162
+972,Status changed from Open to In Progress by Sophia Paloma.,2025-11-10 02:46:50.834377,5,162
+973,Status changed from In Progress to Resolved by Sophia Paloma.,2025-11-10 02:46:57.487172,5,157
+974,Status changed from In Progress to Resolved by Sophia Paloma.,2025-11-10 02:47:07.442622,5,160
+975,Ticket created by Limuel Ongtingco,2025-11-10 03:09:33.994177,1,165
+976,Ticket auto-assigned to Zxakira Napoles,2025-11-10 03:09:34.000750,1,165
+977,Ticket reassigned from Zxakira Napoles to Limuel Ongtingco by Limuel Ongtingco.,2025-11-10 03:09:39.216457,1,165
+978,Ticket created by Limuel Ongtingco,2025-11-10 05:16:52.345087,1,166
+979,Ticket auto-assigned to Zxakira Napoles,2025-11-10 05:16:52.356912,1,166
+980,Ticket reassigned from Zxakira Napoles to Sophia Paloma by Limuel Ongtingco.,2025-11-10 05:17:21.492282,1,166
+981,Ticket status automatically changed to Open by Sophia Paloma viewing it.,2025-11-10 05:17:38.316851,5,166
+982,Status changed from In Progress to Resolved by Zxakira Napoles.,2025-11-10 05:17:43.023560,3,159
+983,Status changed from In Progress to Resolved by Zxakira Napoles.,2025-11-10 05:17:49.183464,3,142
+984,RT Ticket Number '1666' added by Limuel Ongtingco.,2025-11-10 05:24:50.223477,1,166
+985,Status changed from Open to In Progress by Limuel Ongtingco.,2025-11-10 05:24:50.223483,1,166
+986,Ticket status automatically changed to Open by Limuel Ongtingco viewing it.,2025-11-10 06:57:30.045322,4,165
+987,Remark added by Limuel Ongtingco: The ticket has already been resolved by the tech team on Oct 30 18:01:24 2025,2025-11-10 07:05:51.437953,1,13
+988,Status changed from In Progress to Resolved by Limuel Ongtingco.,2025-11-10 07:05:51.437959,1,13
+989,Ticket created by Limuel Ongtingco,2025-11-10 07:07:16.156849,1,168
+990,Ticket auto-assigned to Zxakira Napoles,2025-11-10 07:07:16.164644,1,168
+991,Ticket reassigned from Zxakira Napoles to Limuel Ongtingco by Limuel Ongtingco.,2025-11-10 07:07:23.050924,1,168
+992,Ticket created by Limuel Ongtingco,2025-11-10 07:07:47.366788,1,169
+993,Ticket auto-assigned to Zxakira Napoles,2025-11-10 07:07:47.371585,1,169
+994,Ticket status automatically changed to Open by Limuel Ongtingco viewing it.,2025-11-10 07:10:02.902983,4,168
+995,RT Ticket Number '1668' added by Limuel Ongtingco.,2025-11-10 07:13:41.580935,1,168
+996,Status changed from Open to In Progress by Limuel Ongtingco.,2025-11-10 07:13:41.580939,1,168
+997,Ticket status automatically changed to Open by Zxakira Napoles viewing it.,2025-11-10 07:31:33.457536,3,169
+998,RT Ticket Number '1670' added by Zxakira Napoles.,2025-11-10 07:34:28.182201,3,169
+999,Status changed from Open to In Progress by Zxakira Napoles.,2025-11-10 07:34:28.182205,3,169
+1000,Ticket created by Limuel Ongtingco,2025-11-11 01:12:05.228867,1,170
+1001,Ticket auto-assigned to Zxakira Napoles,2025-11-11 01:12:05.243552,1,170
+1002,Ticket reassigned from Zxakira Napoles to Sophia Paloma by Limuel Ongtingco.,2025-11-11 01:12:11.215411,1,170
+1003,Ticket status automatically changed to Open by Sophia Paloma viewing it.,2025-11-11 01:12:15.455316,5,170
+1004,RT Ticket Number '1672' added by Limuel Ongtingco.,2025-11-11 01:15:01.606628,1,170
+1005,Status changed from Open to In Progress by Limuel Ongtingco.,2025-11-11 01:15:04.342055,1,170
+1006,Remark added by Limuel Ongtingco: Payment received and verified,2025-11-11 01:25:35.147174,4,158
+1007,Status changed from In Progress to Resolved by Limuel Ongtingco.,2025-11-11 01:25:35.147180,4,158
+1008,Remark added by Limuel Ongtingco: This concern has taken care of by the Tacloban team. ,2025-11-11 01:33:34.268685,4,129
+1009,Status changed from Pending to In Progress by Limuel Ongtingco.,2025-11-11 01:33:34.268691,4,129
+1010,Ticket created by Limuel Ongtingco,2025-11-11 03:04:27.495205,1,172
+1011,Ticket auto-assigned to Zxakira Napoles,2025-11-11 03:04:27.560309,1,172
+1012,Ticket status automatically changed to Open by Zxakira Napoles viewing it.,2025-11-11 03:04:33.057213,3,172
+1013,RT Ticket Number '1674' added by Limuel Ongtingco.,2025-11-11 03:50:29.622743,1,172
+1014,Status changed from Open to In Progress by Limuel Ongtingco.,2025-11-11 03:50:29.622749,1,172
+1015,Ticket created by Limuel Ongtingco,2025-11-11 04:17:57.024392,1,173
+1016,Ticket auto-assigned to Zxakira Napoles,2025-11-11 04:17:57.095005,1,173
+1017,Ticket reassigned from Zxakira Napoles to Limuel Ongtingco by Limuel Ongtingco.,2025-11-11 04:18:12.421862,1,173
+1018,RT Ticket Number '1403' added by Limuel Ongtingco.,2025-11-11 04:18:12.421867,1,173
+1019,Status changed from New to In Progress by Limuel Ongtingco.,2025-11-11 04:18:12.421870,1,173
+1020,Ticket created by Limuel Ongtingco,2025-11-11 08:30:30.788543,1,174
+1021,Ticket auto-assigned to Zxakira Napoles,2025-11-11 08:30:30.804434,1,174
+1022,Ticket reassigned from Zxakira Napoles to Limuel Ongtingco by Limuel Ongtingco.,2025-11-11 08:30:35.575268,1,174
+1023,Ticket status automatically changed to Open by Limuel Ongtingco viewing it.,2025-11-11 08:30:41.640945,4,174
+1024,RT Ticket Number '1657' added by Limuel Ongtingco.,2025-11-11 08:57:11.288544,4,174
+1025,Status changed from Open to Resolved by Limuel Ongtingco.,2025-11-11 08:57:11.288548,4,174
+1026,RT Ticket Number changed from '1657' to '1675' by Limuel Ongtingco.,2025-11-11 08:57:22.567813,4,174
+1027,Ticket created by Limuel Ongtingco,2025-11-11 09:01:31.416690,1,175
+1028,Ticket auto-assigned to Zxakira Napoles,2025-11-11 09:01:31.476433,1,175
+1029,Ticket created by Limuel Ongtingco,2025-11-11 09:02:18.471819,1,176
+1030,Ticket auto-assigned to Zxakira Napoles,2025-11-11 09:02:18.476171,1,176
+1031,Ticket reassigned from Zxakira Napoles to Sophia Paloma by Limuel Ongtingco.,2025-11-11 09:02:24.409121,1,176
+1032,Ticket status automatically changed to Open by Sophia Paloma viewing it.,2025-11-11 09:02:28.618419,5,176
+1033,Ticket status automatically changed to Open by Zxakira Napoles viewing it.,2025-11-11 09:03:06.702358,3,175
+1034,RT Ticket Number '1677' added by Sophia Paloma.,2025-11-11 09:05:51.801861,5,176
+1035,Status changed from Open to In Progress by Sophia Paloma.,2025-11-11 09:05:51.801865,5,176
+1036,RT Ticket Number '1678' added by Limuel Ongtingco.,2025-11-11 09:18:45.570301,1,175
+1037,Status changed from Open to Resolved by Limuel Ongtingco.,2025-11-11 09:18:45.570305,1,175
+1038,Status changed from In Progress to Resolved by Limuel Ongtingco.,2025-11-11 09:18:53.069255,1,176
+1039,Status changed from In Progress to Resolved by Limuel Ongtingco.,2025-11-11 09:23:17.882651,1,140
+1040,Ticket created by Limuel Ongtingco,2025-11-11 09:59:39.531336,1,177
+1041,Ticket auto-assigned to Zxakira Napoles,2025-11-11 09:59:39.545978,1,177
+1042,Ticket reassigned from Zxakira Napoles to Limuel Ongtingco by Limuel Ongtingco.,2025-11-11 23:57:13.949394,1,177
+1043,Ticket created by Limuel Ongtingco,2025-11-11 23:58:39.994375,1,178
+1044,Ticket auto-assigned to Zxakira Napoles,2025-11-11 23:58:40.001200,1,178
+1045,Email log added by Limuel Ongtingco.,2025-11-11 23:59:07.148770,1,178
+1046,Ticket status automatically changed to Open by Zxakira Napoles viewing it.,2025-11-11 23:59:26.206120,3,178
+1047,RT Ticket Number '1680' added by Zxakira Napoles.,2025-11-12 00:03:36.087590,3,178
+1048,Status changed from Open to In Progress by Zxakira Napoles.,2025-11-12 00:03:36.087595,3,178
+1049,Ticket status automatically changed to Open by Limuel Ongtingco viewing it.,2025-11-12 01:02:54.664618,4,177
+1050,Remark added by Limuel Ongtingco: payment received and verified,2025-11-12 02:00:44.501009,4,155
+1051,Status changed from In Progress to Resolved by Limuel Ongtingco.,2025-11-12 02:00:44.501013,4,155
+1052,Ticket created by Limuel Ongtingco,2025-11-12 02:14:25.392296,1,179
+1053,Ticket auto-assigned to Zxakira Napoles,2025-11-12 02:14:25.402194,1,179
+1054,Ticket status automatically changed to Open by Zxakira Napoles viewing it.,2025-11-12 02:14:37.286973,3,179
+1055,RT Ticket Number '1682' added by Zxakira Napoles.,2025-11-12 02:18:26.966214,3,179
+1056,Status changed from Open to In Progress by Zxakira Napoles.,2025-11-12 02:18:26.966220,3,179
+1057,RT Ticket Number '1683' added by Limuel Ongtingco.,2025-11-12 02:18:51.066842,4,165
+1058,Status changed from Open to In Progress by Limuel Ongtingco.,2025-11-12 02:18:51.066847,4,165
+1059,Status changed from In Progress to Resolved by Zxakira Napoles.,2025-11-12 02:19:09.963690,3,121
+1060,Status changed from In Progress to Resolved by Zxakira Napoles.,2025-11-12 02:21:53.478364,3,39
+1061,Ticket created by Limuel Ongtingco,2025-11-12 03:15:42.243473,1,180
+1062,Ticket auto-assigned to Zxakira Napoles,2025-11-12 03:15:42.545472,1,180
+1063,Ticket reassigned from Zxakira Napoles to Sophia Paloma by Limuel Ongtingco.,2025-11-12 03:15:50.901437,1,180
+1064,Ticket status automatically changed to Open by Sophia Paloma viewing it.,2025-11-12 03:16:15.803971,5,180
+1065,RT Ticket Number '1684' added by Sophia Paloma.,2025-11-12 03:24:10.342515,5,180
+1066,Status changed from Open to In Progress by Sophia Paloma.,2025-11-12 03:24:10.342519,5,180
+1067,Ticket created by Limuel Ongtingco,2025-11-12 07:15:03.636057,1,181
+1068,Ticket auto-assigned to Zxakira Napoles,2025-11-12 07:15:03.649969,1,181
+1069,Ticket reassigned from Zxakira Napoles to Limuel Ongtingco by Limuel Ongtingco.,2025-11-12 07:15:19.280449,1,181
+1070,Email log added by Limuel Ongtingco.,2025-11-12 07:15:26.871559,4,165
+1071,Remark added by Limuel Ongtingco: Already sent an email to the client ,2025-11-12 07:15:49.325784,4,165
+1072,Status changed from In Progress to Resolved by Limuel Ongtingco.,2025-11-12 07:15:49.325789,4,165
+1073,Remark added by Limuel Ongtingco: The client decided to cancel this account instead,2025-11-12 07:16:12.154139,4,177
+1074,Status changed from Open to Resolved by Limuel Ongtingco.,2025-11-12 07:16:12.154144,4,177
+1075,Remark added by Limuel Ongtingco: Forwarded the concern to Tacloban team for further assistance,2025-11-12 07:16:41.593865,4,129
+1076,Status changed from In Progress to Resolved by Limuel Ongtingco.,2025-11-12 07:16:41.593869,4,129
+1077,Ticket status automatically changed to Open by Limuel Ongtingco viewing it.,2025-11-12 07:17:01.453548,4,181
+1078,RT Ticket Number '1687' added by Limuel Ongtingco.,2025-11-12 07:31:50.855948,4,181
+1079,Status changed from Open to In Progress by Limuel Ongtingco.,2025-11-12 07:31:50.855952,4,181
+1080,Ticket created by Limuel Ongtingco,2025-11-12 23:52:00.751013,1,182
+1081,Ticket auto-assigned to Zxakira Napoles,2025-11-12 23:52:00.759416,1,182
+1082,Ticket status automatically changed to Open by Zxakira Napoles viewing it.,2025-11-12 23:58:03.107074,3,182
+1083,Ticket created by Limuel Ongtingco,2025-11-13 00:09:01.477942,1,183
+1084,Ticket auto-assigned to Zxakira Napoles,2025-11-13 00:09:01.482816,1,183
+1088,Ticket reassigned from Zxakira Napoles to Sophia Paloma by Limuel Ongtingco.,2025-11-13 00:09:29.256790,1,183
+1089,RT Ticket Number '1691' added by Zxakira Napoles.,2025-11-13 00:11:27.825982,3,182
+1090,Status changed from Open to In Progress by Zxakira Napoles.,2025-11-13 00:11:27.825986,3,182
+1091,Remark added by Zxakira Napoles: Payment Received and Verified,2025-11-13 00:11:44.855435,3,179
+1092,Status changed from In Progress to Resolved by Zxakira Napoles.,2025-11-13 00:11:44.855438,3,179
+1093,Ticket status automatically changed to Open by Sophia Paloma viewing it.,2025-11-13 01:25:16.820174,5,183
+1094,RT Ticket Number '1693' added by Sophia Paloma.,2025-11-13 01:31:25.800759,5,183
+1095,Status changed from Open to In Progress by Sophia Paloma.,2025-11-13 01:31:25.800763,5,183
+1096,Status changed from In Progress to Resolved by Sophia Paloma.,2025-11-13 01:35:36.202425,5,100
+1097,Status changed from In Progress to Resolved by Sophia Paloma.,2025-11-13 01:35:46.097508,5,162
+1098,Status changed from In Progress to Resolved by Sophia Paloma.,2025-11-13 01:35:52.682623,5,145
+1099,Remark added by Limuel Ongtingco: merged to ticket #1458,2025-11-13 01:46:38.588369,1,95
+1100,Status changed from In Progress to Resolved by Limuel Ongtingco.,2025-11-13 01:46:38.588375,1,95
+1101,Ticket created by Limuel Ongtingco,2025-11-13 03:13:10.883119,1,188
+1102,Ticket auto-assigned to Zxakira Napoles,2025-11-13 03:13:10.895626,1,188
+1103,Ticket reassigned from Zxakira Napoles to Limuel Ongtingco by Limuel Ongtingco.,2025-11-13 03:13:24.650073,1,188
+1104,Ticket status automatically changed to Open by Limuel Ongtingco viewing it.,2025-11-13 03:13:29.683479,4,188
+1105,RT Ticket Number '1695' added by Limuel Ongtingco.,2025-11-13 03:20:48.061451,4,188
+1106,Status changed from Open to In Progress by Limuel Ongtingco.,2025-11-13 03:20:48.061455,4,188
+1107,Ticket created by Limuel Ongtingco,2025-11-13 03:28:10.069291,1,189
+1108,Ticket auto-assigned to Zxakira Napoles,2025-11-13 03:28:10.085622,1,189
+1109,Ticket reassigned from Zxakira Napoles to Limuel Ongtingco by Limuel Ongtingco.,2025-11-13 03:28:32.166690,1,189
+1110,Ticket status automatically changed to Open by Limuel Ongtingco viewing it.,2025-11-13 03:28:37.152447,4,189
+1111,RT Ticket Number '1696' added by Limuel Ongtingco.,2025-11-13 03:35:02.057717,4,189
+1112,Status changed from Open to In Progress by Limuel Ongtingco.,2025-11-13 03:35:02.057721,4,189
+1113,Ticket created by Limuel Ongtingco,2025-11-13 03:43:04.300697,1,190
+1114,Ticket auto-assigned to Zxakira Napoles,2025-11-13 03:43:04.306395,1,190
+1115,RT Ticket Number '1698' added by Limuel Ongtingco.,2025-11-13 03:43:23.820236,1,190
+1116,Status changed from New to In Progress by Limuel Ongtingco.,2025-11-13 03:43:23.820239,1,190
+1117,Remark added by Limuel Ongtingco: The disconnection has been processed.,2025-11-14 00:16:44.181160,1,190
+1118,Status changed from In Progress to Resolved by Limuel Ongtingco.,2025-11-14 00:16:44.181164,1,190
+1119,Remark added by Limuel Ongtingco: This ticket will be set to resolved.,2025-11-14 00:31:53.124835,1,98
+1120,Status changed from Pending to Resolved by Limuel Ongtingco.,2025-11-14 00:31:53.124841,1,98
+1121,Remark added by Limuel Ongtingco: Rebate has been applied.,2025-11-14 01:20:02.397053,4,188
+1122,Status changed from In Progress to Resolved by Limuel Ongtingco.,2025-11-14 01:20:02.397057,4,188
+1123,Ticket created by Limuel Ongtingco,2025-11-14 01:20:40.858070,1,191
+1124,Ticket auto-assigned to Zxakira Napoles,2025-11-14 01:20:40.897879,1,191
+1125,Ticket reassigned from Zxakira Napoles to Sophia Paloma by Limuel Ongtingco.,2025-11-14 01:20:46.000436,1,191
+1126,Ticket status automatically changed to Open by Sophia Paloma viewing it.,2025-11-14 01:21:18.322815,5,191
+1127,Ticket created by Limuel Ongtingco,2025-11-14 01:21:48.306302,1,192
+1128,Ticket auto-assigned to Zxakira Napoles,2025-11-14 01:21:48.312490,1,192
+1129,Ticket reassigned from Zxakira Napoles to Limuel Ongtingco by Limuel Ongtingco.,2025-11-14 01:21:54.819571,1,192
+1130,Ticket status automatically changed to Open by Limuel Ongtingco viewing it.,2025-11-14 01:21:59.103961,4,192
+1131,RT Ticket Number '1700' added by Sophia Paloma.,2025-11-14 01:25:38.331637,5,191
+1132,Status changed from Open to In Progress by Sophia Paloma.,2025-11-14 01:25:38.331640,5,191
+1133,RT Ticket Number '1702' added by Limuel Ongtingco.,2025-11-14 01:28:16.276002,4,192
+1134,Status changed from Open to In Progress by Limuel Ongtingco.,2025-11-14 01:28:16.276006,4,192
+1135,Remark added by Limuel Ongtingco: Follow-up the client again to check if she has an internet connection. Waiting for her response.,2025-11-14 01:56:39.174477,4,40
+1136,Remark added by Limuel Ongtingco: RT Ticket has already been resolved: Fri Nov 07 09:05:21 2025,2025-11-14 01:57:54.086241,4,51
+1137,Status changed from In Progress to Resolved by Limuel Ongtingco.,2025-11-14 01:57:54.086245,4,51
+1138,"Remark added by Limuel Ongtingco: Ticket Update
+Status: Completed in the Coronatel Pending Ticket Excel file.
+Next Step: Currently waiting for the Tech Team to resolve the ticket.",2025-11-14 02:07:52.347395,4,72
+1139,Status changed from In Progress to Pending by Limuel Ongtingco.,2025-11-14 02:12:38.824304,4,56
+1140,Status changed from In Progress to Pending by Limuel Ongtingco.,2025-11-14 02:13:00.521353,4,72
+1141,"Remark added by Limuel Ongtingco: Status: Completed in the Coronatel Pending Ticket Excel file.
+Next Step: Currently waiting for the Tech Team to resolve the ticket.",2025-11-14 02:25:53.264522,4,93
+1142,Status changed from In Progress to Pending by Limuel Ongtingco.,2025-11-14 02:25:53.264527,4,93
+1143,Remark added by Limuel Ongtingco: Done processing the request of the client. ,2025-11-16 23:43:56.153673,4,192
+1144,Status changed from In Progress to Resolved by Limuel Ongtingco.,2025-11-16 23:43:56.153677,4,192
+1145,Ticket created by Limuel Ongtingco,2025-11-16 23:44:48.563498,1,193
+1146,Ticket auto-assigned to Zxakira Napoles,2025-11-16 23:44:48.621756,1,193
+1147,Ticket created by Limuel Ongtingco,2025-11-16 23:47:49.068565,1,194
+1148,Ticket auto-assigned to Zxakira Napoles,2025-11-16 23:47:49.072493,1,194
+1149,Ticket reassigned from Zxakira Napoles to Sophia Paloma by Limuel Ongtingco.,2025-11-16 23:47:53.580766,1,194
+1150,Ticket status automatically changed to Open by Zxakira Napoles viewing it.,2025-11-17 00:04:44.934941,3,193
+1151,Ticket status automatically changed to Open by Sophia Paloma viewing it.,2025-11-17 00:10:05.986056,5,194
+1152,RT Ticket Number '1705' added by Zxakira Napoles.,2025-11-17 00:16:51.669681,3,193
+1153,Status changed from Open to In Progress by Zxakira Napoles.,2025-11-17 00:16:51.669685,3,193
+1154,RT Ticket Number '1706' added by Sophia Paloma.,2025-11-17 00:17:09.549463,5,194
+1155,Status changed from Open to In Progress by Sophia Paloma.,2025-11-17 00:17:09.549468,5,194
+1156,Status changed from In Progress to Resolved by Zxakira Napoles.,2025-11-17 00:22:49.989613,3,134
+1157,Status changed from In Progress to Resolved by Zxakira Napoles.,2025-11-17 00:31:02.995692,3,114
+1158,Status changed from In Progress to Resolved by Zxakira Napoles.,2025-11-17 01:30:12.059596,3,178
+1159,Ticket created by Limuel Ongtingco,2025-11-17 02:36:11.889504,1,195
+1160,Ticket auto-assigned to Zxakira Napoles,2025-11-17 02:36:12.254984,1,195
+1161,Ticket reassigned from Zxakira Napoles to Limuel Ongtingco by Limuel Ongtingco.,2025-11-17 02:36:21.261224,1,195
+1162,Ticket status automatically changed to Open by Limuel Ongtingco viewing it.,2025-11-17 02:36:51.225636,4,195
+1163,RT Ticket Number '1708' added by Limuel Ongtingco.,2025-11-17 02:43:32.166336,4,195
+1164,Status changed from Open to In Progress by Limuel Ongtingco.,2025-11-17 02:43:32.166340,4,195
+1165,Status changed from In Progress to Resolved by Zxakira Napoles.,2025-11-17 02:51:01.134373,3,182
+1166,Remark added by Limuel Ongtingco: Verified and received,2025-11-17 04:55:22.956738,1,194
+1167,Status changed from In Progress to Resolved by Limuel Ongtingco.,2025-11-17 04:55:22.956742,1,194
+1168,Ticket created by Limuel Ongtingco,2025-11-17 04:55:44.420671,1,196
+1169,Ticket auto-assigned to Zxakira Napoles,2025-11-17 04:55:44.433712,1,196
+1170,Ticket reassigned from Zxakira Napoles to Sophia Paloma by Limuel Ongtingco.,2025-11-17 04:55:48.520353,1,196
+1171,Ticket status automatically changed to Open by Sophia Paloma viewing it.,2025-11-17 04:56:40.518915,5,196
+1172,RT Ticket Number '1710' added by Sophia Paloma.,2025-11-17 05:16:10.546523,5,196
+1173,Status changed from Open to Resolved by Sophia Paloma.,2025-11-17 05:16:10.546529,5,196
+1174,Status changed from In Progress to Resolved by Sophia Paloma.,2025-11-17 05:16:25.254001,5,183
+1175,Ticket created by Limuel Ongtingco,2025-11-17 07:03:47.810074,1,197
+1176,Ticket auto-assigned to Zxakira Napoles,2025-11-17 07:03:47.820644,1,197
+1177,Ticket reassigned from Zxakira Napoles to Limuel Ongtingco by Limuel Ongtingco.,2025-11-17 07:03:51.637377,1,197
+1178,Ticket status automatically changed to Open by Limuel Ongtingco viewing it.,2025-11-17 07:03:59.371830,4,197
+1179,Status changed from In Progress to Resolved by Zxakira Napoles.,2025-11-17 07:58:59.571662,3,193
+1180,Status changed from In Progress to Resolved by Zxakira Napoles.,2025-11-17 07:59:10.506995,3,172
+1181,Status changed from Open to In Progress by Limuel Ongtingco.,2025-11-17 08:06:09.562613,4,197
+1182,RT Ticket Number '1712' added by Limuel Ongtingco.,2025-11-17 08:06:20.998178,4,197
+1183,Ticket created by Limuel Ongtingco,2025-11-17 08:10:41.786933,1,198
+1184,Ticket auto-assigned to Zxakira Napoles,2025-11-17 08:10:41.803711,1,198
+1185,Ticket status automatically changed to Open by Zxakira Napoles viewing it.,2025-11-17 08:11:01.599938,3,198
+1186,RT Ticket Number '1714' added by Limuel Ongtingco.,2025-11-17 08:18:47.430130,1,198
+1187,Status changed from Open to In Progress by Limuel Ongtingco.,2025-11-17 08:18:47.430134,1,198
+1188,Ticket created by Limuel Ongtingco,2025-11-18 00:03:45.423142,1,199
+1189,Ticket auto-assigned to Zxakira Napoles,2025-11-18 00:03:45.440855,1,199
+1190,Ticket reassigned from Zxakira Napoles to Sophia Paloma by Limuel Ongtingco.,2025-11-18 00:03:50.550577,1,199
+1191,Ticket status automatically changed to Open by Sophia Paloma viewing it.,2025-11-18 00:04:01.673888,5,199
+1192,Ticket created by Limuel Ongtingco,2025-11-18 00:04:21.142663,1,201
+1193,Ticket auto-assigned to Zxakira Napoles,2025-11-18 00:04:21.147926,1,201
+1194,Ticket reassigned from Zxakira Napoles to Limuel Ongtingco by Limuel Ongtingco.,2025-11-18 00:04:32.671687,1,201
+1195,Ticket created by Limuel Ongtingco,2025-11-18 00:04:57.342710,1,202
+1196,Ticket auto-assigned to Zxakira Napoles,2025-11-18 00:04:57.348632,1,202
+1197,Ticket reassigned from Zxakira Napoles to Sophia Paloma by Limuel Ongtingco.,2025-11-18 00:05:02.840910,1,202
+1198,Ticket created by Limuel Ongtingco,2025-11-18 00:05:47.174881,1,203
+1199,Ticket auto-assigned to Zxakira Napoles,2025-11-18 00:05:47.178930,1,203
+1200,Ticket reassigned from Zxakira Napoles to Limuel Ongtingco by Limuel Ongtingco.,2025-11-18 00:05:52.849418,1,203
+1201,Ticket created by Limuel Ongtingco,2025-11-18 00:07:03.021492,1,205
+1202,Ticket auto-assigned to Zxakira Napoles,2025-11-18 00:07:03.026935,1,205
+1203,Ticket reassigned from Zxakira Napoles to Sophia Paloma by Limuel Ongtingco.,2025-11-18 00:07:12.756291,1,205
+1204,Ticket status automatically changed to Open by Limuel Ongtingco viewing it.,2025-11-18 00:08:13.561830,4,201
+1205,RT Ticket Number '1715' added by Sophia Paloma.,2025-11-18 00:13:19.394478,5,199
+1206,Status changed from Open to In Progress by Sophia Paloma.,2025-11-18 00:13:19.394482,5,199
+1207,Ticket status automatically changed to Open by Sophia Paloma viewing it.,2025-11-18 00:13:26.599148,5,202
+1208,RT Ticket Number '1718' added by Limuel Ongtingco.,2025-11-18 00:14:10.313327,4,201
+1209,Status changed from Open to In Progress by Limuel Ongtingco.,2025-11-18 00:14:10.313332,4,201
+1210,Ticket status automatically changed to Open by Limuel Ongtingco viewing it.,2025-11-18 00:14:15.256722,4,203
+1211,RT Ticket Number '1720' added by Sophia Paloma.,2025-11-18 00:20:11.955138,5,202
+1212,Status changed from Open to In Progress by Sophia Paloma.,2025-11-18 00:20:11.955143,5,202
+1213,Ticket status automatically changed to Open by Sophia Paloma viewing it.,2025-11-18 00:20:16.518015,5,205
+1214,RT Ticket Number '1723' added by Limuel Ongtingco.,2025-11-18 00:22:49.827648,4,203
+1215,Status changed from Open to In Progress by Limuel Ongtingco.,2025-11-18 00:22:49.827652,4,203
+1216,RT Ticket Number '1724' added by Sophia Paloma.,2025-11-18 00:28:54.328304,5,205
+1217,Status changed from Open to In Progress by Sophia Paloma.,2025-11-18 00:28:54.328307,5,205
+1218,RT Ticket Number changed from '1432' to '1433' by Limuel Ongtingco.,2025-11-18 00:44:31.856955,1,12
+1219,Remark added by Limuel Ongtingco: Technical Update: Ticket resolved [Thu Oct 30 17:56:01 2025],2025-11-18 00:45:25.351626,1,12
+1220,Status changed from In Progress to Resolved by Limuel Ongtingco.,2025-11-18 00:45:25.351632,1,12
+1221,Remark added by Limuel Ongtingco: Technical Update: Ticket Resolved [Thu Nov 13 07:14:28 2025],2025-11-18 00:47:08.986255,1,14
+1222,Status changed from In Progress to Resolved by Limuel Ongtingco.,2025-11-18 00:47:08.986260,1,14
+1223,Ticket created by Limuel Ongtingco,2025-11-18 00:50:36.436453,1,207
+1224,Ticket auto-assigned to Zxakira Napoles,2025-11-18 00:50:36.441787,1,207
+1225,Ticket reassigned from Zxakira Napoles to Limuel Ongtingco by Limuel Ongtingco.,2025-11-18 00:50:42.232542,1,207
+1226,Ticket status automatically changed to Open by Limuel Ongtingco viewing it.,2025-11-18 00:50:50.025975,4,207
+1227,RT Ticket Number '1726' added by Limuel Ongtingco.,2025-11-18 00:54:38.454774,4,207
+1228,Status changed from Open to In Progress by Limuel Ongtingco.,2025-11-18 00:54:38.454778,4,207
+1229,Remark added by Limuel Ongtingco: TECHNICAL UPDATE: TICKET RESOLVED [Tue Nov 18 09:15:22 2025],2025-11-18 01:19:26.989181,1,15
+1230,Status changed from In Progress to Resolved by Limuel Ongtingco.,2025-11-18 01:19:26.989188,1,15
+1231,Email log added by Limuel Ongtingco.,2025-11-18 01:32:13.544657,1,23
+1232,Remark added by Limuel Ongtingco: Support team sent an email to check if the client is still experiencing a dowtime.,2025-11-18 01:32:43.656092,1,23
+1233,Remark added by Limuel Ongtingco: The client continues to experience a persistent issue with not achieving the subscribed internet Mbps.,2025-11-18 01:43:00.552394,1,27
+1234,Ticket created by Limuel Ongtingco,2025-11-18 01:45:00.967823,1,208
+1235,Ticket auto-assigned to Zxakira Napoles,2025-11-18 01:45:00.980751,1,208
+1236,Ticket status automatically changed to Open by Zxakira Napoles viewing it.,2025-11-18 01:45:16.067257,3,208
+1237,RT Ticket Number '1728' added by Zxakira Napoles.,2025-11-18 02:24:57.683823,3,208
+1238,Status changed from Open to In Progress by Zxakira Napoles.,2025-11-18 02:24:57.683826,3,208
+1239,Status changed from In Progress to Resolved by Zxakira Napoles.,2025-11-18 02:30:03.923176,3,198
+1240,Remark added by Limuel Ongtingco: The ticket was resolved. Sent an email to the client for the confirmation if internet has already been restored or not.,2025-11-18 06:15:02.195745,1,32
+1241,Remark added by Limuel Ongtingco: Ticket has not been resolved. Tech team in progress.,2025-11-18 06:32:05.916369,1,36
+1242,"Remark added by Limuel Ongtingco: Technical Team Update: This ticket is included in their target on-site visit today.
+",2025-11-18 06:35:58.414742,1,42
+1243,Remark added by Limuel Ongtingco: Technical Team Update: This ticket is included in their target on-site visit today.,2025-11-18 06:36:22.155950,1,43
+1244,Email log added by Limuel Ongtingco.,2025-11-18 07:01:03.423157,1,40
+1245,Remark added by Limuel Ongtingco: No response from the client. This ticket will set to resolved.,2025-11-18 07:01:38.282651,1,40
+1246,Status changed from Pending to Resolved by Limuel Ongtingco.,2025-11-18 07:01:38.282654,1,40
+1247,Email log added by Limuel Ongtingco.,2025-11-18 07:08:54.891724,1,45
+1248,Remark added by Limuel Ongtingco: RESOLVED: the client has already sent a confirmation email,2025-11-18 07:09:24.691262,1,45
+1249,Status changed from Pending to Resolved by Limuel Ongtingco.,2025-11-18 07:09:24.691266,1,45
+1250,Ticket created by Limuel Ongtingco,2025-11-18 07:59:16.417288,1,210
+1251,Ticket auto-assigned to Zxakira Napoles,2025-11-18 07:59:16.432722,1,210
+1252,Ticket reassigned from Zxakira Napoles to Limuel Ongtingco by Limuel Ongtingco.,2025-11-18 07:59:24.890796,1,210
+1253,Ticket created by Limuel Ongtingco,2025-11-18 07:59:47.034695,1,211
+1254,Ticket auto-assigned to Zxakira Napoles,2025-11-18 07:59:47.115730,1,211
+1255,Ticket status automatically changed to Open by Zxakira Napoles viewing it.,2025-11-18 08:00:22.410951,3,211
+1256,Ticket created by Limuel Ongtingco,2025-11-18 08:01:37.446358,1,212
+1257,Ticket auto-assigned to Zxakira Napoles,2025-11-18 08:01:37.453161,1,212
+1258,Ticket reassigned from Zxakira Napoles to Sophia Paloma by Limuel Ongtingco.,2025-11-18 08:01:43.829753,1,212
+1259,Ticket status automatically changed to Open by Sophia Paloma viewing it.,2025-11-18 08:03:06.162740,5,212
+1260,RT Ticket Number '1732' added by Zxakira Napoles.,2025-11-18 08:12:16.041598,3,211
+1261,Status changed from Open to In Progress by Zxakira Napoles.,2025-11-18 08:12:16.041602,3,211
+1262,RT Ticket Number '1730' added by Sophia Paloma.,2025-11-18 08:21:23.617304,5,212
+1263,Status changed from Open to Resolved by Sophia Paloma.,2025-11-18 08:21:23.617307,5,212
+1264,Status changed from In Progress to Resolved by Sophia Paloma.,2025-11-18 08:21:31.707078,5,202
+1265,Status changed from In Progress to Resolved by Sophia Paloma.,2025-11-18 08:21:41.054564,5,199
+1266,Status changed from In Progress to Resolved by Sophia Paloma.,2025-11-18 08:21:54.946065,5,32
+1267,"Remark added by Limuel Ongtingco: Tech team already completed the restoration of this ticket. Not yet resolved the ticket in the RT by the Tech team.
+",2025-11-18 08:44:35.059267,1,56
+1268,Status changed from In Progress to Resolved by Limuel Ongtingco.,2025-11-18 08:47:40.088507,1,69
+1269,Remark added by Limuel Ongtingco: payment verified and received [Tue Nov 04 07:57:38 2025],2025-11-18 08:48:05.486805,1,69
+1270,Ticket created by Limuel Ongtingco,2025-11-18 23:43:15.791581,1,213
+1271,Ticket auto-assigned to Zxakira Napoles,2025-11-18 23:43:15.866280,1,213
+1272,Ticket reassigned from Zxakira Napoles to Sophia Paloma by Limuel Ongtingco.,2025-11-18 23:44:16.911187,1,213
+1273,Ticket status automatically changed to Open by Sophia Paloma viewing it.,2025-11-18 23:44:40.123101,5,213
+1274,Remark added by Limuel Ongtingco: Ticket Resolved [Wed Nov 05 13:54:41 2025],2025-11-18 23:48:28.369369,1,97
+1275,Status changed from In Progress to Resolved by Limuel Ongtingco.,2025-11-18 23:48:28.369372,1,97
+1276,RT Ticket Number '1734' added by Sophia Paloma.,2025-11-18 23:49:58.697622,5,213
+1277,Status changed from Open to In Progress by Sophia Paloma.,2025-11-18 23:49:58.697625,5,213
+1278,Remark added by Limuel Ongtingco: Payment received and verified,2025-11-18 23:54:50.691472,1,197
+1279,Status changed from In Progress to Resolved by Limuel Ongtingco.,2025-11-18 23:54:50.691476,1,197
+1280,Remark added by Limuel Ongtingco: Payment received and verified,2025-11-19 00:02:08.596531,1,203
+1281,Status changed from In Progress to Resolved by Limuel Ongtingco.,2025-11-19 00:02:08.596537,1,203
+1282,Remark added by Limuel Ongtingco: payment received and verified,2025-11-19 00:06:02.502039,1,201
+1283,Status changed from In Progress to Resolved by Limuel Ongtingco.,2025-11-19 00:06:02.502043,1,201
+1284,Remark added by Limuel Ongtingco: The ticket will be reopened once the client provides an update or decision.,2025-11-19 01:01:11.769019,1,189
+1285,Status changed from In Progress to Resolved by Limuel Ongtingco.,2025-11-19 01:01:11.769026,1,189
+1286,Remark added by Limuel Ongtingco: Ticket has already been resolved.,2025-11-19 01:02:24.219294,1,180
+1287,Status changed from In Progress to Resolved by Limuel Ongtingco.,2025-11-19 01:02:24.219300,1,180
+1288,Remark added by Limuel Ongtingco: Payment for the month of August has been received and verified.,2025-11-19 02:24:45.518634,1,195
+1289,Status changed from In Progress to Resolved by Limuel Ongtingco.,2025-11-19 02:24:45.518641,1,195
+1290,Ticket created by Limuel Ongtingco,2025-11-19 02:25:09.567250,1,214
+1291,Ticket auto-assigned to Zxakira Napoles,2025-11-19 02:25:09.653071,1,214
+1292,Ticket reassigned from Zxakira Napoles to Limuel Ongtingco by Limuel Ongtingco.,2025-11-19 02:25:37.216461,1,214
+1293,Ticket status automatically changed to Open by Limuel Ongtingco viewing it.,2025-11-19 02:25:40.640083,4,214
+1294,RT Ticket Number '1736' added by Limuel Ongtingco.,2025-11-19 02:30:10.825885,4,214
+1295,Status changed from Open to In Progress by Limuel Ongtingco.,2025-11-19 02:30:10.825890,4,214
+1296,Ticket created by Limuel Ongtingco,2025-11-19 06:04:04.713769,1,215
+1297,Ticket auto-assigned to Zxakira Napoles,2025-11-19 06:04:04.793128,1,215
+1298,Ticket reassigned from Zxakira Napoles to Limuel Ongtingco by Limuel Ongtingco.,2025-11-19 06:04:12.871375,1,215
+1299,Ticket status automatically changed to Open by Limuel Ongtingco viewing it.,2025-11-19 06:04:34.777045,4,215
+1300,RT Ticket Number '1738' added by Limuel Ongtingco.,2025-11-19 06:36:39.149154,4,215
+1301,Status changed from Open to In Progress by Limuel Ongtingco.,2025-11-19 06:36:39.149158,4,215
+1302,Status changed from In Progress to Resolved by Limuel Ongtingco.,2025-11-19 06:48:43.289270,1,205
+1303,Ticket created by Limuel Ongtingco,2025-11-19 08:27:26.614545,1,216
+1304,Ticket auto-assigned to Zxakira Napoles,2025-11-19 08:27:26.626378,1,216
+1305,Ticket reassigned from Zxakira Napoles to Sophia Paloma by Limuel Ongtingco.,2025-11-19 08:27:31.457470,1,216
+1306,Ticket status automatically changed to Open by Sophia Paloma viewing it.,2025-11-19 08:29:03.241877,5,216
+1307,Ticket created by Limuel Ongtingco,2025-11-19 08:29:14.772393,1,217
+1308,Ticket auto-assigned to Zxakira Napoles,2025-11-19 08:29:14.776279,1,217
+1309,Ticket reassigned from Zxakira Napoles to Limuel Ongtingco by Limuel Ongtingco.,2025-11-19 08:29:19.808779,1,217
+1310,Ticket status automatically changed to Open by Limuel Ongtingco viewing it.,2025-11-19 08:29:28.685454,4,217
+1311,RT Ticket Number '1740' added by Sophia Paloma.,2025-11-19 08:36:08.720514,5,216
+1312,Status changed from Open to In Progress by Sophia Paloma.,2025-11-19 08:36:08.720518,5,216
+1313,Ticket created by Limuel Ongtingco,2025-11-19 08:58:28.800360,1,218
+1314,Ticket auto-assigned to Zxakira Napoles,2025-11-19 08:58:28.812376,1,218
+1315,Ticket reassigned from Zxakira Napoles to Limuel Ongtingco by Limuel Ongtingco.,2025-11-19 08:58:34.159281,1,218
+1316,Ticket status automatically changed to Open by Limuel Ongtingco viewing it.,2025-11-19 09:00:46.924788,4,218
+1317,RT Ticket Number '1742' added by Limuel Ongtingco.,2025-11-19 09:10:43.716535,4,218
+1318,Status changed from Open to In Progress by Limuel Ongtingco.,2025-11-19 09:10:43.716539,4,218
+1319,RT Ticket Number '1744' added by Limuel Ongtingco.,2025-11-19 09:15:27.898042,4,217
+1320,Status changed from Open to In Progress by Limuel Ongtingco.,2025-11-19 09:15:27.898046,4,217
+1321,Ticket created by Limuel Ongtingco,2025-11-19 23:16:08.110563,1,219
+1322,Ticket auto-assigned to Zxakira Napoles,2025-11-19 23:16:08.186331,1,219
+1323,Ticket status automatically changed to Open by Zxakira Napoles viewing it.,2025-11-19 23:46:41.253430,3,219
+1324,Remark added by Limuel Ongtingco: payment received and verified,2025-11-20 00:06:57.245237,1,211
+1325,Status changed from In Progress to Resolved by Limuel Ongtingco.,2025-11-20 00:06:57.245242,1,211
+1326,RT Ticket Number '1746' added by Zxakira Napoles.,2025-11-20 00:36:53.038098,3,219
+1327,Status changed from Open to Resolved by Zxakira Napoles.,2025-11-20 00:36:53.038102,3,219
+1328,Status changed from Resolved to In Progress by Zxakira Napoles.,2025-11-20 00:36:56.202189,3,219
+1329,Ticket status automatically changed to Open by Limuel Ongtingco viewing it.,2025-11-20 01:27:12.258201,4,210
+1330,RT Ticket Number '1748' added by Limuel Ongtingco.,2025-11-20 01:33:35.119178,4,210
+1331,Status changed from Open to In Progress by Limuel Ongtingco.,2025-11-20 01:33:35.119183,4,210
+1332,Ticket created by Limuel Ongtingco,2025-11-20 01:44:16.935752,1,220
+1333,Ticket auto-assigned to Zxakira Napoles,2025-11-20 01:44:16.946430,1,220
+1334,Ticket reassigned from Zxakira Napoles to Sophia Paloma by Limuel Ongtingco.,2025-11-20 01:44:22.566719,1,220
+1335,Remark added by Limuel Ongtingco: Payment received and verified,2025-11-20 01:46:36.676234,4,217
+1336,Status changed from In Progress to Resolved by Limuel Ongtingco.,2025-11-20 01:46:36.676238,4,217
+1337,Ticket status automatically changed to Open by Sophia Paloma viewing it.,2025-11-20 01:47:05.038604,5,220
+1338,RT Ticket Number '1750' added by Sophia Paloma.,2025-11-20 01:52:48.555966,5,220
+1339,Status changed from Open to In Progress by Sophia Paloma.,2025-11-20 01:52:48.555971,5,220
+1340,Remark added by Limuel Ongtingco: The service invoice has been processed,2025-11-20 02:22:17.823634,4,210
+1341,Status changed from In Progress to Resolved by Limuel Ongtingco.,2025-11-20 02:22:17.823638,4,210
+1342,Ticket created by Limuel Ongtingco,2025-11-20 05:45:19.642543,1,221
+1343,Ticket auto-assigned to Zxakira Napoles,2025-11-20 05:45:19.661639,1,221
+1344,Ticket status automatically changed to Open by Zxakira Napoles viewing it.,2025-11-20 05:45:56.151107,3,221
+1345,RT Ticket Number '1752' added by Zxakira Napoles.,2025-11-20 05:49:11.233076,3,221
+1346,Status changed from Open to In Progress by Zxakira Napoles.,2025-11-20 05:49:11.233081,3,221
+1347,Status changed from In Progress to Resolved by Zxakira Napoles.,2025-11-20 05:49:26.321987,3,42
+1348,Status changed from In Progress to Resolved by Zxakira Napoles.,2025-11-20 05:50:02.485257,3,54
+1349,Ticket created by Limuel Ongtingco,2025-11-20 06:09:02.031218,1,222
+1350,Ticket auto-assigned to Zxakira Napoles,2025-11-20 06:09:02.069866,1,222
+1351,Ticket reassigned from Zxakira Napoles to Limuel Ongtingco by Limuel Ongtingco.,2025-11-20 06:09:06.299914,1,222
+1352,Ticket status automatically changed to Open by Limuel Ongtingco viewing it.,2025-11-20 06:09:11.486337,4,222
+1353,RT Ticket Number '1754' added by Limuel Ongtingco.,2025-11-20 06:12:16.257044,4,222
+1354,Status changed from Open to In Progress by Limuel Ongtingco.,2025-11-20 06:12:16.257049,4,222
+1355,Ticket created by Limuel Ongtingco,2025-11-20 08:59:51.052681,1,224
+1356,Ticket auto-assigned to Zxakira Napoles,2025-11-20 08:59:51.148731,1,224
+1357,Ticket reassigned from Zxakira Napoles to Sophia Paloma by Limuel Ongtingco.,2025-11-20 08:59:55.825380,1,224
+1358,Ticket status automatically changed to Open by Sophia Paloma viewing it.,2025-11-20 09:00:07.865912,5,224
+1359,RT Ticket Number '1756' added by Sophia Paloma.,2025-11-20 09:08:19.106954,5,224
+1360,Status changed from Open to In Progress by Sophia Paloma.,2025-11-20 09:08:19.106958,5,224
+1361,Ticket created by Limuel Ongtingco,2025-11-20 23:47:47.338963,1,225
+1362,Ticket auto-assigned to Zxakira Napoles,2025-11-20 23:47:47.350023,1,225
+1363,Ticket reassigned from Zxakira Napoles to Sophia Paloma by Limuel Ongtingco.,2025-11-20 23:47:51.295766,1,225
+1364,Remark added by Limuel Ongtingco: rebate applied successfully,2025-11-21 00:44:38.289692,4,214
+1365,Status changed from In Progress to Resolved by Limuel Ongtingco.,2025-11-21 00:44:38.289697,4,214
+1366,Remark added by Limuel Ongtingco: payment received and verified,2025-11-21 05:26:02.494182,1,220
+1367,Status changed from In Progress to Resolved by Limuel Ongtingco.,2025-11-21 05:26:02.494186,1,220
+1368,RT Ticket Number '1758' added by Limuel Ongtingco.,2025-11-21 05:27:06.874001,1,225
+1369,Status changed from New to Resolved by Limuel Ongtingco.,2025-11-21 05:27:06.874005,1,225

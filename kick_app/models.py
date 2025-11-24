@@ -3,19 +3,16 @@ from flask_login import UserMixin
 from datetime import datetime
 from werkzeug.security import generate_password_hash, check_password_hash
 import enum
-from itsdangerous import URLSafeTimedSerializer as Serializer
-from flask import current_app
 
 
 # --- Enums for Choices ---
-# Using Enums makes the choices clean and readable
 class UserRole(enum.Enum):
     ADMIN = "Admin"
     TSR = "TSR"
 
 
 class TicketStatus(enum.Enum):
-    NEW = "New"  # <-- Add this line
+    NEW = "New"
     OPEN = "Open"
     IN_PROGRESS = "In Progress"
     RESOLVED = "Resolved"
@@ -23,7 +20,6 @@ class TicketStatus(enum.Enum):
 
 
 # --- Flask-Login User Loader ---
-# This function is required by Flask-Login to load a user from session
 @login_manager.user_loader
 def load_user(user_id):
     return User.query.get(int(user_id))
@@ -47,10 +43,7 @@ class User(db.Model, UserMixin):
     is_active = db.Column(db.Boolean, default=False, nullable=False)
     created_at = db.Column(db.DateTime, default=datetime.utcnow)
 
-    # --- REMOVED/RENAMED ---
-    # 'username' field is replaced by 'employee_id'
-
-    # Relationships (these are the same)
+    # Relationships
     assigned_tickets = db.relationship(
         "Ticket",
         back_populates="assigned_tsr",
@@ -69,30 +62,18 @@ class User(db.Model, UserMixin):
     announcements = db.relationship(
         "Announcement", back_populates="author", lazy="dynamic"
     )
-    email_logs = db.relationship("EmailLog", back_populates="author", lazy="dynamic")
 
-    def __repr__(self):
-        # Updated repr
-        return f"<User {self.full_name} ({self.employee_id})>"
-
-    # --- ADD THIS HELPER METHOD ---
-    def get_id(self):
-        """
-        Required by Flask-Login. Returns a string representation of the user ID.
-        We'll use employee_id as the natural key for login, but Flask-Login
-        still needs the primary key (id) for session management.
-        """
-        return str(self.id)
-
-    # --- ADDED PASSWORD METHODS ---
     def set_password(self, password):
         self.password_hash = generate_password_hash(password)
 
     def check_password(self, password):
-        # Ensure hash exists before checking
-        if self.password_hash:
-            return check_password_hash(self.password_hash, password)
-        return False
+        return check_password_hash(self.password_hash, password)
+
+    def __repr__(self):
+        return f"<User {self.full_name} ({self.employee_id})>"
+
+    def get_id(self):
+        return str(self.id)
 
 
 class Region(db.Model):
@@ -117,7 +98,6 @@ class Client(db.Model):
     account_number = db.Column(db.String(100), unique=True, nullable=False, index=True)
     account_name = db.Column(db.String(200), nullable=False, index=True)
     status = db.Column(db.String(50), default="Active")
-    plan_rate = db.Column(db.Float, nullable=False, default=0.0)
 
     # Foreign Key
     region_id = db.Column(db.Integer, db.ForeignKey("regions.id"), nullable=False)
@@ -135,17 +115,18 @@ class Ticket(db.Model):
 
     __tablename__ = "tickets"
     id = db.Column(db.Integer, primary_key=True)
-    ticket_name = db.Column(
-        db.String(300), unique=True
-    )  # The "Region_AccountName_Num_Concern"
+    ticket_name = db.Column(db.String(300), unique=True)
     concern_title = db.Column(db.String(255), nullable=False)
-    concern_details = db.Column(db.Text, nullable=False)  # Renamed from 'concern'
-    rt_ticket_number = db.Column(
-        db.String(100), nullable=True, index=True
-    )  # Optional RT ticket number
+    concern_details = db.Column(db.Text, nullable=False)
+    rt_ticket_number = db.Column(db.String(100), nullable=True, index=True)
+
+    # --- ADDED FOR EMAIL CHECKBOX ---
+    email_sent = db.Column(db.Boolean, default=False, nullable=False)
+    # --------------------------------
+
     status = db.Column(
         db.Enum(TicketStatus), default=TicketStatus.NEW, nullable=False, index=True
-    )  # Default changed to NEW
+    )
     created_at = db.Column(db.DateTime, default=datetime.utcnow, index=True)
     updated_at = db.Column(
         db.DateTime, default=datetime.utcnow, onupdate=datetime.utcnow
@@ -153,12 +134,8 @@ class Ticket(db.Model):
 
     # Foreign Keys
     client_id = db.Column(db.Integer, db.ForeignKey("clients.id"), nullable=False)
-    assigned_to_id = db.Column(
-        db.Integer, db.ForeignKey("users.id"), nullable=True
-    )  # Can be unassigned
-    created_by_id = db.Column(
-        db.Integer, db.ForeignKey("users.id")
-    )  # e.g., Admin who created it
+    assigned_to_id = db.Column(db.Integer, db.ForeignKey("users.id"), nullable=True)
+    created_by_id = db.Column(db.Integer, db.ForeignKey("users.id"))
 
     # Relationships
     client = db.relationship("Client", back_populates="tickets")
@@ -169,8 +146,6 @@ class Ticket(db.Model):
         "User", back_populates="created_tickets", foreign_keys=[created_by_id]
     )
     logs = db.relationship("ActivityLog", back_populates="ticket", lazy="dynamic")
-    
-    email_logs = db.relationship("EmailLog", back_populates="ticket", lazy="dynamic")
 
     def __repr__(self):
         return f"<Ticket {self.id} - {self.status.value}>"
@@ -181,9 +156,7 @@ class ActivityLog(db.Model):
 
     __tablename__ = "activity_logs"
     id = db.Column(db.Integer, primary_key=True)
-    action = db.Column(
-        db.String(255), nullable=False
-    )  # e.g., "Created ticket", "Assigned to TSR_Name"
+    action = db.Column(db.String(255), nullable=False)
     timestamp = db.Column(db.DateTime, default=datetime.utcnow, index=True)
 
     # Foreign Keys
@@ -208,30 +181,7 @@ class Announcement(db.Model):
     is_active = db.Column(db.Boolean, default=True)
 
     # Foreign Key
-    user_id = db.Column(db.Integer, db.ForeignKey("users.id"))  # Who posted it
+    user_id = db.Column(db.Integer, db.ForeignKey("users.id"))
 
     # Relationship
     author = db.relationship("User", back_populates="announcements")
-
-
-class EmailLog(db.Model):
-    """Stores a log of emails sent to clients."""
-
-    __tablename__ = "email_logs"
-    id = db.Column(db.Integer, primary_key=True)
-    email_content = db.Column(db.Text, nullable=False)
-    sent_at = db.Column(db.DateTime, default=datetime.utcnow, index=True)
-
-    # Foreign Keys
-    ticket_id = db.Column(db.Integer, db.ForeignKey("tickets.id"), nullable=False)
-    user_id = db.Column(
-        db.Integer, db.ForeignKey("users.id"), nullable=False
-    )  # Who logged it
-
-    # Relationships
-    # This relationship links back to the corrected one above
-    ticket = db.relationship("Ticket", back_populates="email_logs")
-    author = db.relationship("User", back_populates="email_logs")
-
-    def __repr__(self):
-        return f"<EmailLog {self.id} for Ticket {self.ticket_id}>"

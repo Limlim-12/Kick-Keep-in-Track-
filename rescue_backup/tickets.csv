@@ -1,0 +1,2211 @@
+id,ticket_name,concern_title,concern_details,status,created_at,updated_at,client_id,assigned_to_id,created_by_id,rt_ticket_number
+1,"R7_EMAN, JOHNREY_B0000031976_Payment",Payment,"Transaction reference number: UB722614
+Transaction Date: October 21, 2025
+Bank Name: UBP
+Amount: P799.00
+Coronatel Account Number: 006030015338
+Payor Last Name, First Name, Middle Name: EMAN, JOHNREY_B0000031976
+Mode of submission (email, physical copy, etc.): Email",RESOLVED,2025-10-24 02:49:56.866843,2025-10-24 08:10:06.675489,98,5,2,1417
+78,"R7_SALA, NICOLE MARIENNE C._B0000032777_RequestServiceDisconnection",Request Service Disconnection,client expressed negative feedback and wanted to end service contract,RESOLVED,2025-11-03 03:27:44.129032,2025-11-06 00:15:11.351057,158,3,1,1513
+10,"R7_DIMSON, FELIX ANDREW V._B0000031047_Payment",Payment,Felix Dimson Billing Email,RESOLVED,2025-10-27 00:03:02.823452,2025-10-27 09:25:32.728844,97,4,1,1327
+221,"R7_NICDAO, ANNETH KRISTINE G._B0000032488_RequestRebate",Request Rebate,"Good afternoon, 
+Requesting for bill adjustment for those days we don't have internet connection starting November 4-17. Hoping for your kind consideration. Thank you",IN_PROGRESS,2025-11-20 05:45:19.545639,2025-11-20 05:49:11.227847,134,3,1,1752
+5,"R7_BENDANILLO, FELIX QUIBOT_B0000030618_Payment",Payment,"Bank Transaction Reference Number: 1033961966735
+Transaction Date: October 24, 2025
+Bank Name: UBP
+Amount: 1,639
+Coronatel Account Number:
+Payor Last Name, First Name, Middle Name: 
+Mode of submission (email, physical copy, etc.): Viber",RESOLVED,2025-10-24 07:55:08.894343,2025-10-27 09:33:08.860078,71,4,1,1425
+41,"R7_ALKUINO, KRISTINE S._B0000032711_NoInternetConnection",No Internet Connection,"2025-10-26 08:17
+Good am! Its been 2days wala gud me internet ....what happen?
+
+",RESOLVED,2025-10-27 07:14:57.056603,2025-10-27 23:59:48.260699,63,5,1,
+6,"R7_SY, DON CHRISTIAN_B0000032352_Payment",Payment,JC LAVILLA BILLING EMAIL,RESOLVED,2025-10-26 23:54:16.684978,2025-10-28 00:04:23.256932,164,5,1,1427
+8,"R7_TABALOC, JULITA_B0000030427_Payment",Payment,Julita Taboloc Billing,RESOLVED,2025-10-27 00:00:36.338209,2025-10-27 07:19:37.744959,165,3,1,1431
+16,"R7_POLIQUIT, JOHN PAUL A._134473_NoInternetConnection",No Internet Connection,"Good morning. Wala pa rin nagbabago sa internet namin dito. Di pa rin namin magamit nang maayos. Sana po maayos niyo na. Wag naman na sana pong umabot sa ilang linggo ulit. Kasi walang nangyayare sa binabayad namin. Please pakiayos ASAP. 
+
+On Sat, Oct 25, 2025, 10:36 AM Jochelle Via Pura <lesleygus14@gmail.com> wrote:
+Good morning. Wala nanaman pong internet dito. Hindi man lang mag 1 day ang internet dito sa amin. Parang di na po nasusulit ang bayad namin sainyo. Pwede paki ayos naman po kasi kailangan na kailangan namin ng internet lalo sa trabaho namin. ",RESOLVED,2025-10-27 00:14:22.916664,2025-11-03 02:51:39.597479,149,3,1,1464
+14,"R7_EMAN, JOHNREY_B0000031976_SlowInternetConnection",Slow Internet Connection,"Hi,
+
+I've experiencing slow connection sense last week, please check.
+
+* Location Coordinates:10.3201049, 123.9202619
+* Account Name: Johnrey Eman
+* Active Contact Number: 09764518940
+* Availability Date/Time: anytime
+
+
+Regards,
+Johnrey",RESOLVED,2025-10-27 00:09:43.491658,2025-11-18 00:47:08.967139,98,5,1,1446
+15,"R7_ABIERA, CHRISTOPHER_B0000031116_SlowInternetConnection",Slow Internet Connection,"Your internet is still slow, your technician already came here yesterday and assured that the problem was not with the router or the wire, so it is within the ISP side its been weeks already since thus problem started and you still haven't fixed it? Can you do something about this please...",RESOLVED,2025-10-27 00:10:54.866964,2025-11-18 01:19:26.981589,60,4,1,1454
+40,"R7_ALBA, RENZYLLE REENICE_B0000031183_NoInternetConnection",No Internet Connection,"2025-10-26 12:54
+
+No Internet Connection",RESOLVED,2025-10-27 06:52:17.673351,2025-11-18 07:01:38.278517,62,4,1,
+3,"R7_ANCHETA, GRACE_B0000031756_Payment",Payment,"Bank Transaction Reference Number: 158310
+Transaction Date: October 24, 2025
+Bank Name: UBP
+Amount: 1,000
+Coronatel Account Number:B0000031756
+Payor Last Name, First Name, Middle Name: ANCHETA, GRACE
+Mode of submission (email, physical copy, etc.): Email",RESOLVED,2025-10-24 02:52:19.321831,2025-10-24 08:05:13.090835,65,4,1,1421
+2,"R7_BITSUZA, LEONARD A._B0000031495_Payment",Payment,"Transaction reference number: 962087
+Transaction Date: Oct 23, 2025
+Bank Name: UBP
+Amount: P1,798.00
+Coronatel Account Number: 006-030-015-338
+Payor Last Name, First Name, Middle Name: BITSUZA, LEONARD A.
+Mode of submission (email, physical copy, etc.): Screenshot/email",RESOLVED,2025-10-24 02:50:18.734362,2025-10-24 08:06:16.852013,72,3,2,1419
+84,"R7_SALA, NICOLE MARIENNE C._B0000032777_RequestRebate",Request Rebate,"Oct 15–19: Up, multiple spikes reaching up to 50 Mb/s
+
+Oct 20–23: Intermittent still decreasing
+
+Oct 24 – Oct 25: low activity. 
+
+Oct 26 – Nov 4: full downtime.",RESOLVED,2025-11-04 07:42:57.374810,2025-11-04 23:34:30.100023,158,4,1,1545
+144,"R7_KURASHIKI EQUIPMENT PHILIPPINES CORP, ._133733_RequestSOA",Request SOA,client is requesting SOA,RESOLVED,2025-11-07 01:51:15.450185,2025-11-07 03:18:35.061970,114,3,1,1635
+4,R7_AGWAY CHEMICALS CORPORATION-CEBU_B0000030449_Payment,Payment,"Transaction reference number: UB515310
+Transaction Date: October 24, 2025
+Bank Name: UBP
+Amount: P2,800.00
+Coronatel Account Number: 006030015338
+Payor Last Name, First Name, Middle Name: AGWAY CHEMICALS CORPORATION-CEBU
+Mode of submission (email, physical copy, etc.): Viber ",RESOLVED,2025-10-24 02:52:39.194045,2025-10-24 08:09:58.364278,61,5,1,1423
+32,R7_NEW ERA INTERNATIONAL CARGO HANDLING INC._B0000030455_NoInternetConnection,No Internet Connection,"Dear  Technical Team,
+
+Good morning.
+
+Please be inform that we dont had a net connection  since this morning. Last  week  was on and off.
+We're waiting for your prompt action. Thank you.
+
+
+Best Regards,
+sol
+
+New Era International Cargo Handling, Inc.
+Room 407 Crown Building, San Jose Dela Montaña Ext. Cor. 2nd St. Reclamation Area, Cebu City, Philippines.
+Tel. Nos: (032) 268-7833 
+Mobile No. (Ms.)Sol Rama 09772481013
+(Maria Renita)  09927690281
+Email: info@newerainternationalcargo.com
+Website: http://newerainternationalcargo.com/
+",RESOLVED,2025-10-27 03:39:37.354933,2025-11-18 08:21:54.944437,132,5,1,1468
+7,"R7_MORAS, JOAQUIN_B0000030631_Payment",Payment,Moras Joaquin billing email,RESOLVED,2025-10-26 23:58:16.993854,2025-11-10 00:47:51.560723,124,3,1,1429
+180,R7_CEBU SOUTH HARBOR AND CONTAINER TERMINAL CORP_B0000032586_RequestSOA,Request SOA,latest SOA,RESOLVED,2025-11-12 03:15:42.229670,2025-11-19 01:02:24.214617,88,5,1,1684
+175,"R8_DAVINES, MA. GRACE J._B0000032358_RequestSOA",Request SOA,Tacloban Team asked to generate a SOA for the client.,RESOLVED,2025-11-11 09:01:31.406154,2025-11-11 09:18:45.567112,310,3,1,1678
+176,"R8_KHIATANI, MARY GRACE B.-LINE 3_B0000032380_RequestSOA",Request SOA,Tacloban Team asked to generate a SOA for the client.,RESOLVED,2025-11-11 09:02:18.462951,2025-11-11 09:18:53.068280,339,5,1,1677
+140,"R7_PANGATUNGGAN, NINO V._B0000032417_RequestServiceInvoice",Request Service Invoice ,The client is requesting service invoice of her payment.,RESOLVED,2025-11-07 00:01:38.449342,2025-11-11 09:23:17.881750,145,4,1,1626
+25,R7_ONEWORLD ALLIANCE LOGISTICS CORPORATION_134808_RequestServiceInvoice,Request Service Invoice ,"Hi Maam/Sir,
+
+May I request invoice for the month of October to November. 
+
+Kindly complete the details.
+- ONEWORLD ALLIANCE LOGISTICS CORPORATION.
+- TIN 227-002-465-00001
+- Address : Crown Bldg, North Reclamation Area Road 6, Carreta Cebu City.
+
+
+Thank you, 
+Best Regards,
+Kimberly Mae R. Castro, LCB
+Customs Declarant	
+",RESOLVED,2025-10-27 00:43:48.402242,2025-10-29 03:18:31.913511,139,4,1,1460
+21,"R7_JAKOSALEM, GERALENE_B0000031623_NoInternetConnection",No Internet Connection,"2025-10-25 13:10
+Hi, good pm po, ask ko lang po if bakit wala po kaming internet connection ngayon?",RESOLVED,2025-10-27 00:25:23.321855,2025-10-28 01:28:07.457717,109,5,1,1447
+22,"R7_JORDAN, JENNIFER CRISTY P._B0000032564_NoInternetConnection",No Internet Connection,"Hello,
+
+This is Jennifer Cristy Jordan.
+Account number: B0000032564
+
+Our internet is not working since this morning.
+We've rebooted the modem multiple times but still the same. No red LOS, all are green lights but just no internet at all.
+
+I do not see your Facebook page that's why I'm contacting you via email.
+
+Please assist. Thank you.
+
+
+Regards,
+
+Jenny Jordan",RESOLVED,2025-10-27 00:38:04.894528,2025-10-28 06:42:42.275328,112,3,1,1442
+19,"R7_BITSUZA, LEONARD A.-LINE 2_B0000032540_NoInternetConnection",No Internet Connection,"2025-10-25 12:15
+
+Hi, Support Team.
+
+Good day!
+Be advised, no internet service for both of my accounts.
+Problem started: 10:00 AM
+
+Account Name	Account Number
+BITSUZA, LEONARD A.	B0000031495
+BITSUZA, LEONARD A.-LINE 2	B0000032540
+
+
+Gracias y vaya con Dios,
+LEE
+Leonard A. Bitsuza, MBA
+Pru Life UK - License Life Insurance Broker | Financial Advisor
+Biz911 - Business Consultan",RESOLVED,2025-10-27 00:20:37.150711,2025-10-28 07:01:52.975948,73,5,1,
+18,"R7_BITSUZA, LEONARD A._B0000031495_NoInternetConnection",No Internet Connection,"2025-10-25 12:15
+
+Hi, Support Team.
+
+Good day!
+Be advised, no internet service for both of my accounts.
+Problem started: 10:00 AM
+
+Account Name	Account Number
+BITSUZA, LEONARD A.	B0000031495
+BITSUZA, LEONARD A.-LINE 2	B0000032540
+
+
+Gracias y vaya con Dios,
+LEE
+Leonard A. Bitsuza, MBA
+Pru Life UK - License Life Insurance Broker | Financial Advisor
+Biz911 - Business Consultan",RESOLVED,2025-10-27 00:20:18.585734,2025-10-28 07:09:35.075490,72,4,1,
+24,"R7_QUITO, ERIC GIOVANNI_B0000030498_NoInternetConnection",No Internet Connection,"We would like to report that there has been no internet connection in our area the entire day and in the past few weeks the connection has been very annoyingly unstable, meaning, the connection slows down and in and out and comes back again. In short, unreliable. 
+
+Account number: B0000030498
+LOS status: no light on LOS 
+Mac: 1c1b4aeb14f0
+
+
+Thank you",RESOLVED,2025-10-27 00:39:31.680322,2025-10-28 23:53:33.802939,151,3,1,1450
+29,"R7_FERNANDEZ, ZADJADE KENT C._B0000031578_NoInternetConnection",No Internet Connection,"Hi
+
+Please give us an update. It has been 2 days now that we don't have an internet connection.
+
+On Sun, 26 Oct 2025, 12:49 pm Zadjade Kent Fernandez, <fernandez.zadjadekent@gmail.com> wrote:
+Hi,
+
+Good day!
+
+We don't have an internet connection since yesterday afternoon.
+
+Account name: Zadjade Kent C. Fernandez
+Account number: B0000031578
+241 B. Rodriguez St, Cebu City
+
+Hoping to hear from you soon. Thank you.
+
+Sincerely,
+Zadjade Kent Fernandez",RESOLVED,2025-10-27 02:01:54.069257,2025-11-03 04:00:14.957523,102,5,1,1456
+103,"R7_PANGATUNGGAN, NINO V._B0000032417_Payment",Payment,payment billing email,RESOLVED,2025-11-05 08:44:55.919269,2025-11-06 00:14:49.208815,145,3,1,1565
+155,"R7_VILLACENCIO, NEIL_B0000030580_Payment",Payment,"Good afternoon Ma'am Please ko sa payment ni 
+Villacencio, Neil - B0000030580",RESOLVED,2025-11-07 08:54:20.497061,2025-11-12 02:00:44.494273,172,4,1,1649
+27,"R7_CEBU QUAD HOTEL MANAGEMENT CORP.,_B0000032390_NoInternetConnection",No Internet Connection,"Dear Coronatel Support Team,
+
+We would like to report that our internet connection has been down since yesterday (October 26, 2025). There has been no connectivity at our location since the outage began.
+
+Account Name: Cebu Quad Hotel Management Corp
+Issue: Loss of Signal (LOS) / No Internet Connection
+Duration: Since October 26, 2025
+Request: Immediate technical assistance and service restoration
+This issue is affecting our hotel operations, so we kindly request your immediate attention and update on the status of our connection. You may reach us at 09657610702 for further coordination.
+
+Thank you for your prompt assistance.
+
+
+Sincerely,
+
+Mark Vincent Mission | IT Specialist
+SureStay Plus by Best Western Cebu City
+
+Danaque Building | Osmeña Blvd., Capitol Site | Cebu City | Philippines | 6000
+
+M: +63.965-761-0702
+
+
+",IN_PROGRESS,2025-10-27 01:43:27.222439,2025-10-27 02:18:21.842163,87,4,1,1458
+20,"R7_MEDALLA, MARK VINCENT Q._B0000031792_NoInternetConnection",No Internet Connection,"Hello, we have no internet connection. Location Minglanilla Cebu. 
+
+Mark Vincent Medalla 
+Acc. # B0000031792",RESOLVED,2025-10-27 00:23:05.495963,2025-10-30 02:07:53.756240,120,3,1,1470
+79,"R7_CANEN, LUISITO M._B0000031944_Payment",Payment,viber chat gcash payment amount: 1200,RESOLVED,2025-11-03 07:26:59.484531,2025-11-04 06:18:05.030118,79,3,1,1538
+28,R7_CEBU AIRMAIL EXPRESS - CAPITOL_B0000032415_NoInternetConnection,No Internet Connection,"Hi Team,
+
+Our store doesn't have connection since last friday.
+
+Cebu Air Mail Express
+Unit 122 Cocomall, Osmena Blvd
+Capitol Site, Cebu City 6000
+
+You may call 0917-192-6119
+
+
+Joey",RESOLVED,2025-10-27 01:48:34.640673,2025-10-30 05:52:36.877414,85,3,1,1452
+37,"R7_PACIFIC PAPYRUS SOLUTIONS, INC._B0000030388_NoInternetConnection",No Internet Connection,"LoS red light 
+Prioritize",RESOLVED,2025-10-27 05:32:07.502890,2025-11-03 02:21:55.523343,142,4,1,1474
+30,"R7_GERONA, MELVIN N._B0000032824_NoInternetConnection",No Internet Connection,"Hi Sir/Ma'am,
+
+Good morning. Inwould like to remind on my below concern for our internet connection.
+
+Thank you.
+
+
+Best regards,
+
+Melvin
+
+Yahoo Mail: Search, Organize, Conquer
+
+On Sun, Oct 26, 2025 at 10:10 AM, Melvin Gerona
+<mngerona@yahoo.com> wrote:
+Hi Sir/Ma'am,
+
+I would to check for an update with you if there is an internal problem on your internet connections.
+
+I believe not only our unit has a probelm because our neighbor also do not have internet.
+
+Please update us.
+
+
+
+Thank you.
+Best regards,
+
+Melvin Gerona",RESOLVED,2025-10-27 03:06:15.335029,2025-11-03 02:23:05.369405,107,4,1,1462
+60,"R7_SALA, NICOLE MARIENNE C._B0000032777_NoInternetConnection",No Internet Connection,"Client has no internet connection since October 26, 2025
+
+Reported today October 29, 2025 that they still have no internet connection.",RESOLVED,2025-10-29 03:34:52.826025,2025-11-03 02:51:50.957370,158,3,1,1505
+23,"R7_TABALOC, JULITA_B0000030427_NoInternetConnection",No Internet Connection,"    Hello, this is JAMES MICHAEL TABALOC, grandson of JULITA REYES TABALOC, a DCTECH customer of Region VII, Central Visayas. We would like to push a concern regarding our intermittent connection, which had just occurred hours ago as of sending this email, and inquire about the details of the problem (and when it will be resolved), thank you.
+
+
+
+Kind regards, 
+
+JAMES MICHAEL TABALOC",PENDING,2025-10-27 00:38:40.161045,2025-10-27 06:06:02.142944,165,5,1,
+17,"R7_BARROGA, JOSEPHINE M._B0000032535_RequestRouterReplacement",Request Router Replacement,"Hello,
+
+Good day!
+
+I would like to ask for your assistance please regarding our router that was damaged last night due to heavy rain. May I ask for a replacement for the router please? Please reach out to my contact number 09062419594 or 09709463476 for any updates.
+
+Thank you!
+
+
+Respectfully yours,
+Josephine M. Barroga",RESOLVED,2025-10-27 00:15:23.272429,2025-10-29 03:36:31.165535,70,5,1,1437
+65,"R7_MORAS, JOAQUIN_B0000030631_NoInternetConnection",No Internet Connection,"reported concern via viber on  10-29-25 
+
+concern details
+
+- light indicators: GREEN but there is no access to Internet Connection
+
+Need Immediate Assistance
+
+",RESOLVED,2025-10-29 07:02:53.124967,2025-11-03 03:09:12.077702,124,4,1,1509
+96,"R7_BENDANILLO, FELIX QUIBOT_B0000030618_RequestRebate",Request Rebate,"Bendanillo, Felix Quibot
+B0000030618
+Oct. 25,2025 Started - Around 2:00 pm
+Oct. 28,2025 restored - 2:00 Am",RESOLVED,2025-11-05 01:31:30.274100,2025-11-06 00:15:03.588404,71,3,1,1557
+69,"R7_GERONA, MELVIN N._B0000032824_Payment",Payment,"Hi Sir/Ma'am,
+
+Good day!
+Please see attached payment receipt for the month of October 2025.
+
+
+
+
+Thanks and best regards,
+
+Melvin Gerona
+",RESOLVED,2025-10-30 09:07:56.877691,2025-11-18 08:47:40.086300,107,5,1,1521
+34,"R7_NACARIO, LORNA_B0000030585_Payment",Payment,"Bank Transaction Reference Number:
+Transaction Date: October 27, 2025
+Bank Name: UBP
+Amount: 999
+Coronatel Account Number: 
+Payor Last Name, First Name, Middle Name: 
+Mode of submission (email, physical copy, etc.): Email",RESOLVED,2025-10-27 03:50:59.468441,2025-10-27 09:43:00.723358,130,4,1,1476
+97,R7_NUAT THAI FOOT & BODY MASSAGE-MABOLO_B0000032427_RequestRebate,Request Rebate,"Nuat Thai Foot & Body Massage-mabolo
+B0000032427
+Oct. 25,2025 Started - Around 2:00 pm
+Oct. 29,2025 restored - 11:00 AM",RESOLVED,2025-11-05 01:32:00.760455,2025-11-18 23:48:28.363641,136,4,1,1559
+31,"R7_ANCHETA, GRACE_B0000031756_NoInternetConnection",No Internet Connection,"Kung kelan nagbayad, tsaka nawalan ng internet!! Anak Ng 
+
+On Sun, Oct 26, 2025, 8:19 AM Grace Ancheta <grace.ancheta85@gmail.com> wrote:
+Hello! Can someone tell me what's going?? 
+
+On Sat, Oct 25, 2025, 5:07 PM Grace Ancheta <grace.ancheta85@gmail.com> wrote:
+Please check status of my internet. I currently do not have any connection since this morning. ",RESOLVED,2025-10-27 03:35:02.939002,2025-10-30 02:06:28.795580,65,3,1,
+85,R7_APOLLO GLOBAL CORPORATION - 7 ELEVEN - ST-1587 BULACAO PARDO_B0000030524_NoInternetConnection,No Internet Connection,"Hi Team 
+
+Please assist client Thank you. 
+
+@⁨DCtech Helpdesk⁩ 
+
+Good day!
+
+Hi Sir/Ma'am
+
+For your assistance please.
+
+Problem Encountered: NO INTERNET CONNECTION, RED LOS
+
+Store ID : 1587 
+Store Name : BULACAO PARDO
+Store Manager Name : JENILENE MATAS
+Contact Number/s : 9933709453
+Email : st1587@store.philseven.com
+Address : CEBU SOUTH ROAD BULACAO, CEBU CITY, CEBU, PHILIPPINES
+Account Number: B0000030524	
+
+Modem: DCTech Fiber
+	LOS - Red Light
+	POWER - Green steady
+	Lan 1 - Green Light",IN_PROGRESS,2025-11-04 23:29:05.220125,2025-11-05 00:19:42.019170,219,3,1,1548
+35,"R7_NACARIO, LORNA_B0000030585_NoInternetConnection",No Internet Connection,Client reported 3 days no internet connection ,RESOLVED,2025-10-27 03:51:31.224449,2025-10-28 06:34:53.035580,130,4,1,
+55,R7_APOLLO GLOBAL CORPORATION - 7 ELEVEN - ST-4131 TUNGKIL MINGLANILLA_B0000031081_NoInternetConnection,No Internet Connection,"Hi Team,
+
+Please check Dctech Fiber in store
+No Internet connection
+
+Store Number : 4131
+Store Name : TUNGKIL MINGLANILLA
+Store Manager : GERALDEN ADLAON	
+Contact Number:  09939665647
+Contact Email : st4131@store.philseven.com
+Address: 1058 PUROK AZALEA, TUNGKIL STA. CROZ, MINGLANILLA, CEBU, PHILIPPINES
+Account Number : B0000031081
+
+DcTech Status:
+POWER - Green light
+POS - Green light
+WIFI - Green light
+LAN 1 - Green light
+Action Taken: Restart DCTECH and secure cables.
+
+Hoping for your prompt response.
+
+Thank you.
+
+@⁨Lim⁩ @⁨Sophia Paloma⁩",IN_PROGRESS,2025-10-28 06:31:20.794721,2025-10-28 06:35:38.833634,261,5,1,1496
+50,"R7_SPEEDFUSION NETWORKS, INC.-MANDAUE CITY_B0000032754_Payment",Payment,"Hello Ma'am,
+
+Good morning.
+
+Please find attached proof of payment for Account Number B0000032754.
+This payment covers the billing period from September 30 - October 30, 2025.",RESOLVED,2025-10-28 03:35:47.291713,2025-10-28 23:47:16.810838,163,4,1,1490
+165,"R7_FINN, ERLINDA F. / FAMILY 3 APARTMENT_B0000031582_RequestServiceReactivation",Request Service Reactivation,"Hi,
+
+I would like to request for a re-qctivqtion of our Qcct # B 0000031582
+Service Plan SP4R62208
+Aas we are back in the City.
+Thank you..
+ERLINDA F.Finn",RESOLVED,2025-11-10 03:09:33.949488,2025-11-12 07:15:49.321849,103,4,1,1683
+181,R7_CEBU ADVENT DEVELOPMENT CORPORATION_B0000032386_NoInternetConnection,No Internet Connection,"Good Afternoon Ma'am/Sir mamalihog ko pa ticket no internet connection.
+
+Cebu Advent Development Corporation
+
+Thank you.",IN_PROGRESS,2025-11-12 07:15:03.585953,2025-11-12 07:31:50.854798,84,4,1,1687
+33,R7_CEBU AIRMAIL EXPRESS - CAPITOL_B0000032415_RequestSOA,Request SOA,"Viber chat 
+
+CEBU AIR MAIL EXPRESS CAPITOL
+B0000032415..
+
+Request SOA.
+
+Thank you",RESOLVED,2025-10-27 03:40:57.787508,2025-10-27 06:46:31.852811,85,4,1,1466
+145,"R7_CANEN, ARBEN A._133594_NoInternetConnection",No Internet Connection,"Hi Good day, I would like to report LOS connection and I restarted the modem multiple times but still no internet connection. Thank you! ",RESOLVED,2025-11-07 02:52:04.345128,2025-11-13 01:35:52.680955,77,5,1,1634
+80,"R7_TAN PANG ENG, ROBERT Y._B0000030418_Payment",Payment,"Bank Transaction Reference Number: UB3528194
+Transaction Date: November 03, 2025
+Bank Name: UBP
+Amount: 999
+Coronatel Account Number: B0000030418
+Payor Last Name, First Name, Middle Name: TAN PANG ENG, ROBERT Y.
+Mode of submission (email, physical copy, etc.): Email",RESOLVED,2025-11-03 09:55:46.878990,2025-11-05 05:23:25.322986,166,4,1,1543
+66,"R7_MORAS, JOAQUIN-LINE 2_B0000031822_NoInternetConnection",No Internet Connection,"reported concern via viber on  10-29-25 
+
+concern details
+
+- light indicators: GREEN but there is no access to Internet Connection
+
+Need Immediate Assistance
+
+",RESOLVED,2025-10-29 07:06:09.745489,2025-11-03 02:52:02.395930,125,3,1,1511
+76,"R7_FAJARDO, RODERICK C._B0000030486_NoInternetConnection",No Internet Connection,"Good Morning Ma'am/Sir mamalihog ko pa ticket ni Fajardo, Roderick C -  B0000030486 no internet connection since Friday. Thank you",IN_PROGRESS,2025-11-03 00:22:57.994740,2025-11-03 01:44:11.092317,99,5,1,1533
+68,"R7_NICDAO, ANNETH KRISTINE G._B0000032488_NoInternetConnection",No Internet Connection,"Good afternoon Ma'am/Sir mamalihog ko pa ticket ni 
+NICDAO, ANNETH KRISTINE wala siyay connection RED LOS daw iyaha modem.",RESOLVED,2025-10-30 08:57:25.027015,2025-11-03 01:45:25.922026,134,4,1,1519
+36,R7_APOLLO GLOBAL CORPORATION - 7 ELEVEN - ST-1029 CALTEX TIPOLO_B0000030519_NoInternetConnection,No Internet Connection,"Store Number : ST-1029
+Store Name : Caltex Tipolo
+Store Manager : JOHANNES DU		   
+Contact Number:  096165065119566832227
+Contact Email : st1029@store.philseven.com
+Address: TIPOLO MANDAUE CITY, MANDAUE CITY, CEBU, PHILIPPINES
+Account Number : 	B0000030519
+Ticket number: 1270",IN_PROGRESS,2025-10-27 05:31:13.970694,2025-10-27 05:37:24.520612,192,5,1,1472
+38,"R7_CABAHUG, FRANCES NICOLE L._B0000031933_NoInternetConnection",No Internet Connection,"Good Afternoon
+
+I'm sorry, I don't know if this is the right email to reach out to, the previous messenger/chat I reached out to is disabled.
+
+It's been more than 24 hours since we've lost connection. Has there been any issues I need to be aware of?
+
+Thank You 
+
+
+
+Best Regards
+
+Frances Nicole Cabahug",RESOLVED,2025-10-27 06:03:24.474269,2025-10-29 02:03:19.893267,74,3,1,
+81,"R7_FERNANDEZ, GLORNEY GRACE B._133327_Payment",Payment,proof of payment in the support mail,RESOLVED,2025-11-04 05:42:26.458002,2025-11-06 00:15:22.468431,100,3,1,1540
+48,"R7_CHONG, OLLIE VERA_B0000032050_NoInternetConnection",No Internet Connection,"When po babalik boss?
+
+On Sun, Oct 26, 2025, 3:48 PM Rheivyn Hibrada <rjhibrada@gmail.com> wrote:
+No internet connection since yesterday 
+Account number B0000032050
+Tungkil, Minglanilla
+Ollie Vera Chong",RESOLVED,2025-10-27 23:42:48.195880,2025-11-07 00:37:12.924047,91,5,1,
+178,R7_NEST CREATIVE INC._B0000032890_RequestServiceDisconnection,Request Service Disconnection,"Good day,
+
+I am writing to formally request the disconnection of my internet service associated with account number B0000032890, registered under the name Nest Creatives Inc.
+
+Over the past few months, we have experienced no active internet connection/service despite being billed regularly.
+
+Given this prolonged service disruption, I kindly request a refund or billing adjustment for the affected months during which we did not receive the internet service as per our plan.
+
+Please proceed with the disconnection effective today November 11,  2025 and confirm once the process is complete. I would appreciate written confirmation regarding both the disconnection and the status of the refund.
+
+Thank you for your prompt attention to this matter.",RESOLVED,2025-11-11 23:58:39.984492,2025-11-17 01:30:12.055109,131,3,1,1680
+39,R7_PALAWAN PAWNSHOP INC.-CEBU-TALISAY CITY-TABUNOK III_B0000031133_NoInternetConnection,No Internet Connection,Viber,RESOLVED,2025-10-27 06:13:16.688369,2025-11-12 02:21:53.477357,144,3,1,1478
+183,"R7_CEBU QUAD HOTEL MANAGEMENT CORP.,_B0000032390_Payment",Payment,billing mail,RESOLVED,2025-11-13 00:09:01.458843,2025-11-17 05:16:25.251744,87,5,1,1693
+47,"R7_BANGAYAN, ROSEWIL MAE_B0000031499_NoInternetConnection",No Internet Connection,"Hi Team,
+
+I would like to report that our internet connection has been down for three days, starting last Saturday, October 25. As of now, the connection has not yet been restored.
+
+I am currently working from home, and this outage is impacting my work. I would greatly appreciate your assistance in resolving this issue.
+
+
+
+Thank you!
+
+
+
+Subscriber Name: BANGAYAN, ROSEWIL MAE
+
+ Account Number: B0000031499
+
+Address: 142 B. Rodriguez Street Brgy. Sambag 2 Cebu City
+
+Contact no. 09470992492",RESOLVED,2025-10-27 23:40:32.768327,2025-10-30 00:59:10.691025,69,3,1,
+77,"R7_CANEN, GRANT BRIEST_B0000031336_Payment",Payment,Jella Canen payment billing,RESOLVED,2025-11-03 02:39:06.029967,2025-11-05 05:15:04.744390,78,4,1,1535
+82,R7_OIKONOMOS INTL RESOURCES CORPORATION MOVENPICK HOTEL MACTAN ISLAND CEBU-IN HOUSE-FREE ACCOUNT_133993_ChangeAccountInformation,Change Account Information,"change Leo.ESCARRO@movenpick.com to jayson.aguirre@movenpick.com
+",PENDING,2025-11-04 05:45:57.724299,2025-11-05 23:29:46.409307,275,5,1,
+26,R7_CEBU SOUTH HARBOR AND CONTAINER TERMINAL CORP-LINE 3_201268_NoInternetConnection,No Internet Connection,"Good Day!
+
+Still the same no internet connection. 
+We tried to restart the Modem/Router
+still not working or no internet.
+
+For your immediate action please.
+
+
+
+Best Regards
+
+
+On 2025-10-25 14:19, Anton wrote:
+> Good Day!
+>
+> we have a concern we dont have internet connection start 10am in the
+> morning.
+>
+> for your immediate response.
+>
+> Thank You.
+",RESOLVED,2025-10-27 00:48:45.723008,2025-10-30 02:08:25.850087,90,3,1,1440
+57,R8_APOLLO GLOBAL CORPORATION - 7 ELEVEN - ST-3679 MARASBARAS_B0000032260_NoInternetConnection,No Internet Connection,"Requesting for your immediate assistance.
+
+Problem Encountered: DCTech Fiber no internet. Wifi is enabled.
+
+Store Number: 3679
+Store Name: Tacloban City Hospital
+Store Manager : JEVIE LABISTE
+Contact Numbers: 9363964226
+Store Email: st3679@store.philseven.com
+Address: BRGY. 80 MARASBARAS, TACLOBAN CITY, LEYTE, PHILIPPINES
+Account Number: B0000032260
+
+Modem : DCTech Fiber
+POWER : Yellow light
+LOS : Red light
+LAN1 : Yellow light
+WIFI : Yellow light
+
+Hoping for your prompt response.
+
+Thank you.",RESOLVED,2025-10-28 23:08:38.215711,2025-10-30 02:09:12.344765,287,3,1,
+46,"R7_ALKUINO, KRISTINE S._B0000032711_RequestRebate",Request Rebate,"Asking for billing adjustment or Rebate
+Oct. 25,2025 10 am plus no internet connection
+Oct. 26, 2025 whole day no internet connection
+Oct.27,2025 whole day no internet connectio until now pa gud... 
+Online class pa gud ako anak ron... pls.pls.pls. i need adjustment or rebate for straight 3 days no internet",RESOLVED,2025-10-27 23:35:50.179452,2025-10-28 07:21:35.159908,63,4,1,1494
+58,"R7_CABAHUG, FRANCES NICOLE L._B0000031933_RequestServiceDisconnection",Request Service Disconnection,need to get the reason of disconnection,RESOLVED,2025-10-28 23:09:47.582490,2025-10-30 02:39:33.168134,74,5,1,1503
+61,"R7_CABAHUG, FRANCES NICOLE L._B0000031933_Payment",Payment,"Good Morning
+
+Here is the Proof of Payment for the settlement of the final balance, as required for the processing end effectivity of the Disconnection Request.
+
+Thank You",RESOLVED,2025-10-29 05:10:59.789543,2025-10-30 02:39:40.578332,74,5,1,1507
+59,"R8_MACAPUGAS, NICANOR MIOLE_B0000032032_Payment",Payment,"payment check the email
+",RESOLVED,2025-10-28 23:10:31.147352,2025-10-30 09:22:06.153559,353,4,1,1500
+56,R7_APOLLO GLOBAL CORPORATION - 7 ELEVEN - ST-4132 DECA HOMES MACTAN_B0000032593_NoInternetConnection,No Internet Connection,"Hi Team,
+
+Please check Dctech Fiber in store
+No Internet connection
+
+Store Number : 4132
+Store Name : DECA HOMES MACTAN
+Store Manager : ROSELYN REGLA 	
+Contact Number:  09533989838
+Contact Email : st4132@store.philseven.com
+Address: BASAK-SUDTUNGGAN RD., GO COMPOUND, LAPULAPU CITY, PHILIPPINES
+Account Number : 4132
+
+DcTech Status:
+POWER - Green light
+WIFI - No light
+LAN 1 - Green light
+Action Taken: Restart DCTECH and secure cables.
+
+Hoping for your prompt response.
+
+Thank you.",PENDING,2025-10-28 23:07:30.630651,2025-11-14 02:12:38.823103,262,4,1,1498
+70,R7_APOLLO GLOBAL CORPORATION - 7 ELEVEN - ST-1323 CITY TIMESQUARE_B0000030536_NoInternetConnection,No Internet Connection,"Good day!
+
+Hi Sir/Ma'am
+
+Requesting for your immediate assistance.
+
+Problem Encountered: DCTech Fiber no internet, fiber cable has rat bites
+
+Store ID : 1323
+Store Name : City Times Square
+Store Manager Name : MAE ANN PEPITO
+Contact Number/s : 9177005950
+Email : st1323@store.philseven.com
+Address : A-103 & 104, GROUND FLOOR, CITY TIME SQUARE, BRGY. SUBANGDAKU, NRA, MANDAUE CITY, CEBU, PHILIPPINES
+Account Number : B0000030536	
+
+Modem : DCTech Fiber
+Power : Green Light
+LOS : Red Blinking
+LAN1 : Green Blinking
+
+Hoping for your prompt response.
+
+Thank you.",IN_PROGRESS,2025-11-02 23:08:20.262579,2025-11-02 23:57:08.804571,208,3,1,1529
+53,"R7_MORAS, JOAQUIN-LINE 2_B0000031822_Payment",Payment,"Good afternoon ma'am/ Sir, Please ko sa payment ni 
+
+Moras, Joaquin Line 1 - 1,499.00
+
+Moras, Joaquin Line 2 - 799.00
+
+Thank you.",RESOLVED,2025-10-28 05:08:04.549914,2025-11-03 03:25:49.839352,125,5,1,1486
+75,"R7_APOLLO GLOBAL CORPORATION - 7 ELEVEN - ST-1797 MACTAN SHRINE, LAPU-LAPU CITY_B0000032617_NoInternetConnection",No Internet Connection,"@⁨DCtech Helpdesk⁩  
+Hi Team,
+
+Please check Dctech Fiber in store
+No Internet connection
+
+Store Number : 1797
+Store Name : MACTAN SHRINE
+Store Manager : MARICAR PAQUIBOT 	
+Contact Number:  09338140966
+Contact Email : st1797@store.philseven.com
+Address: 4328-A CADASTRE BRGY. MACTAN, LAPU-LAPU CITY, CEBU, PHILIPPINES
+Account Number : B0000032617
+
+DcTech Status:
+POWER - Green light
+INTERNET - Red light
+WIFI - No light
+LAN 1 - Green light
+Action Taken: Restart DCTECH and secure cables.
+
+Hoping for your prompt response.
+
+Thank you.
+
+Jemmuel R. Talagtag
+Service Desk
+Apollo Global Corporation
+4120, Kalayaan Ave, Makati City
+jemmuel@apolloglobal.net",IN_PROGRESS,2025-11-02 23:14:05.924657,2025-11-02 23:50:33.110278,230,4,1,1524
+42,"R7_JANOHAN, JESSA_B0000030998_NoInternetConnection",No Internet Connection,"2025-10-25 20:48
+Good evening,
+I would like to inform you that we don't have internet connection again, and it's kinda disappointing that this week we encountered this problem twice.  I don't know what's going on but we are not satisfied with your service lately. 
+We have work and school but we can't make it due to the internet problem. 
+Thank you. ",RESOLVED,2025-10-27 07:17:44.487064,2025-11-20 05:49:26.320248,110,3,1,1371
+54,R7_JEHAN SHIPPING CORPORATION_B0000030879_SlowInternetConnection,Slow Internet Connection,slow internet need assistance,RESOLVED,2025-10-28 05:13:19.986858,2025-11-20 05:50:02.483413,111,3,1,1492
+43,"R7_FLORES, LADY MAE P._B0000032428_NoInternetConnection",No Internet Connection,"Good day, I would like to ask about our internet connection. We haven't had any service for three days, which has caused problems in our work and studies. Can you please tell me the reason for the interruption and when the service will be back? Thank you for your help.",IN_PROGRESS,2025-10-27 07:19:46.732039,2025-11-06 05:46:48.896504,105,4,1,1620
+74,R8_APOLLO GLOBAL CORPORATION - 7 ELEVEN - ST-3926 BRGY 59-B CAIBAAN_B0000032461_NoInternetConnection,No Internet Connection,"Hi Team,
+
+Good Day!
+Please check Dctech Fiber in store
+No Internet
+
+Store Number: 3926
+Store Name: TACLOBAN CAIBAAN
+Store Manager : MARILOU OLMEDA
+Contact Numbers: 09688713337
+Store Email: st3926@store.philseven.com
+Address: BRGY. 95 CAIBAAN, MAHARLIKA HIGHWAY, TACLOBAN CITY, LEYTE, PHILIPPINES
+Account Number : 3926
+
+Modem : DCTech Fiber
+POWER : Yellow light
+LOS : No light
+LAN1 : Yellow light
+WIFI : Yellow light
+
+Action Taken: restart modem and secure cables
+
+Hoping for your prompt response.
+
+Thank you.",IN_PROGRESS,2025-11-02 23:12:57.747590,2025-11-02 23:58:23.724335,290,5,1,
+182,"R7_MINGUEZ, JOSHUA GEORGE C._B0000032477_Payment",Payment,paymennt support mail,RESOLVED,2025-11-12 23:52:00.714330,2025-11-17 02:51:01.132253,122,3,1,1691
+83,"R8_NADERA, JEMILYN S._B0000032030_NoInternetConnection",No Internet Connection,"Good day Ma'am/Sir! 
+ I would like to request to restore the internet here in tacloban. Thank you",RESOLVED,2025-11-04 06:11:46.935638,2025-11-05 23:29:30.653235,360,3,1,
+72,R7_APOLLO GLOBAL CORPORATION - 7 ELEVEN - ST-0931 GAGFA_B0000032495_NoInternetConnection,No Internet Connection,"Hi Team,
+
+Good Day!
+Please check Dctech Fiber in store
+No Internet
+
+Store Number: 931
+Store Name: Gagfa IT
+Store Manager : ZACARIAS LAWAS JR.
+Contact Numbers: 09988450613
+Store Email: st931@store.philseven.com
+Address: G/F GAGFA BLDG CABAHUG STREET MABOLO, CEBU CITY, CEBU, PHILIPPINES
+Account Number : B0000032495
+
+Modem : DCTech Fiber
+POWER : No light
+LOS : Red light
+LAN1 : Yellow light
+WIFI : Yellow light
+
+Action Taken: restart modem and secure cables
+
+Hoping for your prompt response.
+
+Thank you.",PENDING,2025-11-02 23:11:25.608909,2025-11-14 02:13:00.519170,177,4,1,1528
+195,"R7_BENDANILLO, FELIX QUIBOT_B0000030618_PaymentVerification",Payment Verification,Payment for the month of July and August need to be verified with Sir Dennis,RESOLVED,2025-11-17 02:36:11.798128,2025-11-19 02:24:45.427649,71,4,1,1708
+67,"R7_NICDAO, ANNETH KRISTINE G._B0000032488_Payment",Payment,billing email,RESOLVED,2025-10-30 08:13:12.730753,2025-10-30 09:22:51.137945,134,3,1,1517
+52,R7_APOLLO GLOBAL CORPORATION - 7 ELEVEN - ST-2311 SUNDANCE_B0000030534_NoInternetConnection,No Internet Connection,"@⁨DCtech Helpdesk⁩ 
+
+Good day!
+
+Hi Sir/Ma'am
+
+Requesting for your immediate assistance.
+
+Problem Encountered: DCTech Fiber no internet. IP should be set to 192.168.30.1
+
+Store Number: 2311
+Store Name: Sundance Residences
+Store Manager : CHRISTIAN BETCHER
+Contact Numbers: 9988449268
+Store Email: st2311@store.philseven.com
+Address: GF SPACE 3, 4, 5 SUNDANCE RESIDENCES, R. DUTERTE ST., BANAWA, CEBU CITY, PHILIPPINES
+Account Number: B0000030534
+
+Modem : DCTech Fiber
+POWER : Yellow light
+LOS : Red light
+LAN1 : Yellow light
+WIFI : Yellow light
+
+Hoping for your prompt response.
+
+Thank you.",IN_PROGRESS,2025-10-28 04:54:25.346451,2025-10-28 05:08:57.343448,241,5,1,1488
+49,"R7_JORDAN, JENNIFER CRISTY P._B0000032564_RequestRebate",Request Rebate,The internet was not working on October 25-27. Your support team sent an email earlier this morning that the internet was restored last night but we were not able to check it not until this morning.,RESOLVED,2025-10-28 01:30:56.223172,2025-10-28 05:20:51.660544,112,5,1,1482
+44,"R7_FERNANDEZ, ZADJADE KENT C._B0000031578_Payment",Payment,"Hi,
+
+Please see attached file for the payment made today for the October bill.
+
+Account name: Zadjade Kent C. Fernandez
+Account number: B0000031578",RESOLVED,2025-10-27 08:10:13.833709,2025-10-28 08:26:47.976278,102,3,1,1480
+71,"R7_APOLLO GLOBAL CORPORATION - 7 ELEVEN - ST-2667 ETAL PROPERTY, CEBU CITY_B0000032591_NoInternetConnection",No Internet Connection,"Hi Sir/Ma'am
+
+Requesting for your immediate assistance.
+
+Problem Encountered: DCTech Fiber no internet. Wifi is enabled.
+
+Store Number: 2667
+Store Name: Apas Lahug
+Store Manager : JOAN TRASMONTE
+Contact Numbers: 9323448903
+Store Email: st2667@store.philseven.com
+Address: ETAL PROPERTY, CAMP LAPU-LAPU RD. APAS, CEBU CITY, PHILIPPINES
+Account Number: 2667
+
+Modem : DCTech Fiber
+POWER : Yellow light
+LOS : Red light
+LAN1 : Yellow light
+WIFI : Yellow light
+
+Hoping for your prompt response.
+
+Thank you.",IN_PROGRESS,2025-11-02 23:10:37.359412,2025-11-02 23:58:43.855504,251,5,1,1525
+73,R7_APOLLO GLOBAL CORPORATION - 7 ELEVEN - ST-0991 NRA_B0000030471_NoInternetConnection,No Internet Connection,"Good day!
+
+Hi Sir/Ma'am
+
+Requesting for your immediate assistance.
+
+Problem Encountered: DCTech Fiber no internet. RED  LOS
+
+Store Number: 991
+Store Name: Caltex North Reclamation Area
+Store Manager : MARY JANE VALIENTE
+Contact Numbers: 9926894391
+Store Email: st991@store.philseven.com
+Address: QUANO AVENUE NORTH RECLAMATION, MANDAUE CITY, CEBU, PHILIPPINES
+Account Number: B0000030471
+
+Modem : DCTech Fiber
+POWER : Yellow light
+LOS : Red light
+LAN1 : Yellow light
+WIFI : No light
+
+Hoping for your prompt response.
+
+Thank you.",IN_PROGRESS,2025-11-02 23:12:22.900071,2025-11-03 00:18:41.669037,186,3,1,1531
+91,"R7_SALA, NICOLE MARIENNE C._B0000032777_FinalPayment",Final Payment,Client paid his final bill. Requested disconnection.,RESOLVED,2025-11-04 23:32:39.717201,2025-11-06 08:42:05.088106,158,5,1,1553
+93,"R7_PACIFIC PAPYRUS SOLUTIONS, INC._B0000030388_NoInternetConnection(2)",No Internet Connection(2),LOS red modem. High priority,PENDING,2025-11-04 23:39:50.585018,2025-11-14 02:25:53.261464,142,4,1,1547
+106,R7_APOLLO GLOBAL CORPORATION - 7 ELEVEN - ST-4157 BASAK NICOLAS_B0000031995_NoInternetConnection,No Internet Connection,"@⁨DCtech Helpdesk⁩ 
+
+Hi Team,
+
+Good Day!
+Please check Dctech Fiber in store
+No Internet
+
+Store Number: 4157
+Store Name: Basak San Nicolas
+Store Manager : IVY AUM
+Contact Numbers: 09498774788
+Store Email: st4157@store.philseven.com
+Address: 203 TAGUNOL ST., CEBU CITY, PHILIPPINES
+Account Number : 4157
+
+Modem : DCTech Fiber
+POWER : Yellow light
+LOS : No light
+LAN1 : Yellow light
+WIFI : Yellow light
+
+Action Taken: restart modem and secure cables
+
+Hoping for your prompt response.
+
+Thank you.",IN_PROGRESS,2025-11-05 23:36:47.658258,2025-11-06 01:15:37.046569,263,4,1,1593
+196,R7_PARADISE VILLAGE HOMEOWNERS ASSOCIATION_B0000030456_RequestSOA,Request SOA,latest SOA,RESOLVED,2025-11-17 04:55:44.337151,2025-11-17 05:16:10.543255,146,5,1,1710
+116,R7_APOLLO GLOBAL CORPORATION - 7 ELEVEN - ST-4444 GUADALAJARA_B0000031998_NoInternetConnection,No Internet Connection,"@⁨DCtech Helpdesk⁩ 
+
+Hi Team,
+
+Good Day!
+Please check Dctech Fiber in store
+No Internet
+
+Store Number: 4444
+Store Name: Guadalajara
+Store Manager : CIRILA MANGUBAT
+Contact Numbers: 09692502247
+Store Email: st4444@store.philseven.com
+Address: UNIT 2 GROUND FLOOR, JAS BUILDING, GUADALUPE VRAMA AVE., CEBU CITY, PHILIPPINES
+Account Number : 4444
+
+Modem : DCTech Fiber
+POWER : Yellow light
+LOS : No light
+LAN1 : Yellow light
+WIFI : Yellow light
+
+Action Taken: restart modem and secure cables
+
+Hoping for your prompt response.
+
+Thank you.",IN_PROGRESS,2025-11-06 00:21:42.464429,2025-11-06 00:38:26.997684,266,5,1,1579
+118,R7_APOLLO GLOBAL CORPORATION - 7 ELEVEN - ST-4498 SARROSA_B0000032451_NoInternetConnection,No Internet Connection,"@⁨DCtech Helpdesk⁩ 
+
+Hi Team,
+
+Good Day!
+Please check Dctech Fiber in store
+No Internet
+
+Store Number: 4498
+Store Name: Sarrosa Hotel
+Store Manager : GRACE MABALA
+Contact Numbers: 09511654561
+Store Email: st4498@store.philseven.com
+Address: F. CABAHUG ST. PANAGDAIT,MOBOLO, CEBU CITY, PHILIPPINES
+Account Number : 4498
+
+Modem : DCTech Fiber
+POWER : Yellow light
+LOS : No light
+LAN1 : Yellow light
+WIFI : Yellow light
+
+Action Taken: restart modem and secure cables
+
+Hoping for your prompt response.
+
+Thank you.",IN_PROGRESS,2025-11-06 00:23:32.881052,2025-11-06 00:51:55.667439,268,3,1,1589
+117,R7_APOLLO GLOBAL CORPORATION - 7 ELEVEN - ST-1715 PIER UNO_B0000030578_NoInternetConnection,No Internet Connection,"@⁨DCtech Helpdesk⁩ 
+
+Hi Team,
+
+Good Day!
+Please check Dctech Fiber in store
+No Internet
+
+Store Number: 1715
+Store Name: Pier Uno
+Store Manager : REGINE PALLAR
+Contact Numbers: 09091192776
+Store Email: st1715@store.philseven.com
+Address: NO. 21, LEGASPI EXTENSION, CEBU CITY, PHILIPPINES
+Account Number : B0000030578
+
+Modem : DCTech Fiber
+POWER : Yellow light
+LOS : No light
+LAN1 : Yellow light
+WIFI : Yellow light
+
+Action Taken: restart modem and secure cables
+
+Hoping for your prompt response.
+
+Thank you.",IN_PROGRESS,2025-11-06 00:22:32.029284,2025-11-06 01:59:35.921844,226,4,1,1607
+45,"R7_SALON, DANILO G._B0000032105_NoInternetConnection",No Internet Connection,"Good afternoon, 
+
+It has been three (3) days since the lost of our internet connection. We are in need of it at this very moment. It is very unfair to pay a whole of it and just for it to be disconnect for more than three (3) days. 
+
+I have sent a message to DC Tech Micro Services, Inc. and to YOUR email and I STILL DID NOT GET A RESPONSE.
+
+If this will not be settled, we would like to cancel our subscription/connection with your company. 
+
+Thank you.
+
+Sincerely,
+A consistent payer
+
+",RESOLVED,2025-10-27 09:14:55.411983,2025-11-18 07:09:24.688514,159,5,1,
+86,R7_APOLLO GLOBAL CORPORATION - 7 ELEVEN - ST-2612 HSJB_B0000030562_NoInternetConnection,No Internet Connection,"Hi Team 
+
+Please assist client Thank you. 
+
+@⁨DCtech Helpdesk⁩ 
+Hi Team,
+
+Problem Encountered: NO INTERNET CONNECTION, RED LOS
+
+Store Number : 2612
+Store Name : HSJB
+Store Manager : CHARMAINE NECESARIO
+Contact Number: 09391808822
+Contact Email : st2612@store.philseven.com
+Address: N. BACALSO AVE. COR. V. RAMA ST., BGY. SAN NICOLAS, CEBU CITY, CEBU, PHILIPPINES
+Account Number : B0000030562
+
+DcTech Status:
+LOS - Red light
+PON - No light
+POWER - Green light
+Internet - Green light
+WIFI - No light
+LAN 1 - Green light
+Action Taken: Restart DCTECH and secure cables.
+
+Hoping for your prompt response.
+
+Thank you.",IN_PROGRESS,2025-11-04 23:29:52.802583,2025-11-04 23:46:18.171032,247,4,1,1522
+119,R7_APOLLO GLOBAL CORPORATION - 7 ELEVEN - ST-1524 TABUNOK 2_B0000031294_NoInternetConnection,No Internet Connection,"@⁨DCtech Helpdesk⁩ 
+
+Hi Team,
+
+Good Day!
+Please check Dctech Fiber in store
+No Internet
+
+Store Number: 1524
+Store Name: Tabunok 2
+Store Manager : GENELYN CABUENAS
+Contact Numbers: 09985860717
+Store Email: st1524@store.philseven.com
+Address: SANGI, TABUNOK, TALISAY, CEBU, PHILIPPINES
+Account Number : B0000031294
+
+Modem : DCTech Fiber
+POWER : Yellow light
+LOS : No light
+LAN1 : Yellow light
+WIFI : Yellow light
+
+Action Taken: restart modem and secure cables
+
+Hoping for your prompt response.
+
+Thank you.",IN_PROGRESS,2025-11-06 00:24:27.014084,2025-11-06 00:42:16.580370,217,5,1,1581
+105,R7_APOLLO GLOBAL CORPORATION - 7 ELEVEN - ST-3727 LAGTANG TALISAY_B0000030500_NoInternetConnection,No Internet Connection,"@⁨DCtech Helpdesk⁩ 
+
+Hi Team,
+
+Good Day!
+Please check Dctech Fiber in store
+No Internet
+
+Store Number: 3727
+Store Name: Lagtang
+Store Manager : MISHELLE PASIGNA
+Contact Numbers: 09393434035
+Store Email: st3727@store.philseven.com
+Address: LAGTANG, TALISAY CITY, CEBU, PHILIPPINES
+Account Number : B0000030500
+
+Modem : DCTech Fiber
+POWER : Yellow light
+LOS : No light
+LAN1 : Yellow light
+WIFI : Yellow light
+
+Action Taken: restart modem and secure cables
+
+Hoping for your prompt response.
+
+Thank you.",IN_PROGRESS,2025-11-05 23:35:53.638842,2025-11-06 00:25:46.566199,259,5,1,1571
+120,R7_APOLLO GLOBAL CORPORATION - 7 ELEVEN - ST-3842 TALAMBAN 2_B0000031280_NoInternetConnection,No Internet Connection,"@⁨DCtech Helpdesk⁩ 
+
+Hi Team,
+
+Good Day!
+Please check Dctech Fiber in store
+No Internet
+
+Store Number: 3842
+Store Name: Talamban 2
+Store Manager : MILFRED CABILUNA
+Contact Numbers: 09480364941
+Store Email: st3842@store.philseven.com
+Address: MINOZA ST.,, BRGY. TALAMBAN, CEBU CITY, CEBU, PHILIPPINES
+Account Number : B0000031280
+
+Modem : DCTech Fiber
+POWER : Yellow light
+LOS : No light
+LAN1 : Yellow light
+WIFI : Yellow light
+
+Action Taken: restart modem and secure cables
+
+Hoping for your prompt response.
+
+Thank you.",IN_PROGRESS,2025-11-06 00:25:21.853467,2025-11-06 03:15:07.710448,260,4,1,1610
+114,R7_APOLLO GLOBAL CORPORATION - 7 ELEVEN - ST-1745 TAN'S BLDG. MANDAUE CITY_B0000032543_NoInternetConnection,No Internet Connection,"@⁨DCtech Helpdesk⁩ 
+
+Hi Team,
+
+Good Day!
+Please check Dctech Fiber in store
+No Internet
+
+Store Number: 1745
+Store Name: S.B. Cabahug
+Store Manager : MAIMANAH MAUYAG
+Contact Numbers: 09064018040
+Store Email: st1745@store.philseven.com
+Address: TAN'S BLDG., UNIT 2-5, S.B. CABAHUG ST.,, MANDAUE CITY, CEBU, PHILIPPINES
+Account Number : 1745
+
+Modem : DCTech Fiber
+POWER : Yellow light
+LOS : No light
+LAN1 : Yellow light
+WIFI : Yellow light
+
+Action Taken: restart modem and secure cables
+
+Hoping for your prompt response.
+
+Thank you.",RESOLVED,2025-11-06 00:19:01.444413,2025-11-17 00:31:02.994328,227,3,1,1587
+115,R7_APOLLO GLOBAL CORPORATION - 7 ELEVEN - ST-2318 ADG TOWER_B0000031282_NoInternetConnection,No Internet Connection,"@⁨DCtech Helpdesk⁩ 
+
+Hi Team,
+
+Good Day!
+Please check Dctech Fiber in store
+No Internet
+
+Store Number: 2318
+Store Name: ADG Tower
+Store Manager : ANAMIE ANAMIE MARZON
+Contact Numbers: 09988450656
+Store Email: st2318@store.philseven.com
+Address: AD GOTHONG IT TOWER, LOPEZ JAENA ST, SUBANGDAKU, MANDAUE CITY, CEBU, PHILIPPINES
+Account Number : B0000031282
+
+Modem : DCTech Fiber
+POWER : Yellow light
+LOS : No light
+LAN1 : Yellow light
+WIFI : Yellow light
+
+Action Taken: restart modem and secure cables
+
+Hoping for your prompt response.
+
+Thank you.",IN_PROGRESS,2025-11-06 00:19:52.336286,2025-11-06 01:48:25.359660,243,4,1,1601
+98,R7_NEST CREATIVE INC._B0000032890_NoInternetConnection,No Internet Connection,"Good day, 
+
+We would like to request to check on out internet status. 
+we are having an internet issue for this past few months",RESOLVED,2025-11-05 03:29:39.610094,2025-11-14 00:31:53.120655,131,5,1,
+111,R7_APOLLO GLOBAL CORPORATION - 7 ELEVEN - ST-1425 CANDUMAN_B0000030514_NoInternetConnection,No Internet Connection,"@⁨DCtech Helpdesk⁩ 
+
+Hi Team,
+
+Good Day!
+Please check Dctech Fiber in store
+No Internet
+
+Store Number: 1425
+Store Name: Canduman
+Store Manager : JAY-R NOYNAY
+Contact Numbers: 09924091807
+Store Email: st1425@store.philseven.com
+Address: MCT BLDG., H. ABELLANA ST. COR. NATIONAL HIGHWAY BASAK, MANDAUE CITY, CEBU, PHILIPPINES
+Account Number : B0000030514
+
+Modem : DCTech Fiber
+POWER : Yellow light
+LOS : No light
+LAN1 : Yellow light
+WIFI : Yellow light
+
+Action Taken: restart modem and secure cables
+
+Hoping for your prompt response.
+
+Thank you.",IN_PROGRESS,2025-11-06 00:13:19.587814,2025-11-06 00:26:45.741084,212,3,1,1573
+110,R7_APOLLO GLOBAL CORPORATION - 7 ELEVEN - ST-2206 PELAEZ_B0000030525_NoInternetConnection,No Internet Connection,"@⁨DCtech Helpdesk⁩ 
+
+Hi Team,
+
+Good Day!
+Please check Dctech Fiber in store
+No Internet
+
+Store Number: 2206
+Store Name: Pelaez
+Store Manager : IRISH SHANE REYES
+Contact Numbers: 09397264533
+Store Email: st2206@store.philseven.com
+Address: GF TUXEDO SUITES, PELAEZ ST., KAMAGAYAN, CEBU CITY, CEBU, PHILIPPINES
+Account Number : B0000030525
+
+Modem : DCTech Fiber
+POWER : Yellow light
+LOS : No light
+LAN1 : Yellow light
+WIFI : Yellow light
+
+Action Taken: restart modem and secure cables
+
+Hoping for your prompt response.
+
+Thank you.",IN_PROGRESS,2025-11-06 00:12:39.551956,2025-11-06 01:30:07.118714,238,4,1,1599
+112,R7_APOLLO GLOBAL CORPORATION - 7 ELEVEN - ST-1209 GUADALUPE CEBU_B0000030533_NoInternetConnection,No Internet Connection,"@⁨DCtech Helpdesk⁩ 
+
+Hi Team,
+
+Good Day!
+Please check Dctech Fiber in store
+No Internet
+
+Store Number: 1209
+Store Name: Guadalupe Cebu
+Store Manager : JIMMY DILAO JR.
+Contact Numbers: 09190711087
+Store Email: st1209@store.philseven.com
+Address: 2211 V. RAMA AVENUE, GUADALUPE, CEBU CITY, PHILIPPINES
+Account Number : B0000030533
+
+Modem : DCTech Fiber
+POWER : Yellow light
+LOS : No light
+LAN1 : Yellow light
+WIFI : Yellow light
+
+Action Taken: restart modem and secure cables
+
+Hoping for your prompt response.
+
+Thank you.",IN_PROGRESS,2025-11-06 00:15:55.317308,2025-11-06 00:33:23.374110,203,5,1,1577
+102,R7_CORSICA COFFEE CORP.-BANAWA_133879_NoInternetConnection,No Internet Connection,"hi ma'am/sir good afternoon pwede mi pa create ticket kay client po, Corsica Coffee Corp yung 2 accounts po nila no internet",IN_PROGRESS,2025-11-05 06:08:31.214853,2025-11-05 23:27:45.558570,95,5,1,1563
+101,R7_CORSICA COFFEE CORP._B0000031173_NoInternetConnection,No Internet Connection,"hi ma'am/sir good afternoon pwede mi pa create ticket kay client po, Corsica Coffee Corp yung 2 accounts po nila no internet",IN_PROGRESS,2025-11-05 06:08:06.132464,2025-11-05 23:27:55.096310,94,4,1,1562
+104,R7_APOLLO GLOBAL CORPORATION - 7 ELEVEN ST-2432 PIER 4_B0000030670_NoInternetConnection,No Internet Connection,"@⁨DCtech Helpdesk⁩ 
+
+Hi Team,
+
+Good Day!
+Please check Dctech Fiber in store
+No Internet
+
+Store Number: 2432
+Store Name: Pier 4
+Store Manager : CHRISTALYN GAMBOA
+Contact Numbers: 09628674752
+Store Email: st2432@store.philseven.com
+Address: GEN MAXILOM AVE. EXT., COR. 3RD AVE, CEBU CITY, CEBU, PHILIPPINES
+Account Number : 2432
+
+Modem : DCTech Fiber
+POWER : Yellow light
+LOS : No light
+LAN1 : Yellow light
+WIFI : Yellow light
+
+Action Taken: restart modem and secure cables
+
+Hoping for your prompt response.
+
+Thank you.",IN_PROGRESS,2025-11-05 23:35:17.890678,2025-11-06 00:19:24.263473,269,3,1,1567
+108,R7_APOLLO GLOBAL CORPORATION - 7 ELEVEN - ST-1021 TALAMBAN CROSSING_B0000030512_NoInternetConnection,No Internet Connection,"@⁨DCtech Helpdesk⁩ 
+
+Hi Team,
+
+Good Day!
+Please check Dctech Fiber in store
+No Internet
+
+Store Number: 1021
+Store Name: Talamban Crossing
+Store Manager : KEVIN CARSON
+Contact Numbers: 09430915345
+Store Email: st1021@store.philseven.com
+Address: GOV. M CUENCO AVE CORNER ML QUEZON TALAMBAN, CEBU, PHILIPPINES
+Account Number : B0000030512
+
+Modem : DCTech Fiber
+POWER : Yellow light
+LOS : No light
+LAN1 : Yellow light
+WIFI : Yellow light
+
+Action Taken: restart modem and secure cables
+
+Hoping for your prompt response.
+
+Thank you.",IN_PROGRESS,2025-11-06 00:11:24.289493,2025-11-06 00:23:03.071096,189,3,1,1570
+109,R7_APOLLO GLOBAL CORPORATION - 7 ELEVEN - ST-1085 USC MAIN_B0000030612_NoInternetConnection,No Internet Connection,"@⁨DCtech Helpdesk⁩ 
+
+Hi Team,
+
+Good Day!
+Please check Dctech Fiber in store
+No Internet
+
+Store Number: 1085
+Store Name: USC Main
+Store Manager : JUNREY SUMAGANG
+Contact Numbers: 09260948223
+Store Email: st1085@store.philseven.com
+Address: ALONG GEN JUNQUERA STREET KAMAGAYAN CEBU CITY, CEBU, PHILIPPINES
+Account Number : B0000030612
+
+Modem : DCTech Fiber
+POWER : Yellow light
+LOS : No light
+LAN1 : Yellow light
+WIFI : Yellow light
+
+Action Taken: restart modem and secure cables
+
+Hoping for your prompt response.
+
+Thank you.",IN_PROGRESS,2025-11-06 00:12:00.900116,2025-11-06 00:29:22.705007,196,5,1,1575
+137,R8_APOLLO GLOBAL CORPORATION - 7 ELEVEN - ST-4514 BRGY 83-A BARAYAN_B0000032539_RequestSOA,Request SOA,go ateco,RESOLVED,2025-11-06 02:18:14.207391,2025-11-06 02:19:35.097807,291,3,1,1608
+133,"R7_NICDAO, ANNETH KRISTINE G._B0000032488_NoInternetConnection(2)",No Internet Connection(2),Reported concern via viber ,IN_PROGRESS,2025-11-06 00:53:28.049192,2025-11-06 04:03:00.701357,134,4,1,1616
+214,"R7_BALO, MYRLIN_B0000032467_RequestRebate",Request Rebate,"Good morning Ma'am/Sir 
+request rebates 
+Balo, Myrlin - B0000032467
+Date Down - Nov.3 around 9pm
+Date up - Nov.18 around 2:30 pm
+Thank You.",RESOLVED,2025-11-19 02:25:09.554054,2025-11-21 00:44:38.271212,68,4,1,1736
+136,R7_OCEANIC CONTAINER LINES INC._B0000031906_NoInternetConnection,No Internet Connection,Reported concern via viber ,IN_PROGRESS,2025-11-06 00:57:08.949412,2025-11-06 04:06:08.578130,137,4,1,1618
+126,"R7_APOLLO GLOBAL CORPORATION - 7 ELEVEN - ST-1509 CROSSING MARIGONDON BEACH, LAPU-LAPU CITY_B0000032678_NoInternetConnection",No Internet Connection,"@⁨DCtech Helpdesk⁩ 
+
+Hi Team,
+
+Good Day!
+Please check Dctech Fiber in store
+No Internet
+
+Store Number: 1509
+Store Name: Marigondon
+Store Manager : WINDIE GOILAN
+Contact Numbers: 09688576880
+Store Email: st1509@store.philseven.com
+Address: CROSSING MARIGONDON BEACH ROAD, LAPU-LAPU CITY, CEBU, PHILIPPINES
+Account Number : B0000032678
+
+Modem : DCTech Fiber
+POWER : Yellow light
+LOS : No light
+LAN1 : Yellow light
+WIFI : Yellow light
+
+Action Taken: restart modem and secure cables
+
+Hoping for your prompt response.
+
+Thank you.",IN_PROGRESS,2025-11-06 00:31:23.064213,2025-11-06 00:48:23.718103,216,5,1,1586
+121,"R7_APOLLO GLOBAL CORPORATION - 7 ELEVEN - ST-1589 BABAG UNO, LAPU-LAPU CITY_B0000032719_NoInternetConnection",No Internet Connection,"@⁨DCtech Helpdesk⁩ 
+
+Hi Team,
+
+Good Day!
+Please check Dctech Fiber in store
+No Internet
+
+Store Number: 1589
+Store Name: Babag Uno
+Store Manager : JACINTO MALUYA JR.
+Contact Numbers: 09762315198
+Store Email: st1589@store.philseven.com
+Address: BRGY. BABAG 1, LAPU-LAPU CITY, CEBU, PHILIPPINES
+Account Number : 1589
+
+Modem : DCTech Fiber
+POWER : Yellow light
+LOS : No light
+LAN1 : Yellow light
+WIFI : Yellow light
+
+Action Taken: restart modem and secure cables
+
+Hoping for your prompt response.
+
+Thank you.",RESOLVED,2025-11-06 00:25:59.482987,2025-11-12 02:19:09.961997,220,3,1,1592
+123,R7_APOLLO GLOBAL CORPORATION- 7 ELEVEN - ST-1852 THE SPACE_B0000030326_NoInternetConnection,No Internet Connection,"@⁨DCtech Helpdesk⁩ 
+
+Hi Team,
+
+Good Day!
+Please check Dctech Fiber in store
+No Internet
+
+Store Number: 1852
+Store Name: The Space
+Store Manager : REYBETZH ANN CABATINGAN
+Contact Numbers: 09398336112
+Store Email: st1852@store.philseven.com
+Address: THE SPACE, AS FORTUNA ST. COR REMEDIO ST., BANILAD, MANDAUE CITY, CEBU, PHILIPPINES
+Account Number : B0000030326
+
+Modem : DCTech Fiber
+POWER : Yellow light
+LOS : No light
+LAN1 : Yellow light
+WIFI : Yellow light
+
+Action Taken: restart modem and secure cables
+
+Hoping for your prompt response.
+
+Thank you.",IN_PROGRESS,2025-11-06 00:27:49.048434,2025-11-06 03:19:42.243544,274,4,1,1612
+100,"R7_POLIQUIT, JOHN PAUL A._134473_NoInternetConnection(2)",No Internet Connection(2),"Situation after typhoon tino
+
+Blinking red LOS po",RESOLVED,2025-11-05 03:30:17.639169,2025-11-13 01:35:36.201459,149,5,1,1622
+124,R7_APOLLO GLOBAL CORPORATION - 7 ELEVEN - ST-1464 SAN NICHOLAS_B0000030560_NoInternetConnection,No Internet Connection,"@⁨DCtech Helpdesk⁩ 
+
+Hi Team,
+
+Good Day!
+Please check Dctech Fiber in store
+No Internet
+
+Store Number: 1464
+Store Name: Cebu San Nicolas
+Store Manager : GAVINA PUERTO
+Contact Numbers: 09177913660
+Store Email: st1464@store.philseven.com
+Address: GF ANTIGUA BLDG. COR. B. ARANAS ST., CEBU CITY, PHILIPPINES
+Account Number : B0000030560
+
+Modem : DCTech Fiber
+POWER : Yellow light
+LOS : No light
+LAN1 : Yellow light
+WIFI : Yellow light
+
+Action Taken: restart modem and secure cables
+
+Hoping for your prompt response.
+
+Thank you.",IN_PROGRESS,2025-11-06 00:28:57.682809,2025-11-06 01:19:05.026590,215,3,1,1595
+130,R8_APOLLO GLOBAL CORPORATION - 7 ELEVEN - ST-4514 BRGY 83-A BARAYAN_B0000032539_NoInternetConnection,No Internet Connection,"@⁨DCtech Helpdesk⁩ 
+
+Hi Team,
+
+Good Day!
+Please check Dctech Fiber in store
+No Internet
+
+Store Number: 4514
+Store Name: Tacloban Picas
+Store Manager : ALBERTO ROMAGOS
+Contact Numbers: 09510351101
+Store Email: st4514@store.philseven.com
+Address: BRGY. BURAYAN, TACLOBAN CITY, LEYTE, PHILIPPINES
+Account Number : 4514
+
+Modem : DCTech Fiber
+POWER : Yellow light
+LOS : No light
+LAN1 : Yellow light
+WIFI : Yellow light
+
+Action Taken: restart modem and secure cables
+
+Hoping for your prompt response.
+
+Thank you.",RESOLVED,2025-11-06 00:50:59.184079,2025-11-07 00:11:52.854033,291,3,1,
+134,"R7_BENDANILLO, FELIX QUIBOT_B0000030618_NoInternetConnection",No Internet Connection,Reported concern via viber ,RESOLVED,2025-11-06 00:53:55.748556,2025-11-17 00:22:49.988557,71,3,1,1597
+198,"R7_ZAPANTA, IRIS_B0000031345_Payment",Payment,billing mail,RESOLVED,2025-11-17 08:10:41.764921,2025-11-18 02:30:03.921724,175,3,1,1714
+11,R7_APOLLO GLOBAL CORPORATION - 7 ELEVEN - ST-2312 LAWAAN TALISAY_B0000030523_NoInternetConnection,No Internet Connection,"Good day, please mi ani po. Thank you.
+
+Hi Team,
+
+Good Day!
+Please check Dctech Fiber in store
+No Internet
+
+Store Number: 2312
+Store Name: Lawaan Talisay
+Store Manager : RUTCHEVIL ACILO
+Contact Numbers: 9322144394/9772587794
+Store Email: st2312@store.philseven.com
+Address: ROXAS BLDG.,HIWAY LAWAAN III,, TALISAY, CEBU, PHILIPPINES
+
+Modem : DCTech Fiber
+POWER : Yellow light
+LOS : No light
+LAN1 : Yellow light
+WIFI : Yellow light
+
+Action Taken: restart modem and secure cables
+
+Hoping for your prompt response.
+
+Thank you.",RESOLVED,2025-10-27 00:05:11.850647,2025-11-06 00:36:20.060408,242,5,1,1434
+122,"R7_APOLLO GLOBAL CORPORATION - 7 ELEVEN - ST-2648 FLYING V GAS STATION, TALISAY CITY_B0000032500_NoInternetConnection",No Internet Connection,"@⁨DCtech Helpdesk⁩ 
+
+Hi Team,
+
+Good Day!
+Please check Dctech Fiber in store
+No Internet
+
+Store Number: 2648
+Store Name: Flying V SRP
+Store Manager : KURT KOBEN BALANQUIT
+Contact Numbers: 09988450627
+Store Email: st2648@store.philseven.com
+Address: FLYING V GAS STATION, ULDOG ST.,CANSOJONG, TALISAY CITY, CEBU, PHILIPPINES
+Account Number : B0000032500
+
+Modem : DCTech Fiber
+POWER : Yellow light
+LOS : No light
+LAN1 : Yellow light
+WIFI : Yellow light
+
+Action Taken: restart modem and secure cables
+
+Hoping for your prompt response.
+
+Thank you.",IN_PROGRESS,2025-11-06 00:26:57.785200,2025-11-06 00:45:17.048942,250,5,1,1583
+152,"R7_FAJARDO, RODERICK C._B0000030486_RequestRebate",Request Rebate,"Good afternoon Ma'am
+Requesting for rebates
+Fajardo, Roderick C - B0000030486
+
+Date and time service outage started: Oct.30,2025 ; 2:00 PM
+Date and time service restored: Nov.7,2025 ; 3:00 PM
+
+Thank You.",RESOLVED,2025-11-07 07:45:22.682330,2025-11-10 00:15:11.960099,99,3,1,1644
+131,"R7_SOLIS, JOEL JAYSON P._B0000032563_NoInternetConnection",No Internet Connection,Reported concern via viber ,IN_PROGRESS,2025-11-06 00:52:06.688895,2025-11-06 01:53:30.542792,162,5,1,1603
+161,"R7_BALO, MYRLIN_B0000032467_NoInternetConnection",No Internet Connection,Good Morning Ma'am mamalihog ko pa ticket ni Myrlin Balo No internet connection . Salamat,IN_PROGRESS,2025-11-10 02:09:39.115392,2025-11-10 02:34:24.382161,68,3,1,1661
+135,R7_MORETA SHIPPING LINES INC_B0000032667_NoInternetConnection,No Internet Connection,Reported concern via viber ,IN_PROGRESS,2025-11-06 00:54:52.544179,2025-11-06 01:57:18.398742,127,5,1,1605
+141,R7_APOLLO GLOBAL CORPORATION - 7 ELEVEN - ST-0994 ST. THERESA_B0000030528_NoInternetConnection,No Internet Connection,"Hi Team,
+
+Good Day!
+Please check Dctech Fiber in store
+No Internet, Red LOS
+
+Store Number: 994
+Store Name: ST. THERESA
+Store Manager : JAY TOMAS
+Contact Numbers: 09989684724/09054444874
+Store Email: st994@store.philseven.com
+Address: 101 F ABOITIZ STREET CEBU CITY, CEBU, PHILIPPINES
+Account Number : B0000030528
+
+Modem : DCTech Fiber
+POWER : Yellow light
+LOS : Red light
+LAN1 : Yellow light
+
+Action Taken: restart modem and secure cables
+
+Hoping for your prompt response.
+
+Thank you.",IN_PROGRESS,2025-11-07 00:02:28.164276,2025-11-07 00:23:22.546142,187,5,1,1628
+159,"R7_QUITO, ERIC GIOVANNI_B0000030498_Payment",Payment,"Attached is the proof of payment.
+Account # B0000030498",RESOLVED,2025-11-09 23:41:26.312080,2025-11-10 05:17:43.022560,151,3,1,1654
+142,"R7_ALBA, RENZYLLE REENICE_B0000031183_Payment",Payment,payment in billing email,RESOLVED,2025-11-07 00:07:45.655908,2025-11-10 05:17:49.182358,62,3,1,1624
+166,R7_APOLLO GLOBAL CORPORATION - 7 ELEVEN - ST-1402 TALAMBAN PROPER_B0000030513_NoInternetConnection,No Internet Connection,"@all Good afternoon. Please mi ani po. Thank you! 
+
+Hi Team
+
+Requesting for your immediate assistance.
+
+Problem Encountered: DCTech Fiber no internet
+
+Store ID : 1407
+Store Name: TALAMBAN PROPER
+Store Manager Name: ELJUN ALIVIO
+Contact Number/s: 9959040938
+Email: st1402@store.philseven.com
+Address: DR. J.B. VIZCAYNO BLDG., TALAMBAN, CEBU CITY, CEBU, PHILIPPINES
+Account Number: B0000030513
+
+Modem: DCTech Fiber
+Power: Green Light
+PON:  No Light
+LOS: Blinking Red
+Internet: No Light
+LAN1: Green Light",IN_PROGRESS,2025-11-10 05:16:52.313655,2025-11-10 05:24:50.221648,211,5,1,1666
+172,"R7_MEDALLA, MARK VINCENT Q._B0000031792_NoInternetConnection(2)",No Internet Connection(2),Hello. When will we expect for our internet connection to be fully restored? Our neighbors under other providers already had their connection restored last week.,RESOLVED,2025-11-11 03:04:27.484518,2025-11-17 07:59:10.503752,120,3,1,1674
+139,R7_APOLLO GLOBAL CORPORATION - 7 ELEVEN - ST-2312 LAWAAN TALISAY_B0000030523_NoInternetConnection(2),No Internet Connection(2),"@⁨DCtech Helpdesk⁩ 
+
+Hi Team,
+
+Good Day!
+Please check Dctech Fiber in store
+No Internet
+
+Store Number: 2312
+Store Name: Lawaan Talisay
+Store Manager : RUTCHEVIL ACILO
+Contact Numbers: 09322144394 | 09772587794
+Store Email: st2312@store.philseven.com
+Address: ROXAS BLDG.,HIWAY LAWAAN III,, TALISAY, CEBU, PHILIPPINES
+Account Number : B0000030523
+
+Modem : DCTech Fiber
+POWER : Yellow light
+LOS : No light
+LAN1 : Yellow light
+WIFI : Yellow light
+
+Action Taken: restart modem and secure cables
+
+Hoping for your prompt response.
+
+Thank you.",IN_PROGRESS,2025-11-06 03:24:15.700019,2025-11-06 03:29:55.613576,242,4,1,1614
+143,R7_APOLLO GLOBAL CORPORATION - 7 ELEVEN - ST-2106 PARIAN_B0000030438_NoInternetConnection,No Internet Connection,"Good day!
+
+Hi Sir/Ma'am
+
+For your assistance please.
+
+Problem Encountered: DCTECH FIBER NO INTERNET CONNECTION , RED LOS CONNECTION & ENABLED WIFI. KINDLY DISABLED THE WIFI
+
+Store ID : 2106 
+Store Name : Parian Cebu
+Store Manager Name :  JANET DE LA CERNA
+Contact Number/s : 9988451858
+Email : st2106@store.philseven.com
+Address : MABINI ST. COR. ZULUETA ST., CEBU CITY, PHILIPPINES
+Account Number: B0000030438
+
+Modem: DCTech Fiber status:
+    LOS - Red steady
+    PON - Green steady
+    POWER - Green steady
+    WIFI - Green steady
+    LAN 2 - Green blinking
+    Action Taken: Restart DCTECH and secure cable
+
+Hoping for your prompt response.",IN_PROGRESS,2025-11-07 00:38:07.863020,2025-11-07 00:50:10.448984,236,4,1,2106
+177,"R8_KHIATANI, MARY GRACE B.-LINE 2_B0000032220_RequestInternetServiceReconnection",Request Internet Service Reconnection,"Tacloban team reached out regarding to the current situation of the client.
+Client did not know where to pay leading to the disconnection of her internet service",RESOLVED,2025-11-11 09:59:39.444217,2025-11-12 07:16:12.084539,338,4,1,
+147,"R7_LORENZO SHIPPING CORPORATION, ._135175_RequestLineTransfer",Request Line Transfer,"Dear Corona Support,
+
+ 
+
+This is to formally request for physical transfer of our internet service  to our new office address. How do we proceed?
+
+ 
+
+See below details:
+
+ 
+
+ 
+
+Company
+
+Account No. / SID
+
+OLD Office address
+
+NEW office (google map address)
+
+Contact Person and Contact no.
+
+Lorenzo Shipping Corporation - Cebu
+
+0000135175
+
+CEBU SOUTH HARBOR CONTAINER AND TERMINAL CORP., BRGY SAN ROQUE
+
+10.306199, 123.919284
+Carreta, Cebu City, 6000 Cebu
+
+Jimboy R. Tagam 
+
+CORONA TELECOM (DataConnect Network Services Inc)
+
++639989682965
+
+ 
+
+ 
+
+Spot map of our new office
+
+ 
+
+Coordinates: 10.306199, 123.919284",IN_PROGRESS,2025-11-07 03:16:46.517370,2025-11-07 05:12:46.784146,117,3,1,1637
+162,"R7_RACHO, CLOVIS B._B0000030464_Payment",Payment,"Please sed attached payment for
+Subseriber Name: RACHO, CLOVIS B
+Account Number: B000030464
+November due",RESOLVED,2025-11-10 02:36:43.053647,2025-11-13 01:35:46.096364,152,5,1,1662
+149,R7_APOLLO GLOBAL CORPORATION - 7 ELEVEN - ST-1165 CTU_B0000030428_NoInternetConnection,No Internet Connection,"Good day!
+
+Hi Sir/Ma'am
+
+For your assistance please.
+
+Problem Encountered: NO INTERNET CONNECTION ,RED LOS CONNECTION
+
+Store ID : 1165
+Store Name : CTU
+Store Manager Name : VAN DAVE RESPONTE
+Contact Number/s : 09997451922
+Email : st1165@store.philseven.com
+Address : CIENNA RESIDENCES, V. GUILLAS ST. CEBU CITY, CEBU, PHILIPPINES
+Account Number: B0000030428
+
+Modem: DCTech Fiber
+	LOS - Red Light
+	POWER - Green steady
+	WIFI - Green Steady
+	Lan 1 - Green Light
+
+Already secured the network cable and power cycle.
+
+Hoping for your prompt response.",IN_PROGRESS,2025-11-07 05:10:13.265439,2025-11-07 05:16:04.347208,200,4,1,1639
+199,"R7_BANGAYAN, ROSEWIL MAE_B0000031499_Payment",Payment,billing email,RESOLVED,2025-11-18 00:03:45.412479,2025-11-18 08:21:41.053429,69,5,1,1715
+153,R7_APOLLO GLOBAL CORPORATION - 7 ELEVEN - ST-4331 LOOC ARCADE_B0000032035_NoInternetConnection,No Internet Connection,"Good day!
+
+Hi Sir/Ma'am
+
+For your assistance please.
+
+Problem Encountered: NO INTERNET CONNECTION ,RED LOS CONNECTION
+
+Store ID : 4331
+Store Name : LOOC ARCADE
+Store Manager Name : EUBERT MURING
+Contact Number/s : 9989883661
+Email : st4331@store.philseven.com
+Address : ALONG C. OUANO ST. LOOC, MANDAUE CITY, CEBU, PHILIPPINES
+Account Number: 4331
+
+Modem: DCTech Fiber
+	LOS - Red Light
+	POWER - Green steady
+	WIFI - Green Steady
+	Lan 1 - Green Light
+
+Already secured the network cable and power cycle.
+
+Hoping for your prompt response.",IN_PROGRESS,2025-11-07 07:46:15.996889,2025-11-07 07:52:48.628030,265,4,1,1646
+151,R7_PALAWAN PAWNSHOP INC.-CEBU-TALISAY CITY-TABUNOK III_B0000031133_NoInternetConnection(2),No Internet Connection(2),B0000031133 viber ,IN_PROGRESS,2025-11-07 05:17:45.983642,2025-11-07 07:48:20.774970,144,5,1,1642
+154,"R7_ABIERA, CHRISTOPHER_B0000031116_Payment",Payment,Payment via DC,RESOLVED,2025-11-07 08:09:45.422312,2025-11-07 08:13:42.304114,60,4,1,1647
+157,"R7_FAJARDO, RODERICK C._B0000030486_Payment",Payment,"Sir/ Madame:
+
+I have attached herewith a screenshot of our payment for October bill amounting to 1,274 pesos for your reference. 
+
+Thank you, 
+Fajardo account",RESOLVED,2025-11-09 23:40:08.865230,2025-11-10 02:46:57.485973,99,5,1,1659
+160,"R7_ORTEGA, OLIVER L._135849_Payment",Payment,"Good Day Corona Team,
+
+Payment has been made via bank transfer ",RESOLVED,2025-11-09 23:47:58.664059,2025-11-10 02:47:07.439119,141,5,1,1656
+146,"R7_DIMSON, FELIX ANDREW V._B0000031047_NoInternetConnection",No Internet Connection,"Hi team,
+
+I need help with my internet connection. Issue started after Typhoon Tino
+
+I understand that this might be a wide spread outage but my neighbors who are also using dataconnect are working okay.
+
+The place where I live was not flooded and my modem is okay. No changes made within my premises and below are the details.
+
+Account Name: Felix Andrew V. Dimson
+Account Number: B0000031047
+Contact Number: 09298186174
+
+LED STATUS ON MY MODEM
+Power-GREEN
+PON-OFF
+LOS-BLINKING RED
+Internet -OFF
+
+Note that I have already restarted the modem several times and no changes was made on my current set up.
+
+I need this resolve because I use your service for work.
+
+Thank you.",IN_PROGRESS,2025-11-07 02:52:42.818365,2025-11-07 03:19:28.520126,97,4,1,1633
+13,R7_APOLLO GLOBAL CORPORATION - 7 ELEVEN - ST-2022 SANCHEZ CENTER_B0000030856_NoInternetConnection,No Internet Connection,"Good morning team please assist client 
+
+Good day!
+
+Hi Sir/Ma'am
+
+Requesting for your immediate assistance.
+
+Problem Encountered: DCTech Fiber no internet. IP should be set to 192.168.30.1
+
+Store Number: 2022
+Store Name: Sanchez Center
+Store Manager : FELY PERA-AN
+Contact Numbers: 9486209179
+Store Email: st2022@store.philseven.com
+Address: G/F UNIT 1, SANCHEZ CENTER, P. OUANO COR. PLARIDEL STS. ALANG-ALANG, MANDAUE CITY, CEBU, PHILIPPINES
+Account Number: B0000030856
+
+Modem : DCTech Fiber
+POWER : Yellow light
+LOS : Red light
+LAN1 : Yellow light
+WIFI : Yellow light
+
+Hoping for your prompt response.
+
+Thank you.",RESOLVED,2025-10-27 00:07:38.502761,2025-11-10 07:05:51.433960,234,4,1,1445
+222,R7_APOLLO GLOBAL CORPORATION - 7 ELEVEN - ST-1022 LUCKY 99 COLON_B0000030526_NoInternetConnection,No Internet Connection,"Hi Team, Good day!
+
+Please check Dctech Fiber in store
+No Internet connection
+
+Store Number : 1022 
+Store Name : Colon
+Store Manager : JAMES HONDRADA JAMES
+Contact Number:  9189518189
+Contact Email : st1022@store.philseven.com
+Address: CORNER COLON AND PELAEZ STREET OSMENA BLG. BRY.KALUBIHAN, PILAR, CEBU CITY, PHILIPPINES
+Account Number : B0000030526
+
+DcTech Status:
+POWER - Green Light
+WIFI - Green Light
+LAN 1 - No Light
+LOS- Red light
+Action Taken: Restart DCTECH and secure cables.
+
+Hoping for your prompt response.
+
+Thank you.",IN_PROGRESS,2025-11-20 06:09:01.964543,2025-11-20 06:12:16.255346,190,4,1,1754
+168,R7_APOLLO GLOBAL CORPORATION - 7 ELEVEN - ST-2022 SANCHEZ CENTER_B0000030856_NoInternetConnection(2),No Internet Connection(2),"@all Please mi ani po. Thank you! 
+
+Hi Team,
+
+Please check Dctech Fiber in store
+No Internet connection
+
+Store Number : 2022
+Store Name : SANCHEZ CENTER
+Store Manager : FELY PERA-AN 	
+Contact Number:  09486209179
+Contact Email : st2022@store.philseven.com
+Address: G/F UNIT 1, SANCHEZ CENTER, P. OUANO COR. PLARIDEL STS. ALANG-ALANG, MANDAUE CITY, CEBU, PHILIPPINES
+Account Number : B0000030856
+
+DcTech Status:
+POWER - Green light
+WIFI - No light
+LAN 1 - Green light
+Action Taken: Restart DCTECH and secure cables.
+
+Hoping for your prompt response.
+
+Thank you.",IN_PROGRESS,2025-11-10 07:07:16.071114,2025-11-10 07:13:41.579930,234,4,1,1668
+148,R8_APOLLO GLOBAL CORPORATION - 7 ELEVEN - ST-3679 MARASBARAS_B0000032260_RequestSOA,Request SOA,Tac team is requesting to check the client's current account status.,RESOLVED,2025-11-07 03:20:40.405990,2025-11-07 05:20:35.380128,287,4,1,1641
+173,R7_APOLLO GLOBAL CORPORATION -7 ELEVEN - ST-2486 SAEKYUNG VILLAGE_B0000032658_NoInternetConnection,No Internet Connection,"concern reported via viber on 10-23-2025 4:15 AM
+
+Problem Encountered: DCTech Fiber no internet. IP should be set to 192.168.30.1
+
+Store Number: 2486
+Store Name: Saekyung Village
+Store Manager : MANILYN SILVA
+Contact Numbers: 9988450654
+Store Email: st2486@store.philseven.com
+Address: UNIT 1 ADMIN BLDG SAEKYUNG VILLAGE ONE, MARIGONDON, LAPU-LAPU CITY, CEBU, PHILIPPINES
+Account Number: 2486
+
+Modem : DCTech Fiber
+POWER : Yellow light
+LOS : Red light
+LAN1 : Yellow light
+WIFI : Yellow light
+
+Hoping for your prompt response.",IN_PROGRESS,2025-11-11 04:17:57.013065,2025-11-11 04:18:12.419756,271,4,1,1403
+169,R7_APOLLO GLOBAL CORPORATION - 7 ELEVEN - ST-1798 DUMLOG_B0000031544_NoInternetConnection,No Internet Connection,"Please pud mi ani po.  Thank you
+
+Good day!
+
+Hi Sir/Ma'am
+
+Requesting for your immediate assistance.
+
+Problem Encountered: DCTech Fiber no internet. Wifi is enabled.
+
+Store Number: 1798
+Store Name: Dumlog Talisay
+Store Manager : JAYZEL ESPINOSA
+Contact Numbers: 9455347795
+Store Email: st1798@store.philseven.com
+Address: ZONE 2 DEIPARINE ST., BARANGAY DUMLOG, TALISAY CITY, CEBU, PHILIPPINES
+Account Number: B0000031544
+
+Modem : DCTech Fiber
+POWER : Yellow light
+LOS : Red light
+LAN1 : Yellow light
+WIFI : Yellow light
+
+Hoping for your prompt response.
+
+Thank you.",IN_PROGRESS,2025-11-10 07:07:47.357142,2025-11-10 07:34:28.179979,231,3,1,1670
+95,"R7_CEBU QUAD HOTEL MANAGEMENT CORP.,_B0000032390_NoInternetConnection(2)",No Internet Connection(2),"Dear Coronatel Technical Support,
+ 
+Good day. We would like to report that our internet connection is currently down (LOS – Loss of Signal) and has been unavailable since the recent Typhoon Tino. This outage is affecting our hotel operations, and we are requesting your immediate assistance to restore the service. Account Details: 
+Account Name: Cebu Quad Hotel Management Corp 
+Issue: No Internet Connection / LOS (Loss of Signal) Possible Cause: Service disruption due to Typhoon Tino  
+Contact Person:MARK VINCENT MISSION 09657610702 
+
+ We hope your technical team can check and assist us at the soonest possible time. Thank you for your urgent attention and support.
+
+
+Sincerely,",RESOLVED,2025-11-05 00:18:40.347254,2025-11-13 01:46:38.584356,87,5,1,1555
+51,R7_APOLLO GLOBAL CORPORATION - 7 ELEVEN - ST-2179 MIVESA BUILDING_B0000030657_NoInternetConnection,No Internet Connection,"Hi Team,
+
+Please check Dctech Fiber in store
+Detected connected to router but no Internet connection.
+
+Store Number : 2179
+Store Name : Mivesa Garden
+Store Manager : SHERYBETH DELOS NIEVES
+Contact Number: 09988439838
+Contact Email : st2179@store.philseven.com
+Address: MIVESA GARDEN RESIDENCES BLDG. 1, LAHUG, CEBU CITY, CEBU, PHILIPPINES
+Account Number : B0000030657
+
+DcTech Status:
+LOS - Red light
+PON - No light
+POWER - Green light
+Internet - Green light
+WIFI - No light
+LAN 1 - Green light
+Action Taken: Restart DCTECH and secure cables.
+
+Hoping for your prompt response.
+
+Thank you.",RESOLVED,2025-10-28 04:05:20.242802,2025-11-14 01:57:54.080423,237,4,1,1484
+190,"R7_CANEN, MARIA ASUNCION_B0000031162_RequestServiceDisconnection",Request Service Disconnection,"Hi Coronatel team,
+
+This is to formally request the termination of my internet services from Coronatel with details below.
+
+Subscriber Name: CANEN, MARIA ASUNCION 
+Account Number: B0000031162 Service Plan: SP1R52301 
+
+Let me know what you need from my end to process this asap.
+
+Thank you.",RESOLVED,2025-11-13 03:43:04.287696,2025-11-14 00:16:44.175681,80,3,1,1698
+212,"R7_ALKUINO, KRISTINE S._B0000032711_SOAVerification",SOA Verification,"Good pm! Unsaon nako pag change ug password sa ako internet kay need nako mag change kay di naman me kasulod man ...
+
+Ug pls. Ko review sa SOA na inyo g send sa ako why 999 ako bill na mura 881 man sguro ako byranan",RESOLVED,2025-11-18 08:01:37.436114,2025-11-18 08:21:23.616072,63,5,1,1730
+201,"R7_NACARIO, LORNA_B0000030585_Payment(2)",Payment(2),billing email,RESOLVED,2025-11-18 00:04:21.132657,2025-11-19 00:06:02.496150,130,4,1,1718
+211,R7_ONEWORLD ALLIANCE LOGISTICS CORPORATION_134808_Payment,Payment,"Dear Maam/Sir, 
+
+Please see attached POP for the month of October to November. 
+
+Thank you
+Best Regards,
+Kimberly Mae R. Castro, LCB
+Customs Declarant",RESOLVED,2025-11-18 07:59:47.024670,2025-11-20 00:06:57.227281,139,3,1,1732
+194,"R7_BARROGA, JOSEPHINE M._B0000032535_Payment",Payment,billing email 2025-11-15 19:51,RESOLVED,2025-11-16 23:47:49.060298,2025-11-17 04:55:22.950720,70,5,1,1706
+193,R7_URBAN RISE 28 DEVELOPMENT AND SERVICES OPC_B0000032891_Payment,Payment,billing email 2025-11-15 13:27,RESOLVED,2025-11-16 23:44:48.544515,2025-11-17 07:58:59.561836,170,3,1,1705
+156,R7_APOLLO GLOBAL CORPORATION - 7 ELEVEN - ST-1713 BANAWA PASEO_B0000030532_NoInternetConnection,No Internet Connection,"@⁨DCtech Helpdesk⁩ 
+Hi Team,
+
+For your assistance please
+Problem Encountered: DCTech Fiber Down
+
+Store Number : 1713
+Store Name : Banawa Paseo
+Store Manager : PAUL TARNATE
+Contact Number:  09318527592
+Contact Email : st1713@store.philseven.com
+Address: R. DUTERTE ST., BANAWA, CEBU CITY, CEBU, PHILIPPINES
+Account Number : B0000030532
+
+DcTech Status:
+LOS - RED LIGHT
+POWER - Green light
+LAN 1 - Green Light
+Action Taken: Restart DCTECH and secure cables.
+
+Hoping for your prompt response.
+
+Thank you.",IN_PROGRESS,2025-11-09 23:36:18.450818,2025-11-10 00:02:43.845572,225,4,1,1653
+170,R7_APOLLO GLOBAL CORPORATION - 7 ELEVEN - ST-1152 SWU_B0000030595_NoInternetConnection,No Internet Connection,"Hi Sir/Ma'am
+
+For your assistance please.
+
+Problem Encountered: DCTECH FIBER NO INTERNET CONNECTION 
+
+Store ID : 1152 
+Store Name : SWU
+Store Manager Name : VIRGILIO ABELLA JR.
+Contact Number/s : 9338279094
+Email : st1152@store.philseven.com
+Address : TORMIS ST CORN. URGELLO ST SAMBAG 1 CEBU CITY, CEBU, PHILIPPINES
+Account Number: B0000030595	
+
+Modem: DCTech Fiber status:
+	LOS - Red Light
+	POWER - Green steady
+	LAN 1 - Green steady
+	Action Taken: Restart DCTECH and secure cable
+
+Hoping for your prompt response.",IN_PROGRESS,2025-11-11 01:12:05.214990,2025-11-11 01:15:04.339452,199,5,1,1672
+158,"R7_REPUELA, CECILIA_B0000030555_Payment",Payment,"Sending you the proof of payment under the account of  
+ Subscriber Name: REPUELA, CECILIA 
+Account Number: B0000030555 
+Service Plan: SP2R22201",RESOLVED,2025-11-09 23:40:51.116860,2025-11-11 01:25:35.142132,155,4,1,1651
+129,R8_APOLLO GLOBAL CORPORATION - 7 ELEVEN - ST-3679 MARASBARAS_B0000032260_NoInternetConnection(2),No Internet Connection(2),"@⁨DCtech Helpdesk⁩ 
+
+Hi Team,
+
+Good Day!
+Please check Dctech Fiber in store
+No Internet
+
+Store Number: 3679
+Store Name: Tacloban City Hospital
+Store Manager : JEVIE LABISTE
+Contact Numbers: 09363964226
+Store Email: st3679@store.philseven.com
+Address: BRGY. 80 MARASBARAS, TACLOBAN CITY, LEYTE, PHILIPPINES
+Account Number : B0000032260
+
+Modem : DCTech Fiber
+POWER : Yellow light
+LOS : No light
+LAN1 : Yellow light
+WIFI : Yellow light
+
+Action Taken: restart modem and secure cables
+
+Hoping for your prompt response.
+
+Thank you.",RESOLVED,2025-11-06 00:35:37.344802,2025-11-12 07:16:41.590989,287,4,1,
+179,"R7_JORDAN, JENNIFER CRISTY P._B0000032564_Payment",Payment,billing email,RESOLVED,2025-11-12 02:14:25.380817,2025-11-13 00:11:44.852254,112,3,1,1682
+12,R7_APOLLO GLOBAL CORPORATION - 7 ELEVEN - ST-1816 POBLACION CONSOLACION_B0000031150_NoInternetConnection,No Internet Connection,"Good day please mi ani thank you.
+
+HI TEAM 
+
+Please check Dctech Fiber in store
+No Internet connection
+
+Store Number : 1816
+Store Name : Consolacion
+Store Manager : FRANZ FLORES
+Contact Number: 9268689670
+Contact Email: st1816@store.philseven.com
+Address: M. Pepito St., National Highway, Poblacion Occidental Consolacion, Cebu
+Account Number : B0000031150
+
+DcTech Status:
+LOS - Red light 
+POWER - Green light
+WIFI - No light
+LAN 1 - Green light
+Action Taken: Restart DCTECH and secure cables.
+
+Hoping for your prompt response.
+
+Thank you.",RESOLVED,2025-10-27 00:06:41.067991,2025-11-18 00:45:25.346777,232,5,1,1433
+174,R7_OCEANIC CONTAINER LINES INC._B0000031906_RequestSOA,Request SOA,Cebu team asked for the SOA,RESOLVED,2025-11-11 08:30:30.719350,2025-11-11 08:57:22.566380,137,4,1,1675
+188,"R7_BENDANILLO, FELIX QUIBOT_B0000030618_RequestRebate(2)",Request Rebate(2),"Good Morning Ma'am/Sir . Request Rebates 
+Bendanillo, Felix Quibot - B0000030618
+
+Date Down - Nov.4,2025 - 3:00am
+Date restored - Nov.12,2025 - 1:00 Pm
+
+Thank You.",RESOLVED,2025-11-13 03:13:10.790772,2025-11-14 01:20:02.390967,71,4,1,1695
+207,R7_OCEANIC CONTAINER LINES INC._B0000031906_NoInternetConnection(2),No Internet Connection(2),"Good morning Ma'am/Sir pa ticket ako kay oceanic no internet connection daw sila as of today.
+Thank you.",IN_PROGRESS,2025-11-18 00:50:36.427356,2025-11-18 00:54:38.453055,137,4,1,1726
+202,"R7_CHONG, OLLIE VERA_B0000032050_Payment",Payment,billing email,RESOLVED,2025-11-18 00:04:57.328727,2025-11-18 08:21:31.702964,91,5,1,1720
+192,R7_NEST CREATIVE INC._B0000032890_RequestRebate,Request Rebate,"Confirmed downtime periods:
+Oct 14 – Oct 17 (6:00 PM)
+Oct 18 – Oct 20 (12:00 AM)
+Oct 21 – Oct 22 (8:30 PM)
+Oct 23 (8:00 AM) – Oct 31
+Nov 1 – Nov 12 – No data; only a single spike detected (likely down)",RESOLVED,2025-11-14 01:21:48.291160,2025-11-16 23:43:56.142866,131,4,1,1702
+203,R7_NEXUS REAL ESTATE CORPORATION_B0000031046_Payment,Payment,billing email,RESOLVED,2025-11-18 00:05:47.167258,2025-11-19 00:02:08.590969,133,4,1,1723
+189,"R7_CHUA, CHRISTIAN ERIC M. _B0000032314_RequestServiceReactivation",Request Service Reactivation,The client reached out and wanted to reactivate his internet service. ,RESOLVED,2025-11-13 03:28:10.049705,2025-11-19 01:01:11.762441,394,4,1,1696
+191,R7_APOLLO GLOBAL CORPORATION - 7 ELEVEN - ST-1264 SQUARE ONE_B0000030537_NoInternetConnection,No Internet Connection,"@⁨DCtech Helpdesk⁩ 
+
+Good day!
+
+Hi Sir/Ma'am
+
+Requesting for your immediate assistance.
+
+Problem Encountered: DCTech Fiber no internet. Wifi is enabled.
+
+Store Number: 1264
+Store Name: Square One
+Store Manager : MARJHON SILAGPO
+Contact Numbers: 9912759047
+Store Email: st1264@store.philseven.com
+Address: G/F, SQAURE 1, HIGHWAY MANDAUE COR. SINGSON VILLAGE ,TIPOLO, MANDAUE CITY, CEBU, PHILIPPINES
+Account Number: B0000030537
+
+Modem : DCTech Fiber
+POWER : Yellow light
+LOS : Red light
+LAN1 : Yellow light
+WIFI : Yellow light
+
+Hoping for your prompt response.
+
+Thank you.
+
+Best Regards,
+Russel Eronico
+Apollo Service Desk / Shift Lead
+daverussel@apolloglobal.net",IN_PROGRESS,2025-11-14 01:20:40.848072,2025-11-14 01:25:38.330369,204,5,1,1700
+205,"R7_JANOHAN, JESSA_B0000030998_NoInternetConnection(2)",No Internet Connection(2),"Good day,
+I would like to ask about my bill, why is it that my current balance is 1,299.00 where in fact it's been two weeks that our WiFi is not working until now. The red signal it keeps blinking, and no one is dare to fix our issue. I would like to ask rebate process for our bill so that we can pay the remaining balance. 
+Thanks. 
+
+Date and time service went down: November 4,2025 at 4:00am. ",RESOLVED,2025-11-18 00:07:03.012265,2025-11-19 06:48:43.287888,110,5,1,1724
+208,R7_APOLLO GLOBAL CORPORATION -7 ELEVEN - ST-1398 MACTAN DOCTORS_B0000032520_NoInternetConnection,No Internet Connection,"Good day!
+
+Hi Sir/Ma'am
+
+Requesting for your immediate assistance.
+
+Problem Encountered: DCTech Fiber no internet. Wifi is enabled.
+
+Store ID : 1398
+Store Name : Mactan Doctors Hospital
+Store Manager Name : JERALDINE BONTIA
+Contact Number/s : 9455505742
+Email : st1398@store.philseven.com
+Address : G/F, JS REALTY, WASHINGTON ST. COR. CAGUDOY ST., LAPU-LAPU CITY, LAPU-LAPU CITY, CEBU, PHILIPPINES
+Account Number: 1398
+
+Modem : DCTech Fiber
+POWER : Yellow light
+LOS : Red light
+LAN1 : Yellow light
+WIFI : Yellow light
+
+Hoping for your prompt response.
+
+Thank you.
+
+Best Regards,
+Russel Eronico
+Apollo Service Desk / Shift Lead
+daverussel@apolloglobal.net",IN_PROGRESS,2025-11-18 01:45:00.957136,2025-11-18 02:24:57.680575,270,3,1,1728
+224,"R7_DIMSON, FELIX ANDREW V._B0000031047_Payment(2)",Payment(2),"Hi team,
+
+Good afternoon! Attached is a screenshot of my payment via BPI.
+
+Below are the details of my account.
+
+Account Name: Felix Andrew V. Dimson
+Account Number: B0000031047
+Contact Number: 09298186174
+
+Please respond and confirm that you receive the payment.
+
+Sincerely,
+Drew
+",IN_PROGRESS,2025-11-20 08:59:51.022548,2025-11-20 09:08:19.104227,97,5,1,1756
+213,R7_APOLLO GLOBAL CORPORATION - 7 ELEVEN - ST-0947 CDU_201093_NoInternetConnection,No Internet Connection,"@⁨DCtech Helpdesk⁩ 
+
+Hi Team,
+
+Good Day!
+Please check Dctech Fiber in store
+No Internet
+
+Store Number: 947
+Store Name: CDU
+Store Manager : VENSON PAGALAN
+Contact Numbers: 09566220226
+Store Email: st947@store.philseven.com
+Address: CDU DR LARRAZABAL AVENUE N. R A. MANDAUE CITY CEBU, MANDAUE CITY, CEBU, PHILIPPINES
+Account Number : RES-00002-01093
+
+Modem : DCTech Fiber
+POWER : Yellow light
+LOS : Red light
+LAN1 : Yellow light
+WIFI : Yellow light
+
+Action Taken: restart modem and secure cables
+
+Hoping for your prompt response.
+
+Thank you.",IN_PROGRESS,2025-11-18 23:43:15.780542,2025-11-18 23:49:58.696056,181,5,1,1734
+197,R7_NUAT THAI FOOT & BODY MASSAGE-MABOLO_B0000032427_Payment,Payment,"Good Afternoon Ma'am/Sir - Please ko sa payment ni 
+Nuat Thai Foot & Body Massage-mabolo - B0000032427.  Thank You.",RESOLVED,2025-11-17 07:03:47.720849,2025-11-18 23:54:50.688763,136,4,1,1712
+225,R7_MORETA SHIPPING LINES INC_B0000032667_RequestSOA,Request SOA,"Hi Mam/Sir, 
+
+
+Good Day!
+
+May I request billing for November 2025
+
+Chin-chin
+
+Thank you & God Bless
+Moreta Shipping Lines,Inc
+
+Tel No: (02)721-6480 / 721-7115
+
+Email Add: moretaonline@yahoo.com
+
+Office Address: Operation Center 2, Pier 2 North Harbor Tondo, Manila",RESOLVED,2025-11-20 23:47:47.277702,2025-11-21 05:27:06.871554,127,5,1,1758
+215,R7_APOLLO GLOBAL CORPORATION - 7 ELEVEN - ST-4462 CASUNTINGAN_B0000032512_NoInternetConnection,No Internet Connection,"@⁨DCtech Helpdesk⁩ 
+
+Hi Team,
+
+Good Day!
+Please check Dctech Fiber in store
+No Internet
+
+Store Number: 4462
+Store Name: Casuntingan
+Store Manager : JEFFERSON TUMAPON
+Contact Numbers: 9674960728
+Store Email: st4462@store.philseven.com
+Address: MAGUIKAY, MANDAUE CITY, CEBU, PHILIPPINES
+Account Number : B0000032512
+
+Modem : DCTech Fiber
+POWER : Yellow light
+LOS : Red light
+LAN1 : Yellow light
+WIFI : Yellow light
+
+Action Taken: restart modem and secure cables
+
+Hoping for your prompt response.
+
+Thank you.",IN_PROGRESS,2025-11-19 06:04:04.686561,2025-11-19 06:36:39.146044,267,4,1,1738
+210,R7_ONEWORLD ALLIANCE LOGISTICS CORPORATION_134808_RequestServiceInvoice(2),Request Service Invoice(2),"Hi Maam/Sir,
+
+May I request invoice for the month of November to December. 
+
+Kindly complete the details.
+- ONEWORLD ALLIANCE LOGISTICS CORPORATION.
+- TIN 227-002-465-00001
+- Address : Crown Bldg, North Reclamation Area Road 6, Carreta Cebu City.
+",RESOLVED,2025-11-18 07:59:16.357596,2025-11-20 02:22:17.806230,139,4,1,1748
+220,R7_PARADISE VILLAGE HOMEOWNERS ASSOCIATION_B0000030456_Payment,Payment,"Good Day Ma'am/ Sir.
+
+Please see attached file for our payment for the month NOVEMBER  2025. 
+
+Best Regards
+Hydie",RESOLVED,2025-11-20 01:44:16.914779,2025-11-21 05:26:02.485412,146,5,1,1750
+216,R7_ONEWORLD ALLIANCE LOGISTICS CORPORATION_134808_NoInternetConnection,No Internet Connection,"Dear Maam/Sir, 
+
+We already perform the troubleshooting method you mentioned but still no wifi connection.
+
+Power - STEADY GREEN
+PON - NO LIGHTS
+LOS - BLINKING RED
+LAN1 - BLINKING GREEN
+WiFi - STEADY GREEN",IN_PROGRESS,2025-11-19 08:27:26.593363,2025-11-19 08:36:08.718784,139,5,1,1740
+218,R7_APOLLO GLOBAL CORPORATION - 7 ELEVEN - ST-2736 MIT BLDG_B0000030329_NoInternetConnection,No Internet Connection,no internet connection ,IN_PROGRESS,2025-11-19 08:58:28.773734,2025-11-19 09:10:43.715328,255,4,1,1742
+219,R7_APOLLO GLOBAL CORPORATION - 7 ELEVEN - ST-2638 TINTAY_B0000030499_NoInternetConnection,No Internet Connection,"@⁨DCtech Helpdesk⁩  
+Hi Team,
+
+Please check Dctech Fiber in store
+No Internet connection
+
+Store Number : 2638
+Store Name : TINTAY
+Store Manager : ANDREW BASIGA	
+Contact Number:  09988450634
+Contact Email : st2638@store.philseven.com
+Address: H. ABELLANA ST., TALAMBAN, CEBU CITY, CEBU, PHILIPPINES
+Account Number : B0000030499
+
+DcTech Status:
+POWER - Green light
+WIFI - No light
+LAN 1 - Green light
+Action Taken: Restart DCTECH and secure cables.
+
+Hoping for your prompt response.
+
+Thank you.
+
+Jemmuel R. Talagtag
+Service Desk
+Apollo Global Corporation
+4120, Kalayaan Ave, Makati City
+jemmuel@apolloglobal.net",IN_PROGRESS,2025-11-19 23:16:08.099621,2025-11-20 00:36:56.200760,249,3,1,1746
+217,R7_NEW ERA INTERNATIONAL CARGO HANDLING INC._B0000030455_Payment,Payment,"Dear Corona Telecom,
+
+Good Afternoon!
+
+Please see attached deposit slip as proof of  our payment.
+
+TAKE NOT: Our internet connection is unstable since morning please check.
+
+Thanks 
+Best Regards,
+maria",RESOLVED,2025-11-19 08:29:14.765027,2025-11-20 01:46:36.672960,132,4,1,1744

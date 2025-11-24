@@ -62,6 +62,7 @@ class User(db.Model, UserMixin):
     announcements = db.relationship(
         "Announcement", back_populates="author", lazy="dynamic"
     )
+    email_logs = db.relationship("EmailLog", back_populates="author", lazy="dynamic")
 
     def set_password(self, password):
         self.password_hash = generate_password_hash(password)
@@ -98,6 +99,7 @@ class Client(db.Model):
     account_number = db.Column(db.String(100), unique=True, nullable=False, index=True)
     account_name = db.Column(db.String(200), nullable=False, index=True)
     status = db.Column(db.String(50), default="Active")
+    plan_rate = db.Column(db.Float, nullable=False, default=0.0)
 
     # Foreign Key
     region_id = db.Column(db.Integer, db.ForeignKey("regions.id"), nullable=False)
@@ -122,7 +124,6 @@ class Ticket(db.Model):
 
     # --- ADDED FOR EMAIL CHECKBOX ---
     email_sent = db.Column(db.Boolean, default=False, nullable=False)
-    # --------------------------------
 
     status = db.Column(
         db.Enum(TicketStatus), default=TicketStatus.NEW, nullable=False, index=True
@@ -146,6 +147,7 @@ class Ticket(db.Model):
         "User", back_populates="created_tickets", foreign_keys=[created_by_id]
     )
     logs = db.relationship("ActivityLog", back_populates="ticket", lazy="dynamic")
+    email_logs = db.relationship("EmailLog", back_populates="ticket", lazy="dynamic")
 
     def __repr__(self):
         return f"<Ticket {self.id} - {self.status.value}>"
@@ -185,3 +187,23 @@ class Announcement(db.Model):
 
     # Relationship
     author = db.relationship("User", back_populates="announcements")
+
+
+class EmailLog(db.Model):
+    """Stores a log of emails sent to clients."""
+
+    __tablename__ = "email_logs"
+    id = db.Column(db.Integer, primary_key=True)
+    email_content = db.Column(db.Text, nullable=False)
+    sent_at = db.Column(db.DateTime, default=datetime.utcnow, index=True)
+
+    # Foreign Keys
+    ticket_id = db.Column(db.Integer, db.ForeignKey("tickets.id"), nullable=False)
+    user_id = db.Column(db.Integer, db.ForeignKey("users.id"), nullable=False)
+
+    # Relationships
+    ticket = db.relationship("Ticket", back_populates="email_logs")
+    author = db.relationship("User", back_populates="email_logs")
+
+    def __repr__(self):
+        return f"<EmailLog {self.id} for Ticket {self.ticket_id}>"

@@ -14,3 +14,9 @@ instance/
 
 # IDE
 .vscode/
+
+# --- ADD THESE LINES BELOW ---
+rescue_backup/
+clean_db.py
+rescue_data.py
+restore_data.py

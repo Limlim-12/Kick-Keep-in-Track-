@@ -19,6 +19,7 @@ def restore():
             "clients",
             "tickets",
             "activity_logs",
+            "email_logs",
         ]
 
         print("💾 Starting restore process...")
@@ -40,13 +41,33 @@ def restore():
                         print(f"      ⚠️  CSV for '{table}' is empty. Skipping.")
                         continue
 
-                    # 2. FIX MISSING COLUMNS (The Patch)
-                    # Fix Tickets: Add 'email_sent' if missing
-                    if table == "tickets" and "email_sent" not in df.columns:
-                        print("      🔧 Patching missing 'email_sent' column...")
-                        df["email_sent"] = False
+                    # --- FIXES FOR TICKETS TABLE ---
+                    if table == "tickets":
+                        # Fix 1: Add missing 'email_sent' column
+                        if "email_sent" not in df.columns:
+                            print("      🔧 Patching missing 'email_sent' column...")
+                            df["email_sent"] = False
 
-                    # Fix Clients: Add 'plan_rate' if missing
+                        # Fix 2: Remove ".0" from RT Ticket Number
+                        # This converts 1758.0 -> 1758 -> "1758"
+                        if "rt_ticket_number" in df.columns:
+                            print(
+                                "      🔧 Formatting 'rt_ticket_number' (removing decimals)..."
+                            )
+
+                            def clean_rt(val):
+                                if pd.isna(val) or str(val).strip() == "":
+                                    return None
+                                try:
+                                    return str(int(float(val)))
+                                except Exception:
+                                    return str(val)  # Keep original if it's text
+
+                            df["rt_ticket_number"] = df["rt_ticket_number"].apply(
+                                clean_rt
+                            )
+
+                    # --- FIXES FOR CLIENTS TABLE ---
                     if table == "clients" and "plan_rate" not in df.columns:
                         print("      🔧 Patching missing 'plan_rate' column...")
                         df["plan_rate"] = 0.0
@@ -57,14 +78,12 @@ def restore():
 
                     # 4. Reset Auto-Increment ID (Sequence)
                     try:
-                        # PostgreSQL command to sync the ID counter
                         query = text(
                             f"SELECT setval(pg_get_serial_sequence('{table}', 'id'), coalesce(max(id)+1, 1), false) FROM {table};"
                         )
                         conn.execute(query)
                         print(f"      🔄 ID sequence reset for '{table}'.")
                     except Exception as seq_e:
-                        # Some tables might not have an ID sequence, which is fine
                         print(
                             f"      ℹ️  Note: Sequence reset skipped (usually fine): {seq_e}"
                         )

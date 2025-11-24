@@ -152,6 +152,12 @@ class Ticket(db.Model):
     def __repr__(self):
         return f"<Ticket {self.id} - {self.status.value}>"
 
+    attachments = db.relationship(
+        "TicketAttachment", back_populates="ticket", lazy="dynamic"
+    )
+    def __repr__(self):
+        return f"<Ticket {self.id} - {self.status.value}>"
+
 
 class ActivityLog(db.Model):
     """Stores actions taken on tickets and users."""
@@ -207,3 +213,26 @@ class EmailLog(db.Model):
 
     def __repr__(self):
         return f"<EmailLog {self.id} for Ticket {self.ticket_id}>"
+
+
+# --- ADD THIS NEW CLASS AT THE BOTTOM ---
+class TicketAttachment(db.Model):
+    """Stores file references for tickets (Images, PDFs)."""
+
+    __tablename__ = "ticket_attachments"
+
+    id = db.Column(db.Integer, primary_key=True)
+    filename = db.Column(db.String(255), nullable=False)  # The saved name on disk
+    filepath = db.Column(db.String(255), nullable=False)  # The relative path for HTML
+    uploaded_at = db.Column(db.DateTime, default=datetime.utcnow)
+
+    # Foreign Keys
+    ticket_id = db.Column(db.Integer, db.ForeignKey("tickets.id"), nullable=False)
+    uploader_id = db.Column(db.Integer, db.ForeignKey("users.id"), nullable=False)
+
+    # Relationships
+    ticket = db.relationship("Ticket", back_populates="attachments")
+    uploader = db.relationship("User")
+
+    def __repr__(self):
+        return f"<Attachment {self.filename}>"

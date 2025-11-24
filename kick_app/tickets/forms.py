@@ -1,4 +1,5 @@
 from flask_wtf import FlaskForm
+from flask_wtf.file import FileField, FileAllowed, FileRequired
 from wtforms import (
     StringField,
     SubmitField,
@@ -118,3 +119,16 @@ class EmailLogForm(FlaskForm):
 
 
 # --- END OF NEW FORM ---
+
+
+class AttachmentForm(FlaskForm):
+    """Form for uploading ticket attachments."""
+
+    file = FileField(
+        "Attach File",
+        validators=[
+            FileRequired(),
+            FileAllowed(["jpg", "png", "jpeg", "pdf"], "Images and PDFs only!"),
+        ],
+    )
+    submit_attachment = SubmitField("Upload")

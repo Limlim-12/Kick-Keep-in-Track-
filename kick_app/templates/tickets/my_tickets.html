@@ -7,10 +7,14 @@
 
 <form method="GET" action="{{ url_for('tickets.my_tickets') }}" class="mb-3">
     <div class="input-group">
+        {# --- UPDATED INPUT FIELD --- #}
         <input type="text" class="form-control" name="search" placeholder="Search my tickets..."
-            value="{{ search_query or '' }}">
+            value="{{ search_query or '' }}" style="text-transform: uppercase;"
+            oninput="this.value = this.value.toUpperCase()">
+        {# --- END UPDATE --- #}
+
         <button class="btn btn-outline-secondary" type="submit">Search</button>
-        {% if search_query %} {# Add a clear button if a search is active #}
+        {% if search_query %}
         <a href="{{ url_for('tickets.my_tickets') }}" class="btn btn-outline-danger" title="Clear Search">X</a>
         {% endif %}
     </div>
@@ -52,7 +56,7 @@
                                 {{ ticket.status.value }}
                             </span>
                         </td>
-                        <td>{{ ticket.ticket_name | truncate(50) }}</td>
+                        <td>{{ ticket.ticket_name | no_stamp | truncate(50) }}</td>
                         <td>{{ ticket.client.account_name }}</td>
                         <td>{{ ticket.updated_at | pht }}</td>
                         <td>

@@ -10,8 +10,13 @@
 
 <form method="GET" action="{{ url_for('tickets.all_tickets') }}" class="mb-3">
     <div class="input-group">
+        {# --- UPDATED INPUT FIELD --- #}
         <input type="text" class="form-control" name="search"
-            placeholder="Search by Ticket Name, RT#, Client Name/Account#, Region..." value="{{ search_query or '' }}">
+            placeholder="Search by RT#, Client, Account#, Concern, Assigned TSR, Status..."
+            value="{{ search_query or '' }}" style="text-transform: uppercase;"
+            oninput="this.value = this.value.toUpperCase()">
+        {# --- END UPDATE --- #}
+
         <button class="btn btn-outline-secondary" type="submit">Search</button>
         {% if search_query %}
         <a href="{{ url_for('tickets.all_tickets') }}" class="btn btn-outline-danger" title="Clear Search">X</a>
@@ -28,11 +33,12 @@
                 <thead>
                     <tr>
                         <th>RT / Kick ID</th>
-                        <th>Ticket Name</th>
-                        <th>Concern Title</th>
+                        {# --- MERGED HEADER: Concern & Ticket Name --- #}
+                        <th style="min-width: 250px;">Concern Details</th>
                         <th>Status</th>
-                        <th>Created At (PHT)</th>
-                        <th>Last Updated (PHT)</th>
+                        {# --- UPDATED HEADERS: Added text-center and width --- #}
+                        <th class="text-center" style="min-width: 110px;">Created</th>
+                        <th class="text-center" style="min-width: 110px;">Updated</th>
                         <th>Assigned TSR</th>
                         <th>Client Name</th>
                         <th>Account Number</th>
@@ -54,8 +60,19 @@
                             {{ ticket.id }}
                             {% endif %}
                         </td>
-                        <td>{{ ticket.ticket_name | truncate(50) }}</td>
-                        <td>{{ ticket.concern_title | truncate(30) }}</td>
+                    {# --- MERGED CELL: Concern Title (Top) + Ticket Name (Bottom) --- #}
+                    <td>
+                        <div class="d-flex flex-column">
+                            {# Primary Info: The Concern #}
+                            <span class="fw-bold text-dark">
+                                {{ ticket.concern_title }}
+                            </span>
+                            {# Secondary Info: The Technical Ticket Name #}
+                        <span class="text-muted text-truncate" style="font-size: 0.75rem; max-width: 300px;"
+                            title="{{ ticket.ticket_name | no_stamp }}"> {# <-- Added filter here #} {{ ticket.ticket_name | no_stamp }} {# <--
+                                And here #} </span>
+                        </div>
+                    </td>
                         <td>
                             <span class="badge
                                 {% if ticket.status.name == 'NEW' %} bg-secondary
@@ -66,21 +83,47 @@
                                 {{ ticket.status.value }}
                             </span>
                         </td>
-                        <td>{{ ticket.created_at | pht }}</td>
-                        <td>{{ ticket.updated_at | pht }}</td>
+                        {# --- NEW DATE STRUCTURE: Created At --- #}
+                        <td class="text-center">
+                            {% set c_dt = ticket.created_at | pht %}
+                            {% if c_dt != 'N/A' %}
+                            {% set c_parts = c_dt.split(' ') %}
+                            <div class="fw-bold" style="font-size: 0.9rem;">{{ c_parts[0] }}</div> {# Date #}
+                            <div class="text-muted" style="font-size: 0.75rem;">{{ c_parts[1] }}</div> {# Time #}
+                            {% else %}
+                            <span class="text-muted">-</span>
+                            {% endif %}
+                        </td>
+                        
+                        {# --- NEW DATE STRUCTURE: Last Updated --- #}
+                        <td class="text-center">
+                            {% set u_dt = ticket.updated_at | pht %}
+                            {% if u_dt != 'N/A' %}
+                            {% set u_parts = u_dt.split(' ') %}
+                            <div class="fw-bold" style="font-size: 0.9rem;">{{ u_parts[0] }}</div> {# Date #}
+                            <div class="text-muted" style="font-size: 0.75rem;">{{ u_parts[1] }}</div> {# Time #}
+                            {% else %}
+                            <span class="text-muted">-</span>
+                            {% endif %}
+                        </td>
                         <td>{{ ticket.assigned_tsr.full_name if ticket.assigned_tsr else 'Unassigned' }}</td>
                         <td>{{ ticket.client.account_name }}</td>
                         <td>{{ ticket.client.account_number }}</td>
                         <td>{{ ticket.client.region.name }}</td>
                         <td>{{ ticket.creator.full_name if ticket.creator else 'N/A' }}</td>
                         <td>
-                            <a href="{{ url_for('tickets.view_ticket', id=ticket.id) }}"
-                                class="btn btn-sm btn-outline-primary">View</a>
+                        {# --- NEW BUTTON STRUCTURE --- #}
+                        <div class="d-flex gap-2">
+                            <a href="{{ url_for('tickets.view_ticket', id=ticket.id) }}" class="btn btn-sm btn-outline-primary text-nowrap">
+                                View
+                            </a>
                             <form action="{{ url_for('tickets.delete_ticket', id=ticket.id) }}" method="POST"
-                                class="d-inline"
                                 onsubmit="return confirm('Are you sure you want to permanently delete this ticket? This cannot be undone.');">
-                                <button type="submit" class="btn btn-sm btn-danger">Delete</button>
+                                <button type="submit" class="btn btn-sm btn-outline-danger text-nowrap">Delete</button> {# Changed to
+                                outline-danger for cleaner look #}
                             </form>
+                        </div>
+                        {# --- END NEW STRUCTURE --- #}
                         </td>
                     </tr>
                     {% else %}

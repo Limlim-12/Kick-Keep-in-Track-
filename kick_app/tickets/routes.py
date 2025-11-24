@@ -1,14 +1,10 @@
-from flask import render_template, flash, redirect, url_for, request
+from flask import render_template, flash, redirect, url_for, request, current_app
 from flask_login import login_required, current_user
 from sqlalchemy import func, or_
-from . import tickets  # Correct relative import for blueprint
-from .forms import (
-    TicketForm,
-    UpdateTicketForm,
-    EmailLogForm,
-)  # Correct relative import for forms
-from .. import db  # Correct relative import for db
-from ..models import (  # Correct relative import for models
+from . import tickets
+from .forms import TicketForm, UpdateTicketForm, EmailLogForm, AttachmentForm
+from .. import db
+from ..models import (
     Ticket,
     Client,
     User,
@@ -16,19 +12,16 @@ from ..models import (  # Correct relative import for models
     TicketStatus,
     UserRole,
     ActivityLog,
-    EmailLog,  # Include EmailLog
+    EmailLog,
+    TicketAttachment,
 )
-from ..decorators import admin_required  # Correct relative import for decorator
+from ..decorators import admin_required
 import pytz
-from datetime import datetime  # <-- 1. ADD THIS IMPORT
+from datetime import datetime
 
 
-# --- Helper Function for Auto-Assignment (remains the same) ---
+# --- Helper Function for Auto-Assignment ---
 def get_next_tsr():
-    """
-    Finds the active TSR with the fewest 'Open' or 'In Progress' tickets.
-    This is our core load-balancing logic.
-    """
     subquery = (
         db.session.query(
             Ticket.assigned_to_id, func.count(Ticket.id).label("ticket_count")
@@ -54,27 +47,22 @@ def get_next_tsr():
 @login_required
 @admin_required
 def create_ticket():
-    """Admin-only route to create a new ticket."""
     form = TicketForm()
     if form.validate_on_submit():
-
         client = form.client.data
         concern_title = form.concern_title.data
         concern_details = form.concern_details.data
 
-        # --- START: FIX FOR UNIQUE TICKET NAME ---
-        # 2. Get a unique timestamp string
+        # Unique timestamp for ticket name
         timestamp_str = str(int(datetime.utcnow().timestamp()))
 
-        # 3. Add the timestamp to the ticket name
         ticket_name = (
             f"{client.region.name}_"
             f"{client.account_name}_"
             f"{client.account_number}_"
-            f"{concern_title.replace(' ', '')}_"  # Added an underscore
-            f"{timestamp_str}"  # Added the unique timestamp
+            f"{concern_title.replace(' ', '')}_"
+            f"{timestamp_str}"
         )
-        # --- END: FIX FOR UNIQUE TICKET NAME ---
 
         ticket = Ticket(
             ticket_name=ticket_name,
@@ -86,9 +74,8 @@ def create_ticket():
         )
 
         db.session.add(ticket)
-        db.session.commit()  # Commit to get ticket.id
+        db.session.commit()
 
-        # Log the creation
         log_creation = ActivityLog(
             action=f"Ticket created by {current_user.full_name}",
             user_id=current_user.id,
@@ -96,7 +83,6 @@ def create_ticket():
         )
         db.session.add(log_creation)
 
-        # --- Auto-assignment logic ---
         next_tsr = get_next_tsr()
         if next_tsr:
             ticket.assigned_to_id = next_tsr.id
@@ -111,14 +97,14 @@ def create_ticket():
                 f"Ticket created and auto-assigned to {next_tsr.full_name}.", "success"
             )
         else:
-            db.session.commit()  # Commit creation log even if no assignment
+            db.session.commit()
             flash(
                 "Ticket created but no active TSRs available for assignment.", "warning"
             )
 
         return redirect(url_for("tickets.all_tickets"))
 
-    elif request.method == "POST":  # Flash errors only on failed POST
+    elif request.method == "POST":
         for field, errors in form.errors.items():
             for error in errors:
                 flash(f"Error in {getattr(form, field).label.text}: {error}", "danger")
@@ -130,31 +116,44 @@ def create_ticket():
 @login_required
 @admin_required
 def all_tickets():
-    """Admin-only view of all tickets, filterable and searchable."""
+    """Admin-only view of all tickets with ADVANCED SEARCH."""
     page = request.args.get("page", 1, type=int)
     status_filter = request.args.get("status")
     search_query = request.args.get("search", "").strip()
 
-    query = Ticket.query.join(Client).join(Region).order_by(Ticket.created_at.desc())
+    # Join Client, Region, AND outerjoin User (for assigned TSR search)
+    query = (
+        Ticket.query.join(Client)
+        .join(Region)
+        .outerjoin(
+            User, Ticket.assigned_to_id == User.id
+        )  # Join User table to search TSR names
+        .order_by(Ticket.created_at.desc())
+    )
 
-    # Apply Status Filter
+    # Apply Status Filter (Dropdown)
     if status_filter:
         try:
             query = query.filter(Ticket.status == TicketStatus[status_filter.upper()])
         except KeyError:
             flash(f"Invalid status filter '{status_filter}'.", "warning")
 
-    # --- Apply Search Filter ---
+    # --- SMART SEARCH ENGINE ---
     if search_query:
         search_term = f"%{search_query}%"
+
+        # Use ILIKE for case-insensitive search (PostgreSQL friendly)
         query = query.filter(
             or_(
-                Ticket.ticket_name.like(search_term),
-                Ticket.concern_title.like(search_term),
-                Ticket.rt_ticket_number.like(search_term),
-                Client.account_name.like(search_term),
-                Client.account_number.like(search_term),
-                Region.name.like(search_term),
+                Ticket.ticket_name.ilike(search_term),  # Ticket Name
+                Ticket.concern_title.ilike(search_term),  # Concern
+                Ticket.rt_ticket_number.ilike(search_term),  # RT Number
+                Client.account_name.ilike(search_term),  # Client Name
+                Client.account_number.ilike(search_term),  # Account Number
+                Region.name.ilike(search_term),  # Region
+                User.full_name.ilike(search_term),  # Assigned TSR Name
+                # Cast Enum status to string to allow searching "RESOLVED" or "OPEN"
+                db.cast(Ticket.status, db.String).ilike(search_term),
             )
         )
 
@@ -171,7 +170,7 @@ def all_tickets():
 @tickets.route("/my")
 @login_required
 def my_tickets():
-    """TSR-only view of their assigned tickets, searchable."""
+    """TSR-only view with ADVANCED SEARCH."""
     if current_user.role == UserRole.ADMIN:
         return redirect(url_for("tickets.all_tickets"))
 
@@ -181,26 +180,26 @@ def my_tickets():
     # Base query for user's tickets
     query = Ticket.query.filter_by(assigned_to_id=current_user.id)
 
-    # --- Apply Search Filter ---
+    # --- SMART SEARCH ENGINE ---
     if search_query:
         search_term = f"%{search_query}%"
-        # Join related tables for searching
         query = (
             query.join(Client)
             .join(Region)
             .filter(
                 or_(
-                    Ticket.ticket_name.like(search_term),
-                    Ticket.concern_title.like(search_term),
-                    Ticket.rt_ticket_number.like(search_term),
-                    Client.account_name.like(search_term),
-                    Client.account_number.like(search_term),
-                    Region.name.like(search_term),
+                    Ticket.ticket_name.ilike(search_term),
+                    Ticket.concern_title.ilike(search_term),
+                    Ticket.rt_ticket_number.ilike(search_term),
+                    Client.account_name.ilike(search_term),
+                    Client.account_number.ilike(search_term),
+                    Region.name.ilike(search_term),
+                    db.cast(Ticket.status, db.String).ilike(search_term),
                 )
             )
         )
 
-    # Apply sorting (existing logic, includes NEW status)
+    # Apply sorting
     query = query.order_by(
         db.case(
             (Ticket.status == TicketStatus.NEW, -1),
@@ -223,7 +222,6 @@ def my_tickets():
     )
 
 
-# --- UPDATED view_ticket Function ---
 @tickets.route("/<int:id>", methods=["GET", "POST"])
 @login_required
 def view_ticket(id):
@@ -247,34 +245,74 @@ def view_ticket(id):
         db.session.commit()
         flash("Ticket status updated to Open.", "info")
 
-    # Initialize BOTH forms
     form = UpdateTicketForm()
     email_form = EmailLogForm()
+    attachment_form = AttachmentForm()
 
-    # Handle Email Log Form Submission (check by submit button name)
+    # --- NEW: Handle Attachment Upload ---
+    if attachment_form.submit_attachment.data and attachment_form.validate_on_submit():
+        try:
+            f = attachment_form.file.data
+            original_filename = secure_filename(f.filename)
+
+            # Create a unique filename: ticketID_timestamp_filename
+            timestamp = int(datetime.utcnow().timestamp())
+            unique_filename = f"{ticket.id}_{timestamp}_{original_filename}"
+
+            # Define upload path: kick_app/static/uploads/tickets
+            upload_dir = os.path.join(
+                current_app.root_path, "static", "uploads", "tickets"
+            )
+            os.makedirs(upload_dir, exist_ok=True)  # Create dir if not exists
+
+            # Save the file
+            file_path = os.path.join(upload_dir, unique_filename)
+            f.save(file_path)
+
+            # Save to DB
+            attachment = TicketAttachment(
+                filename=original_filename,
+                filepath=f"uploads/tickets/{unique_filename}",  # Relative to static folder
+                ticket_id=ticket.id,
+                uploader_id=current_user.id,
+            )
+            db.session.add(attachment)
+
+            # Log it
+            log_activity = ActivityLog(
+                action=f"Uploaded attachment: {original_filename}",
+                user_id=current_user.id,
+                ticket_id=ticket.id,
+            )
+            db.session.add(log_activity)
+
+            db.session.commit()
+            flash(f"File '{original_filename}' uploaded successfully.", "success")
+            return redirect(url_for("tickets.view_ticket", id=id))
+
+        except Exception as e:
+            db.session.rollback()
+            flash(f"Error uploading file: {e}", "danger")
+
     if email_form.submit_email_log.data and email_form.validate_on_submit():
         try:
-            # Convert naive datetime from form to PHT-aware datetime
             pht_tz = pytz.timezone("Asia/Manila")
             naive_dt = email_form.sent_at.data
-            # Localize the naive datetime to PHT
             if naive_dt.tzinfo is None:
                 pht_dt = pht_tz.localize(naive_dt)
-            else:  # If already timezone aware (less likely from form), ensure it's PHT
+            else:
                 pht_dt = naive_dt.astimezone(pht_tz)
 
-            # Convert to UTC for database storage
             utc_dt = pht_dt.astimezone(pytz.utc)
 
             new_log = EmailLog(
                 email_content=email_form.email_content.data,
-                sent_at=utc_dt,  # Store in UTC
+                sent_at=utc_dt,
                 ticket_id=ticket.id,
                 user_id=current_user.id,
             )
             db.session.add(new_log)
 
-            # Also log to main activity
             log_activity = ActivityLog(
                 action=f"Email log added by {current_user.full_name}.",
                 user_id=current_user.id,
@@ -284,23 +322,17 @@ def view_ticket(id):
 
             db.session.commit()
             flash("New email log entry has been added.", "success")
-            return redirect(
-                url_for("tickets.view_ticket", id=id)
-            )  # Redirect after successful post
+            return redirect(url_for("tickets.view_ticket", id=id))
         except Exception as e:
             db.session.rollback()
             flash(f"Error logging email: {e}", "danger")
 
-    # Handle Ticket Update Form Submission (check by submit button name)
-    elif (
-        form.submit.data and form.validate_on_submit()
-    ):  # Use elif to prevent double processing
+    elif form.submit.data and form.validate_on_submit():
         try:
             new_status_enum = TicketStatus[form.status.data]
             log_action = ""
             something_changed = False
 
-            # Admin re-assign logic
             if current_user.role == UserRole.ADMIN:
                 new_tsr = form.assigned_tsr.data
                 old_tsr_id = ticket.assigned_to_id
@@ -325,7 +357,6 @@ def view_ticket(id):
                     ticket.assigned_to_id = None
                     something_changed = True
 
-            # RT Number logic
             new_rt_number = form.rt_ticket_number.data.strip() or None
             old_rt_number = ticket.rt_ticket_number
             if new_rt_number != old_rt_number:
@@ -346,7 +377,6 @@ def view_ticket(id):
                 ticket.rt_ticket_number = new_rt_number
                 something_changed = True
 
-            # Status change logic
             if ticket.status != new_status_enum:
                 log_action = (
                     f"Status changed from {ticket.status.value} to {new_status_enum.value} "
@@ -355,9 +385,7 @@ def view_ticket(id):
                 ticket.status = new_status_enum
                 something_changed = True
 
-            # Remarks logic
             if form.remarks.data:
-                # Check if remark is different from the last one (optional, prevents spam)
                 last_remark_log = (
                     ActivityLog.query.filter(
                         ActivityLog.ticket_id == ticket.id,
@@ -369,7 +397,6 @@ def view_ticket(id):
                     .first()
                 )
 
-                # Only add if it's a new remark or no previous remark exists
                 if (
                     not last_remark_log
                     or last_remark_log.action
@@ -386,8 +413,7 @@ def view_ticket(id):
                     db.session.add(log_remark)
                     something_changed = True
 
-            # Commit changes
-            if log_action:  # Log status change if it happened
+            if log_action:
                 log_status = ActivityLog(
                     action=log_action.strip(),
                     user_id=current_user.id,
@@ -400,34 +426,33 @@ def view_ticket(id):
                 flash("Ticket updated successfully.", "success")
             else:
                 flash("No changes detected.", "info")
-            return redirect(
-                url_for("tickets.view_ticket", id=id)
-            )  # Redirect after successful post
+            return redirect(url_for("tickets.view_ticket", id=id))
         except Exception as e:
             db.session.rollback()
             flash(f"Error updating ticket: {e}", "danger")
 
-    # Pre-populate UpdateTicketForm on GET request (or if POST validation failed)
     if request.method == "GET" or not form.validate_on_submit():
         form.status.data = ticket.status.name
         form.rt_ticket_number.data = ticket.rt_ticket_number
         if ticket.assigned_tsr:
             form.assigned_tsr.data = ticket.assigned_tsr
 
-    # Query for logs (both types)
     logs = ticket.logs.order_by(ActivityLog.timestamp.asc()).all()
-    email_logs = ticket.email_logs.order_by(
-        EmailLog.sent_at.desc()
-    ).all()  # Get email logs, newest first
+    email_logs = ticket.email_logs.order_by(EmailLog.sent_at.desc()).all()
+    attachments = ticket.attachments.order_by(
+        TicketAttachment.uploaded_at.desc()
+    ).all()  # Get attachments
 
     return render_template(
         "view_ticket.html",
         title=f"Ticket: {ticket.ticket_name}",
         ticket=ticket,
-        form=form,  # Pass update form
-        email_form=email_form,  # Pass email log form
-        logs=logs,  # Pass activity logs
-        email_logs=email_logs,  # Pass email logs
+        form=form,
+        email_form=email_form,
+        attachment_form=attachment_form,
+        logs=logs,
+        email_logs=email_logs,
+        attachments=attachments,
     )
 
 
@@ -435,16 +460,10 @@ def view_ticket(id):
 @login_required
 @admin_required
 def delete_ticket(id):
-    """Admin-only route to delete a ticket."""
     ticket = Ticket.query.get_or_404(id)
-
-    # Manually delete dependent logs first (important for foreign key constraints)
     ActivityLog.query.filter_by(ticket_id=ticket.id).delete()
-    EmailLog.query.filter_by(ticket_id=ticket.id).delete()  # Also delete email logs
-
-    # Now, safely delete the ticket
+    EmailLog.query.filter_by(ticket_id=ticket.id).delete()
     db.session.delete(ticket)
     db.session.commit()
-
     flash(f'Ticket "{ticket.concern_title}" has been permanently deleted.', "success")
     return redirect(url_for("tickets.all_tickets"))

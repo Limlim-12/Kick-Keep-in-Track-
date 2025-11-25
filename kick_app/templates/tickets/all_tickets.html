@@ -83,17 +83,26 @@
                                 {{ ticket.status.value }}
                             </span>
                         </td>
-                        {# --- NEW DATE STRUCTURE: Created At --- #}
-                        <td class="text-center">
-                            {% set c_dt = ticket.created_at | pht %}
-                            {% if c_dt != 'N/A' %}
-                            {% set c_parts = c_dt.split(' ') %}
-                            <div class="fw-bold" style="font-size: 0.9rem;">{{ c_parts[0] }}</div> {# Date #}
-                            <div class="text-muted" style="font-size: 0.75rem;">{{ c_parts[1] }}</div> {# Time #}
-                            {% else %}
-                            <span class="text-muted">-</span>
-                            {% endif %}
-                        </td>
+                    <td class="text-center position-relative"> {# Added position-relative #}
+                        {% set c_dt = ticket.created_at | pht %}
+                        {% set sla_color = ticket.created_at | sla %}
+                    
+                        {% if c_dt != 'N/A' %}
+                        {# --- SLA INDICATOR --- #}
+                        <div class="badge rounded-pill bg-{{ sla_color }} mb-1" style="font-size: 0.65rem; opacity: 0.9;">
+                            {% if 'success' in sla_color %}FRESH
+                            {% elif 'warning' in sla_color %}AGING
+                            {% else %}OVERDUE{% endif %}
+                        </div>
+                        {# --------------------- #}
+                    
+                        {% set c_parts = c_dt.split(' ') %}
+                        <div class="fw-bold" style="font-size: 0.9rem;">{{ c_parts[0] }}</div>
+                        <div class="text-muted" style="font-size: 0.75rem;">{{ c_parts[1] }}</div>
+                        {% else %}
+                        <span class="text-muted">-</span>
+                        {% endif %}
+                    </td>
                         
                         {# --- NEW DATE STRUCTURE: Last Updated --- #}
                         <td class="text-center">
@@ -117,11 +126,14 @@
                             <a href="{{ url_for('tickets.view_ticket', id=ticket.id) }}" class="btn btn-sm btn-outline-primary text-nowrap">
                                 View
                             </a>
-                            <form action="{{ url_for('tickets.delete_ticket', id=ticket.id) }}" method="POST"
-                                onsubmit="return confirm('Are you sure you want to permanently delete this ticket? This cannot be undone.');">
-                                <button type="submit" class="btn btn-sm btn-outline-danger text-nowrap">Delete</button> {# Changed to
-                                outline-danger for cleaner look #}
-                            </form>
+                        {# --- SWEETALERT DELETE FORM --- #}
+                        <form id="delete-form-{{ ticket.id }}" action="{{ url_for('tickets.delete_ticket', id=ticket.id) }}" method="POST">
+                            <button type="button" class="btn btn-sm btn-outline-danger text-nowrap"
+                                onclick="confirmDelete('{{ ticket.id }}', '{{ ticket.concern_title }}')">
+                                Delete
+                            </button>
+                        </form>
+                        {# ------------------------------ #}
                         </div>
                         {# --- END NEW STRUCTURE --- #}
                         </td>
@@ -168,4 +180,28 @@
     </ul>
 </nav>
 
+
+{% endblock %}
+
+
+{% block scripts %}
+<script>
+    function confirmDelete(ticketId, ticketTitle) {
+        Swal.fire({
+            title: 'Are you sure?',
+            text: "You are about to permanently delete: " + ticketTitle,
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#dc3545', // Bootstrap Danger Red
+            cancelButtonColor: '#6c757d', // Bootstrap Secondary Grey
+            confirmButtonText: 'Yes, delete it!',
+            cancelButtonText: 'Cancel'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                // If user clicks "Yes", submit the specific form
+                document.getElementById('delete-form-' + ticketId).submit();
+            }
+        })
+    }
+</script>
 {% endblock %}

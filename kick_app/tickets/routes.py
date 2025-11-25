@@ -489,9 +489,21 @@ def view_ticket(id):
 @admin_required
 def delete_ticket(id):
     ticket = Ticket.query.get_or_404(id)
+
+    # 1. Delete Activity Logs
     ActivityLog.query.filter_by(ticket_id=ticket.id).delete()
+
+    # 2. Delete Email Logs
     EmailLog.query.filter_by(ticket_id=ticket.id).delete()
+
+    # 3. --- FIX: Delete Attachments ---
+    # We must remove the attachments BEFORE deleting the ticket
+    TicketAttachment.query.filter_by(ticket_id=ticket.id).delete()
+    # ----------------------------------
+
+    # 4. Finally, delete the Ticket
     db.session.delete(ticket)
     db.session.commit()
+
     flash(f'Ticket "{ticket.concern_title}" has been permanently deleted.', "success")
     return redirect(url_for("tickets.all_tickets"))

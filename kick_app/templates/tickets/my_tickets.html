@@ -58,7 +58,16 @@
                         </td>
                         <td>{{ ticket.ticket_name | no_stamp | truncate(50) }}</td>
                         <td>{{ ticket.client.account_name }}</td>
-                        <td>{{ ticket.updated_at | pht }}</td>
+                        <td class="text-center">
+                            {% set sla_color = ticket.created_at | sla %}
+                            <span class="badge bg-{{ sla_color }}" style="font-size: 0.7rem;">
+                                {% if 'success' in sla_color %}FRESH
+                                {% elif 'warning' in sla_color %}AGING
+                                {% else %}OVERDUE{% endif %}
+                            </span>
+                            <br>
+                            <small class="text-muted">{{ ticket.updated_at | pht }}</small>
+                        </td>
                         <td>
                             <a href="{{ url_for('tickets.view_ticket', id=ticket.id) }}"
                                 class="btn btn-sm btn-primary">View / Update</a>

@@ -18,7 +18,9 @@ login_manager.login_view = "auth.login"
 login_manager.login_message_category = "info"
 
 
-# --- EXISTING TIMEZONE FILTER ---
+# --- FILTERS ---
+
+
 def format_datetime_pht(utc_dt):
     """Converts a UTC datetime object to PHT (Philippines) string."""
     if not utc_dt:
@@ -28,17 +30,31 @@ def format_datetime_pht(utc_dt):
     return pht_dt.strftime("%Y-%m-%d %H:%M")
 
 
-# --- NEW FILTER: STRIP TIMESTAMP ---
 def strip_timestamp_filter(ticket_name):
     """Removes the Unix timestamp suffix from the ticket name."""
     if not ticket_name:
         return ""
-    # Split from the right, max 1 split, take the first part
-    # e.g., "Client_Issue_123456" -> "Client_Issue"
     return ticket_name.rsplit("_", 1)[0]
 
 
-# --- END NEW FILTER ---
+def sla_class_filter(created_at):
+    """Returns a Bootstrap color class based on ticket age."""
+    if not created_at:
+        return "secondary"  # Gray default
+
+    now = datetime.utcnow()
+    diff = now - created_at
+    hours = diff.total_seconds() / 3600
+
+    if hours < 4:
+        return "success"  # Green (Fresh)
+    elif hours < 24:
+        return "warning text-dark"  # Yellow (Aging)
+    else:
+        return "danger"  # Red (Overdue)
+
+
+# --- APP FACTORY ---
 
 
 def create_app(config_class=Config):
@@ -50,8 +66,8 @@ def create_app(config_class=Config):
 
     # --- REGISTER FILTERS ---
     app.jinja_env.filters["pht"] = format_datetime_pht
-    # This line fixes your error:
     app.jinja_env.filters["no_stamp"] = strip_timestamp_filter
+    app.jinja_env.filters["sla"] = sla_class_filter
 
     # Initialize extensions with the app
     db.init_app(app)
@@ -87,4 +103,4 @@ def create_app(config_class=Config):
     with app.app_context():
         from . import models
 
-    return app
+    return app  # <--- THIS LINE WAS LIKELY MISSING OR INDENTED WRONG

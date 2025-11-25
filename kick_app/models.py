@@ -42,6 +42,7 @@ class User(db.Model, UserMixin):
     role = db.Column(db.Enum(UserRole), default=UserRole.TSR, nullable=False)
     is_active = db.Column(db.Boolean, default=False, nullable=False)
     created_at = db.Column(db.DateTime, default=datetime.utcnow)
+    last_assigned_at = db.Column(db.DateTime, nullable=True)
 
     # Relationships
     assigned_tickets = db.relationship(

@@ -23,47 +23,56 @@
                 </tr>
             </thead>
             <tbody>
-                {% for user in users %}
-                <tr class="{% if not user.is_active %}table-warning fw-bold{% endif %}">
-                    <td>
-                        {% if user.is_active %}
-                        <span class="badge bg-success">Active</span>
-                        {% else %}
-                        <span class="badge bg-warning text-dark">Pending</span>
-                        {% endif %}
-                    </td>
-                    <td>{{ user.full_name }}</td>
-                    <td>{{ user.employee_id }}</td>
-                    <td>{{ user.email }}</td>
-                    <td>
-                        {% if user.role.value == 'Admin' %}
-                        <span class="badge bg-danger">{{ user.role.value }}</span>
-                        {% else %}
-                        <span class="badge bg-secondary">{{ user.role.value }}</span>
-                        {% endif %}
-                    </td>
-                    <td>{{ user.created_at.strftime('%Y-%m-%d') }}</td>
-                    <td>
-                        {% if not user.is_active and user.role.value == 'TSR' %}
-                        <form action="{{ url_for('admin.approve_user', id=user.id) }}" method="POST" class="d-inline">
-                            <button type="submit" class="btn btn-sm btn-success">Approve</L>
+            {% for user in users %}
+            <tr class="{% if not user.is_active %}table-warning{% endif %}">
+                <td>
+                    {% if user.is_active %}
+                    <span class="badge bg-success">Active</span>
+                    {% else %}
+                    <span class="badge bg-warning text-dark">Pending</span>
+                    {% endif %}
+                </td>
+                <td>{{ user.full_name }}</td>
+                <td>{{ user.employee_id }}</td>
+                <td>{{ user.email }}</td>
+                <td>
+                    {% if user.role.value == 'Admin' %}
+                    <span class="badge bg-danger">{{ user.role.value }}</span>
+                    {% else %}
+                    <span class="badge bg-secondary">{{ user.role.value }}</span>
+                    {% endif %}
+                </td>
+                <td>{{ user.created_at.strftime('%Y-%m-%d') }}</td>
+                <td>
+                    <div class="d-flex gap-2">
+                        {% if not user.is_active %}
+                        {# --- Actions for Pending Users --- #}
+                        <form action="{{ url_for('admin.approve_user', id=user.id) }}" method="POST">
+                            <button type="submit" class="btn btn-sm btn-success text-nowrap">Approve</button>
                         </form>
-                        <form action="{{ url_for('admin.reject_user', id=user.id) }}" method="POST" class="d-inline"
-                            onsubmit="return confirm('Are you sure you want to REJECT and DELETE this user? This cannot be undone.');">
-                            <button type="submit" class="btn btn-sm btn-danger">Reject</button>
-                        </form>
-                        {% else %}
-                        <span class="text-muted">N/A</span>
                         {% endif %}
-                    </td>
-                </tr>
-                {% else %}
-                <tr>
-                    <td colspan="7" class="text-center">No users found.</td>
-                </tr>
-                {% endfor %}
+            
+                        {# --- Edit Button (All Users) --- #}
+                        <a href="{{ url_for('admin.edit_user', id=user.id) }}" class="btn btn-sm btn-primary text-nowrap">Edit</a>
+            
+                        {# --- Delete Button (Exclude Self) --- #}
+                        {% if user.id != current_user.id %}
+                        <form action="{{ url_for('admin.delete_user', id=user.id) }}" method="POST"
+                            onsubmit="return confirm('Are you sure you want to DELETE this user? This cannot be undone.');">
+                            <button type="submit" class="btn btn-sm btn-danger text-nowrap">Delete</button>
+                        </form>
+                        {% endif %}
+                    </div>
+                </td>
+            </tr>
+            {% else %}
+            <tr>
+                <td colspan="7" class="text-center">No users found.</td>
+            </tr>
+            {% endfor %}
             </tbody>
-        </table>
-    </div>
-</div>
-{% endblock %}
+            </table>
+            </div>
+            </div>
+            </div>
+            {% endblock %}

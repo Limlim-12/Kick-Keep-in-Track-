@@ -1,8 +1,8 @@
 from flask_wtf import FlaskForm
 from flask_wtf.file import FileField, FileAllowed, FileRequired
-from wtforms import StringField, SubmitField, SelectField, TextAreaField, FloatField
+from wtforms import StringField, SubmitField, SelectField, TextAreaField, FloatField, PasswordField
 from wtforms.fields import DateField
-from wtforms.validators import DataRequired, Length, NumberRange
+from wtforms.validators import DataRequired, Length, NumberRange, Email, Optional, EqualTo
 from wtforms_sqlalchemy.fields import QuerySelectField
 from kick_app.models import Region
 
@@ -72,3 +72,35 @@ class ReportForm(FlaskForm):
     submit_tickets = SubmitField("Generate Ticket Report")
     # --- ADD THIS LINE ---
     submit_tsr = SubmitField("Generate TSR Performance Report")
+
+
+# --- NEW FORM FOR USER MANAGEMENT ---
+class UserForm(FlaskForm):
+    """Form for adding or editing a user."""
+
+    employee_id = StringField(
+        "Employee ID", validators=[DataRequired(), Length(max=80)]
+    )
+    full_name = StringField("Full Name", validators=[DataRequired(), Length(max=150)])
+    email = StringField("Email", validators=[DataRequired(), Email(), Length(max=120)])
+
+    role = SelectField(
+        "Role",
+        choices=[("TSR", "TSR"), ("ADMIN", "Admin")],
+        validators=[DataRequired()],
+    )
+
+    # --- NEW STATUS FIELD ---
+    is_active = SelectField(
+        "Status",
+        choices=[("True", "Active"), ("False", "Inactive")],
+        validators=[DataRequired()],
+    )
+
+    password = PasswordField("Password", validators=[Optional(), Length(min=6)])
+    confirm_password = PasswordField(
+        "Confirm Password",
+        validators=[EqualTo("password", message="Passwords must match")],
+    )
+
+    submit = SubmitField("Save User")

@@ -24,19 +24,37 @@ from datetime import datetime
 
 # --- Helper Function for Auto-Assignment ---
 def get_next_tsr():
+    """
+    Smart Assignment v2:
+    1. Filter for Active TSRs only.
+    2. Count ALL active workload: NEW + OPEN + IN PROGRESS.
+       (Fixes the issue where 'New' tickets were ignored, causing assignment bursts)
+    3. TIE-BREAKER: Round Robin (Oldest 'last_assigned_at').
+    """
     subquery = (
         db.session.query(
             Ticket.assigned_to_id, func.count(Ticket.id).label("ticket_count")
         )
-        .filter(Ticket.status.in_([TicketStatus.OPEN, TicketStatus.IN_PROGRESS]))
+        # FIX: Include TicketStatus.NEW so instant assignments count immediately!
+        .filter(
+            Ticket.status.in_(
+                [TicketStatus.NEW, TicketStatus.OPEN, TicketStatus.IN_PROGRESS]
+            )
+        )
         .group_by(Ticket.assigned_to_id)
         .subquery()
     )
+
     tsr_with_counts = (
         db.session.query(User, func.coalesce(subquery.c.ticket_count, 0).label("count"))
         .outerjoin(subquery, User.id == subquery.c.assigned_to_id)
-        .filter(User.role == UserRole.TSR, User.is_active == True)
-        .order_by(func.coalesce(subquery.c.ticket_count, 0).asc())
+        .filter(User.role == UserRole.TSR, User.is_active == True)  # Only Active users
+        .order_by(
+            func.coalesce(
+                subquery.c.ticket_count, 0
+            ).asc(),  # Priority 1: Lowest Workload
+            User.last_assigned_at.asc().nullsfirst(),  # Priority 2: Round Robin Fairness
+        )
         .first()
     )
     return tsr_with_counts[0] if tsr_with_counts else None
@@ -85,15 +103,23 @@ def create_ticket():
         )
         db.session.add(log_creation)
 
+        # --- AUTO-ASSIGNMENT LOGIC ---
         next_tsr = get_next_tsr()
         if next_tsr:
             ticket.assigned_to_id = next_tsr.id
+
+            # --- CRITICAL: Update the User's Timestamp ---
+            next_tsr.last_assigned_at = datetime.utcnow()
+            db.session.add(next_tsr)
+            # ---------------------------------------------
+
             log_assign = ActivityLog(
                 action=f"Ticket auto-assigned to {next_tsr.full_name}",
                 user_id=current_user.id,
                 ticket_id=ticket.id,
             )
             db.session.add(log_assign)
+
             db.session.commit()
             flash(
                 f"Ticket created and auto-assigned to {next_tsr.full_name}.", "success"

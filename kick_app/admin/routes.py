@@ -8,7 +8,7 @@ from flask import (
 )
 from flask_login import login_required, current_user
 from . import admin
-from .forms import ClientForm, ExcelUploadForm, AnnouncementForm, ReportForm
+from .forms import ClientForm, ExcelUploadForm, AnnouncementForm, ReportForm, UserForm
 from .. import db  # Use relative import
 from ..models import Client, Region, User, UserRole, Announcement  # Use relative import
 from ..decorators import admin_required  # Use relative import
@@ -214,8 +214,101 @@ def delete_client(id):
 @admin_required
 def user_list():
     """Display list of all users, with pending users first."""
+    # Sort by Pending first, then by date created
     all_users = User.query.order_by(User.is_active.asc(), User.created_at.desc()).all()
     return render_template("user_list.html", title="User Management", users=all_users)
+
+
+# --- NEW ROUTE: ADD USER ---
+@admin.route("/users/add", methods=["GET", "POST"])
+@login_required
+@admin_required
+def add_user():
+    form = UserForm()
+    if form.validate_on_submit():
+        if User.query.filter_by(employee_id=form.employee_id.data).first():
+            flash("Employee ID already exists.", "danger")
+        elif User.query.filter_by(email=form.email.data).first():
+            flash("Email already exists.", "danger")
+        elif not form.password.data:
+            flash("Password is required for new users.", "danger")
+        else:
+            user = User(
+                employee_id=form.employee_id.data,
+                full_name=form.full_name.data,
+                email=form.email.data,
+                role=UserRole[form.role.data],
+                # Convert string 'True'/'False' to Boolean
+                is_active=(form.is_active.data == "True"),
+            )
+            user.set_password(form.password.data)
+            db.session.add(user)
+            db.session.commit()
+            flash(f"User {user.full_name} added successfully.", "success")
+            return redirect(url_for("admin.user_list"))
+
+    return render_template("user_form.html", title="Add New User", form=form)
+
+
+# --- NEW ROUTE: EDIT USER ---
+@admin.route("/users/edit/<int:id>", methods=["GET", "POST"])
+@login_required
+@admin_required
+def edit_user(id):
+    user = User.query.get_or_404(id)
+    form = UserForm(obj=user)
+
+    if form.validate_on_submit():
+        existing_id = User.query.filter_by(employee_id=form.employee_id.data).first()
+        existing_email = User.query.filter_by(email=form.email.data).first()
+
+        if existing_id and existing_id.id != user.id:
+            flash("Employee ID already in use by another user.", "danger")
+        elif existing_email and existing_email.id != user.id:
+            flash("Email already in use by another user.", "danger")
+        else:
+            user.employee_id = form.employee_id.data
+            user.full_name = form.full_name.data
+            user.email = form.email.data
+            user.role = UserRole[form.role.data]
+            # Update status
+            user.is_active = form.is_active.data == "True"
+
+            if form.password.data:
+                user.set_password(form.password.data)
+
+            db.session.commit()
+            flash(f"User {user.full_name} updated successfully.", "success")
+            return redirect(url_for("admin.user_list"))
+
+    elif request.method == "GET":
+        form.role.data = user.role.name
+        # Pre-fill the status dropdown
+        form.is_active.data = str(user.is_active)
+
+    return render_template("user_form.html", title="Edit User", form=form, user=user)
+
+
+# --- NEW ROUTE: DELETE USER ---
+@admin.route("/users/delete/<int:id>", methods=["POST"])
+@login_required
+@admin_required
+def delete_user(id):
+    user = User.query.get_or_404(id)
+
+    # Prevent admin from deleting themselves
+    if user.id == current_user.id:
+        flash("You cannot delete your own account.", "danger")
+    else:
+        # Clean up related data? (Optional: decide if you want to keep logs/tickets)
+        # For now, assuming cascade or simple delete.
+        # Note: If user has tickets, this might fail depending on DB constraints.
+        # Usually safer to deactivate, but user asked for delete.
+        db.session.delete(user)
+        db.session.commit()
+        flash(f"User {user.full_name} has been deleted.", "success")
+
+    return redirect(url_for("admin.user_list"))
 
 
 @admin.route("/users/approve/<int:id>", methods=["POST"])

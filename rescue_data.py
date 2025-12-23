@@ -2,55 +2,58 @@ import os
 import pandas as pd
 from sqlalchemy import create_engine
 
-# This is your Render Database URL
-DB_URL = "postgresql://kick_db_user:MsUyd4dZXaeJOTebKCKfzIEmIM5Zz2Ct@dpg-d3td070dl3ps73eas7h0-a.singapore-postgres.render.com/kick_db"
+# --- CONFIGURATION ---
+# I added '.singapore-postgres.render.com' to make it accessible from your laptop
+DB_URL = "postgresql://kick_db_v2_user:mGVN4elj8EobfR10XLp3Sm2nCmIcEQGd@dpg-d4hsjm6mcj7s73c870ag-a.singapore-postgres.render.com/kick_db_v2"
+
+# Folder to save CSVs
+BACKUP_FOLDER = "rescue_backup"
 
 
 def backup():
-    print("🚀 Connecting to Render database...")
+    print(f"🚀 Connecting to database: kick_db_v2 (External) ...")
+
     try:
-        # Connect to the database
         engine = create_engine(DB_URL)
 
-        # List of tables to backup
+        # We need ALL 8 tables for the new system
         tables = [
-            "users",
             "regions",
+            "users",
             "clients",
             "tickets",
             "activity_logs",
+            "email_logs",  # New Feature
+            "ticket_attachments",  # New Feature
             "announcements",
         ]
 
-        # Create a folder for the backup
-        if not os.path.exists("rescue_backup"):
-            os.makedirs("rescue_backup")
+        if not os.path.exists(BACKUP_FOLDER):
+            os.makedirs(BACKUP_FOLDER)
+            print(f"📂 Created folder: {BACKUP_FOLDER}")
 
         print("💾 Starting backup...")
 
-        for table in tables:
-            try:
-                # Read table data into a pandas DataFrame
-                df = pd.read_sql_table(table, engine)
+        with engine.connect() as conn:
+            for table in tables:
+                try:
+                    df = pd.read_sql(f"SELECT * FROM {table}", conn)
+                    filename = f"{BACKUP_FOLDER}/{table}.csv"
+                    df.to_csv(filename, index=False)
+                    print(f"   ✅ Saved {len(df)} rows from '{table}'")
+                except Exception as e:
+                    print(f"   ⚠️  Could not backup '{table}' (might be empty): {e}")
 
-                # Save to CSV file
-                filename = f"rescue_backup/{table}.csv"
-                df.to_csv(filename, index=False)
-                print(f"   ✅ Saved {len(df)} rows from '{table}' to {filename}")
-
-            except ValueError:
-                print(
-                    f"   ⚠️  Table '{table}' not found (might be empty or not created)."
-                )
-            except Exception as e:
-                print(f"   ❌ Error backing up '{table}': {e}")
-
-        print("\n🎉 Backup Complete! Your data is in the 'rescue_backup' folder.")
-        print("⚠️  NOW GO DELETE THE PAID DATABASE ON RENDER TO STOP CHARGES! ⚠️")
+        print(f"\n🎉 Backup Complete! Check the '{BACKUP_FOLDER}' folder.")
+        print(
+            "🔎 Please open 'tickets.csv' and check if your recent tickets are there!"
+        )
 
     except Exception as e:
-        print(f"\n❌ Critical Error: Could not connect to database.\n{e}")
-        print("Try running: pip install psycopg2-binary sqlalchemy pandas")
+        print(f"\n❌ Critical Error: {e}")
+        print(
+            "Note: If this fails, go to Render Dashboard -> Connect -> External Connection and copy that URL."
+        )
 
 
 if __name__ == "__main__":

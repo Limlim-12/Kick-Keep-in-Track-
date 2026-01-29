@@ -1,0 +1,46 @@
+id,message,created_at,is_active,user_id
+4,"SUPPORT TEAM UPDATE — 11/18/2025
+
+Grafana’s Bandwidth Graph shows that the client did not experience any service downtime within the week.
+
+The technical team has also updated the Google Sheets tracker, and Ticket #1454 is already marked as Completed.
+
+The Support Team will now close this ticket on behalf of the Technical Team.",2025-11-18 01:19:45.796649,False,1
+3,"Dear [Client Name],
+
+Good day!
+
+As per our technical team, your internet connection was restored last night. We would like to confirm if your connection is now working properly.
+
+If you are still experiencing no connection, please try restarting your router first before confirming. Kindly let us know if the internet is already restored and running smoothly.
+
+Your confirmation and feedback are very helpful to us. Should the issue persist, we will immediately coordinate again with our technical team for further assistance.
+
+Thank you for your cooperation.
+
+Best regards,
+Corona Telecom Support Team",2025-10-27 23:21:13.068430,False,1
+2,"Hi Client Name,
+
+Good day.
+
+We sincerely apologize for the continued inconvenience you’ve been experiencing. Please be informed that we have already created a support ticket for your concern and relayed the details you provided to our Technical Team for further checking.
+
+Please be informed that on October 25, 2025, around 10:00 AM, several network nodes in Cebu experienced downtime, which may have affected your service. Rest assured that our Technical Team is actively investigating and working to restore your connection as soon as possible.
+
+We truly appreciate your patience and understanding while we resolve this matter. Updates will be provided once the issue has been fully resolved.
+
+Warm regards,
+support@coronatel.com",2025-10-27 01:50:23.127736,False,1
+1,"Dear Valued Subscriber,
+
+Please be informed that on October 25, 2025, at around 10:00 AM, several network nodes in Cebu experienced downtime, which may have affected your connection.
+
+Apologies for the late follow-up, our team was on rest days over the weekend. If the issue still persists, please let us know so we can coordinate with our Technical Team to recheck your line.
+
+Rest assured that the concern has already been escalated, and our team is actively working to identify and resolve the issue at the soonest possible time.
+
+We sincerely apologize for the inconvenience and greatly appreciate your patience and understanding. Updates will be provided once the service is fully restored.
+
+Best regards,
+Corona Telecom Support Team",2025-10-27 01:28:22.036030,False,1

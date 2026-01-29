@@ -4,7 +4,7 @@ import os
 
 # Uses the URL you just set in the terminal
 NEW_DB_URL = os.environ.get("DATABASE_URL")
-BACKUP_FOLDER = "rescue_backup"
+BACKUP_FOLDER = "rescue_backup_v3"
 
 
 def restore():
